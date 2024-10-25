@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSRptMER" targetNamespace="http://tempuri.org/DSRptMER.xsd" xmlns:mstns="http://tempuri.org/DSRptMER.xsd" xmlns="http://tempuri.org/DSRptMER.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FSCo" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FSCo (Settings)" PropertyReference="ApplicationSettings.ERP_Production.Properties.Settings.GlobalReference.Default.FSCo" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Pro_ModelTableAdapter" GeneratorDataComponentClassName="tbl_Pro_ModelTableAdapter" Name="tbl_Pro_Model" UserDataComponentName="tbl_Pro_ModelTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FSCo (Settings)" DbObjectName="MIS.dbo.tbl_Pro_Model" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        SesonalRange
+FROM            tbl_Pro_Model
+GROUP BY SesonalRange</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SesonalRange" DataSetColumn="SesonalRange" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Pro_Model1TableAdapter" GeneratorDataComponentClassName="tbl_Pro_Model1TableAdapter" Name="tbl_Pro_Model1" UserDataComponentName="tbl_Pro_Model1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FSCo (Settings)" DbObjectName="MIS.dbo.tbl_Pro_Model" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        SesonalRange
+FROM            tbl_Pro_Model
+GROUP BY SesonalRange</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SesonalRange" DataSetColumn="SesonalRange" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Pro_ClientTableAdapter" GeneratorDataComponentClassName="tbl_Pro_ClientTableAdapter" Name="tbl_Pro_Client" UserDataComponentName="tbl_Pro_ClientTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FSCo (Settings)" DbObjectName="MIS.dbo.tbl_Pro_Client" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [tbl_Pro_Client] WHERE (([ClientID] = ?) AND ((? = 1 AND [ClientName] IS NULL) OR ([ClientName] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ClientID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ClientName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ClientName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_Pro_Client] ([ClientID], [ClientName]) VALUES (?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ClientID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ClientName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ClientID, ClientName
+FROM            tbl_Pro_Client</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [tbl_Pro_Client] SET [ClientID] = ?, [ClientName] = ? WHERE (([ClientID] = ?) AND ((? = 1 AND [ClientName] IS NULL) OR ([ClientName] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ClientID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ClientName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ClientID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ClientName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ClientName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ClientID" DataSetColumn="ClientID" />
+              <Mapping SourceColumn="ClientName" DataSetColumn="ClientName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Pro_ArticleTableAdapter" GeneratorDataComponentClassName="tbl_Pro_ArticleTableAdapter" Name="tbl_Pro_Article" UserDataComponentName="tbl_Pro_ArticleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FSCo (Settings)" DbObjectName="MIS.dbo.tbl_Pro_Article" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ClientID, ArtCode
+FROM            tbl_Pro_Article</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ClientID" DataSetColumn="ClientID" />
+              <Mapping SourceColumn="ArtCode" DataSetColumn="ArtCode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Pro_Article1TableAdapter" GeneratorDataComponentClassName="tbl_Pro_Article1TableAdapter" Name="tbl_Pro_Article1" UserDataComponentName="tbl_Pro_Article1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FSCo (Settings)" DbObjectName="MIS.dbo.tbl_Pro_Article" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     ClientID, ArtCode
+FROM         tbl_Pro_Article</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ClientID" DataSetColumn="ClientID" />
+              <Mapping SourceColumn="ArtCode" DataSetColumn="ArtCode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Pro_Client1TableAdapter" GeneratorDataComponentClassName="tbl_Pro_Client1TableAdapter" Name="tbl_Pro_Client1" UserDataComponentName="tbl_Pro_Client1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FSCo (Settings)" DbObjectName="MIS.dbo.tbl_Pro_Client" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [tbl_Pro_Client] WHERE (([ClientID] = ?) AND ((? = 1 AND [ClientName] IS NULL) OR ([ClientName] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ClientID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ClientName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ClientName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_Pro_Client] ([ClientID], [ClientName]) VALUES (?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ClientID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ClientName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ClientID, ClientName
+FROM            tbl_Pro_Client</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [tbl_Pro_Client] SET [ClientID] = ?, [ClientName] = ? WHERE (([ClientID] = ?) AND ((? = 1 AND [ClientName] IS NULL) OR ([ClientName] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ClientID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ClientName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ClientID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ClientName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ClientName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClientName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ClientID" DataSetColumn="ClientID" />
+              <Mapping SourceColumn="ClientName" DataSetColumn="ClientName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="auth_userTableAdapter" GeneratorDataComponentClassName="auth_userTableAdapter" Name="auth_user" UserDataComponentName="auth_userTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FSCo (Settings)" DbObjectName="MIS.dbo.auth_user" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [auth_user] WHERE (([id] = ?) AND ([username] = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_username" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="username" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT id, username FROM auth_user</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [auth_user] SET [username] = ? WHERE (([id] = ?) AND ([username] = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="username" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="username" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_username" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="username" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSRptMER" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DSRptMER" msprop:Generator_UserDSName="DSRptMER">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_Pro_Model" msprop:Generator_TableClassName="tbl_Pro_ModelDataTable" msprop:Generator_TableVarName="tabletbl_Pro_Model" msprop:Generator_TablePropName="tbl_Pro_Model" msprop:Generator_RowDeletingName="tbl_Pro_ModelRowDeleting" msprop:Generator_RowChangingName="tbl_Pro_ModelRowChanging" msprop:Generator_RowEvHandlerName="tbl_Pro_ModelRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Pro_ModelRowDeleted" msprop:Generator_UserTableName="tbl_Pro_Model" msprop:Generator_RowChangedName="tbl_Pro_ModelRowChanged" msprop:Generator_RowEvArgName="tbl_Pro_ModelRowChangeEvent" msprop:Generator_RowClassName="tbl_Pro_ModelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SesonalRange" msprop:Generator_ColumnVarNameInTable="columnSesonalRange" msprop:Generator_ColumnPropNameInRow="SesonalRange" msprop:Generator_ColumnPropNameInTable="SesonalRangeColumn" msprop:Generator_UserColumnName="SesonalRange" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Pro_Model1" msprop:Generator_TableClassName="tbl_Pro_Model1DataTable" msprop:Generator_TableVarName="tabletbl_Pro_Model1" msprop:Generator_TablePropName="tbl_Pro_Model1" msprop:Generator_RowDeletingName="tbl_Pro_Model1RowDeleting" msprop:Generator_RowChangingName="tbl_Pro_Model1RowChanging" msprop:Generator_RowEvHandlerName="tbl_Pro_Model1RowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Pro_Model1RowDeleted" msprop:Generator_UserTableName="tbl_Pro_Model1" msprop:Generator_RowChangedName="tbl_Pro_Model1RowChanged" msprop:Generator_RowEvArgName="tbl_Pro_Model1RowChangeEvent" msprop:Generator_RowClassName="tbl_Pro_Model1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SesonalRange" msprop:Generator_ColumnVarNameInTable="columnSesonalRange" msprop:Generator_ColumnPropNameInRow="SesonalRange" msprop:Generator_ColumnPropNameInTable="SesonalRangeColumn" msprop:Generator_UserColumnName="SesonalRange" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Pro_Client" msprop:Generator_TableClassName="tbl_Pro_ClientDataTable" msprop:Generator_TableVarName="tabletbl_Pro_Client" msprop:Generator_TablePropName="tbl_Pro_Client" msprop:Generator_RowDeletingName="tbl_Pro_ClientRowDeleting" msprop:Generator_RowChangingName="tbl_Pro_ClientRowChanging" msprop:Generator_RowEvHandlerName="tbl_Pro_ClientRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Pro_ClientRowDeleted" msprop:Generator_UserTableName="tbl_Pro_Client" msprop:Generator_RowChangedName="tbl_Pro_ClientRowChanged" msprop:Generator_RowEvArgName="tbl_Pro_ClientRowChangeEvent" msprop:Generator_RowClassName="tbl_Pro_ClientRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" msprop:Generator_UserColumnName="ClientID" type="xs:int" />
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Pro_Article" msprop:Generator_TableClassName="tbl_Pro_ArticleDataTable" msprop:Generator_TableVarName="tabletbl_Pro_Article" msprop:Generator_TablePropName="tbl_Pro_Article" msprop:Generator_RowDeletingName="tbl_Pro_ArticleRowDeleting" msprop:Generator_RowChangingName="tbl_Pro_ArticleRowChanging" msprop:Generator_RowEvHandlerName="tbl_Pro_ArticleRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Pro_ArticleRowDeleted" msprop:Generator_UserTableName="tbl_Pro_Article" msprop:Generator_RowChangedName="tbl_Pro_ArticleRowChanged" msprop:Generator_RowEvArgName="tbl_Pro_ArticleRowChangeEvent" msprop:Generator_RowClassName="tbl_Pro_ArticleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" msprop:Generator_UserColumnName="ClientID" type="xs:int" />
+              <xs:element name="ArtCode" msprop:Generator_ColumnVarNameInTable="columnArtCode" msprop:Generator_ColumnPropNameInRow="ArtCode" msprop:Generator_ColumnPropNameInTable="ArtCodeColumn" msprop:Generator_UserColumnName="ArtCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Pro_Article1" msprop:Generator_TableClassName="tbl_Pro_Article1DataTable" msprop:Generator_TableVarName="tabletbl_Pro_Article1" msprop:Generator_TablePropName="tbl_Pro_Article1" msprop:Generator_RowDeletingName="tbl_Pro_Article1RowDeleting" msprop:Generator_RowChangingName="tbl_Pro_Article1RowChanging" msprop:Generator_RowEvHandlerName="tbl_Pro_Article1RowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Pro_Article1RowDeleted" msprop:Generator_UserTableName="tbl_Pro_Article1" msprop:Generator_RowChangedName="tbl_Pro_Article1RowChanged" msprop:Generator_RowEvArgName="tbl_Pro_Article1RowChangeEvent" msprop:Generator_RowClassName="tbl_Pro_Article1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" msprop:Generator_UserColumnName="ClientID" type="xs:int" />
+              <xs:element name="ArtCode" msprop:Generator_ColumnVarNameInTable="columnArtCode" msprop:Generator_ColumnPropNameInRow="ArtCode" msprop:Generator_ColumnPropNameInTable="ArtCodeColumn" msprop:Generator_UserColumnName="ArtCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Pro_Client1" msprop:Generator_TableClassName="tbl_Pro_Client1DataTable" msprop:Generator_TableVarName="tabletbl_Pro_Client1" msprop:Generator_TablePropName="tbl_Pro_Client1" msprop:Generator_RowDeletingName="tbl_Pro_Client1RowDeleting" msprop:Generator_RowChangingName="tbl_Pro_Client1RowChanging" msprop:Generator_RowEvHandlerName="tbl_Pro_Client1RowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Pro_Client1RowDeleted" msprop:Generator_UserTableName="tbl_Pro_Client1" msprop:Generator_RowChangedName="tbl_Pro_Client1RowChanged" msprop:Generator_RowEvArgName="tbl_Pro_Client1RowChangeEvent" msprop:Generator_RowClassName="tbl_Pro_Client1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" msprop:Generator_UserColumnName="ClientID" type="xs:int" />
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="auth_user" msprop:Generator_TableClassName="auth_userDataTable" msprop:Generator_TableVarName="tableauth_user" msprop:Generator_TablePropName="auth_user" msprop:Generator_RowDeletingName="auth_userRowDeleting" msprop:Generator_RowChangingName="auth_userRowChanging" msprop:Generator_RowEvHandlerName="auth_userRowChangeEventHandler" msprop:Generator_RowDeletedName="auth_userRowDeleted" msprop:Generator_UserTableName="auth_user" msprop:Generator_RowChangedName="auth_userRowChanged" msprop:Generator_RowEvArgName="auth_userRowChangeEvent" msprop:Generator_RowClassName="auth_userRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_Pro_Client" />
+      <xs:field xpath="mstns:ClientID" />
+    </xs:unique>
+    <xs:unique name="tbl_Pro_Client1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_Pro_Client1" />
+      <xs:field xpath="mstns:ClientID" />
+    </xs:unique>
+    <xs:unique name="auth_user_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:auth_user" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tbl_Pro_Client_tbl_Pro_Article" msdata:parent="tbl_Pro_Client" msdata:child="tbl_Pro_Article" msdata:parentkey="ClientID" msdata:childkey="ClientID" msprop:Generator_UserChildTable="tbl_Pro_Article" msprop:Generator_ChildPropName="Gettbl_Pro_ArticleRows" msprop:Generator_UserRelationName="tbl_Pro_Client_tbl_Pro_Article" msprop:Generator_ParentPropName="tbl_Pro_ClientRow" msprop:Generator_RelationVarName="relationtbl_Pro_Client_tbl_Pro_Article" msprop:Generator_UserParentTable="tbl_Pro_Client" />
+      <msdata:Relationship name="tbl_Pro_Client_tbl_Pro_Article1" msdata:parent="tbl_Pro_Client" msdata:child="tbl_Pro_Article1" msdata:parentkey="ClientID" msdata:childkey="ClientID" msprop:Generator_UserChildTable="tbl_Pro_Article1" msprop:Generator_ChildPropName="Gettbl_Pro_Article1Rows" msprop:Generator_UserRelationName="tbl_Pro_Client_tbl_Pro_Article1" msprop:Generator_ParentPropName="tbl_Pro_ClientRow" msprop:Generator_RelationVarName="relationtbl_Pro_Client_tbl_Pro_Article1" msprop:Generator_UserParentTable="tbl_Pro_Client" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

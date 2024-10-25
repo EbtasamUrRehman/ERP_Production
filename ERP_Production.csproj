@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BC124E2-03ED-4F16-A029-7F8A5D27221E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ERP_Production</RootNamespace>
+    <AssemblyName>ERP_Production</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\dnsserver\IT Shared\ERPFS\Production\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>95</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BAE8486DAC2F6EEBC3312691D5D2BE9B82844869</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ERP_Production_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>technical-support-2_icon-icons.com_52811.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="BusinessObjects.Licensing.KeycodeDecoder, Version=11.5.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.2.UI, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataVisualization.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v21.2.Drawing, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Tutorials.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Tutorials.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Extensions, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.UI, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.2.CodeCompletion, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Extensions, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core.Desktop, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard\FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSPackingMaterial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPackingMaterial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSplanning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSplanning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSPlanning1.cs">
+      <DependentUpon>DSPlanning1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSRep.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRep.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSReports1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSReports1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSRptMER.cs">
+      <DependentUpon>DSRptMER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSRptMER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptMER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutoUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutoUpload.Designer.cs">
+      <DependentUpon>FrmAutoUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanningM.cs" />
+    <Compile Include="loadedModules.cs" />
+    <Compile Include="Login\FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\NewDS.cs">
+      <DependentUpon>NewDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login\NewDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MISDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MISDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleInfo.cs" />
+    <Compile Include="Packing Mateial Requisition\FrmPackingRequisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Packing Mateial Requisition\FrmPackingRequisition.Designer.cs">
+      <DependentUpon>FrmPackingRequisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\DSPackingList.cs">
+      <DependentUpon>DSPackingList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\DSPackingList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPackingList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\FrmPackingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackingList\FrmPackingList.Designer.cs">
+      <DependentUpon>FrmPackingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\DSPlanning.cs">
+      <DependentUpon>DSPlanning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\DSPlanning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPlanning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\frmPlanningM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\frmPlanningM.Designer.cs">
+      <DependentUpon>frmPlanningM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\FrmPlanningReplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\FrmPlanningReplacement.Designer.cs">
+      <DependentUpon>FrmPlanningReplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\POManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\POManagement.Designer.cs">
+      <DependentUpon>POManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProPlanReports\FrmProPlanReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProPlanReports\FrmProPlanReports.Designer.cs">
+      <DependentUpon>FrmProPlanReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\DSPurchaseOrderNew.cs">
+      <DependentUpon>DSPurchaseOrderNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\DSPurchaseOrderNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPurchaseOrderNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\FormAutoUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\FormAutoUpload.Designer.cs">
+      <DependentUpon>FormAutoUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmAddCustomer.Designer.cs">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\frmPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\frmPurchaseOrder.Designer.cs">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\FrmPurchaseOrderNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\FrmPurchaseOrderNew.Designer.cs">
+      <DependentUpon>FrmPurchaseOrderNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\FrmUpdatesUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\FrmUpdatesUpload.Designer.cs">
+      <DependentUpon>FrmUpdatesUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrderReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrderReport.Designer.cs">
+      <DependentUpon>PurchaseOrderReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmMasterPlanningReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmMasterPlanningReports.Designer.cs">
+      <DependentUpon>frmMasterPlanningReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmOrderManagentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmOrderManagentReport.Designer.cs">
+      <DependentUpon>FrmOrderManagentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmPlanningReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmPlanningReports.Designer.cs">
+      <DependentUpon>FrmPlanningReports.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboard\FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutoUpload.resx">
+      <DependentUpon>FrmAutoUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Packing Mateial Requisition\FrmPackingRequisition.resx">
+      <DependentUpon>FrmPackingRequisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackingList\FrmPackingList.resx">
+      <DependentUpon>FrmPackingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\frmPlanningM.resx">
+      <DependentUpon>frmPlanningM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\FrmPlanningReplacement.resx">
+      <DependentUpon>FrmPlanningReplacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\POManagement.resx">
+      <DependentUpon>POManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ProPlanReports\FrmProPlanReports.resx">
+      <DependentUpon>FrmProPlanReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\FormAutoUpload.resx">
+      <DependentUpon>FormAutoUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\FrmPurchaseOrderNew.resx">
+      <DependentUpon>FrmPurchaseOrderNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\FrmUpdatesUpload.resx">
+      <DependentUpon>FrmUpdatesUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrderReport.resx">
+      <DependentUpon>PurchaseOrderReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmMasterPlanningReports.resx">
+      <DependentUpon>frmMasterPlanningReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmOrderManagentReport.resx">
+      <DependentUpon>FrmOrderManagentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmPlanningReports.resx">
+      <DependentUpon>FrmPlanningReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DSPackingMaterial.xsc">
+      <DependentUpon>DSPackingMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="DSPackingMaterial.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPackingMaterial.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSPackingMaterial.xss">
+      <DependentUpon>DSPackingMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="DSplanning.xsc">
+      <DependentUpon>DSplanning.xsd</DependentUpon>
+    </None>
+    <None Include="DSplanning.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSplanning.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSplanning.xss">
+      <DependentUpon>DSplanning.xsd</DependentUpon>
+    </None>
+    <None Include="DSPlanning1.xsc">
+      <DependentUpon>DSPlanning1.xsd</DependentUpon>
+    </None>
+    <None Include="DSPlanning1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPlanning1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSPlanning1.xss">
+      <DependentUpon>DSPlanning1.xsd</DependentUpon>
+    </None>
+    <None Include="DSRep.xsc">
+      <DependentUpon>DSRep.xsd</DependentUpon>
+    </None>
+    <None Include="DSRep.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRep.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSRep.xss">
+      <DependentUpon>DSRep.xsd</DependentUpon>
+    </None>
+    <None Include="DSReports1.xsc">
+      <DependentUpon>DSReports1.xsd</DependentUpon>
+    </None>
+    <None Include="DSReports1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReports1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSReports1.xss">
+      <DependentUpon>DSReports1.xsd</DependentUpon>
+    </None>
+    <None Include="DSRptMER.xsc">
+      <DependentUpon>DSRptMER.xsd</DependentUpon>
+    </None>
+    <None Include="DSRptMER.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptMER.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSRptMER.xss">
+      <DependentUpon>DSRptMER.xsd</DependentUpon>
+    </None>
+    <None Include="ERP_Production_TemporaryKey.pfx" />
+    <None Include="Login\NewDS.xsc">
+      <DependentUpon>NewDS.xsd</DependentUpon>
+    </None>
+    <None Include="Login\NewDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Login\NewDS.xss">
+      <DependentUpon>NewDS.xsd</DependentUpon>
+    </None>
+    <None Include="MISDataSet.xsc">
+      <DependentUpon>MISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MISDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MISDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MISDataSet.xss">
+      <DependentUpon>MISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PackingList\DSPackingList.xsc">
+      <DependentUpon>DSPackingList.xsd</DependentUpon>
+    </None>
+    <None Include="PackingList\DSPackingList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPackingList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PackingList\DSPackingList.xss">
+      <DependentUpon>DSPackingList.xsd</DependentUpon>
+    </None>
+    <None Include="Planning\DSPlanning.xsc">
+      <DependentUpon>DSPlanning.xsd</DependentUpon>
+    </None>
+    <None Include="Planning\DSPlanning.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPlanning.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Planning\DSPlanning.xss">
+      <DependentUpon>DSPlanning.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Purchase Order\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Purchase Order\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Purchase Order\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Purchase Order\DSPurchaseOrderNew.xsc">
+      <DependentUpon>DSPurchaseOrderNew.xsd</DependentUpon>
+    </None>
+    <None Include="Purchase Order\DSPurchaseOrderNew.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPurchaseOrderNew.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Purchase Order\DSPurchaseOrderNew.xss">
+      <DependentUpon>DSPurchaseOrderNew.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\saveandclose.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveclose_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveto_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\additem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveandnew_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newcustomer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_personalid.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_scatterpolarline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createpyramidmanhattanbarchart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shapespanel.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printallpages.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boreport2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearforecast_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drilldownonarguments_chart_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieseries_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outbox_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removepivotfield_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x163.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x164.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outbox_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pieseries_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CrystalDecisions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x165.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drilldownonarguments_chart_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quickfilter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quickfilter_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filterbyseries_pie_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showhidecomment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="process-accept_icon-icons.com_52369 %281%29.ico" />
+    <None Include="Resources\sortandfilter_16x16.png" />
+    <None Include="Resources\exporttoxml_16x16.png" />
+    <Content Include="technical-support-2_icon-icons.com_52811.ico" />
+    <None Include="Resources\delete_16x16.png" />
+    <None Include="Resources\printer_16x16.png" />
+    <None Include="Resources\show_16x161.png" />
+    <None Include="Resources\show_16x162.png" />
+    <None Include="Resources\show_16x163.png" />
+    <None Include="Resources\show_16x164.png" />
+    <None Include="Resources\show_16x165.png" />
+    <None Include="Resources\printernetwork_16x16.png" />
+    <None Include="Resources\reset_16x16.png" />
+    <None Include="Resources\undo_16x16.png" />
+    <None Include="Resources\reset_16x161.png" />
+    <None Include="Resources\undo_16x161.png" />
+    <None Include="Resources\trash_16x16.png" />
+    <None Include="Resources\printquick.svg" />
+    <None Include="Resources\defaultprinternetwork_32x32.png" />
+    <None Include="Resources\managequeries.svg" />
+    <Content Include="strategy_office_management_planning_resource_enterprise_erp_icon_261711.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
