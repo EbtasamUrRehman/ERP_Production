@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>95</ApplicationRevision>
+    <ApplicationRevision>98</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -171,6 +171,11 @@
     <Compile Include="Dashboard\FrmDashboard.Designer.cs">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DSLabelPlanning.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DSPackingMaterial.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -227,6 +232,12 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPlanningM.cs" />
+    <Compile Include="Label Planning\frmLabelPlanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Label Planning\frmLabelPlanning.Designer.cs">
+      <DependentUpon>frmLabelPlanning.cs</DependentUpon>
+    </Compile>
     <Compile Include="loadedModules.cs" />
     <Compile Include="Login\FrmChangePassword.cs">
       <SubType>Form</SubType>
@@ -402,6 +413,9 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Label Planning\frmLabelPlanning.resx">
+      <DependentUpon>frmLabelPlanning.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\FrmChangePassword.resx">
       <DependentUpon>FrmChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -464,6 +478,18 @@
     <EmbeddedResource Include="Reports\FrmPlanningReports.resx">
       <DependentUpon>FrmPlanningReports.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="DSLabelPlanning.xsc">
+      <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
+    </None>
+    <None Include="DSLabelPlanning.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLabelPlanning.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSLabelPlanning.xss">
+      <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
+    </None>
     <None Include="DSPackingMaterial.xsc">
       <DependentUpon>DSPackingMaterial.xsd</DependentUpon>
     </None>

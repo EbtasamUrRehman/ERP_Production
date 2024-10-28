@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ERP_Production.Planning
 {
-    public partial class FrmPlanningReplacement : DevExpress.XtraEditors.XtraForm
+    public partial class frmLabelPlanning : DevExpress.XtraEditors.XtraForm
     {
-        public FrmPlanningReplacement()
+        public frmLabelPlanning()
         {
             InitializeComponent();
         }

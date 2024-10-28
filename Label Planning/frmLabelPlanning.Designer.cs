@@ -1,7 +1,7 @@
 ﻿
-namespace ERP_Production.Packing_Mateial_Requisition
+namespace ERP_Production.Label_Planning
 {
-    partial class FrmPackingRequisition
+    partial class frmLabelPlanning
     {
         /// <summary>
         /// Required designer variable.
@@ -30,17 +30,17 @@ namespace ERP_Production.Packing_Mateial_Requisition
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPackingRequisition));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLabelPlanning));
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -48,8 +48,6 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl12 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
-            this.view_Multi_requisition_PackingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSPackingMaterial = new ERP_Production.DSPackingMaterial();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colReqID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRequestDate = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -87,7 +85,6 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl15 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl10 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.view_MullinePacking_requBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colPOCode = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCode = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -129,15 +126,10 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.tbl_Multi_PO_HBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panelControl21 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl18 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
             this.panelControl19 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl9 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
@@ -146,15 +138,13 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.gridView7 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.view_MullinePacking_requTableAdapter = new ERP_Production.DSPackingMaterialTableAdapters.View_MullinePacking_requTableAdapter();
-            this.tableAdapterManager = new ERP_Production.DSPackingMaterialTableAdapters.TableAdapterManager();
-            this.tbl_Multi_PO_HTableAdapter = new ERP_Production.DSPackingMaterialTableAdapters.tbl_Multi_PO_HTableAdapter();
-            this.tbl_Multi_PO_ReqBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_Multi_PO_ReqTableAdapter = new ERP_Production.DSPackingMaterialTableAdapters.tbl_Multi_PO_ReqTableAdapter();
-            this.tbl_Multi_PO_Req1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_Multi_PO_Req1TableAdapter = new ERP_Production.DSPackingMaterialTableAdapters.tbl_Multi_PO_Req1TableAdapter();
-            this.view_Multi_requisition_PackingTableAdapter = new ERP_Production.DSPackingMaterialTableAdapters.View_Multi_requisition_PackingTableAdapter();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.searchLookUpEdit2 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.searchLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.dSLabelPlanning = new ERP_Production.DSLabelPlanning();
+            this.tbl_Pro_ClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_Pro_ClientTableAdapter = new ERP_Production.DSLabelPlanningTableAdapters.tbl_Pro_ClientTableAdapter();
+            this.tableAdapterManager = new ERP_Production.DSLabelPlanningTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -166,8 +156,6 @@ namespace ERP_Production.Packing_Mateial_Requisition
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_requisition_PackingBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSPackingMaterial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView6)).BeginInit();
@@ -180,7 +168,6 @@ namespace ERP_Production.Packing_Mateial_Requisition
             ((System.ComponentModel.ISupportInitialize)(this.panelControl10)).BeginInit();
             this.panelControl10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_MullinePacking_requBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditAvaBala)).BeginInit();
@@ -200,25 +187,18 @@ namespace ERP_Production.Packing_Mateial_Requisition
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl17)).BeginInit();
-            this.panelControl17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_HBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl21)).BeginInit();
-            this.panelControl21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl18)).BeginInit();
-            this.panelControl18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl9)).BeginInit();
             this.panelControl9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_ReqBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_Req1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ClientBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -227,8 +207,8 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1586, 807);
-            this.panel1.TabIndex = 2;
+            this.panel1.Size = new System.Drawing.Size(1316, 818);
+            this.panel1.TabIndex = 3;
             // 
             // tabPane1
             // 
@@ -239,9 +219,9 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.tabPane1.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabNavigationPage2});
-            this.tabPane1.RegularSize = new System.Drawing.Size(1586, 807);
+            this.tabPane1.RegularSize = new System.Drawing.Size(1316, 818);
             this.tabPane1.SelectedPage = this.tabNavigationPage2;
-            this.tabPane1.Size = new System.Drawing.Size(1586, 807);
+            this.tabPane1.Size = new System.Drawing.Size(1316, 818);
             this.tabPane1.TabIndex = 0;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -254,7 +234,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.tabNavigationPage2.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage2.Name = "tabNavigationPage2";
             this.tabNavigationPage2.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage2.Size = new System.Drawing.Size(1586, 759);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(1316, 770);
             // 
             // panelControl11
             // 
@@ -263,7 +243,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl11.Location = new System.Drawing.Point(0, 0);
             this.panelControl11.Name = "panelControl11";
-            this.panelControl11.Size = new System.Drawing.Size(1586, 759);
+            this.panelControl11.Size = new System.Drawing.Size(1316, 770);
             this.panelControl11.TabIndex = 8;
             // 
             // panelControl12
@@ -272,7 +252,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl12.Location = new System.Drawing.Point(2, 510);
             this.panelControl12.Name = "panelControl12";
-            this.panelControl12.Size = new System.Drawing.Size(1582, 247);
+            this.panelControl12.Size = new System.Drawing.Size(1312, 258);
             this.panelControl12.TabIndex = 8;
             // 
             // panelControl6
@@ -282,33 +262,22 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl6.Location = new System.Drawing.Point(2, 2);
             this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(1578, 243);
+            this.panelControl6.Size = new System.Drawing.Size(1308, 254);
             this.panelControl6.TabIndex = 6;
             // 
             // gridControl3
             // 
-            this.gridControl3.DataSource = this.view_Multi_requisition_PackingBindingSource;
             this.gridControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl3.Location = new System.Drawing.Point(2, 52);
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Name = "gridControl3";
             this.gridControl3.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit4});
-            this.gridControl3.Size = new System.Drawing.Size(1574, 189);
+            this.gridControl3.Size = new System.Drawing.Size(1304, 200);
             this.gridControl3.TabIndex = 4;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3,
             this.gridView6});
-            // 
-            // view_Multi_requisition_PackingBindingSource
-            // 
-            this.view_Multi_requisition_PackingBindingSource.DataMember = "View_Multi_requisition_Packing";
-            this.view_Multi_requisition_PackingBindingSource.DataSource = this.dSPackingMaterial;
-            // 
-            // dSPackingMaterial
-            // 
-            this.dSPackingMaterial.DataSetName = "DSPackingMaterial";
-            this.dSPackingMaterial.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView3
             // 
@@ -501,12 +470,11 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // repositoryItemButtonEdit4
             // 
             this.repositoryItemButtonEdit4.AutoHeight = false;
-            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.repositoryItemButtonEdit4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit4.Name = "repositoryItemButtonEdit4";
             this.repositoryItemButtonEdit4.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.repositoryItemButtonEdit4.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItemButtonEdit4_ButtonClick);
             // 
             // gridView6
             // 
@@ -523,7 +491,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl5.Location = new System.Drawing.Point(2, 2);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(1574, 50);
+            this.panelControl5.Size = new System.Drawing.Size(1304, 50);
             this.panelControl5.TabIndex = 5;
             // 
             // labelControl2
@@ -532,9 +500,9 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(44, 10);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(94, 25);
+            this.labelControl2.Size = new System.Drawing.Size(75, 25);
             this.labelControl2.TabIndex = 4;
-            this.labelControl2.Text = "Requisition";
+            this.labelControl2.Text = "Planning";
             // 
             // labelControl3
             // 
@@ -558,7 +526,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(2, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1582, 508);
+            this.panelControl2.Size = new System.Drawing.Size(1312, 508);
             this.panelControl2.TabIndex = 7;
             // 
             // panelControl15
@@ -567,7 +535,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl15.Location = new System.Drawing.Point(2, 166);
             this.panelControl15.Name = "panelControl15";
-            this.panelControl15.Size = new System.Drawing.Size(1578, 340);
+            this.panelControl15.Size = new System.Drawing.Size(1308, 340);
             this.panelControl15.TabIndex = 12;
             // 
             // panelControl10
@@ -576,12 +544,11 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl10.Location = new System.Drawing.Point(2, 2);
             this.panelControl10.Name = "panelControl10";
-            this.panelControl10.Size = new System.Drawing.Size(1574, 336);
+            this.panelControl10.Size = new System.Drawing.Size(1304, 336);
             this.panelControl10.TabIndex = 10;
             // 
             // gridControl2
             // 
-            this.gridControl2.DataSource = this.view_MullinePacking_requBindingSource;
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl2.Location = new System.Drawing.Point(2, 2);
             this.gridControl2.MainView = this.gridView2;
@@ -589,16 +556,10 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit2,
             this.repositoryItemButtonEditAvaBala});
-            this.gridControl2.Size = new System.Drawing.Size(1570, 332);
+            this.gridControl2.Size = new System.Drawing.Size(1300, 332);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
-            this.gridControl2.Click += new System.EventHandler(this.gridControl2_Click);
-            // 
-            // view_MullinePacking_requBindingSource
-            // 
-            this.view_MullinePacking_requBindingSource.DataMember = "View_MullinePacking_requ";
-            this.view_MullinePacking_requBindingSource.DataSource = this.dSPackingMaterial;
             // 
             // gridView2
             // 
@@ -753,12 +714,11 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // repositoryItemButtonEdit2
             // 
             this.repositoryItemButtonEdit2.AutoHeight = false;
-            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.repositoryItemButtonEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit2.Name = "repositoryItemButtonEdit2";
             this.repositoryItemButtonEdit2.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.repositoryItemButtonEdit2.Click += new System.EventHandler(this.repositoryItemButtonEdit2_Click);
             // 
             // colPartielQty
             // 
@@ -783,7 +743,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl14.Location = new System.Drawing.Point(2, 57);
             this.panelControl14.Name = "panelControl14";
-            this.panelControl14.Size = new System.Drawing.Size(1578, 109);
+            this.panelControl14.Size = new System.Drawing.Size(1308, 109);
             this.panelControl14.TabIndex = 11;
             // 
             // groupControl2
@@ -793,20 +753,18 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(2, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1574, 105);
+            this.groupControl2.Size = new System.Drawing.Size(1304, 105);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Show Record";
             // 
             // panelControl20
             // 
             this.panelControl20.Controls.Add(this.panelControl25);
-            this.panelControl20.Controls.Add(this.panelControl21);
             this.panelControl20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl20.Location = new System.Drawing.Point(2, 21);
             this.panelControl20.Name = "panelControl20";
-            this.panelControl20.Size = new System.Drawing.Size(1570, 84);
+            this.panelControl20.Size = new System.Drawing.Size(1300, 84);
             this.panelControl20.TabIndex = 23;
-            this.panelControl20.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl20_Paint);
             // 
             // panelControl25
             // 
@@ -815,12 +773,17 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl25.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl25.Location = new System.Drawing.Point(2, 2);
             this.panelControl25.Name = "panelControl25";
-            this.panelControl25.Size = new System.Drawing.Size(949, 80);
+            this.panelControl25.Size = new System.Drawing.Size(1298, 80);
             this.panelControl25.TabIndex = 29;
             // 
             // panelControl26
             // 
+            this.panelControl26.Controls.Add(this.simpleButton2);
+            this.panelControl26.Controls.Add(this.searchLookUpEdit2);
+            this.panelControl26.Controls.Add(this.labelControl1);
+            this.panelControl26.Controls.Add(this.searchLookUpEdit1);
             this.panelControl26.Controls.Add(this.labelControl24);
+            this.panelControl26.Controls.Add(this.labelControl4);
             this.panelControl26.Controls.Add(this.dateEdit9);
             this.panelControl26.Controls.Add(this.comboBoxEdit3);
             this.panelControl26.Controls.Add(this.simpleButton4);
@@ -831,12 +794,12 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl26.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl26.Location = new System.Drawing.Point(2, 2);
             this.panelControl26.Name = "panelControl26";
-            this.panelControl26.Size = new System.Drawing.Size(945, 37);
+            this.panelControl26.Size = new System.Drawing.Size(1294, 76);
             this.panelControl26.TabIndex = 30;
             // 
             // labelControl24
             // 
-            this.labelControl24.Location = new System.Drawing.Point(5, 9);
+            this.labelControl24.Location = new System.Drawing.Point(181, 8);
             this.labelControl24.Name = "labelControl24";
             this.labelControl24.Size = new System.Drawing.Size(54, 15);
             this.labelControl24.TabIndex = 32;
@@ -845,7 +808,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // dateEdit9
             // 
             this.dateEdit9.EditValue = null;
-            this.dateEdit9.Location = new System.Drawing.Point(65, 7);
+            this.dateEdit9.Location = new System.Drawing.Point(241, 6);
             this.dateEdit9.Name = "dateEdit9";
             this.dateEdit9.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -853,11 +816,10 @@ namespace ERP_Production.Packing_Mateial_Requisition
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit9.Size = new System.Drawing.Size(118, 22);
             this.dateEdit9.TabIndex = 31;
-            this.dateEdit9.EditValueChanged += new System.EventHandler(this.dateEdit9_EditValueChanged);
             // 
             // comboBoxEdit3
             // 
-            this.comboBoxEdit3.Location = new System.Drawing.Point(453, 6);
+            this.comboBoxEdit3.Location = new System.Drawing.Point(629, 5);
             this.comboBoxEdit3.Name = "comboBoxEdit3";
             this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -876,17 +838,16 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // simpleButton4
             // 
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(592, 6);
+            this.simpleButton4.Location = new System.Drawing.Point(770, 4);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(104, 23);
             this.simpleButton4.TabIndex = 8;
             this.simpleButton4.Text = "Load PO";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // dateEdit4
             // 
             this.dateEdit4.EditValue = null;
-            this.dateEdit4.Location = new System.Drawing.Point(248, 6);
+            this.dateEdit4.Location = new System.Drawing.Point(424, 5);
             this.dateEdit4.Name = "dateEdit4";
             this.dateEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -894,11 +855,10 @@ namespace ERP_Production.Packing_Mateial_Requisition
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit4.Size = new System.Drawing.Size(118, 22);
             this.dateEdit4.TabIndex = 21;
-            this.dateEdit4.EditValueChanged += new System.EventHandler(this.dateEdit4_EditValueChanged);
             // 
             // labelControl19
             // 
-            this.labelControl19.Location = new System.Drawing.Point(188, 10);
+            this.labelControl19.Location = new System.Drawing.Point(364, 9);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(50, 15);
             this.labelControl19.TabIndex = 22;
@@ -914,7 +874,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // 
             // labelControl16
             // 
-            this.labelControl16.Location = new System.Drawing.Point(374, 8);
+            this.labelControl16.Location = new System.Drawing.Point(550, 7);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(73, 15);
             this.labelControl16.TabIndex = 13;
@@ -923,28 +883,24 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // 
             // panelControl17
             // 
-            this.panelControl17.Controls.Add(this.simpleButton2);
-            this.panelControl17.Controls.Add(this.labelControl1);
-            this.panelControl17.Controls.Add(this.searchLookUpEdit1);
             this.panelControl17.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl17.Location = new System.Drawing.Point(2, 42);
+            this.panelControl17.Location = new System.Drawing.Point(2, 30);
             this.panelControl17.Name = "panelControl17";
-            this.panelControl17.Size = new System.Drawing.Size(945, 36);
+            this.panelControl17.Size = new System.Drawing.Size(1294, 48);
             this.panelControl17.TabIndex = 28;
             // 
             // simpleButton2
             // 
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(312, 5);
+            this.simpleButton2.Location = new System.Drawing.Point(1168, 7);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(104, 23);
             this.simpleButton2.TabIndex = 33;
             this.simpleButton2.Text = "Show Record";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(5, 8);
+            this.labelControl1.Location = new System.Drawing.Point(890, 7);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(45, 15);
             this.labelControl1.TabIndex = 33;
@@ -952,22 +908,16 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // 
             // searchLookUpEdit1
             // 
-            this.searchLookUpEdit1.Location = new System.Drawing.Point(65, 5);
+            this.searchLookUpEdit1.Location = new System.Drawing.Point(941, 6);
             this.searchLookUpEdit1.Name = "searchLookUpEdit1";
             this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit1.Properties.DataSource = this.tbl_Multi_PO_HBindingSource;
             this.searchLookUpEdit1.Properties.DisplayMember = "POCode";
             this.searchLookUpEdit1.Properties.PopupView = this.searchLookUpEdit1View;
             this.searchLookUpEdit1.Properties.ValueMember = "PO";
             this.searchLookUpEdit1.Properties.EditValueChanged += new System.EventHandler(this.searchLookUpEdit1_Properties_EditValueChanged);
-            this.searchLookUpEdit1.Size = new System.Drawing.Size(231, 22);
+            this.searchLookUpEdit1.Size = new System.Drawing.Size(212, 22);
             this.searchLookUpEdit1.TabIndex = 0;
-            // 
-            // tbl_Multi_PO_HBindingSource
-            // 
-            this.tbl_Multi_PO_HBindingSource.DataMember = "tbl_Multi_PO_H";
-            this.tbl_Multi_PO_HBindingSource.DataSource = this.dSPackingMaterial;
             // 
             // searchLookUpEdit1View
             // 
@@ -999,50 +949,12 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.gridColumn4.FieldName = "EntryDate";
             this.gridColumn4.Name = "gridColumn4";
             // 
-            // panelControl21
-            // 
-            this.panelControl21.Controls.Add(this.panelControl18);
-            this.panelControl21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl21.Location = new System.Drawing.Point(1326, 2);
-            this.panelControl21.Name = "panelControl21";
-            this.panelControl21.Size = new System.Drawing.Size(242, 80);
-            this.panelControl21.TabIndex = 27;
-            // 
-            // panelControl18
-            // 
-            this.panelControl18.Controls.Add(this.labelControl10);
-            this.panelControl18.Controls.Add(this.dateEdit3);
-            this.panelControl18.Location = new System.Drawing.Point(5, 9);
-            this.panelControl18.Name = "panelControl18";
-            this.panelControl18.Size = new System.Drawing.Size(228, 47);
-            this.panelControl18.TabIndex = 8;
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Location = new System.Drawing.Point(4, 16);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(89, 15);
-            this.labelControl10.TabIndex = 1;
-            this.labelControl10.Text = "Requisition Date:";
-            // 
-            // dateEdit3
-            // 
-            this.dateEdit3.EditValue = null;
-            this.dateEdit3.Location = new System.Drawing.Point(99, 13);
-            this.dateEdit3.Name = "dateEdit3";
-            this.dateEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit3.Size = new System.Drawing.Size(100, 22);
-            this.dateEdit3.TabIndex = 0;
-            // 
             // panelControl19
             // 
             this.panelControl19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl19.Location = new System.Drawing.Point(2, 2);
             this.panelControl19.Name = "panelControl19";
-            this.panelControl19.Size = new System.Drawing.Size(1574, 105);
+            this.panelControl19.Size = new System.Drawing.Size(1304, 105);
             this.panelControl19.TabIndex = 0;
             // 
             // panelControl9
@@ -1051,7 +963,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl9.Location = new System.Drawing.Point(2, 2);
             this.panelControl9.Name = "panelControl9";
-            this.panelControl9.Size = new System.Drawing.Size(1578, 55);
+            this.panelControl9.Size = new System.Drawing.Size(1308, 55);
             this.panelControl9.TabIndex = 9;
             // 
             // panelControl3
@@ -1069,7 +981,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl3.Location = new System.Drawing.Point(2, 2);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1574, 50);
+            this.panelControl3.Size = new System.Drawing.Size(1304, 50);
             this.panelControl3.TabIndex = 8;
             // 
             // simpleButton1
@@ -1078,7 +990,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(1479, 0);
+            this.simpleButton1.Location = new System.Drawing.Point(1209, 0);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton1.Size = new System.Drawing.Size(41, 50);
@@ -1092,7 +1004,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl22.AutoSize = true;
             this.panelControl22.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl22.Location = new System.Drawing.Point(1520, 0);
+            this.panelControl22.Location = new System.Drawing.Point(1250, 0);
             this.panelControl22.Name = "panelControl22";
             this.panelControl22.Size = new System.Drawing.Size(0, 50);
             this.panelControl22.TabIndex = 28;
@@ -1103,9 +1015,9 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Location = new System.Drawing.Point(140, 13);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(240, 25);
+            this.labelControl8.Size = new System.Drawing.Size(125, 25);
             this.labelControl8.TabIndex = 4;
-            this.labelControl8.Text = "Packing Material Requisition";
+            this.labelControl8.Text = "Label Planning";
             // 
             // labelControl9
             // 
@@ -1125,7 +1037,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // 
             this.simpleButton6.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.Location = new System.Drawing.Point(1520, 0);
+            this.simpleButton6.Location = new System.Drawing.Point(1250, 0);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton6.Size = new System.Drawing.Size(54, 50);
@@ -1133,59 +1045,65 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.simpleButton6.ToolTip = "Show Requisition Report";
             this.simpleButton6.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton6.ToolTipTitle = "Requisition Report";
-            this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
-            // gridView7
+            // labelControl4
             // 
-            this.gridView7.Name = "gridView7";
+            this.labelControl4.Location = new System.Drawing.Point(16, 8);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(34, 15);
+            this.labelControl4.TabIndex = 33;
+            this.labelControl4.Text = "Client:";
+            this.labelControl4.Visible = false;
             // 
-            // view_MullinePacking_requTableAdapter
+            // searchLookUpEdit2
             // 
-            this.view_MullinePacking_requTableAdapter.ClearBeforeFill = true;
+            this.searchLookUpEdit2.Location = new System.Drawing.Point(56, 5);
+            this.searchLookUpEdit2.Name = "searchLookUpEdit2";
+            this.searchLookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.searchLookUpEdit2.Properties.DataSource = this.tbl_Pro_ClientBindingSource;
+            this.searchLookUpEdit2.Properties.DisplayMember = "ClientName";
+            this.searchLookUpEdit2.Properties.PopupView = this.searchLookUpEdit2View;
+            this.searchLookUpEdit2.Properties.ValueMember = "ClientID";
+            this.searchLookUpEdit2.Size = new System.Drawing.Size(100, 22);
+            this.searchLookUpEdit2.TabIndex = 34;
+            // 
+            // searchLookUpEdit2View
+            // 
+            this.searchLookUpEdit2View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.searchLookUpEdit2View.Name = "searchLookUpEdit2View";
+            this.searchLookUpEdit2View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.searchLookUpEdit2View.OptionsView.ShowGroupPanel = false;
+            // 
+            // dSLabelPlanning
+            // 
+            this.dSLabelPlanning.DataSetName = "DSLabelPlanning";
+            this.dSLabelPlanning.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_Pro_ClientBindingSource
+            // 
+            this.tbl_Pro_ClientBindingSource.DataMember = "tbl_Pro_Client";
+            this.tbl_Pro_ClientBindingSource.DataSource = this.dSLabelPlanning;
+            // 
+            // tbl_Pro_ClientTableAdapter
+            // 
+            this.tbl_Pro_ClientTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.tbl_Multi_PO_Req1TableAdapter = null;
-            this.tableAdapterManager.tbl_Multi_PO_ReqTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ERP_Production.DSPackingMaterialTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.tbl_Pro_ClientTableAdapter = this.tbl_Pro_ClientTableAdapter;
+            this.tableAdapterManager.UpdateOrder = ERP_Production.DSLabelPlanningTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // tbl_Multi_PO_HTableAdapter
-            // 
-            this.tbl_Multi_PO_HTableAdapter.ClearBeforeFill = true;
-            // 
-            // tbl_Multi_PO_ReqBindingSource
-            // 
-            this.tbl_Multi_PO_ReqBindingSource.DataSource = this.dSPackingMaterial;
-            this.tbl_Multi_PO_ReqBindingSource.Position = 0;
-            // 
-            // tbl_Multi_PO_ReqTableAdapter
-            // 
-            this.tbl_Multi_PO_ReqTableAdapter.ClearBeforeFill = true;
-            // 
-            // tbl_Multi_PO_Req1BindingSource
-            // 
-            this.tbl_Multi_PO_Req1BindingSource.DataMember = "tbl_Multi_PO_Req1";
-            this.tbl_Multi_PO_Req1BindingSource.DataSource = this.dSPackingMaterial;
-            // 
-            // tbl_Multi_PO_Req1TableAdapter
-            // 
-            this.tbl_Multi_PO_Req1TableAdapter.ClearBeforeFill = true;
-            // 
-            // view_Multi_requisition_PackingTableAdapter
-            // 
-            this.view_Multi_requisition_PackingTableAdapter.ClearBeforeFill = true;
-            // 
-            // FrmPackingRequisition
+            // frmLabelPlanning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1586, 807);
+            this.ClientSize = new System.Drawing.Size(1316, 818);
             this.Controls.Add(this.panel1);
-            this.Name = "FrmPackingRequisition";
-            this.Text = "FrmPackingRequisition";
-            this.Load += new System.EventHandler(this.FrmPackingRequisition_Load);
+            this.Name = "frmLabelPlanning";
+            this.Text = "frmLabelPlanning";
+            this.Load += new System.EventHandler(this.frmLabelPlanning_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
@@ -1197,8 +1115,6 @@ namespace ERP_Production.Packing_Mateial_Requisition
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_requisition_PackingBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSPackingMaterial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView6)).EndInit();
@@ -1213,7 +1129,6 @@ namespace ERP_Production.Packing_Mateial_Requisition
             ((System.ComponentModel.ISupportInitialize)(this.panelControl10)).EndInit();
             this.panelControl10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_MullinePacking_requBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditAvaBala)).EndInit();
@@ -1234,18 +1149,8 @@ namespace ERP_Production.Packing_Mateial_Requisition
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl17)).EndInit();
-            this.panelControl17.ResumeLayout(false);
-            this.panelControl17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_HBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl21)).EndInit();
-            this.panelControl21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl18)).EndInit();
-            this.panelControl18.ResumeLayout(false);
-            this.panelControl18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl9)).EndInit();
             this.panelControl9.ResumeLayout(false);
@@ -1254,9 +1159,10 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl3.ResumeLayout(false);
             this.panelControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_ReqBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_Req1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ClientBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1271,81 +1177,6 @@ namespace ERP_Production.Packing_Mateial_Requisition
         private DevExpress.XtraEditors.PanelControl panelControl6;
         private DevExpress.XtraGrid.GridControl gridControl3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit4;
-        private DevExpress.XtraEditors.PanelControl panelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.PanelControl panelControl15;
-        private DevExpress.XtraEditors.PanelControl panelControl10;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit2;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEditAvaBala;
-        private DevExpress.XtraEditors.PanelControl panelControl14;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.PanelControl panelControl20;
-        private DevExpress.XtraEditors.PanelControl panelControl25;
-        private DevExpress.XtraEditors.PanelControl panelControl26;
-        private DevExpress.XtraEditors.LabelControl labelControl24;
-        private DevExpress.XtraEditors.DateEdit dateEdit9;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.DateEdit dateEdit4;
-        private DevExpress.XtraEditors.LabelControl labelControl19;
-        private DevExpress.XtraEditors.LabelControl labelControl20;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
-        private DevExpress.XtraEditors.PanelControl panelControl17;
-        private DevExpress.XtraEditors.PanelControl panelControl21;
-        private DevExpress.XtraEditors.PanelControl panelControl18;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.DateEdit dateEdit3;
-        private DevExpress.XtraEditors.PanelControl panelControl19;
-        private DevExpress.XtraEditors.PanelControl panelControl9;
-        private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.PanelControl panelControl22;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView7;
-        private DSPackingMaterial dSPackingMaterial;
-        private System.Windows.Forms.BindingSource view_MullinePacking_requBindingSource;
-        private DSPackingMaterialTableAdapters.View_MullinePacking_requTableAdapter view_MullinePacking_requTableAdapter;
-        private DSPackingMaterialTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingSource tbl_Multi_PO_HBindingSource;
-        private DSPackingMaterialTableAdapters.tbl_Multi_PO_HTableAdapter tbl_Multi_PO_HTableAdapter;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
-        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private System.Windows.Forms.BindingSource tbl_Multi_PO_ReqBindingSource;
-        private DSPackingMaterialTableAdapters.tbl_Multi_PO_ReqTableAdapter tbl_Multi_PO_ReqTableAdapter;
-        private DevExpress.XtraGrid.Columns.GridColumn colPOCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colMatFormula;
-        private DevExpress.XtraGrid.Columns.GridColumn colPrdLine;
-        private DevExpress.XtraGrid.Columns.GridColumn colClientID;
-        private DevExpress.XtraGrid.Columns.GridColumn colMaterialName;
-        private DevExpress.XtraGrid.Columns.GridColumn colSize;
-        private DevExpress.XtraGrid.Columns.GridColumn colArtCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colFactoryCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colBalance;
-        private DevExpress.XtraGrid.Columns.GridColumn colPO;
-        private DevExpress.XtraGrid.Columns.GridColumn colEntryDate;
-        private DevExpress.XtraGrid.Columns.GridColumn colPSDD;
-        private DevExpress.XtraGrid.Columns.GridColumn colPlanDate;
-        private DevExpress.XtraGrid.Columns.GridColumn colFPD;
-        private DevExpress.XtraGrid.Columns.GridColumn colPODD;
-        private DevExpress.XtraGrid.Columns.GridColumn colPOS;
-        private DevExpress.XtraGrid.Columns.GridColumn colPOM;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn colPartielQty;
-        private System.Windows.Forms.BindingSource tbl_Multi_PO_Req1BindingSource;
-        private DSPackingMaterialTableAdapters.tbl_Multi_PO_Req1TableAdapter tbl_Multi_PO_Req1TableAdapter;
-        private System.Windows.Forms.BindingSource view_Multi_requisition_PackingBindingSource;
-        private DSPackingMaterialTableAdapters.View_Multi_requisition_PackingTableAdapter view_Multi_requisition_PackingTableAdapter;
         private DevExpress.XtraGrid.Columns.GridColumn colReqID;
         private DevExpress.XtraGrid.Columns.GridColumn colRequestDate;
         private DevExpress.XtraGrid.Columns.GridColumn colReqFormula;
@@ -1372,10 +1203,75 @@ namespace ERP_Production.Packing_Mateial_Requisition
         private DevExpress.XtraGrid.Columns.GridColumn colPOD;
         private DevExpress.XtraGrid.Columns.GridColumn colLAName;
         private DevExpress.XtraGrid.Columns.GridColumn colRequiredQty;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit4;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
+        private DevExpress.XtraEditors.PanelControl panelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.PanelControl panelControl15;
+        private DevExpress.XtraEditors.PanelControl panelControl10;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Columns.GridColumn colPOCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colMatFormula;
+        private DevExpress.XtraGrid.Columns.GridColumn colPrdLine;
+        private DevExpress.XtraGrid.Columns.GridColumn colClientID;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaterialName;
+        private DevExpress.XtraGrid.Columns.GridColumn colSize;
+        private DevExpress.XtraGrid.Columns.GridColumn colArtCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colFactoryCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colBalance;
+        private DevExpress.XtraGrid.Columns.GridColumn colPO;
+        private DevExpress.XtraGrid.Columns.GridColumn colAvailableQty;
+        private DevExpress.XtraGrid.Columns.GridColumn colEntryDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colPSDD;
+        private DevExpress.XtraGrid.Columns.GridColumn colPlanDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colFPD;
+        private DevExpress.XtraGrid.Columns.GridColumn colPODD;
+        private DevExpress.XtraGrid.Columns.GridColumn colPOS;
+        private DevExpress.XtraGrid.Columns.GridColumn colPOM;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit2;
+        private DevExpress.XtraGrid.Columns.GridColumn colPartielQty;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEditAvaBala;
+        private DevExpress.XtraEditors.PanelControl panelControl14;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.PanelControl panelControl20;
+        private DevExpress.XtraEditors.PanelControl panelControl25;
+        private DevExpress.XtraEditors.PanelControl panelControl26;
+        private DevExpress.XtraEditors.LabelControl labelControl24;
+        private DevExpress.XtraEditors.DateEdit dateEdit9;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.DateEdit dateEdit4;
+        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private DevExpress.XtraEditors.LabelControl labelControl20;
+        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private DevExpress.XtraEditors.PanelControl panelControl17;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
+        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn colAvailableQty;
+        private DevExpress.XtraEditors.PanelControl panelControl19;
+        private DevExpress.XtraEditors.PanelControl panelControl9;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.PanelControl panelControl22;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit2;
+        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit2View;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DSLabelPlanning dSLabelPlanning;
+        private System.Windows.Forms.BindingSource tbl_Pro_ClientBindingSource;
+        private DSLabelPlanningTableAdapters.tbl_Pro_ClientTableAdapter tbl_Pro_ClientTableAdapter;
+        private DSLabelPlanningTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

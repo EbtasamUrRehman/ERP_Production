@@ -400,7 +400,7 @@ namespace ERP_Production
                 MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            await ShowOrToggleFormAsync<FrmPlanningReplacement>();
+            await ShowOrToggleFormAsync<frmLabelPlanning>();
         }
 
         private async void accordionControlElement17_Click(object sender, EventArgs e)
@@ -420,7 +420,7 @@ namespace ERP_Production
                 MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            await ShowOrToggleFormAsync<FrmPlanningReplacement>();
+            await ShowOrToggleFormAsync<frmLabelPlanning>();
         }
 
         //private void accordionControlElement11_Click(object sender, EventArgs e)

@@ -315,8 +315,10 @@ namespace ERP_Production.Planning
         }
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-          
+            var requisitionDate1 = ((DateTime)dateEdit1.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
+            var requisitionDate2 = ((DateTime)dateEdit2.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
             {
+                //{ View_Rpt_Mat_Requisition.Code} = "1-01-002-1237" and  { View_Rpt_Mat_Requisition.RequisitionDate} in DateTime(0, 0, 0, 00, 00, 00) to DateTime(0, 0, 0, 00, 00, 00)
                 // Create an instance of Form1
                 Form1 objFrmFilter = new Form1();
 
@@ -325,10 +327,21 @@ namespace ERP_Production.Planning
                 string parameters = "";
                 // Construct the selection formula string
                 string selectionFormula = "";
-                var requisitionDate = ((DateTime)dateEdit3.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
-
+                //var requisitionDate = ((DateTime)dateEdit3.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
+                if (radioButton1.Checked)
+                {
+                    selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate1.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) AND {{View_Rpt_Mat_Requisition.Code}} = '{searchLookUpEdit2.EditValue}'";
+                }
+                else if (radioButton2.Checked)
+                {
+                    selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate1.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) AND {{View_Rpt_Mat_Requisition.FactoryCode}} = '{comboBoxEdit5.Text}'";
+                }
+                else if  (radioButton3.Checked)
+                {
+                    selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate1.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) AND {{View_Rpt_Mat_Requisition.PrdLineName}} = '{lookUpEdit2.EditValue}'";
+                }
                 // Create the selection formula with proper formatting
-                selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")})";
+               
                 // Iterate through the checked items to build the selection formula
 
                 // Show the selection formula for debugging
@@ -336,7 +349,7 @@ namespace ERP_Production.Planning
                 //lookUpEdit2.EditValue  is not null
 
                      // Create the selection formula with proper formatting
-                selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")})";
+                //selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")})";
 
 
 
@@ -1864,6 +1877,33 @@ namespace ERP_Production.Planning
         }
 
         private void gridControl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            //searchLookUpEdit2.Enabled = false;
+
+            //Disable the LookUpEdit control
+            //lookUpEdit2.Enabled = false;
+        }
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            //lookUpEdit2.Enabled = false;
+            //comboBoxEdit5.Enabled = false;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            //searchLookUpEdit2.Enabled = false;
+
+            //// Disable the LookUpEdit control
+            //comboBoxEdit5.Enabled = false;
+        }
+
+        private void labelControl34_Click(object sender, EventArgs e)
         {
 
         }
