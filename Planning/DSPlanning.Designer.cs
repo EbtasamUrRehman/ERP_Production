@@ -2095,6 +2095,8 @@ namespace ERP_Production.Planning {
             
             private global::System.Data.DataColumn columnArtCode;
             
+            private global::System.Data.DataColumn columnCountryName;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_Multi_po_planningDataTable() {
@@ -2442,6 +2444,14 @@ namespace ERP_Production.Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CountryNameColumn {
+                get {
+                    return this.columnCountryName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2516,7 +2526,8 @@ namespace ERP_Production.Planning {
                         int StockAdj, 
                         string OrderType, 
                         string ModelName, 
-                        string ArtCode) {
+                        string ArtCode, 
+                        string CountryName) {
                 View_Multi_po_planningRow rowView_Multi_po_planningRow = ((View_Multi_po_planningRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ClientID,
@@ -2557,7 +2568,8 @@ namespace ERP_Production.Planning {
                         StockAdj,
                         OrderType,
                         ModelName,
-                        ArtCode};
+                        ArtCode,
+                        CountryName};
                 rowView_Multi_po_planningRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowView_Multi_po_planningRow);
                 return rowView_Multi_po_planningRow;
@@ -2619,6 +2631,7 @@ namespace ERP_Production.Planning {
                 this.columnOrderType = base.Columns["OrderType"];
                 this.columnModelName = base.Columns["ModelName"];
                 this.columnArtCode = base.Columns["ArtCode"];
+                this.columnCountryName = base.Columns["CountryName"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2702,6 +2715,8 @@ namespace ERP_Production.Planning {
                 base.Columns.Add(this.columnModelName);
                 this.columnArtCode = new global::System.Data.DataColumn("ArtCode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArtCode);
+                this.columnCountryName = new global::System.Data.DataColumn("CountryName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCountryName);
                 this.columnClientID.AllowDBNull = false;
                 this.columnModelID.AllowDBNull = false;
                 this.columnArtID.AllowDBNull = false;
@@ -2728,6 +2743,8 @@ namespace ERP_Production.Planning {
                 this.columnModelName.MaxLength = 100;
                 this.columnArtCode.AllowDBNull = false;
                 this.columnArtCode.MaxLength = 50;
+                this.columnCountryName.ReadOnly = true;
+                this.columnCountryName.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14603,6 +14620,22 @@ namespace ERP_Production.Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CountryName {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_Multi_po_planning.CountryNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CountryName\' in table \'View_Multi_po_planning\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_Multi_po_planning.CountryNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsLineNull() {
                 return this.IsNull(this.tableView_Multi_po_planning.LineColumn);
             }
@@ -14911,6 +14944,18 @@ namespace ERP_Production.Planning {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetOrderTypeNull() {
                 this[this.tableView_Multi_po_planning.OrderTypeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCountryNameNull() {
+                return this.IsNull(this.tableView_Multi_po_planning.CountryNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCountryNameNull() {
+                this[this.tableView_Multi_po_planning.CountryNameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -27493,6 +27538,7 @@ ORDER BY MPID DESC";
             tableMapping.ColumnMappings.Add("OrderType", "OrderType");
             tableMapping.ColumnMappings.Add("ModelName", "ModelName");
             tableMapping.ColumnMappings.Add("ArtCode", "ArtCode");
+            tableMapping.ColumnMappings.Add("CountryName", "CountryName");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -27510,76 +27556,55 @@ ORDER BY MPID DESC";
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        ClientID, ModelID, ArtID, PO, POCode, FactoryCode, LAName, [Size], Line, DD, ShipMode, CustReqDate, ExFactoryDate, PlanQty, OrderQty, Balance, PartielQty, POS, POM, SecondConfDate, LastEditDate, CreationDate, 
-                         CurrentDate, CancelDate, IssueDate, PlanDate, ReceiveDate, PlantCode, BarCode, BatchDate, PSDD, FPD, PODD, LPDate, StockAdj, OrderType, ModelName, ArtCode
+                         CurrentDate, CancelDate, IssueDate, PlanDate, ReceiveDate, PlantCode, BarCode, BatchDate, PSDD, FPD, PODD, LPDate, StockAdj, OrderType, ModelName, ArtCode, CountryName
 FROM            View_Multi_po_planning
 WHERE        (Balance > 0)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, 
-                         OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj
-FROM            View_Multi_po_planning
-WHERE        (Balance > 0) AND (BatchDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
+            this._commandCollection[1].CommandText = @"SELECT ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CountryName, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj FROM View_Multi_po_planning WHERE (Balance > 0) AND (BatchDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("BatchDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "BatchDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("BatchDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "BatchDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = @"SELECT        ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, 
-                         OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj
-FROM            View_Multi_po_planning
-WHERE        (Balance > 0) AND (CustReqDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
+            this._commandCollection[2].CommandText = @"SELECT ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CountryName, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj FROM View_Multi_po_planning WHERE (Balance > 0) AND (CustReqDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CustReqDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CustReqDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CustReqDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CustReqDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[3] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = @"SELECT        ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, 
-                         OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj
-FROM            View_Multi_po_planning
-WHERE        (Balance > 0) AND (FactoryCode = ?) AND (PODD BETWEEN ? AND ?)";
+            this._commandCollection[3].CommandText = @"SELECT ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CountryName, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj FROM View_Multi_po_planning WHERE (Balance > 0) AND (FactoryCode = ?) AND (PODD BETWEEN ? AND ?)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[4] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = @"SELECT        ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, 
-                         OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj
-FROM            View_Multi_po_planning
-WHERE        (Balance > 0) AND (FPD BETWEEN ? AND ?) AND (FactoryCode = ?)";
+            this._commandCollection[4].CommandText = @"SELECT ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CountryName, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj FROM View_Multi_po_planning WHERE (Balance > 0) AND (FPD BETWEEN ? AND ?) AND (FactoryCode = ?)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FPD", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FPD", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FPD1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FPD", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[5] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = @"SELECT        ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, 
-                         OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj
-FROM            View_Multi_po_planning
-WHERE        (Balance > 0) AND (LPDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
+            this._commandCollection[5].CommandText = @"SELECT ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CountryName, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj FROM View_Multi_po_planning WHERE (Balance > 0) AND (LPDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[5].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LPDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LPDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[5].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LPDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LPDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[5].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[6] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[6].Connection = this.Connection;
-            this._commandCollection[6].CommandText = @"SELECT        ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, 
-                         OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj
-FROM            View_Multi_po_planning
-WHERE        (Balance > 0) AND (PlanDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
+            this._commandCollection[6].CommandText = @"SELECT ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CountryName, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj FROM View_Multi_po_planning WHERE (Balance > 0) AND (PlanDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
             this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[6].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[6].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[6].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[7] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[7].Connection = this.Connection;
-            this._commandCollection[7].CommandText = @"SELECT        ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, 
-                         OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj
-FROM            View_Multi_po_planning
-WHERE        (Balance > 0) AND (PSDD BETWEEN ? AND ?) AND (FactoryCode = ?)";
+            this._commandCollection[7].CommandText = @"SELECT ArtCode, ArtID, Balance, BarCode, BatchDate, CancelDate, ClientID, CountryName, CreationDate, CurrentDate, CustReqDate, DD, ExFactoryDate, FPD, FactoryCode, IssueDate, LAName, LPDate, LastEditDate, Line, ModelID, ModelName, OrderQty, OrderType, PO, POCode, PODD, POM, POS, PSDD, PartielQty, PlanDate, PlanQty, PlantCode, ReceiveDate, SecondConfDate, ShipMode, [Size], StockAdj FROM View_Multi_po_planning WHERE (Balance > 0) AND (PSDD BETWEEN ? AND ?) AND (FactoryCode = ?)";
             this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[7].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PSDD", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PSDD", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[7].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PSDD1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PSDD", global::System.Data.DataRowVersion.Current, false, null));

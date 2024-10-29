@@ -31,6 +31,8 @@ namespace ERP_Production.Planning
 
         private void frmPlanningM_Load(object sender, EventArgs e)
         {
+            dateEdit1.EditValue = DateTime.Now.Date;
+            dateEdit2.EditValue = DateTime.Now.Date;
             // TODO: This line of code loads data into the 'dSPlanning.tbl_MaterialName' table. You can move, or remove it, as needed.
             this.tbl_MaterialNameTableAdapter.Fill(this.dSPlanning.tbl_MaterialName);
             // TODO: This line of code loads data into the 'dSPlanning.tbl_Inv_L4' table. You can move, or remove it, as needed.
@@ -292,10 +294,10 @@ namespace ERP_Production.Planning
             string comboValue = (string)comboBoxEdit4.EditValue;  // Changed to comboBoxEdit4, as used in the condition
 
             // Check if all controls have valid values
-            if (date1.HasValue && date2.HasValue && comboBoxEdit4.EditValue != null && lookUpEdit2.EditValue != null)
+            if (date1.HasValue && date2.HasValue && comboBoxEdit4.EditValue != null )
             {
                 // Fill the dataset based on the conditions
-                tbl_Multi_PO_Plan2TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan2, date1, date2, comboValue, (int)lookUpEdit2.EditValue);
+                //tbl_Multi_PO_Plan2TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan2, date1, date2, comboValue);
             }
 
             // Check if comboBoxEdit4 has a valid value and it's greater than 0
@@ -336,10 +338,10 @@ namespace ERP_Production.Planning
                 {
                     selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate1.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) AND {{View_Rpt_Mat_Requisition.FactoryCode}} = '{comboBoxEdit5.Text}'";
                 }
-                else if  (radioButton3.Checked)
-                {
-                    selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate1.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) AND {{View_Rpt_Mat_Requisition.PrdLineName}} = '{lookUpEdit2.EditValue}'";
-                }
+                //else if  (radioButton3.Checked)
+                //{
+                //    selectionFormula = $"{{View_Rpt_Mat_Requisition.RequisitionDate}} = DateTime({requisitionDate1.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) AND {{View_Rpt_Mat_Requisition.PrdLineName}} = '{lookUpEdit2.EditValue}'";
+                //}
                 // Create the selection formula with proper formatting
                
                 // Iterate through the checked items to build the selection formula
@@ -800,7 +802,15 @@ namespace ERP_Production.Planning
             // Use the selectionFormula for your report as needed
             // Example: Set the formula for a Crystal Report object
             // reportDocument.DataDefinition.RecordSelectionFormula = selectionFormula;
-            this.tbl_Multi_PO_ReqTableAdapter.Fill(this.dSPlanning.tbl_Multi_PO_Req);
+            try
+            {
+                this.tbl_Multi_PO_ReqTableAdapter.Fill(this.dSPlanning.tbl_Multi_PO_Req);
+            }
+            catch
+            {
+
+            }
+           
         }
 
         private void dateEdit5_EditValueChanged(object sender, EventArgs e)
@@ -1904,6 +1914,11 @@ namespace ERP_Production.Planning
         }
 
         private void labelControl34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelControl1_Paint(object sender, PaintEventArgs e)
         {
 
         }
