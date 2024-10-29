@@ -58,10 +58,10 @@ namespace ERP_Production
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.fluentDesignFormContainer = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
-            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement20 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement21 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.fluentDesignFormContainer = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager2)).BeginInit();
@@ -292,6 +292,21 @@ namespace ERP_Production
             this.accordionControlElement19.Text = "Planning";
             this.accordionControlElement19.Click += new System.EventHandler(this.accordionControlElement19_Click);
             // 
+            // accordionControlElement20
+            // 
+            this.accordionControlElement20.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement21});
+            this.accordionControlElement20.Expanded = true;
+            this.accordionControlElement20.Name = "accordionControlElement20";
+            this.accordionControlElement20.Text = "RWPD";
+            // 
+            // accordionControlElement21
+            // 
+            this.accordionControlElement21.Name = "accordionControlElement21";
+            this.accordionControlElement21.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement21.Text = "Rwpd Transection";
+            this.accordionControlElement21.Click += new System.EventHandler(this.accordionControlElement21_Click);
+            // 
             // fluentDesignFormContainer
             // 
             this.fluentDesignFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -308,20 +323,6 @@ namespace ERP_Production
             this.accordionControlElement1.Text = "Dashboard";
             this.accordionControlElement1.VisibleInFooter = false;
             this.accordionControlElement1.Click += new System.EventHandler(this.accordionControlElement1_Click);
-            // 
-            // accordionControlElement20
-            // 
-            this.accordionControlElement20.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement21});
-            this.accordionControlElement20.Expanded = true;
-            this.accordionControlElement20.Name = "accordionControlElement20";
-            this.accordionControlElement20.Text = "RWPD";
-            // 
-            // accordionControlElement21
-            // 
-            this.accordionControlElement21.Name = "accordionControlElement21";
-            this.accordionControlElement21.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement21.Text = "Rwpd Transection";
             // 
             // FrmMain
             // 

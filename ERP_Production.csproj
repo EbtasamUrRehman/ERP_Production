@@ -210,6 +210,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSRptMER.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DSRwpd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRwpd.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -587,6 +592,17 @@
     </None>
     <None Include="DSRptMER.xss">
       <DependentUpon>DSRptMER.xsd</DependentUpon>
+    </None>
+    <None Include="DSRwpd.xsc">
+      <DependentUpon>DSRwpd.xsd</DependentUpon>
+    </None>
+    <None Include="DSRwpd.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRwpd.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSRwpd.xss">
+      <DependentUpon>DSRwpd.xsd</DependentUpon>
     </None>
     <None Include="ERP_Production_TemporaryKey.pfx" />
     <None Include="Label Planning\DSLabelPlanning.xsc">
