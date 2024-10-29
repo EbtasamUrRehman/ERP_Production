@@ -30,25 +30,36 @@ namespace Erp_Production_Label
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLabelPlan));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl11 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl12 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.tbl_Multi_LabelPlanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSLabelPlanning = new Erp_Production_Label.DSLabelPlanning();
+            this.view_Multi_Label_Plan_AMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSLabelPlanning1 = new ERP_Production.Label_Planning.DSLabelPlanning();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colPO1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPOCode1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colModelName1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colArtCode1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFactoryCode1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEntryDATE = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPlanDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPlanQty = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLAName1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTranID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemButtonEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -58,6 +69,7 @@ namespace Erp_Production_Label
             this.panelControl10 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.view_Multi_LabelPlanning_FinalCompleteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSLabelPlanning = new Erp_Production_Label.DSLabelPlanning();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colPO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colArtCode = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -101,6 +113,7 @@ namespace Erp_Production_Label
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbl_Multi_LabelPlanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_Multi_PO_HBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_Pro_ClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.view_Multi_PO_ReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -117,21 +130,8 @@ namespace Erp_Production_Label
             this.tbl_Multi_LabelPlanTableAdapter = new Erp_Production_Label.DSLabelPlanningTableAdapters.tbl_Multi_LabelPlanTableAdapter();
             this.view_Multi_LabelPlanning_FinalCompleteTableAdapter = new Erp_Production_Label.DSLabelPlanningTableAdapters.View_Multi_LabelPlanning_FinalCompleteTableAdapter();
             this.tbl_Multi_PO_HTableAdapter = new Erp_Production_Label.DSLabelPlanningTableAdapters.tbl_Multi_PO_HTableAdapter();
-            this.dSLabelPlanning1 = new ERP_Production.Label_Planning.DSLabelPlanning();
-            this.view_Multi_Label_Plan_AMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.view_Multi_Label_Plan_AMTableAdapter = new ERP_Production.Label_Planning.DSLabelPlanningTableAdapters.View_Multi_Label_Plan_AMTableAdapter();
             this.tableAdapterManager1 = new ERP_Production.Label_Planning.DSLabelPlanningTableAdapters.TableAdapterManager();
-            this.colPO1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPOCode1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colModelName1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colArtCode1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colFactoryCode1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEntryDATE = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPlanDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPlanQty = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colLAName1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTranID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl11)).BeginInit();
@@ -141,8 +141,8 @@ namespace Erp_Production_Label
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_LabelPlanBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_Label_Plan_AMBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
@@ -155,6 +155,7 @@ namespace Erp_Production_Label
             this.panelControl10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_Multi_LabelPlanning_FinalCompleteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl14)).BeginInit();
@@ -180,6 +181,7 @@ namespace Erp_Production_Label
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_LabelPlanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_HBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ClientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_Multi_PO_ReportsBindingSource)).BeginInit();
@@ -188,17 +190,16 @@ namespace Erp_Production_Label
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditAvaBala)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_Label_Plan_AMBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.panelControl11);
             this.panelControl1.Controls.Add(this.panel1);
-            this.panelControl1.Location = new System.Drawing.Point(1, 4);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1569, 817);
+            this.panelControl1.Size = new System.Drawing.Size(1506, 821);
             this.panelControl1.TabIndex = 0;
             // 
             // panelControl11
@@ -208,7 +209,7 @@ namespace Erp_Production_Label
             this.panelControl11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl11.Location = new System.Drawing.Point(2, 2);
             this.panelControl11.Name = "panelControl11";
-            this.panelControl11.Size = new System.Drawing.Size(1565, 813);
+            this.panelControl11.Size = new System.Drawing.Size(1502, 817);
             this.panelControl11.TabIndex = 10;
             // 
             // panelControl12
@@ -217,7 +218,7 @@ namespace Erp_Production_Label
             this.panelControl12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl12.Location = new System.Drawing.Point(2, 510);
             this.panelControl12.Name = "panelControl12";
-            this.panelControl12.Size = new System.Drawing.Size(1561, 301);
+            this.panelControl12.Size = new System.Drawing.Size(1498, 305);
             this.panelControl12.TabIndex = 8;
             // 
             // panelControl6
@@ -227,31 +228,32 @@ namespace Erp_Production_Label
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl6.Location = new System.Drawing.Point(2, 2);
             this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(1557, 297);
+            this.panelControl6.Size = new System.Drawing.Size(1494, 301);
             this.panelControl6.TabIndex = 6;
             // 
             // gridControl2
             // 
             this.gridControl2.DataSource = this.view_Multi_Label_Plan_AMBindingSource;
-            this.gridControl2.Location = new System.Drawing.Point(3, 53);
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl2.Location = new System.Drawing.Point(2, 52);
             this.gridControl2.MainView = this.gridView3;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit3});
-            this.gridControl2.Size = new System.Drawing.Size(1298, 241);
+            this.gridControl2.Size = new System.Drawing.Size(1490, 247);
             this.gridControl2.TabIndex = 6;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
             // 
-            // tbl_Multi_LabelPlanBindingSource
+            // view_Multi_Label_Plan_AMBindingSource
             // 
-            this.tbl_Multi_LabelPlanBindingSource.DataMember = "tbl_Multi_LabelPlan";
-            this.tbl_Multi_LabelPlanBindingSource.DataSource = this.dSLabelPlanning;
+            this.view_Multi_Label_Plan_AMBindingSource.DataMember = "View_Multi_Label_Plan_AM";
+            this.view_Multi_Label_Plan_AMBindingSource.DataSource = this.dSLabelPlanning1;
             // 
-            // dSLabelPlanning
+            // dSLabelPlanning1
             // 
-            this.dSLabelPlanning.DataSetName = "DSLabelPlanning";
-            this.dSLabelPlanning.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dSLabelPlanning1.DataSetName = "DSLabelPlanning";
+            this.dSLabelPlanning1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView3
             // 
@@ -271,12 +273,91 @@ namespace Erp_Production_Label
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowFooter = true;
             // 
+            // colPO1
+            // 
+            this.colPO1.FieldName = "PO";
+            this.colPO1.Name = "colPO1";
+            this.colPO1.Visible = true;
+            this.colPO1.VisibleIndex = 0;
+            // 
+            // colPOCode1
+            // 
+            this.colPOCode1.FieldName = "POCode";
+            this.colPOCode1.Name = "colPOCode1";
+            this.colPOCode1.Visible = true;
+            this.colPOCode1.VisibleIndex = 1;
+            // 
+            // colModelName1
+            // 
+            this.colModelName1.FieldName = "ModelName";
+            this.colModelName1.Name = "colModelName1";
+            this.colModelName1.Visible = true;
+            this.colModelName1.VisibleIndex = 2;
+            // 
+            // colArtCode1
+            // 
+            this.colArtCode1.FieldName = "ArtCode";
+            this.colArtCode1.Name = "colArtCode1";
+            this.colArtCode1.Visible = true;
+            this.colArtCode1.VisibleIndex = 3;
+            // 
+            // colFactoryCode1
+            // 
+            this.colFactoryCode1.FieldName = "FactoryCode";
+            this.colFactoryCode1.Name = "colFactoryCode1";
+            this.colFactoryCode1.Visible = true;
+            this.colFactoryCode1.VisibleIndex = 4;
+            // 
+            // colEntryDATE
+            // 
+            this.colEntryDATE.Caption = "Entry Date";
+            this.colEntryDATE.FieldName = "EntryDATE";
+            this.colEntryDATE.Name = "colEntryDATE";
+            this.colEntryDATE.Visible = true;
+            this.colEntryDATE.VisibleIndex = 6;
+            // 
+            // colPlanDate
+            // 
+            this.colPlanDate.FieldName = "PlanDate";
+            this.colPlanDate.Name = "colPlanDate";
+            this.colPlanDate.Visible = true;
+            this.colPlanDate.VisibleIndex = 7;
+            // 
+            // colPlanQty
+            // 
+            this.colPlanQty.FieldName = "PlanQty";
+            this.colPlanQty.Name = "colPlanQty";
+            this.colPlanQty.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "PlanQty", "{0:0.##}")});
+            this.colPlanQty.Visible = true;
+            this.colPlanQty.VisibleIndex = 8;
+            // 
+            // colLAName1
+            // 
+            this.colLAName1.FieldName = "LAName";
+            this.colLAName1.Name = "colLAName1";
+            this.colLAName1.Visible = true;
+            this.colLAName1.VisibleIndex = 5;
+            // 
+            // colTranID
+            // 
+            this.colTranID.FieldName = "TranID";
+            this.colTranID.Name = "colTranID";
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Undo";
+            this.gridColumn2.ColumnEdit = this.repositoryItemButtonEdit3;
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 9;
+            // 
             // repositoryItemButtonEdit3
             // 
             this.repositoryItemButtonEdit3.AutoHeight = false;
-            editorButtonImageOptions7.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions7.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.repositoryItemButtonEdit3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit3.Name = "repositoryItemButtonEdit3";
             this.repositoryItemButtonEdit3.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEdit3.Click += new System.EventHandler(this.repositoryItemButtonEdit3_Click);
@@ -291,7 +372,7 @@ namespace Erp_Production_Label
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl5.Location = new System.Drawing.Point(2, 2);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(1553, 50);
+            this.panelControl5.Size = new System.Drawing.Size(1490, 50);
             this.panelControl5.TabIndex = 5;
             // 
             // labelControl2
@@ -326,7 +407,7 @@ namespace Erp_Production_Label
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(2, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1561, 508);
+            this.panelControl2.Size = new System.Drawing.Size(1498, 508);
             this.panelControl2.TabIndex = 7;
             // 
             // panelControl15
@@ -335,7 +416,7 @@ namespace Erp_Production_Label
             this.panelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl15.Location = new System.Drawing.Point(2, 135);
             this.panelControl15.Name = "panelControl15";
-            this.panelControl15.Size = new System.Drawing.Size(1557, 371);
+            this.panelControl15.Size = new System.Drawing.Size(1494, 371);
             this.panelControl15.TabIndex = 12;
             // 
             // panelControl10
@@ -344,18 +425,19 @@ namespace Erp_Production_Label
             this.panelControl10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl10.Location = new System.Drawing.Point(2, 2);
             this.panelControl10.Name = "panelControl10";
-            this.panelControl10.Size = new System.Drawing.Size(1553, 367);
+            this.panelControl10.Size = new System.Drawing.Size(1490, 367);
             this.panelControl10.TabIndex = 10;
             // 
             // gridControl1
             // 
             this.gridControl1.DataSource = this.view_Multi_LabelPlanning_FinalCompleteBindingSource;
-            this.gridControl1.Location = new System.Drawing.Point(3, -3);
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(2, 2);
             this.gridControl1.MainView = this.gridView2;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(1293, 334);
+            this.gridControl1.Size = new System.Drawing.Size(1486, 363);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -364,6 +446,11 @@ namespace Erp_Production_Label
             // 
             this.view_Multi_LabelPlanning_FinalCompleteBindingSource.DataMember = "View_Multi_LabelPlanning_FinalComplete";
             this.view_Multi_LabelPlanning_FinalCompleteBindingSource.DataSource = this.dSLabelPlanning;
+            // 
+            // dSLabelPlanning
+            // 
+            this.dSLabelPlanning.DataSetName = "DSLabelPlanning";
+            this.dSLabelPlanning.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView2
             // 
@@ -512,9 +599,9 @@ namespace Erp_Production_Label
             // repositoryItemButtonEdit1
             // 
             this.repositoryItemButtonEdit1.AutoHeight = false;
-            editorButtonImageOptions8.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions8.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEdit1.Click += new System.EventHandler(this.repositoryItemButtonEdit1_Click);
@@ -527,7 +614,7 @@ namespace Erp_Production_Label
             this.panelControl14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl14.Location = new System.Drawing.Point(2, 57);
             this.panelControl14.Name = "panelControl14";
-            this.panelControl14.Size = new System.Drawing.Size(1557, 78);
+            this.panelControl14.Size = new System.Drawing.Size(1494, 78);
             this.panelControl14.TabIndex = 11;
             // 
             // groupControl2
@@ -537,7 +624,7 @@ namespace Erp_Production_Label
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(2, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1553, 74);
+            this.groupControl2.Size = new System.Drawing.Size(1490, 74);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Show Record";
             // 
@@ -548,7 +635,7 @@ namespace Erp_Production_Label
             this.panelControl20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl20.Location = new System.Drawing.Point(2, 21);
             this.panelControl20.Name = "panelControl20";
-            this.panelControl20.Size = new System.Drawing.Size(1549, 61);
+            this.panelControl20.Size = new System.Drawing.Size(1486, 53);
             this.panelControl20.TabIndex = 23;
             // 
             // panelControl4
@@ -556,9 +643,9 @@ namespace Erp_Production_Label
             this.panelControl4.Controls.Add(this.dateEdit1);
             this.panelControl4.Controls.Add(this.labelControl4);
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl4.Location = new System.Drawing.Point(1347, 2);
+            this.panelControl4.Location = new System.Drawing.Point(1284, 2);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(200, 57);
+            this.panelControl4.Size = new System.Drawing.Size(200, 49);
             this.panelControl4.TabIndex = 38;
             // 
             // dateEdit1
@@ -594,7 +681,7 @@ namespace Erp_Production_Label
             this.panelControl25.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl25.Location = new System.Drawing.Point(2, 2);
             this.panelControl25.Name = "panelControl25";
-            this.panelControl25.Size = new System.Drawing.Size(699, 57);
+            this.panelControl25.Size = new System.Drawing.Size(699, 49);
             this.panelControl25.TabIndex = 29;
             this.panelControl25.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl25_Paint);
             // 
@@ -678,7 +765,7 @@ namespace Erp_Production_Label
             this.panelControl19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl19.Location = new System.Drawing.Point(2, 2);
             this.panelControl19.Name = "panelControl19";
-            this.panelControl19.Size = new System.Drawing.Size(1553, 74);
+            this.panelControl19.Size = new System.Drawing.Size(1490, 74);
             this.panelControl19.TabIndex = 0;
             // 
             // panelControl9
@@ -687,7 +774,7 @@ namespace Erp_Production_Label
             this.panelControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl9.Location = new System.Drawing.Point(2, 2);
             this.panelControl9.Name = "panelControl9";
-            this.panelControl9.Size = new System.Drawing.Size(1557, 55);
+            this.panelControl9.Size = new System.Drawing.Size(1494, 55);
             this.panelControl9.TabIndex = 9;
             // 
             // panelControl3
@@ -705,7 +792,7 @@ namespace Erp_Production_Label
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl3.Location = new System.Drawing.Point(2, 2);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1553, 50);
+            this.panelControl3.Size = new System.Drawing.Size(1490, 50);
             this.panelControl3.TabIndex = 8;
             // 
             // simpleButton1
@@ -714,7 +801,7 @@ namespace Erp_Production_Label
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(1458, 0);
+            this.simpleButton1.Location = new System.Drawing.Point(1395, 0);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton1.Size = new System.Drawing.Size(41, 50);
@@ -728,7 +815,7 @@ namespace Erp_Production_Label
             this.panelControl22.AutoSize = true;
             this.panelControl22.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl22.Location = new System.Drawing.Point(1499, 0);
+            this.panelControl22.Location = new System.Drawing.Point(1436, 0);
             this.panelControl22.Name = "panelControl22";
             this.panelControl22.Size = new System.Drawing.Size(0, 50);
             this.panelControl22.TabIndex = 28;
@@ -761,7 +848,7 @@ namespace Erp_Production_Label
             // 
             this.simpleButton6.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.Location = new System.Drawing.Point(1499, 0);
+            this.simpleButton6.Location = new System.Drawing.Point(1436, 0);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton6.Size = new System.Drawing.Size(54, 50);
@@ -775,8 +862,13 @@ namespace Erp_Production_Label
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1565, 813);
+            this.panel1.Size = new System.Drawing.Size(1502, 817);
             this.panel1.TabIndex = 9;
+            // 
+            // tbl_Multi_LabelPlanBindingSource
+            // 
+            this.tbl_Multi_LabelPlanBindingSource.DataMember = "tbl_Multi_LabelPlan";
+            this.tbl_Multi_LabelPlanBindingSource.DataSource = this.dSLabelPlanning;
             // 
             // tbl_Multi_PO_HBindingSource
             // 
@@ -862,16 +954,6 @@ namespace Erp_Production_Label
             // 
             this.tbl_Multi_PO_HTableAdapter.ClearBeforeFill = true;
             // 
-            // dSLabelPlanning1
-            // 
-            this.dSLabelPlanning1.DataSetName = "DSLabelPlanning";
-            this.dSLabelPlanning1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // view_Multi_Label_Plan_AMBindingSource
-            // 
-            this.view_Multi_Label_Plan_AMBindingSource.DataMember = "View_Multi_Label_Plan_AM";
-            this.view_Multi_Label_Plan_AMBindingSource.DataSource = this.dSLabelPlanning1;
-            // 
             // view_Multi_Label_Plan_AMTableAdapter
             // 
             this.view_Multi_Label_Plan_AMTableAdapter.ClearBeforeFill = true;
@@ -884,90 +966,11 @@ namespace Erp_Production_Label
             this.tableAdapterManager1.tbl_Pro_ClientTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = ERP_Production.Label_Planning.DSLabelPlanningTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // colPO1
-            // 
-            this.colPO1.FieldName = "PO";
-            this.colPO1.Name = "colPO1";
-            this.colPO1.Visible = true;
-            this.colPO1.VisibleIndex = 0;
-            // 
-            // colPOCode1
-            // 
-            this.colPOCode1.FieldName = "POCode";
-            this.colPOCode1.Name = "colPOCode1";
-            this.colPOCode1.Visible = true;
-            this.colPOCode1.VisibleIndex = 1;
-            // 
-            // colModelName1
-            // 
-            this.colModelName1.FieldName = "ModelName";
-            this.colModelName1.Name = "colModelName1";
-            this.colModelName1.Visible = true;
-            this.colModelName1.VisibleIndex = 2;
-            // 
-            // colArtCode1
-            // 
-            this.colArtCode1.FieldName = "ArtCode";
-            this.colArtCode1.Name = "colArtCode1";
-            this.colArtCode1.Visible = true;
-            this.colArtCode1.VisibleIndex = 3;
-            // 
-            // colFactoryCode1
-            // 
-            this.colFactoryCode1.FieldName = "FactoryCode";
-            this.colFactoryCode1.Name = "colFactoryCode1";
-            this.colFactoryCode1.Visible = true;
-            this.colFactoryCode1.VisibleIndex = 4;
-            // 
-            // colEntryDATE
-            // 
-            this.colEntryDATE.Caption = "Entry Date";
-            this.colEntryDATE.FieldName = "EntryDATE";
-            this.colEntryDATE.Name = "colEntryDATE";
-            this.colEntryDATE.Visible = true;
-            this.colEntryDATE.VisibleIndex = 6;
-            // 
-            // colPlanDate
-            // 
-            this.colPlanDate.FieldName = "PlanDate";
-            this.colPlanDate.Name = "colPlanDate";
-            this.colPlanDate.Visible = true;
-            this.colPlanDate.VisibleIndex = 7;
-            // 
-            // colPlanQty
-            // 
-            this.colPlanQty.FieldName = "PlanQty";
-            this.colPlanQty.Name = "colPlanQty";
-            this.colPlanQty.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "PlanQty", "{0:0.##}")});
-            this.colPlanQty.Visible = true;
-            this.colPlanQty.VisibleIndex = 8;
-            // 
-            // colLAName1
-            // 
-            this.colLAName1.FieldName = "LAName";
-            this.colLAName1.Name = "colLAName1";
-            this.colLAName1.Visible = true;
-            this.colLAName1.VisibleIndex = 5;
-            // 
-            // colTranID
-            // 
-            this.colTranID.FieldName = "TranID";
-            this.colTranID.Name = "colTranID";
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Undo";
-            this.gridColumn2.ColumnEdit = this.repositoryItemButtonEdit3;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 9;
-            // 
             // FrmLabelPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1575, 821);
+            this.ClientSize = new System.Drawing.Size(1506, 821);
             this.Controls.Add(this.panelControl1);
             this.Name = "FrmLabelPlan";
             this.Text = "Form1";
@@ -981,8 +984,8 @@ namespace Erp_Production_Label
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_LabelPlanBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_Label_Plan_AMBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
@@ -997,6 +1000,7 @@ namespace Erp_Production_Label
             this.panelControl10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_Multi_LabelPlanning_FinalCompleteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl14)).EndInit();
@@ -1026,6 +1030,7 @@ namespace Erp_Production_Label
             this.panelControl3.ResumeLayout(false);
             this.panelControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_LabelPlanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_HBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ClientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_Multi_PO_ReportsBindingSource)).EndInit();
@@ -1034,8 +1039,6 @@ namespace Erp_Production_Label
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditAvaBala)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSLabelPlanning1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_Label_Plan_AMBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
