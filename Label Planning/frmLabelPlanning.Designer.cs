@@ -141,10 +141,10 @@ namespace ERP_Production.Label_Planning
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.searchLookUpEdit2 = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.dSLabelPlanning = new ERP_Production.DSLabelPlanning();
+            this.dSLabelPlanning = new DSLabelPlanning();
             this.tbl_Pro_ClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_Pro_ClientTableAdapter = new ERP_Production.DSLabelPlanningTableAdapters.tbl_Pro_ClientTableAdapter();
-            this.tableAdapterManager = new ERP_Production.DSLabelPlanningTableAdapters.TableAdapterManager();
+            this.tbl_Pro_ClientTableAdapter = new DSLabelPlanningTableAdapters.tbl_Pro_ClientTableAdapter();
+            this.tableAdapterManager = new DSLabelPlanningTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -1093,7 +1093,7 @@ namespace ERP_Production.Label_Planning
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.tbl_Pro_ClientTableAdapter = this.tbl_Pro_ClientTableAdapter;
-            this.tableAdapterManager.UpdateOrder = ERP_Production.DSLabelPlanningTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = DSLabelPlanningTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // frmLabelPlanning
             // 

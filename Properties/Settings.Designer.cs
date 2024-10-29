@@ -33,5 +33,15 @@ namespace ERP_Production.Properties {
                 return ((string)(this["FSCo"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Dsn=MIS;uid=Ajax;app=Microsoft® Visual Studio®;wsid=ITS-14;database=MIS")]
+        public string MISConnectionString {
+            get {
+                return ((string)(this["MISConnectionString"]));
+            }
+        }
     }
 }

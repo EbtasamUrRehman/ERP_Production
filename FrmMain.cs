@@ -15,6 +15,7 @@ using ERP_Production.PackingList;
 using ERP_Production.ProPlanReports;
 using ERP_Production.Reports;
 using ERP_Production.Packing_Mateial_Requisition;
+using Erp_Production_Label;
 
 namespace ERP_Production
 {
@@ -420,7 +421,7 @@ namespace ERP_Production
                 MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            await ShowOrToggleFormAsync<frmLabelPlanning>();
+            await ShowOrToggleFormAsync<FrmLabelPlan>();
         }
 
         //private void accordionControlElement11_Click(object sender, EventArgs e)

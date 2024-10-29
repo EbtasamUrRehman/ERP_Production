@@ -189,6 +189,9 @@
     <Compile Include="DSPlanning1.cs">
       <DependentUpon>DSPlanning1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DSRep.cs">
+      <DependentUpon>DSRep.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DSRep.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -232,6 +235,23 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPlanningM.cs" />
+    <Compile Include="Label Planning\DSLabelPlanning.cs">
+      <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Label Planning\DSLabelPlanning.Designer.cs">
+      <DependentUpon>DSLabelPlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Label Planning\DSLabelPlanning1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Label Planning\FrmLabelPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Label Planning\FrmLabelPlan.Designer.cs">
+      <DependentUpon>FrmLabelPlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Label Planning\frmLabelPlanning.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -413,6 +433,9 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Label Planning\FrmLabelPlan.resx">
+      <DependentUpon>FrmLabelPlan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Label Planning\frmLabelPlanning.resx">
       <DependentUpon>frmLabelPlanning.cs</DependentUpon>
     </EmbeddedResource>
@@ -557,6 +580,17 @@
       <DependentUpon>DSRptMER.xsd</DependentUpon>
     </None>
     <None Include="ERP_Production_TemporaryKey.pfx" />
+    <None Include="Label Planning\DSLabelPlanning.xsc">
+      <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
+    </None>
+    <None Include="Label Planning\DSLabelPlanning.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLabelPlanning1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Label Planning\DSLabelPlanning.xss">
+      <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
+    </None>
     <None Include="Login\NewDS.xsc">
       <DependentUpon>NewDS.xsd</DependentUpon>
     </None>
