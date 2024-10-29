@@ -228,17 +228,5 @@ namespace Erp_Production_Label
             }
         }
 
-        private void fillToolStripButton_Click(object sender, EventArgs e)
-        {
-            //try
-            //{
-            //    this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(planDateToolStripTextBox.Text, typeof(System.DateTime))))));
-            //}
-            //catch (System.Exception ex)
-            //{
-            //    System.Windows.Forms.MessageBox.Show(ex.Message);
-            //}+
-
-        }
     }
 }

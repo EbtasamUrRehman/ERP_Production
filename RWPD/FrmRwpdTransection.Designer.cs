@@ -30,17 +30,17 @@ namespace ERP_Production.RWPD
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRwpdTransection));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
@@ -48,53 +48,9 @@ namespace ERP_Production.RWPD
             this.panelControl12 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.repositoryItemButtonEdit4 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.gridView6 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl15 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl10 = new DevExpress.XtraEditors.PanelControl();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.repositoryItemButtonEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.repositoryItemButtonEditAvaBala = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.panelControl14 = new DevExpress.XtraEditors.PanelControl();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.panelControl20 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl25 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl26 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
-            this.dateEdit9 = new DevExpress.XtraEditors.DateEdit();
-            this.dateEdit4 = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl19 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl9 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl22 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.dSRwpd = new ERP_Production.DSRwpd();
-            this.tbl_RackNOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_RackNOTableAdapter = new ERP_Production.DSRwpdTableAdapters.tbl_RackNOTableAdapter();
-            this.tableAdapterManager = new ERP_Production.DSRwpdTableAdapters.TableAdapterManager();
-            this.view_Multi_PO_ReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.view_Multi_PO_ReportsTableAdapter = new ERP_Production.DSRwpdTableAdapters.View_Multi_PO_ReportsTableAdapter();
             this.view_RWPD_Multi_INBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.view_RWPD_Multi_INTableAdapter = new ERP_Production.DSRwpdTableAdapters.View_RWPD_Multi_INTableAdapter();
-            this.view_RWPD_Multi_Out_BalanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.view_RWPD_Multi_Out_BalanceTableAdapter = new ERP_Production.DSRwpdTableAdapters.View_RWPD_Multi_Out_BalanceTableAdapter();
+            this.dSRwpd = new ERP_Production.DSRwpd();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colTID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTranInID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRackID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -113,36 +69,70 @@ namespace ERP_Production.RWPD
             this.colFactoryCode1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colS4Status = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colClientID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colModelID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colArtID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSize = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colArtCode = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colLine = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPOCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemButtonEdit4 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.gridView6 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl15 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl10 = new DevExpress.XtraEditors.PanelControl();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.view_Multi_PO_ReportsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.repositoryItemButtonEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.repositoryItemButtonEditAvaBala = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.panelControl14 = new DevExpress.XtraEditors.PanelControl();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.panelControl20 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl25 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl26 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.tbl_RackNOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.dateEdit9 = new DevExpress.XtraEditors.DateEdit();
+            this.dateEdit4 = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            this.panelControl19 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl9 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl22 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.tbl_RackNOTableAdapter = new ERP_Production.DSRwpdTableAdapters.tbl_RackNOTableAdapter();
+            this.tableAdapterManager = new ERP_Production.DSRwpdTableAdapters.TableAdapterManager();
+            this.view_Multi_PO_ReportsTableAdapter = new ERP_Production.DSRwpdTableAdapters.View_Multi_PO_ReportsTableAdapter();
+            this.view_RWPD_Multi_INTableAdapter = new ERP_Production.DSRwpdTableAdapters.View_RWPD_Multi_INTableAdapter();
+            this.view_RWPD_Multi_Out_BalanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.view_RWPD_Multi_Out_BalanceTableAdapter = new ERP_Production.DSRwpdTableAdapters.View_RWPD_Multi_Out_BalanceTableAdapter();
+            this.view_RWPD_Multi_IN_BalanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.view_RWPD_Multi_IN_BalanceTableAdapter = new ERP_Production.DSRwpdTableAdapters.View_RWPD_Multi_IN_BalanceTableAdapter();
+            this.colTID1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTranInID1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRackID1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRackNo1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRackNoinfo1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colClientName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colModelName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPOCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colArticle1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSize = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQuantity1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDeliverDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colbalance = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEntryDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSysIP1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colReceivedDate1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFactoryCode = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCustomerOrderNo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colLAName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSecondConfDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colOrderQty = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStockAdj = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPlanQty = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBalance = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCountryName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCustomerName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPOS = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPOM = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPartielQty = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCustID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCompanyCode = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCountryID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colModelNo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colBINFStatus = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colS4Status1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -154,6 +144,8 @@ namespace ERP_Production.RWPD
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_RWPD_Multi_INBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSRwpd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView6)).BeginInit();
@@ -166,6 +158,7 @@ namespace ERP_Production.RWPD
             ((System.ComponentModel.ISupportInitialize)(this.panelControl10)).BeginInit();
             this.panelControl10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_PO_ReportsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditAvaBala)).BeginInit();
@@ -179,6 +172,9 @@ namespace ERP_Production.RWPD
             this.panelControl25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl26)).BeginInit();
             this.panelControl26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_RackNOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties.CalendarTimeProperties)).BeginInit();
@@ -191,13 +187,8 @@ namespace ERP_Production.RWPD
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSRwpd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_RackNOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_PO_ReportsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_RWPD_Multi_INBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_RWPD_Multi_Out_BalanceBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_RWPD_Multi_IN_BalanceBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -279,6 +270,16 @@ namespace ERP_Production.RWPD
             this.gridView3,
             this.gridView6});
             // 
+            // view_RWPD_Multi_INBindingSource
+            // 
+            this.view_RWPD_Multi_INBindingSource.DataMember = "View_RWPD_Multi_IN";
+            this.view_RWPD_Multi_INBindingSource.DataSource = this.dSRwpd;
+            // 
+            // dSRwpd
+            // 
+            this.dSRwpd.DataSetName = "DSRwpd";
+            this.dSRwpd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // gridView3
             // 
             this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -304,14 +305,120 @@ namespace ERP_Production.RWPD
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowFooter = true;
             // 
+            // colTID
+            // 
+            this.colTID.FieldName = "TID";
+            this.colTID.Name = "colTID";
+            // 
+            // colTranInID
+            // 
+            this.colTranInID.FieldName = "TranInID";
+            this.colTranInID.Name = "colTranInID";
+            // 
+            // colRackID
+            // 
+            this.colRackID.FieldName = "RackID";
+            this.colRackID.Name = "colRackID";
+            // 
+            // colRackNo
+            // 
+            this.colRackNo.FieldName = "RackNo";
+            this.colRackNo.Name = "colRackNo";
+            this.colRackNo.Visible = true;
+            this.colRackNo.VisibleIndex = 4;
+            // 
+            // colRackNoinfo
+            // 
+            this.colRackNoinfo.FieldName = "RackNoinfo";
+            this.colRackNoinfo.Name = "colRackNoinfo";
+            // 
+            // colPO1
+            // 
+            this.colPO1.FieldName = "PO";
+            this.colPO1.Name = "colPO1";
+            // 
+            // colPOCode1
+            // 
+            this.colPOCode1.FieldName = "POCode";
+            this.colPOCode1.Name = "colPOCode1";
+            this.colPOCode1.Visible = true;
+            this.colPOCode1.VisibleIndex = 0;
+            // 
+            // colArticle
+            // 
+            this.colArticle.FieldName = "Article";
+            this.colArticle.Name = "colArticle";
+            this.colArticle.Visible = true;
+            this.colArticle.VisibleIndex = 1;
+            // 
+            // colSize1
+            // 
+            this.colSize1.FieldName = "Size";
+            this.colSize1.Name = "colSize1";
+            this.colSize1.Visible = true;
+            this.colSize1.VisibleIndex = 2;
+            // 
+            // colQuantity
+            // 
+            this.colQuantity.FieldName = "Quantity";
+            this.colQuantity.Name = "colQuantity";
+            this.colQuantity.Visible = true;
+            this.colQuantity.VisibleIndex = 3;
+            // 
+            // colDeliverDate
+            // 
+            this.colDeliverDate.FieldName = "DeliverDate";
+            this.colDeliverDate.Name = "colDeliverDate";
+            // 
+            // colbalance1
+            // 
+            this.colbalance1.FieldName = "balance";
+            this.colbalance1.Name = "colbalance1";
+            // 
+            // colEntryDate1
+            // 
+            this.colEntryDate1.FieldName = "EntryDate";
+            this.colEntryDate1.Name = "colEntryDate1";
+            // 
+            // colSysIP
+            // 
+            this.colSysIP.FieldName = "SysIP";
+            this.colSysIP.Name = "colSysIP";
+            // 
+            // colReceivedDate
+            // 
+            this.colReceivedDate.FieldName = "ReceivedDate";
+            this.colReceivedDate.Name = "colReceivedDate";
+            this.colReceivedDate.Visible = true;
+            this.colReceivedDate.VisibleIndex = 5;
+            // 
+            // colFactoryCode1
+            // 
+            this.colFactoryCode1.FieldName = "FactoryCode";
+            this.colFactoryCode1.Name = "colFactoryCode1";
+            // 
+            // colS4Status
+            // 
+            this.colS4Status.FieldName = "S4Status";
+            this.colS4Status.Name = "colS4Status";
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Undo";
+            this.gridColumn2.ColumnEdit = this.repositoryItemButtonEdit4;
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 6;
+            // 
             // repositoryItemButtonEdit4
             // 
             this.repositoryItemButtonEdit4.AutoHeight = false;
-            editorButtonImageOptions10.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions10.Image")));
+            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
             this.repositoryItemButtonEdit4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit4.Name = "repositoryItemButtonEdit4";
             this.repositoryItemButtonEdit4.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repositoryItemButtonEdit4.Click += new System.EventHandler(this.repositoryItemButtonEdit4_Click);
             // 
             // gridView6
             // 
@@ -387,7 +494,7 @@ namespace ERP_Production.RWPD
             // 
             // gridControl2
             // 
-            this.gridControl2.DataSource = this.view_Multi_PO_ReportsBindingSource;
+            this.gridControl2.DataSource = this.view_RWPD_Multi_INBindingSource;
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl2.Location = new System.Drawing.Point(2, 2);
             this.gridControl2.MainView = this.gridView2;
@@ -400,52 +507,43 @@ namespace ERP_Production.RWPD
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
             // 
+            // view_Multi_PO_ReportsBindingSource
+            // 
+            this.view_Multi_PO_ReportsBindingSource.DataMember = "View_Multi_PO_Reports";
+            this.view_Multi_PO_ReportsBindingSource.DataSource = this.dSRwpd;
+            // 
             // gridView2
             // 
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colClientID,
-            this.colModelID,
-            this.colArtID,
-            this.colSize,
-            this.colArtCode,
-            this.colLine,
-            this.colPOCode,
+            this.colTID1,
+            this.colTranInID1,
+            this.colRackID1,
+            this.colRackNo1,
+            this.colRackNoinfo1,
             this.colPO,
-            this.colClientName,
-            this.colModelName,
+            this.colPOCode,
+            this.colArticle1,
+            this.colSize,
+            this.colQuantity1,
+            this.colDeliverDate1,
+            this.colbalance,
+            this.colEntryDate,
+            this.colSysIP1,
+            this.colReceivedDate1,
             this.colFactoryCode,
-            this.colCustomerOrderNo,
-            this.colLAName,
-            this.colDD,
-            this.colSecondConfDate,
-            this.colOrderQty,
-            this.colStockAdj,
-            this.colPlanQty,
-            this.colBalance,
-            this.colCountryName,
-            this.colCustomerName,
-            this.colPOS,
-            this.colPOM,
-            this.colPartielQty,
-            this.colCustID,
-            this.colCompanyCode,
-            this.colCountryID,
-            this.colModelNo,
-            this.colBINFStatus,
-            this.gridColumn1});
+            this.colS4Status1});
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
-            this.gridView2.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colPOM, DevExpress.Data.ColumnSortOrder.Ascending)});
             // 
             // repositoryItemButtonEdit2
             // 
             this.repositoryItemButtonEdit2.AutoHeight = false;
-            editorButtonImageOptions9.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions9.Image")));
+            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
             this.repositoryItemButtonEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit2.Name = "repositoryItemButtonEdit2";
             this.repositoryItemButtonEdit2.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repositoryItemButtonEdit2.Click += new System.EventHandler(this.repositoryItemButtonEdit2_Click);
             // 
             // repositoryItemButtonEditAvaBala
             // 
@@ -483,7 +581,7 @@ namespace ERP_Production.RWPD
             this.panelControl20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl20.Location = new System.Drawing.Point(2, 21);
             this.panelControl20.Name = "panelControl20";
-            this.panelControl20.Size = new System.Drawing.Size(1283, 119);
+            this.panelControl20.Size = new System.Drawing.Size(1283, 136);
             this.panelControl20.TabIndex = 23;
             // 
             // panelControl25
@@ -497,6 +595,7 @@ namespace ERP_Production.RWPD
             // 
             // panelControl26
             // 
+            this.panelControl26.Controls.Add(this.labelControl4);
             this.panelControl26.Controls.Add(this.searchLookUpEdit1);
             this.panelControl26.Controls.Add(this.simpleButton3);
             this.panelControl26.Controls.Add(this.dateEdit1);
@@ -514,19 +613,53 @@ namespace ERP_Production.RWPD
             this.panelControl26.TabIndex = 30;
             this.panelControl26.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl26_Paint);
             // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(745, 7);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(70, 15);
+            this.labelControl4.TabIndex = 38;
+            this.labelControl4.Text = "Receive Date:";
+            // 
+            // searchLookUpEdit1
+            // 
+            this.searchLookUpEdit1.Location = new System.Drawing.Point(624, 3);
+            this.searchLookUpEdit1.Name = "searchLookUpEdit1";
+            this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.searchLookUpEdit1.Properties.DataSource = this.tbl_RackNOBindingSource;
+            this.searchLookUpEdit1.Properties.DisplayMember = "RackNo";
+            this.searchLookUpEdit1.Properties.PopupView = this.searchLookUpEdit1View;
+            this.searchLookUpEdit1.Properties.ValueMember = "ID";
+            this.searchLookUpEdit1.Size = new System.Drawing.Size(100, 22);
+            this.searchLookUpEdit1.TabIndex = 37;
+            // 
+            // tbl_RackNOBindingSource
+            // 
+            this.tbl_RackNOBindingSource.DataMember = "tbl_RackNO";
+            this.tbl_RackNOBindingSource.DataSource = this.dSRwpd;
+            // 
+            // searchLookUpEdit1View
+            // 
+            this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
+            this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
             // simpleButton3
             // 
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(928, 3);
+            this.simpleButton3.Location = new System.Drawing.Point(1079, 3);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(104, 23);
             this.simpleButton3.TabIndex = 36;
             this.simpleButton3.Text = "Tran In";
+            this.simpleButton3.Visible = false;
             // 
             // dateEdit1
             // 
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(770, 4);
+            this.dateEdit1.Location = new System.Drawing.Point(821, 5);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -551,6 +684,7 @@ namespace ERP_Production.RWPD
             this.simpleButton2.Size = new System.Drawing.Size(104, 23);
             this.simpleButton2.TabIndex = 33;
             this.simpleButton2.Text = "Refresh";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // labelControl24
             // 
@@ -571,6 +705,7 @@ namespace ERP_Production.RWPD
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit9.Size = new System.Drawing.Size(118, 22);
             this.dateEdit9.TabIndex = 31;
+            this.dateEdit9.EditValueChanged += new System.EventHandler(this.dateEdit9_EditValueChanged);
             // 
             // dateEdit4
             // 
@@ -583,6 +718,7 @@ namespace ERP_Production.RWPD
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit4.Size = new System.Drawing.Size(118, 22);
             this.dateEdit4.TabIndex = 21;
+            this.dateEdit4.EditValueChanged += new System.EventHandler(this.dateEdit4_EditValueChanged);
             // 
             // labelControl19
             // 
@@ -697,36 +833,6 @@ namespace ERP_Production.RWPD
             this.simpleButton6.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.simpleButton6.ToolTipTitle = "Requisition Report";
             // 
-            // searchLookUpEdit1
-            // 
-            this.searchLookUpEdit1.Location = new System.Drawing.Point(624, 3);
-            this.searchLookUpEdit1.Name = "searchLookUpEdit1";
-            this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit1.Properties.DataSource = this.tbl_RackNOBindingSource;
-            this.searchLookUpEdit1.Properties.DisplayMember = "RackNo";
-            this.searchLookUpEdit1.Properties.PopupView = this.searchLookUpEdit1View;
-            this.searchLookUpEdit1.Properties.ValueMember = "ID";
-            this.searchLookUpEdit1.Size = new System.Drawing.Size(100, 22);
-            this.searchLookUpEdit1.TabIndex = 37;
-            // 
-            // searchLookUpEdit1View
-            // 
-            this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
-            this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
-            // 
-            // dSRwpd
-            // 
-            this.dSRwpd.DataSetName = "DSRwpd";
-            this.dSRwpd.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbl_RackNOBindingSource
-            // 
-            this.tbl_RackNOBindingSource.DataMember = "tbl_RackNO";
-            this.tbl_RackNOBindingSource.DataSource = this.dSRwpd;
-            // 
             // tbl_RackNOTableAdapter
             // 
             this.tbl_RackNOTableAdapter.ClearBeforeFill = true;
@@ -737,19 +843,9 @@ namespace ERP_Production.RWPD
             this.tableAdapterManager.tbl_RackNOTableAdapter = this.tbl_RackNOTableAdapter;
             this.tableAdapterManager.UpdateOrder = ERP_Production.DSRwpdTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // view_Multi_PO_ReportsBindingSource
-            // 
-            this.view_Multi_PO_ReportsBindingSource.DataMember = "View_Multi_PO_Reports";
-            this.view_Multi_PO_ReportsBindingSource.DataSource = this.dSRwpd;
-            // 
             // view_Multi_PO_ReportsTableAdapter
             // 
             this.view_Multi_PO_ReportsTableAdapter.ClearBeforeFill = true;
-            // 
-            // view_RWPD_Multi_INBindingSource
-            // 
-            this.view_RWPD_Multi_INBindingSource.DataMember = "View_RWPD_Multi_IN";
-            this.view_RWPD_Multi_INBindingSource.DataSource = this.dSRwpd;
             // 
             // view_RWPD_Multi_INTableAdapter
             // 
@@ -764,308 +860,133 @@ namespace ERP_Production.RWPD
             // 
             this.view_RWPD_Multi_Out_BalanceTableAdapter.ClearBeforeFill = true;
             // 
-            // colTID
+            // view_RWPD_Multi_IN_BalanceBindingSource
             // 
-            this.colTID.FieldName = "TID";
-            this.colTID.Name = "colTID";
+            this.view_RWPD_Multi_IN_BalanceBindingSource.DataMember = "View_RWPD_Multi_IN_Balance";
+            this.view_RWPD_Multi_IN_BalanceBindingSource.DataSource = this.dSRwpd;
             // 
-            // colTranInID
+            // view_RWPD_Multi_IN_BalanceTableAdapter
             // 
-            this.colTranInID.FieldName = "TranInID";
-            this.colTranInID.Name = "colTranInID";
+            this.view_RWPD_Multi_IN_BalanceTableAdapter.ClearBeforeFill = true;
             // 
-            // colRackID
+            // colTID1
             // 
-            this.colRackID.FieldName = "RackID";
-            this.colRackID.Name = "colRackID";
+            this.colTID1.FieldName = "TID";
+            this.colTID1.Name = "colTID1";
+            this.colTID1.Visible = true;
+            this.colTID1.VisibleIndex = 0;
             // 
-            // colRackNo
+            // colTranInID1
             // 
-            this.colRackNo.FieldName = "RackNo";
-            this.colRackNo.Name = "colRackNo";
-            this.colRackNo.Visible = true;
-            this.colRackNo.VisibleIndex = 4;
+            this.colTranInID1.FieldName = "TranInID";
+            this.colTranInID1.Name = "colTranInID1";
+            this.colTranInID1.Visible = true;
+            this.colTranInID1.VisibleIndex = 1;
             // 
-            // colRackNoinfo
+            // colRackID1
             // 
-            this.colRackNoinfo.FieldName = "RackNoinfo";
-            this.colRackNoinfo.Name = "colRackNoinfo";
+            this.colRackID1.FieldName = "RackID";
+            this.colRackID1.Name = "colRackID1";
+            this.colRackID1.Visible = true;
+            this.colRackID1.VisibleIndex = 2;
             // 
-            // colPO1
+            // colRackNo1
             // 
-            this.colPO1.FieldName = "PO";
-            this.colPO1.Name = "colPO1";
+            this.colRackNo1.FieldName = "RackNo";
+            this.colRackNo1.Name = "colRackNo1";
+            this.colRackNo1.Visible = true;
+            this.colRackNo1.VisibleIndex = 3;
             // 
-            // colPOCode1
+            // colRackNoinfo1
             // 
-            this.colPOCode1.FieldName = "POCode";
-            this.colPOCode1.Name = "colPOCode1";
-            this.colPOCode1.Visible = true;
-            this.colPOCode1.VisibleIndex = 0;
+            this.colRackNoinfo1.FieldName = "RackNoinfo";
+            this.colRackNoinfo1.Name = "colRackNoinfo1";
+            this.colRackNoinfo1.Visible = true;
+            this.colRackNoinfo1.VisibleIndex = 4;
             // 
-            // colArticle
+            // colPO
             // 
-            this.colArticle.FieldName = "Article";
-            this.colArticle.Name = "colArticle";
-            this.colArticle.Visible = true;
-            this.colArticle.VisibleIndex = 1;
-            // 
-            // colSize1
-            // 
-            this.colSize1.FieldName = "Size";
-            this.colSize1.Name = "colSize1";
-            this.colSize1.Visible = true;
-            this.colSize1.VisibleIndex = 2;
-            // 
-            // colQuantity
-            // 
-            this.colQuantity.FieldName = "Quantity";
-            this.colQuantity.Name = "colQuantity";
-            this.colQuantity.Visible = true;
-            this.colQuantity.VisibleIndex = 3;
-            // 
-            // colDeliverDate
-            // 
-            this.colDeliverDate.FieldName = "DeliverDate";
-            this.colDeliverDate.Name = "colDeliverDate";
-            // 
-            // colbalance1
-            // 
-            this.colbalance1.FieldName = "balance";
-            this.colbalance1.Name = "colbalance1";
-            // 
-            // colEntryDate1
-            // 
-            this.colEntryDate1.FieldName = "EntryDate";
-            this.colEntryDate1.Name = "colEntryDate1";
-            // 
-            // colSysIP
-            // 
-            this.colSysIP.FieldName = "SysIP";
-            this.colSysIP.Name = "colSysIP";
-            // 
-            // colReceivedDate
-            // 
-            this.colReceivedDate.FieldName = "ReceivedDate";
-            this.colReceivedDate.Name = "colReceivedDate";
-            this.colReceivedDate.Visible = true;
-            this.colReceivedDate.VisibleIndex = 5;
-            // 
-            // colFactoryCode1
-            // 
-            this.colFactoryCode1.FieldName = "FactoryCode";
-            this.colFactoryCode1.Name = "colFactoryCode1";
-            // 
-            // colS4Status
-            // 
-            this.colS4Status.FieldName = "S4Status";
-            this.colS4Status.Name = "colS4Status";
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Undo";
-            this.gridColumn2.ColumnEdit = this.repositoryItemButtonEdit4;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 6;
-            // 
-            // colClientID
-            // 
-            this.colClientID.FieldName = "ClientID";
-            this.colClientID.Name = "colClientID";
-            this.colClientID.Width = 42;
-            // 
-            // colModelID
-            // 
-            this.colModelID.FieldName = "ModelID";
-            this.colModelID.Name = "colModelID";
-            this.colModelID.Width = 42;
-            // 
-            // colArtID
-            // 
-            this.colArtID.FieldName = "ArtID";
-            this.colArtID.Name = "colArtID";
-            this.colArtID.Width = 42;
-            // 
-            // colSize
-            // 
-            this.colSize.FieldName = "Size";
-            this.colSize.Name = "colSize";
-            this.colSize.Visible = true;
-            this.colSize.VisibleIndex = 2;
-            this.colSize.Width = 42;
-            // 
-            // colArtCode
-            // 
-            this.colArtCode.FieldName = "ArtCode";
-            this.colArtCode.Name = "colArtCode";
-            this.colArtCode.Visible = true;
-            this.colArtCode.VisibleIndex = 1;
-            this.colArtCode.Width = 42;
-            // 
-            // colLine
-            // 
-            this.colLine.FieldName = "Line";
-            this.colLine.Name = "colLine";
-            this.colLine.Width = 42;
+            this.colPO.FieldName = "PO";
+            this.colPO.Name = "colPO";
+            this.colPO.Visible = true;
+            this.colPO.VisibleIndex = 5;
             // 
             // colPOCode
             // 
             this.colPOCode.FieldName = "POCode";
             this.colPOCode.Name = "colPOCode";
             this.colPOCode.Visible = true;
-            this.colPOCode.VisibleIndex = 0;
-            this.colPOCode.Width = 42;
+            this.colPOCode.VisibleIndex = 6;
             // 
-            // colPO
+            // colArticle1
             // 
-            this.colPO.FieldName = "PO";
-            this.colPO.Name = "colPO";
-            this.colPO.Width = 42;
+            this.colArticle1.FieldName = "Article";
+            this.colArticle1.Name = "colArticle1";
+            this.colArticle1.Visible = true;
+            this.colArticle1.VisibleIndex = 7;
             // 
-            // colClientName
+            // colSize
             // 
-            this.colClientName.FieldName = "ClientName";
-            this.colClientName.Name = "colClientName";
-            this.colClientName.Width = 42;
+            this.colSize.FieldName = "Size";
+            this.colSize.Name = "colSize";
+            this.colSize.Visible = true;
+            this.colSize.VisibleIndex = 8;
             // 
-            // colModelName
+            // colQuantity1
             // 
-            this.colModelName.FieldName = "ModelName";
-            this.colModelName.Name = "colModelName";
-            this.colModelName.Width = 42;
+            this.colQuantity1.FieldName = "Quantity";
+            this.colQuantity1.Name = "colQuantity1";
+            this.colQuantity1.Visible = true;
+            this.colQuantity1.VisibleIndex = 9;
+            // 
+            // colDeliverDate1
+            // 
+            this.colDeliverDate1.FieldName = "DeliverDate";
+            this.colDeliverDate1.Name = "colDeliverDate1";
+            this.colDeliverDate1.Visible = true;
+            this.colDeliverDate1.VisibleIndex = 10;
+            // 
+            // colbalance
+            // 
+            this.colbalance.FieldName = "balance";
+            this.colbalance.Name = "colbalance";
+            this.colbalance.Visible = true;
+            this.colbalance.VisibleIndex = 11;
+            // 
+            // colEntryDate
+            // 
+            this.colEntryDate.FieldName = "EntryDate";
+            this.colEntryDate.Name = "colEntryDate";
+            this.colEntryDate.Visible = true;
+            this.colEntryDate.VisibleIndex = 12;
+            // 
+            // colSysIP1
+            // 
+            this.colSysIP1.FieldName = "SysIP";
+            this.colSysIP1.Name = "colSysIP1";
+            this.colSysIP1.Visible = true;
+            this.colSysIP1.VisibleIndex = 13;
+            // 
+            // colReceivedDate1
+            // 
+            this.colReceivedDate1.FieldName = "ReceivedDate";
+            this.colReceivedDate1.Name = "colReceivedDate1";
+            this.colReceivedDate1.Visible = true;
+            this.colReceivedDate1.VisibleIndex = 14;
             // 
             // colFactoryCode
             // 
             this.colFactoryCode.FieldName = "FactoryCode";
             this.colFactoryCode.Name = "colFactoryCode";
             this.colFactoryCode.Visible = true;
-            this.colFactoryCode.VisibleIndex = 3;
-            this.colFactoryCode.Width = 40;
+            this.colFactoryCode.VisibleIndex = 15;
             // 
-            // colCustomerOrderNo
+            // colS4Status1
             // 
-            this.colCustomerOrderNo.FieldName = "CustomerOrderNo";
-            this.colCustomerOrderNo.Name = "colCustomerOrderNo";
-            this.colCustomerOrderNo.Width = 35;
-            // 
-            // colLAName
-            // 
-            this.colLAName.FieldName = "LAName";
-            this.colLAName.Name = "colLAName";
-            this.colLAName.Width = 39;
-            // 
-            // colDD
-            // 
-            this.colDD.Caption = "Delivery Date";
-            this.colDD.FieldName = "DD";
-            this.colDD.Name = "colDD";
-            this.colDD.Visible = true;
-            this.colDD.VisibleIndex = 4;
-            this.colDD.Width = 34;
-            // 
-            // colSecondConfDate
-            // 
-            this.colSecondConfDate.FieldName = "SecondConfDate";
-            this.colSecondConfDate.Name = "colSecondConfDate";
-            this.colSecondConfDate.Width = 34;
-            // 
-            // colOrderQty
-            // 
-            this.colOrderQty.FieldName = "OrderQty";
-            this.colOrderQty.Name = "colOrderQty";
-            this.colOrderQty.Visible = true;
-            this.colOrderQty.VisibleIndex = 5;
-            this.colOrderQty.Width = 40;
-            // 
-            // colStockAdj
-            // 
-            this.colStockAdj.FieldName = "StockAdj";
-            this.colStockAdj.Name = "colStockAdj";
-            this.colStockAdj.Width = 40;
-            // 
-            // colPlanQty
-            // 
-            this.colPlanQty.FieldName = "PlanQty";
-            this.colPlanQty.Name = "colPlanQty";
-            this.colPlanQty.Width = 40;
-            // 
-            // colBalance
-            // 
-            this.colBalance.FieldName = "Balance";
-            this.colBalance.Name = "colBalance";
-            this.colBalance.Visible = true;
-            this.colBalance.VisibleIndex = 6;
-            this.colBalance.Width = 40;
-            // 
-            // colCountryName
-            // 
-            this.colCountryName.FieldName = "CountryName";
-            this.colCountryName.Name = "colCountryName";
-            this.colCountryName.Width = 40;
-            // 
-            // colCustomerName
-            // 
-            this.colCustomerName.FieldName = "CustomerName";
-            this.colCustomerName.Name = "colCustomerName";
-            this.colCustomerName.Width = 40;
-            // 
-            // colPOS
-            // 
-            this.colPOS.FieldName = "POS";
-            this.colPOS.Name = "colPOS";
-            this.colPOS.Width = 40;
-            // 
-            // colPOM
-            // 
-            this.colPOM.FieldName = "POM";
-            this.colPOM.Name = "colPOM";
-            this.colPOM.Width = 40;
-            // 
-            // colPartielQty
-            // 
-            this.colPartielQty.FieldName = "PartielQty";
-            this.colPartielQty.Name = "colPartielQty";
-            this.colPartielQty.Width = 30;
-            // 
-            // colCustID
-            // 
-            this.colCustID.FieldName = "CustID";
-            this.colCustID.Name = "colCustID";
-            this.colCustID.Width = 30;
-            // 
-            // colCompanyCode
-            // 
-            this.colCompanyCode.FieldName = "CompanyCode";
-            this.colCompanyCode.Name = "colCompanyCode";
-            this.colCompanyCode.Width = 69;
-            // 
-            // colCountryID
-            // 
-            this.colCountryID.FieldName = "CountryID";
-            this.colCountryID.Name = "colCountryID";
-            this.colCountryID.Width = 26;
-            // 
-            // colModelNo
-            // 
-            this.colModelNo.FieldName = "ModelNo";
-            this.colModelNo.Name = "colModelNo";
-            // 
-            // colBINFStatus
-            // 
-            this.colBINFStatus.FieldName = "BINFStatus";
-            this.colBINFStatus.Name = "colBINFStatus";
-            this.colBINFStatus.Visible = true;
-            this.colBINFStatus.VisibleIndex = 7;
-            this.colBINFStatus.Width = 36;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "Tran In";
-            this.gridColumn1.ColumnEdit = this.repositoryItemButtonEdit2;
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 8;
+            this.colS4Status1.FieldName = "S4Status";
+            this.colS4Status1.Name = "colS4Status1";
+            this.colS4Status1.Visible = true;
+            this.colS4Status1.VisibleIndex = 16;
             // 
             // FrmRwpdTransection
             // 
@@ -1087,6 +1008,8 @@ namespace ERP_Production.RWPD
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_RWPD_Multi_INBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSRwpd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView6)).EndInit();
@@ -1101,6 +1024,7 @@ namespace ERP_Production.RWPD
             ((System.ComponentModel.ISupportInitialize)(this.panelControl10)).EndInit();
             this.panelControl10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_PO_ReportsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEditAvaBala)).EndInit();
@@ -1115,6 +1039,9 @@ namespace ERP_Production.RWPD
             ((System.ComponentModel.ISupportInitialize)(this.panelControl26)).EndInit();
             this.panelControl26.ResumeLayout(false);
             this.panelControl26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_RackNOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties.CalendarTimeProperties)).EndInit();
@@ -1129,13 +1056,8 @@ namespace ERP_Production.RWPD
             this.panelControl3.ResumeLayout(false);
             this.panelControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSRwpd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbl_RackNOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_PO_ReportsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_RWPD_Multi_INBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_RWPD_Multi_Out_BalanceBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_RWPD_Multi_IN_BalanceBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1214,35 +1136,25 @@ namespace ERP_Production.RWPD
         private DevExpress.XtraGrid.Columns.GridColumn colFactoryCode1;
         private DevExpress.XtraGrid.Columns.GridColumn colS4Status;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn colClientID;
-        private DevExpress.XtraGrid.Columns.GridColumn colModelID;
-        private DevExpress.XtraGrid.Columns.GridColumn colArtID;
-        private DevExpress.XtraGrid.Columns.GridColumn colSize;
-        private DevExpress.XtraGrid.Columns.GridColumn colArtCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colLine;
-        private DevExpress.XtraGrid.Columns.GridColumn colPOCode;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private System.Windows.Forms.BindingSource view_RWPD_Multi_IN_BalanceBindingSource;
+        private DSRwpdTableAdapters.View_RWPD_Multi_IN_BalanceTableAdapter view_RWPD_Multi_IN_BalanceTableAdapter;
+        private DevExpress.XtraGrid.Columns.GridColumn colTID1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTranInID1;
+        private DevExpress.XtraGrid.Columns.GridColumn colRackID1;
+        private DevExpress.XtraGrid.Columns.GridColumn colRackNo1;
+        private DevExpress.XtraGrid.Columns.GridColumn colRackNoinfo1;
         private DevExpress.XtraGrid.Columns.GridColumn colPO;
-        private DevExpress.XtraGrid.Columns.GridColumn colClientName;
-        private DevExpress.XtraGrid.Columns.GridColumn colModelName;
+        private DevExpress.XtraGrid.Columns.GridColumn colPOCode;
+        private DevExpress.XtraGrid.Columns.GridColumn colArticle1;
+        private DevExpress.XtraGrid.Columns.GridColumn colSize;
+        private DevExpress.XtraGrid.Columns.GridColumn colQuantity1;
+        private DevExpress.XtraGrid.Columns.GridColumn colDeliverDate1;
+        private DevExpress.XtraGrid.Columns.GridColumn colbalance;
+        private DevExpress.XtraGrid.Columns.GridColumn colEntryDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colSysIP1;
+        private DevExpress.XtraGrid.Columns.GridColumn colReceivedDate1;
         private DevExpress.XtraGrid.Columns.GridColumn colFactoryCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colCustomerOrderNo;
-        private DevExpress.XtraGrid.Columns.GridColumn colLAName;
-        private DevExpress.XtraGrid.Columns.GridColumn colDD;
-        private DevExpress.XtraGrid.Columns.GridColumn colSecondConfDate;
-        private DevExpress.XtraGrid.Columns.GridColumn colOrderQty;
-        private DevExpress.XtraGrid.Columns.GridColumn colStockAdj;
-        private DevExpress.XtraGrid.Columns.GridColumn colPlanQty;
-        private DevExpress.XtraGrid.Columns.GridColumn colBalance;
-        private DevExpress.XtraGrid.Columns.GridColumn colCountryName;
-        private DevExpress.XtraGrid.Columns.GridColumn colCustomerName;
-        private DevExpress.XtraGrid.Columns.GridColumn colPOS;
-        private DevExpress.XtraGrid.Columns.GridColumn colPOM;
-        private DevExpress.XtraGrid.Columns.GridColumn colPartielQty;
-        private DevExpress.XtraGrid.Columns.GridColumn colCustID;
-        private DevExpress.XtraGrid.Columns.GridColumn colCompanyCode;
-        private DevExpress.XtraGrid.Columns.GridColumn colCountryID;
-        private DevExpress.XtraGrid.Columns.GridColumn colModelNo;
-        private DevExpress.XtraGrid.Columns.GridColumn colBINFStatus;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn colS4Status1;
     }
 }

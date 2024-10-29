@@ -455,7 +455,7 @@ namespace ERP_Production.Reports
             // RadioButton28
             // 
             this.RadioButton28.AutoSize = true;
-            this.RadioButton28.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton28.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton28.Location = new System.Drawing.Point(9, 621);
             this.RadioButton28.Name = "RadioButton28";
             this.RadioButton28.Size = new System.Drawing.Size(275, 19);
@@ -467,7 +467,7 @@ namespace ERP_Production.Reports
             // RadioButton25
             // 
             this.RadioButton25.AutoSize = true;
-            this.RadioButton25.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton25.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton25.Location = new System.Drawing.Point(9, 598);
             this.RadioButton25.Name = "RadioButton25";
             this.RadioButton25.Size = new System.Drawing.Size(306, 19);
@@ -479,7 +479,7 @@ namespace ERP_Production.Reports
             // RadioButton24
             // 
             this.RadioButton24.AutoSize = true;
-            this.RadioButton24.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton24.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton24.Location = new System.Drawing.Point(9, 575);
             this.RadioButton24.Name = "RadioButton24";
             this.RadioButton24.Size = new System.Drawing.Size(293, 19);
@@ -491,7 +491,7 @@ namespace ERP_Production.Reports
             // RadioButton12
             // 
             this.RadioButton12.AutoSize = true;
-            this.RadioButton12.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton12.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton12.ForeColor = System.Drawing.Color.Black;
             this.RadioButton12.Location = new System.Drawing.Point(7, 352);
             this.RadioButton12.Name = "RadioButton12";
@@ -504,7 +504,7 @@ namespace ERP_Production.Reports
             // RadioButton17
             // 
             this.RadioButton17.AutoSize = true;
-            this.RadioButton17.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton17.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton17.ForeColor = System.Drawing.Color.Black;
             this.RadioButton17.Location = new System.Drawing.Point(9, 371);
             this.RadioButton17.Name = "RadioButton17";
@@ -517,7 +517,7 @@ namespace ERP_Production.Reports
             // RadioButton23
             // 
             this.RadioButton23.AutoSize = true;
-            this.RadioButton23.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton23.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton23.Location = new System.Drawing.Point(9, 439);
             this.RadioButton23.Name = "RadioButton23";
             this.RadioButton23.Size = new System.Drawing.Size(262, 19);
@@ -529,7 +529,7 @@ namespace ERP_Production.Reports
             // RadioButton13
             // 
             this.RadioButton13.AutoSize = true;
-            this.RadioButton13.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton13.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton13.ForeColor = System.Drawing.Color.Black;
             this.RadioButton13.Location = new System.Drawing.Point(7, 329);
             this.RadioButton13.Name = "RadioButton13";
@@ -542,7 +542,7 @@ namespace ERP_Production.Reports
             // RadioButton16
             // 
             this.RadioButton16.AutoSize = true;
-            this.RadioButton16.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton16.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton16.ForeColor = System.Drawing.Color.Black;
             this.RadioButton16.Location = new System.Drawing.Point(9, 393);
             this.RadioButton16.Name = "RadioButton16";
@@ -555,7 +555,7 @@ namespace ERP_Production.Reports
             // RadioButton14
             // 
             this.RadioButton14.AutoSize = true;
-            this.RadioButton14.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton14.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton14.ForeColor = System.Drawing.Color.Black;
             this.RadioButton14.Location = new System.Drawing.Point(7, 307);
             this.RadioButton14.Name = "RadioButton14";
@@ -568,7 +568,7 @@ namespace ERP_Production.Reports
             // RadioButton22
             // 
             this.RadioButton22.AutoSize = true;
-            this.RadioButton22.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton22.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton22.Location = new System.Drawing.Point(9, 555);
             this.RadioButton22.Name = "RadioButton22";
             this.RadioButton22.Size = new System.Drawing.Size(277, 19);
@@ -580,7 +580,7 @@ namespace ERP_Production.Reports
             // RadioButton11
             // 
             this.RadioButton11.AutoSize = true;
-            this.RadioButton11.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton11.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton11.ForeColor = System.Drawing.Color.Black;
             this.RadioButton11.Location = new System.Drawing.Point(7, 281);
             this.RadioButton11.Name = "RadioButton11";
@@ -593,7 +593,7 @@ namespace ERP_Production.Reports
             // RadioButton15
             // 
             this.RadioButton15.AutoSize = true;
-            this.RadioButton15.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton15.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton15.ForeColor = System.Drawing.Color.Black;
             this.RadioButton15.Location = new System.Drawing.Point(9, 416);
             this.RadioButton15.Name = "RadioButton15";
@@ -606,7 +606,7 @@ namespace ERP_Production.Reports
             // RadioButton9
             // 
             this.RadioButton9.AutoSize = true;
-            this.RadioButton9.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton9.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton9.ForeColor = System.Drawing.Color.Black;
             this.RadioButton9.Location = new System.Drawing.Point(7, 258);
             this.RadioButton9.Name = "RadioButton9";
@@ -619,7 +619,7 @@ namespace ERP_Production.Reports
             // RadioButton21
             // 
             this.RadioButton21.AutoSize = true;
-            this.RadioButton21.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton21.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton21.Location = new System.Drawing.Point(9, 532);
             this.RadioButton21.Name = "RadioButton21";
             this.RadioButton21.Size = new System.Drawing.Size(259, 19);
@@ -631,7 +631,7 @@ namespace ERP_Production.Reports
             // RadioButton10
             // 
             this.RadioButton10.AutoSize = true;
-            this.RadioButton10.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton10.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton10.ForeColor = System.Drawing.Color.Black;
             this.RadioButton10.Location = new System.Drawing.Point(7, 236);
             this.RadioButton10.Name = "RadioButton10";
@@ -644,7 +644,7 @@ namespace ERP_Production.Reports
             // RadioButton18
             // 
             this.RadioButton18.AutoSize = true;
-            this.RadioButton18.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton18.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton18.Location = new System.Drawing.Point(9, 462);
             this.RadioButton18.Name = "RadioButton18";
             this.RadioButton18.Size = new System.Drawing.Size(177, 19);
@@ -667,7 +667,7 @@ namespace ERP_Production.Reports
             // RadioButton20
             // 
             this.RadioButton20.AutoSize = true;
-            this.RadioButton20.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton20.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton20.Location = new System.Drawing.Point(9, 508);
             this.RadioButton20.Name = "RadioButton20";
             this.RadioButton20.Size = new System.Drawing.Size(148, 19);
@@ -691,7 +691,7 @@ namespace ERP_Production.Reports
             // RadioButton19
             // 
             this.RadioButton19.AutoSize = true;
-            this.RadioButton19.BackColor = System.Drawing.SystemColors.Control;
+            this.RadioButton19.BackColor = System.Drawing.Color.Transparent;
             this.RadioButton19.Location = new System.Drawing.Point(9, 485);
             this.RadioButton19.Name = "RadioButton19";
             this.RadioButton19.Size = new System.Drawing.Size(209, 19);

@@ -120,7 +120,13 @@ namespace ERP_Production.Planning
         private void FrmPlanningReplacement_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'mISDataSet.tbl_Multi_PO_ReqInsert' table. You can move, or remove it, as needed.
-            this.tbl_Multi_PO_ReqInsertTableAdapter.Fill(this.mISDataSet.tbl_Multi_PO_ReqInsert);
+            try {
+                this.tbl_Multi_PO_ReqInsertTableAdapter.Fill(this.mISDataSet.tbl_Multi_PO_ReqInsert);
+            }
+            catch
+            {
+
+            }
             // TODO: This line of code loads data into the 'dSRep.tbl_Prd_Lines' table. You can move, or remove it, as needed.
             this.tbl_Prd_LinesTableAdapter.Fill(this.dSRep.tbl_Prd_Lines);
             // TODO: This line of code loads data into the 'dSRep.tbl_Multi_PO_S' table. You can move, or remove it, as needed.

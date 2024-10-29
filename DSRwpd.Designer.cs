@@ -32,6 +32,8 @@ namespace ERP_Production {
         
         private View_RWPD_Multi_Out_BalanceDataTable tableView_RWPD_Multi_Out_Balance;
         
+        private View_RWPD_Multi_IN_BalanceDataTable tableView_RWPD_Multi_IN_Balance;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -71,6 +73,9 @@ namespace ERP_Production {
                 }
                 if ((ds.Tables["View_RWPD_Multi_Out_Balance"] != null)) {
                     base.Tables.Add(new View_RWPD_Multi_Out_BalanceDataTable(ds.Tables["View_RWPD_Multi_Out_Balance"]));
+                }
+                if ((ds.Tables["View_RWPD_Multi_IN_Balance"] != null)) {
+                    base.Tables.Add(new View_RWPD_Multi_IN_BalanceDataTable(ds.Tables["View_RWPD_Multi_IN_Balance"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -127,6 +132,16 @@ namespace ERP_Production {
         public View_RWPD_Multi_Out_BalanceDataTable View_RWPD_Multi_Out_Balance {
             get {
                 return this.tableView_RWPD_Multi_Out_Balance;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public View_RWPD_Multi_IN_BalanceDataTable View_RWPD_Multi_IN_Balance {
+            get {
+                return this.tableView_RWPD_Multi_IN_Balance;
             }
         }
         
@@ -209,6 +224,9 @@ namespace ERP_Production {
                 if ((ds.Tables["View_RWPD_Multi_Out_Balance"] != null)) {
                     base.Tables.Add(new View_RWPD_Multi_Out_BalanceDataTable(ds.Tables["View_RWPD_Multi_Out_Balance"]));
                 }
+                if ((ds.Tables["View_RWPD_Multi_IN_Balance"] != null)) {
+                    base.Tables.Add(new View_RWPD_Multi_IN_BalanceDataTable(ds.Tables["View_RWPD_Multi_IN_Balance"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -266,6 +284,12 @@ namespace ERP_Production {
                     this.tableView_RWPD_Multi_Out_Balance.InitVars();
                 }
             }
+            this.tableView_RWPD_Multi_IN_Balance = ((View_RWPD_Multi_IN_BalanceDataTable)(base.Tables["View_RWPD_Multi_IN_Balance"]));
+            if ((initTable == true)) {
+                if ((this.tableView_RWPD_Multi_IN_Balance != null)) {
+                    this.tableView_RWPD_Multi_IN_Balance.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -284,6 +308,8 @@ namespace ERP_Production {
             base.Tables.Add(this.tableView_RWPD_Multi_IN);
             this.tableView_RWPD_Multi_Out_Balance = new View_RWPD_Multi_Out_BalanceDataTable();
             base.Tables.Add(this.tableView_RWPD_Multi_Out_Balance);
+            this.tableView_RWPD_Multi_IN_Balance = new View_RWPD_Multi_IN_BalanceDataTable();
+            base.Tables.Add(this.tableView_RWPD_Multi_IN_Balance);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -307,6 +333,12 @@ namespace ERP_Production {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializeView_RWPD_Multi_Out_Balance() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeView_RWPD_Multi_IN_Balance() {
             return false;
         }
         
@@ -376,6 +408,9 @@ namespace ERP_Production {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void View_RWPD_Multi_Out_BalanceRowChangeEventHandler(object sender, View_RWPD_Multi_Out_BalanceRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void View_RWPD_Multi_IN_BalanceRowChangeEventHandler(object sender, View_RWPD_Multi_IN_BalanceRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -2212,6 +2247,720 @@ namespace ERP_Production {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class View_RWPD_Multi_IN_BalanceDataTable : global::System.Data.TypedTableBase<View_RWPD_Multi_IN_BalanceRow> {
+            
+            private global::System.Data.DataColumn columnOrderQty;
+            
+            private global::System.Data.DataColumn columnPOCode;
+            
+            private global::System.Data.DataColumn columnPO;
+            
+            private global::System.Data.DataColumn columnSize;
+            
+            private global::System.Data.DataColumn columnAlreadyIn;
+            
+            private global::System.Data.DataColumn columnBalance;
+            
+            private global::System.Data.DataColumn columnClientID;
+            
+            private global::System.Data.DataColumn columnModelID;
+            
+            private global::System.Data.DataColumn columnArtID;
+            
+            private global::System.Data.DataColumn columnArtCode;
+            
+            private global::System.Data.DataColumn columnLine;
+            
+            private global::System.Data.DataColumn columnClientName;
+            
+            private global::System.Data.DataColumn columnModelName;
+            
+            private global::System.Data.DataColumn columnFactoryCode;
+            
+            private global::System.Data.DataColumn columnCustomerOrderNo;
+            
+            private global::System.Data.DataColumn columnLAName;
+            
+            private global::System.Data.DataColumn columnDD;
+            
+            private global::System.Data.DataColumn columnSecondConfDate;
+            
+            private global::System.Data.DataColumn columnStockAdj;
+            
+            private global::System.Data.DataColumn columnPlanQty;
+            
+            private global::System.Data.DataColumn columnCountryName;
+            
+            private global::System.Data.DataColumn columnCustomerName;
+            
+            private global::System.Data.DataColumn columnPOS;
+            
+            private global::System.Data.DataColumn columnPOM;
+            
+            private global::System.Data.DataColumn columnPartielQty;
+            
+            private global::System.Data.DataColumn columnCustID;
+            
+            private global::System.Data.DataColumn columnCompanyCode;
+            
+            private global::System.Data.DataColumn columnCountryID;
+            
+            private global::System.Data.DataColumn columnModelNo;
+            
+            private global::System.Data.DataColumn columnBINFStatus;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public View_RWPD_Multi_IN_BalanceDataTable() {
+                this.TableName = "View_RWPD_Multi_IN_Balance";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal View_RWPD_Multi_IN_BalanceDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected View_RWPD_Multi_IN_BalanceDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn OrderQtyColumn {
+                get {
+                    return this.columnOrderQty;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POCodeColumn {
+                get {
+                    return this.columnPOCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POColumn {
+                get {
+                    return this.columnPO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SizeColumn {
+                get {
+                    return this.columnSize;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn AlreadyInColumn {
+                get {
+                    return this.columnAlreadyIn;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn BalanceColumn {
+                get {
+                    return this.columnBalance;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ClientIDColumn {
+                get {
+                    return this.columnClientID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ModelIDColumn {
+                get {
+                    return this.columnModelID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ArtIDColumn {
+                get {
+                    return this.columnArtID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ArtCodeColumn {
+                get {
+                    return this.columnArtCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn LineColumn {
+                get {
+                    return this.columnLine;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ClientNameColumn {
+                get {
+                    return this.columnClientName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ModelNameColumn {
+                get {
+                    return this.columnModelName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn FactoryCodeColumn {
+                get {
+                    return this.columnFactoryCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CustomerOrderNoColumn {
+                get {
+                    return this.columnCustomerOrderNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn LANameColumn {
+                get {
+                    return this.columnLAName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DDColumn {
+                get {
+                    return this.columnDD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SecondConfDateColumn {
+                get {
+                    return this.columnSecondConfDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn StockAdjColumn {
+                get {
+                    return this.columnStockAdj;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PlanQtyColumn {
+                get {
+                    return this.columnPlanQty;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CountryNameColumn {
+                get {
+                    return this.columnCountryName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CustomerNameColumn {
+                get {
+                    return this.columnCustomerName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POSColumn {
+                get {
+                    return this.columnPOS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POMColumn {
+                get {
+                    return this.columnPOM;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PartielQtyColumn {
+                get {
+                    return this.columnPartielQty;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CustIDColumn {
+                get {
+                    return this.columnCustID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CompanyCodeColumn {
+                get {
+                    return this.columnCompanyCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CountryIDColumn {
+                get {
+                    return this.columnCountryID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ModelNoColumn {
+                get {
+                    return this.columnModelNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn BINFStatusColumn {
+                get {
+                    return this.columnBINFStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public View_RWPD_Multi_IN_BalanceRow this[int index] {
+                get {
+                    return ((View_RWPD_Multi_IN_BalanceRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event View_RWPD_Multi_IN_BalanceRowChangeEventHandler View_RWPD_Multi_IN_BalanceRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event View_RWPD_Multi_IN_BalanceRowChangeEventHandler View_RWPD_Multi_IN_BalanceRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event View_RWPD_Multi_IN_BalanceRowChangeEventHandler View_RWPD_Multi_IN_BalanceRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event View_RWPD_Multi_IN_BalanceRowChangeEventHandler View_RWPD_Multi_IN_BalanceRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddView_RWPD_Multi_IN_BalanceRow(View_RWPD_Multi_IN_BalanceRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public View_RWPD_Multi_IN_BalanceRow AddView_RWPD_Multi_IN_BalanceRow(
+                        int OrderQty, 
+                        string POCode, 
+                        int PO, 
+                        string Size, 
+                        decimal AlreadyIn, 
+                        decimal Balance, 
+                        int ClientID, 
+                        int ModelID, 
+                        int ArtID, 
+                        string ArtCode, 
+                        int Line, 
+                        string ClientName, 
+                        string ModelName, 
+                        string FactoryCode, 
+                        string CustomerOrderNo, 
+                        string LAName, 
+                        System.DateTime DD, 
+                        System.DateTime SecondConfDate, 
+                        int StockAdj, 
+                        int PlanQty, 
+                        string CountryName, 
+                        string CustomerName, 
+                        int POS, 
+                        int POM, 
+                        int PartielQty, 
+                        int CustID, 
+                        string CompanyCode, 
+                        int CountryID, 
+                        string ModelNo, 
+                        bool BINFStatus) {
+                View_RWPD_Multi_IN_BalanceRow rowView_RWPD_Multi_IN_BalanceRow = ((View_RWPD_Multi_IN_BalanceRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        OrderQty,
+                        POCode,
+                        PO,
+                        Size,
+                        AlreadyIn,
+                        Balance,
+                        ClientID,
+                        ModelID,
+                        ArtID,
+                        ArtCode,
+                        Line,
+                        ClientName,
+                        ModelName,
+                        FactoryCode,
+                        CustomerOrderNo,
+                        LAName,
+                        DD,
+                        SecondConfDate,
+                        StockAdj,
+                        PlanQty,
+                        CountryName,
+                        CustomerName,
+                        POS,
+                        POM,
+                        PartielQty,
+                        CustID,
+                        CompanyCode,
+                        CountryID,
+                        ModelNo,
+                        BINFStatus};
+                rowView_RWPD_Multi_IN_BalanceRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowView_RWPD_Multi_IN_BalanceRow);
+                return rowView_RWPD_Multi_IN_BalanceRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                View_RWPD_Multi_IN_BalanceDataTable cln = ((View_RWPD_Multi_IN_BalanceDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new View_RWPD_Multi_IN_BalanceDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnOrderQty = base.Columns["OrderQty"];
+                this.columnPOCode = base.Columns["POCode"];
+                this.columnPO = base.Columns["PO"];
+                this.columnSize = base.Columns["Size"];
+                this.columnAlreadyIn = base.Columns["AlreadyIn"];
+                this.columnBalance = base.Columns["Balance"];
+                this.columnClientID = base.Columns["ClientID"];
+                this.columnModelID = base.Columns["ModelID"];
+                this.columnArtID = base.Columns["ArtID"];
+                this.columnArtCode = base.Columns["ArtCode"];
+                this.columnLine = base.Columns["Line"];
+                this.columnClientName = base.Columns["ClientName"];
+                this.columnModelName = base.Columns["ModelName"];
+                this.columnFactoryCode = base.Columns["FactoryCode"];
+                this.columnCustomerOrderNo = base.Columns["CustomerOrderNo"];
+                this.columnLAName = base.Columns["LAName"];
+                this.columnDD = base.Columns["DD"];
+                this.columnSecondConfDate = base.Columns["SecondConfDate"];
+                this.columnStockAdj = base.Columns["StockAdj"];
+                this.columnPlanQty = base.Columns["PlanQty"];
+                this.columnCountryName = base.Columns["CountryName"];
+                this.columnCustomerName = base.Columns["CustomerName"];
+                this.columnPOS = base.Columns["POS"];
+                this.columnPOM = base.Columns["POM"];
+                this.columnPartielQty = base.Columns["PartielQty"];
+                this.columnCustID = base.Columns["CustID"];
+                this.columnCompanyCode = base.Columns["CompanyCode"];
+                this.columnCountryID = base.Columns["CountryID"];
+                this.columnModelNo = base.Columns["ModelNo"];
+                this.columnBINFStatus = base.Columns["BINFStatus"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnOrderQty = new global::System.Data.DataColumn("OrderQty", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOrderQty);
+                this.columnPOCode = new global::System.Data.DataColumn("POCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOCode);
+                this.columnPO = new global::System.Data.DataColumn("PO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPO);
+                this.columnSize = new global::System.Data.DataColumn("Size", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSize);
+                this.columnAlreadyIn = new global::System.Data.DataColumn("AlreadyIn", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAlreadyIn);
+                this.columnBalance = new global::System.Data.DataColumn("Balance", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBalance);
+                this.columnClientID = new global::System.Data.DataColumn("ClientID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnClientID);
+                this.columnModelID = new global::System.Data.DataColumn("ModelID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnModelID);
+                this.columnArtID = new global::System.Data.DataColumn("ArtID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArtID);
+                this.columnArtCode = new global::System.Data.DataColumn("ArtCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArtCode);
+                this.columnLine = new global::System.Data.DataColumn("Line", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLine);
+                this.columnClientName = new global::System.Data.DataColumn("ClientName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnClientName);
+                this.columnModelName = new global::System.Data.DataColumn("ModelName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnModelName);
+                this.columnFactoryCode = new global::System.Data.DataColumn("FactoryCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFactoryCode);
+                this.columnCustomerOrderNo = new global::System.Data.DataColumn("CustomerOrderNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCustomerOrderNo);
+                this.columnLAName = new global::System.Data.DataColumn("LAName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLAName);
+                this.columnDD = new global::System.Data.DataColumn("DD", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDD);
+                this.columnSecondConfDate = new global::System.Data.DataColumn("SecondConfDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSecondConfDate);
+                this.columnStockAdj = new global::System.Data.DataColumn("StockAdj", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStockAdj);
+                this.columnPlanQty = new global::System.Data.DataColumn("PlanQty", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlanQty);
+                this.columnCountryName = new global::System.Data.DataColumn("CountryName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCountryName);
+                this.columnCustomerName = new global::System.Data.DataColumn("CustomerName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCustomerName);
+                this.columnPOS = new global::System.Data.DataColumn("POS", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOS);
+                this.columnPOM = new global::System.Data.DataColumn("POM", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOM);
+                this.columnPartielQty = new global::System.Data.DataColumn("PartielQty", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPartielQty);
+                this.columnCustID = new global::System.Data.DataColumn("CustID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCustID);
+                this.columnCompanyCode = new global::System.Data.DataColumn("CompanyCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCompanyCode);
+                this.columnCountryID = new global::System.Data.DataColumn("CountryID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCountryID);
+                this.columnModelNo = new global::System.Data.DataColumn("ModelNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnModelNo);
+                this.columnBINFStatus = new global::System.Data.DataColumn("BINFStatus", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBINFStatus);
+                this.columnOrderQty.AllowDBNull = false;
+                this.columnPOCode.AllowDBNull = false;
+                this.columnPOCode.MaxLength = 150;
+                this.columnPO.AllowDBNull = false;
+                this.columnSize.AllowDBNull = false;
+                this.columnSize.MaxLength = 50;
+                this.columnBalance.ReadOnly = true;
+                this.columnClientID.AllowDBNull = false;
+                this.columnModelID.AllowDBNull = false;
+                this.columnArtID.AllowDBNull = false;
+                this.columnArtCode.AllowDBNull = false;
+                this.columnArtCode.MaxLength = 50;
+                this.columnClientName.MaxLength = 50;
+                this.columnModelName.AllowDBNull = false;
+                this.columnModelName.MaxLength = 100;
+                this.columnFactoryCode.AllowDBNull = false;
+                this.columnFactoryCode.MaxLength = 50;
+                this.columnCustomerOrderNo.MaxLength = 550;
+                this.columnLAName.AllowDBNull = false;
+                this.columnLAName.MaxLength = 150;
+                this.columnCountryName.ReadOnly = true;
+                this.columnCountryName.MaxLength = 50;
+                this.columnCustomerName.ReadOnly = true;
+                this.columnCustomerName.MaxLength = 250;
+                this.columnPOS.AllowDBNull = false;
+                this.columnPOM.AllowDBNull = false;
+                this.columnCustID.ReadOnly = true;
+                this.columnCompanyCode.MaxLength = 250;
+                this.columnCountryID.ReadOnly = true;
+                this.columnModelNo.AllowDBNull = false;
+                this.columnModelNo.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public View_RWPD_Multi_IN_BalanceRow NewView_RWPD_Multi_IN_BalanceRow() {
+                return ((View_RWPD_Multi_IN_BalanceRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new View_RWPD_Multi_IN_BalanceRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(View_RWPD_Multi_IN_BalanceRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.View_RWPD_Multi_IN_BalanceRowChanged != null)) {
+                    this.View_RWPD_Multi_IN_BalanceRowChanged(this, new View_RWPD_Multi_IN_BalanceRowChangeEvent(((View_RWPD_Multi_IN_BalanceRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.View_RWPD_Multi_IN_BalanceRowChanging != null)) {
+                    this.View_RWPD_Multi_IN_BalanceRowChanging(this, new View_RWPD_Multi_IN_BalanceRowChangeEvent(((View_RWPD_Multi_IN_BalanceRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.View_RWPD_Multi_IN_BalanceRowDeleted != null)) {
+                    this.View_RWPD_Multi_IN_BalanceRowDeleted(this, new View_RWPD_Multi_IN_BalanceRowChangeEvent(((View_RWPD_Multi_IN_BalanceRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.View_RWPD_Multi_IN_BalanceRowDeleting != null)) {
+                    this.View_RWPD_Multi_IN_BalanceRowDeleting(this, new View_RWPD_Multi_IN_BalanceRowChangeEvent(((View_RWPD_Multi_IN_BalanceRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveView_RWPD_Multi_IN_BalanceRow(View_RWPD_Multi_IN_BalanceRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DSRwpd ds = new DSRwpd();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "View_RWPD_Multi_IN_BalanceDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class tbl_RackNORow : global::System.Data.DataRow {
@@ -3538,6 +4287,633 @@ namespace ERP_Production {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class View_RWPD_Multi_IN_BalanceRow : global::System.Data.DataRow {
+            
+            private View_RWPD_Multi_IN_BalanceDataTable tableView_RWPD_Multi_IN_Balance;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal View_RWPD_Multi_IN_BalanceRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableView_RWPD_Multi_IN_Balance = ((View_RWPD_Multi_IN_BalanceDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int OrderQty {
+                get {
+                    return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.OrderQtyColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.OrderQtyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string POCode {
+                get {
+                    return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.POCodeColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.POCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PO {
+                get {
+                    return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.POColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.POColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Size {
+                get {
+                    return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.SizeColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.SizeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal AlreadyIn {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableView_RWPD_Multi_IN_Balance.AlreadyInColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AlreadyIn\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.AlreadyInColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal Balance {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableView_RWPD_Multi_IN_Balance.BalanceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Balance\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.BalanceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ClientID {
+                get {
+                    return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.ClientIDColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.ClientIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ModelID {
+                get {
+                    return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.ModelIDColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.ModelIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ArtID {
+                get {
+                    return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.ArtIDColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.ArtIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ArtCode {
+                get {
+                    return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.ArtCodeColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.ArtCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Line {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.LineColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Line\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.LineColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ClientName {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.ClientNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ClientName\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.ClientNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ModelName {
+                get {
+                    return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.ModelNameColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.ModelNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string FactoryCode {
+                get {
+                    return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.FactoryCodeColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.FactoryCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CustomerOrderNo {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.CustomerOrderNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CustomerOrderNo\' in table \'View_RWPD_Multi_IN_Balance\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.CustomerOrderNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string LAName {
+                get {
+                    return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.LANameColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.LANameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime DD {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableView_RWPD_Multi_IN_Balance.DDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DD\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.DDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime SecondConfDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableView_RWPD_Multi_IN_Balance.SecondConfDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SecondConfDate\' in table \'View_RWPD_Multi_IN_Balance\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.SecondConfDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int StockAdj {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.StockAdjColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StockAdj\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.StockAdjColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PlanQty {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.PlanQtyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PlanQty\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.PlanQtyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CountryName {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.CountryNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CountryName\' in table \'View_RWPD_Multi_IN_Balance\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.CountryNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CustomerName {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.CustomerNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CustomerName\' in table \'View_RWPD_Multi_IN_Balance\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.CustomerNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int POS {
+                get {
+                    return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.POSColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.POSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int POM {
+                get {
+                    return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.POMColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.POMColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PartielQty {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.PartielQtyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PartielQty\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.PartielQtyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int CustID {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.CustIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CustID\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.CustIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CompanyCode {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.CompanyCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CompanyCode\' in table \'View_RWPD_Multi_IN_Balance\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.CompanyCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int CountryID {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_RWPD_Multi_IN_Balance.CountryIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CountryID\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.CountryIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ModelNo {
+                get {
+                    return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.ModelNoColumn]));
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.ModelNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool BINFStatus {
+                get {
+                    try {
+                        return ((bool)(this[this.tableView_RWPD_Multi_IN_Balance.BINFStatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'BINFStatus\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.BINFStatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsAlreadyInNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.AlreadyInColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetAlreadyInNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.AlreadyInColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsBalanceNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.BalanceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetBalanceNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.BalanceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsLineNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.LineColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetLineNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.LineColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsClientNameNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.ClientNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetClientNameNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.ClientNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCustomerOrderNoNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.CustomerOrderNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCustomerOrderNoNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.CustomerOrderNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDDNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.DDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDDNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.DDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsSecondConfDateNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.SecondConfDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetSecondConfDateNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.SecondConfDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsStockAdjNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.StockAdjColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetStockAdjNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.StockAdjColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPlanQtyNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.PlanQtyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPlanQtyNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.PlanQtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCountryNameNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.CountryNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCountryNameNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.CountryNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCustomerNameNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.CustomerNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCustomerNameNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.CustomerNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPartielQtyNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.PartielQtyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPartielQtyNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.PartielQtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCustIDNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.CustIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCustIDNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.CustIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCompanyCodeNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.CompanyCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCompanyCodeNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.CompanyCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCountryIDNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.CountryIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCountryIDNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.CountryIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsBINFStatusNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.BINFStatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetBINFStatusNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.BINFStatusColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -3659,6 +5035,40 @@ namespace ERP_Production {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_RWPD_Multi_Out_BalanceRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class View_RWPD_Multi_IN_BalanceRowChangeEvent : global::System.EventArgs {
+            
+            private View_RWPD_Multi_IN_BalanceRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public View_RWPD_Multi_IN_BalanceRowChangeEvent(View_RWPD_Multi_IN_BalanceRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public View_RWPD_Multi_IN_BalanceRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -4257,13 +5667,22 @@ namespace ERP_Production.DSRwpdTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
+            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[2];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        ClientID, ModelID, ArtID, [Size], ArtCode, Line, POCode, PO, ClientName, ModelName, FactoryCode, CustomerOrderNo, LAName, DD, SecondConfDate, OrderQty, StockAdj, PlanQty, Balance, CountryName, CustomerName, POS, 
                          POM, PartielQty, CustID, CompanyCode, CountryID, ModelNo, BINFStatus
 FROM            View_Multi_PO_Reports";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        ClientID, ModelID, ArtID, [Size], ArtCode, Line, POCode, PO, ClientName, ModelName, FactoryCode, CustomerOrderNo, LAName, DD, SecondConfDate, OrderQty, StockAdj, PlanQty, Balance, CountryName, CustomerName, POS, 
+                         POM, PartielQty, CustID, CompanyCode, CountryID, ModelNo, BINFStatus
+FROM            View_Multi_PO_Reports
+WHERE        (SecondConfDate BETWEEN ? AND ?)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("SecondConfDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "SecondConfDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("SecondConfDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "SecondConfDate", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4285,6 +5704,54 @@ FROM            View_Multi_PO_Reports";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DSRwpd.View_Multi_PO_ReportsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DSRwpd.View_Multi_PO_ReportsDataTable dataTable = new DSRwpd.View_Multi_PO_ReportsDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(DSRwpd.View_Multi_PO_ReportsDataTable dataTable, global::System.Nullable<global::System.DateTime> SecondConfDate, global::System.Nullable<global::System.DateTime> SecondConfDate1) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((SecondConfDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(SecondConfDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((SecondConfDate1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(SecondConfDate1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DSRwpd.View_Multi_PO_ReportsDataTable GetDataBy(global::System.Nullable<global::System.DateTime> SecondConfDate, global::System.Nullable<global::System.DateTime> SecondConfDate1) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((SecondConfDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(SecondConfDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((SecondConfDate1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(SecondConfDate1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             DSRwpd.View_Multi_PO_ReportsDataTable dataTable = new DSRwpd.View_Multi_PO_ReportsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -4442,21 +5909,58 @@ FROM            View_Multi_PO_Reports";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
+            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[3];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        TID, TranInID, RackID, RackNo, RackNoinfo, PO, POCode, Article, [Si" +
                 "ze], Quantity, DeliverDate, balance, EntryDate, SysIP, ReceivedDate, FactoryCode" +
-                ", S4Status\r\nFROM            View_RWPD_Multi_IN";
+                ", S4Status\r\nFROM            View_RWPD_Multi_IN\r\nWHERE        (ReceivedDate BETWE" +
+                "EN ? AND ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ReceivedDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ReceivedDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ReceivedDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ReceivedDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "DELETE FROM tbl_RWPD_IN\r\nWHERE        (TID = ?)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TID", global::System.Data.DataRowVersion.Original, false, null));
+            this._commandCollection[2] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "INSERT INTO tbl_RWPD_IN\r\n                         (PO, POCode, Article, [Size], Q" +
+                "uantity, RackNo, DeliverDate, EntryDate, SysIP, ReceivedDate, FactoryCode, S4Sta" +
+                "tus)\r\nVALUES        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,1)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Article", global::System.Data.Odbc.OdbcType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Article", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Size", global::System.Data.Odbc.OdbcType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Size", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Quantity", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "Quantity", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("RackNo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "RackNo", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("DeliverDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DeliverDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("SysIP", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "SysIP", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ReceivedDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ReceivedDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DSRwpd.View_RWPD_Multi_INDataTable dataTable) {
+        public virtual int Fill(DSRwpd.View_RWPD_Multi_INDataTable dataTable, global::System.Nullable<global::System.DateTime> ReceivedDate, global::System.Nullable<global::System.DateTime> ReceivedDate1) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((ReceivedDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(ReceivedDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((ReceivedDate1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(ReceivedDate1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -4468,11 +5972,136 @@ FROM            View_Multi_PO_Reports";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DSRwpd.View_RWPD_Multi_INDataTable GetData() {
+        public virtual DSRwpd.View_RWPD_Multi_INDataTable GetData(global::System.Nullable<global::System.DateTime> ReceivedDate, global::System.Nullable<global::System.DateTime> ReceivedDate1) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((ReceivedDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(ReceivedDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((ReceivedDate1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(ReceivedDate1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             DSRwpd.View_RWPD_Multi_INDataTable dataTable = new DSRwpd.View_RWPD_Multi_INDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteQuery(int TID) {
+            global::System.Data.Odbc.OdbcCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(TID));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery(global::System.Nullable<int> PO, string POCode, string Article, string Size, global::System.Nullable<decimal> Quantity, global::System.Nullable<int> RackNo, global::System.Nullable<global::System.DateTime> DeliverDate, global::System.Nullable<global::System.DateTime> EntryDate, string SysIP, global::System.Nullable<global::System.DateTime> ReceivedDate, string FactoryCode) {
+            global::System.Data.Odbc.OdbcCommand command = this.CommandCollection[2];
+            if ((PO.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(PO.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((POCode == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(POCode));
+            }
+            if ((Article == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(Article));
+            }
+            if ((Size == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(Size));
+            }
+            if ((Quantity.HasValue == true)) {
+                command.Parameters[4].Value = ((decimal)(Quantity.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((RackNo.HasValue == true)) {
+                command.Parameters[5].Value = ((int)(RackNo.Value));
+            }
+            else {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((DeliverDate.HasValue == true)) {
+                command.Parameters[6].Value = ((System.DateTime)(DeliverDate.Value));
+            }
+            else {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((EntryDate.HasValue == true)) {
+                command.Parameters[7].Value = ((System.DateTime)(EntryDate.Value));
+            }
+            else {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((SysIP == null)) {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[8].Value = ((string)(SysIP));
+            }
+            if ((ReceivedDate.HasValue == true)) {
+                command.Parameters[9].Value = ((System.DateTime)(ReceivedDate.Value));
+            }
+            else {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((FactoryCode == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(FactoryCode));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -4643,6 +6272,261 @@ FROM            View_Multi_PO_Reports";
         public virtual DSRwpd.View_RWPD_Multi_Out_BalanceDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             DSRwpd.View_RWPD_Multi_Out_BalanceDataTable dataTable = new DSRwpd.View_RWPD_Multi_Out_BalanceDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class View_RWPD_Multi_IN_BalanceTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.Odbc.OdbcDataAdapter _adapter;
+        
+        private global::System.Data.Odbc.OdbcConnection _connection;
+        
+        private global::System.Data.Odbc.OdbcTransaction _transaction;
+        
+        private global::System.Data.Odbc.OdbcCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public View_RWPD_Multi_IN_BalanceTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.Odbc.OdbcDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.Odbc.OdbcConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.Odbc.OdbcCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.Odbc.OdbcTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.Odbc.OdbcCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.Odbc.OdbcDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "View_RWPD_Multi_IN_Balance";
+            tableMapping.ColumnMappings.Add("OrderQty", "OrderQty");
+            tableMapping.ColumnMappings.Add("POCode", "POCode");
+            tableMapping.ColumnMappings.Add("PO", "PO");
+            tableMapping.ColumnMappings.Add("Size", "Size");
+            tableMapping.ColumnMappings.Add("AlreadyIn", "AlreadyIn");
+            tableMapping.ColumnMappings.Add("Balance", "Balance");
+            tableMapping.ColumnMappings.Add("ClientID", "ClientID");
+            tableMapping.ColumnMappings.Add("ModelID", "ModelID");
+            tableMapping.ColumnMappings.Add("ArtID", "ArtID");
+            tableMapping.ColumnMappings.Add("ArtCode", "ArtCode");
+            tableMapping.ColumnMappings.Add("Line", "Line");
+            tableMapping.ColumnMappings.Add("ClientName", "ClientName");
+            tableMapping.ColumnMappings.Add("ModelName", "ModelName");
+            tableMapping.ColumnMappings.Add("FactoryCode", "FactoryCode");
+            tableMapping.ColumnMappings.Add("CustomerOrderNo", "CustomerOrderNo");
+            tableMapping.ColumnMappings.Add("LAName", "LAName");
+            tableMapping.ColumnMappings.Add("DD", "DD");
+            tableMapping.ColumnMappings.Add("SecondConfDate", "SecondConfDate");
+            tableMapping.ColumnMappings.Add("StockAdj", "StockAdj");
+            tableMapping.ColumnMappings.Add("PlanQty", "PlanQty");
+            tableMapping.ColumnMappings.Add("CountryName", "CountryName");
+            tableMapping.ColumnMappings.Add("CustomerName", "CustomerName");
+            tableMapping.ColumnMappings.Add("POS", "POS");
+            tableMapping.ColumnMappings.Add("POM", "POM");
+            tableMapping.ColumnMappings.Add("PartielQty", "PartielQty");
+            tableMapping.ColumnMappings.Add("CustID", "CustID");
+            tableMapping.ColumnMappings.Add("CompanyCode", "CompanyCode");
+            tableMapping.ColumnMappings.Add("CountryID", "CountryID");
+            tableMapping.ColumnMappings.Add("ModelNo", "ModelNo");
+            tableMapping.ColumnMappings.Add("BINFStatus", "BINFStatus");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.Odbc.OdbcConnection();
+            this._connection.ConnectionString = global::ERP_Production.Properties.Settings.Default.FSCo;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[2];
+            this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT        OrderQty, POCode, PO, [Size], AlreadyIn, Balance, ClientID, ModelID, ArtID, ArtCode, Line, ClientName, ModelName, FactoryCode, CustomerOrderNo, LAName, DD, SecondConfDate, StockAdj, PlanQty, CountryName, 
+                         CustomerName, POS, POM, PartielQty, CustID, CompanyCode, CountryID, ModelNo, BINFStatus
+FROM            View_RWPD_Multi_IN_Balance";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        OrderQty, POCode, PO, [Size], AlreadyIn, Balance, ClientID, ModelID, ArtID, ArtCode, Line, ClientName, ModelName, FactoryCode, CustomerOrderNo, LAName, DD, SecondConfDate, StockAdj, PlanQty, CountryName, 
+                         CustomerName, POS, POM, PartielQty, CustID, CompanyCode, CountryID, ModelNo, BINFStatus
+FROM            View_RWPD_Multi_IN_Balance
+WHERE        (SecondConfDate BETWEEN ? AND ?)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("SecondConfDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "SecondConfDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("SecondConfDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "SecondConfDate", global::System.Data.DataRowVersion.Current, false, null));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DSRwpd.View_RWPD_Multi_IN_BalanceDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DSRwpd.View_RWPD_Multi_IN_BalanceDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DSRwpd.View_RWPD_Multi_IN_BalanceDataTable dataTable = new DSRwpd.View_RWPD_Multi_IN_BalanceDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(DSRwpd.View_RWPD_Multi_IN_BalanceDataTable dataTable, global::System.Nullable<global::System.DateTime> SecondConfDate, global::System.Nullable<global::System.DateTime> SecondConfDate1) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((SecondConfDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(SecondConfDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((SecondConfDate1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(SecondConfDate1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DSRwpd.View_RWPD_Multi_IN_BalanceDataTable GetDataBy(global::System.Nullable<global::System.DateTime> SecondConfDate, global::System.Nullable<global::System.DateTime> SecondConfDate1) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((SecondConfDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(SecondConfDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((SecondConfDate1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(SecondConfDate1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            DSRwpd.View_RWPD_Multi_IN_BalanceDataTable dataTable = new DSRwpd.View_RWPD_Multi_IN_BalanceDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

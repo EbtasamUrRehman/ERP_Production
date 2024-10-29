@@ -660,15 +660,15 @@ namespace ERP_Production.Reports
 
             {
                 RadioButton7.Visible = true;
-                RadioButton9.Visible = false;
-                RadioButton10.Visible = false;
-                RadioButton11.Visible = false;
-                RadioButton12.Visible = false;
-                RadioButton13.Visible = false;
-                RadioButton14.Visible = false;
-                RadioButton15.Visible = false;
-                RadioButton16.Visible = false;
-                RadioButton17.Visible = false;
+                RadioButton9.Visible = true;
+                RadioButton10.Visible = true;
+                RadioButton11.Visible = true;
+                RadioButton12.Visible = true;
+                RadioButton13.Visible = true;
+                RadioButton14.Visible = true;
+                RadioButton15.Visible = true;
+                RadioButton16.Visible = true;
+                RadioButton17.Visible = true;
             }
 
             {
@@ -686,15 +686,15 @@ namespace ERP_Production.Reports
             {
                 RadioButton7.Visible = true;
 
-                RadioButton9.Visible = false;
-                RadioButton10.Visible = false;
-                RadioButton11.Visible = false;
-                RadioButton12.Visible = false;
-                RadioButton13.Visible = false;
-                RadioButton14.Visible = false;
-                RadioButton15.Visible = false;
-                RadioButton16.Visible = false;
-                RadioButton17.Visible = false;
+                RadioButton9.Visible = true;
+                RadioButton10.Visible = true;
+                RadioButton11.Visible = true;
+                RadioButton12.Visible = true;
+                RadioButton13.Visible = true;
+                RadioButton14.Visible = true;
+                RadioButton15.Visible = true;
+                RadioButton16.Visible = true;
+                RadioButton17.Visible = true;
             }
 
 
