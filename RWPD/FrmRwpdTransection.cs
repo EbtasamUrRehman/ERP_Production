@@ -63,19 +63,29 @@ namespace ERP_Production.RWPD
 
         private void dateEdit9_EditValueChanged(object sender, EventArgs e)
         {
-            this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            //this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            this.view_RWPD_Multi_IN_BalanceTableAdapter.FillBy(dSRwpd.View_RWPD_Multi_IN_Balance, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
             this.view_RWPD_Multi_INTableAdapter.Fill(this.dSRwpd.View_RWPD_Multi_IN, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
         }
 
         private void dateEdit4_EditValueChanged(object sender, EventArgs e)
         {
-            this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
-            this.view_RWPD_Multi_INTableAdapter.Fill(this.dSRwpd.View_RWPD_Multi_IN, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            //this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            this.view_RWPD_Multi_IN_BalanceTableAdapter.FillBy(dSRwpd.View_RWPD_Multi_IN_Balance, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            try
+            {
+                this.view_RWPD_Multi_INTableAdapter.Fill(this.dSRwpd.View_RWPD_Multi_IN, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show($"Error: {ex.Message}");
+            }
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            //this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            this.view_RWPD_Multi_IN_BalanceTableAdapter.FillBy(dSRwpd.View_RWPD_Multi_IN_Balance, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
             this.view_RWPD_Multi_INTableAdapter.Fill(this.dSRwpd.View_RWPD_Multi_IN, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
         }
 
@@ -147,7 +157,8 @@ namespace ERP_Production.RWPD
 
                                 MessageBox.Show("Data inserted successfully!");
 
-                                this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+                                //this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+                                this.view_RWPD_Multi_IN_BalanceTableAdapter.FillBy(dSRwpd.View_RWPD_Multi_IN_Balance, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
                                 this.view_RWPD_Multi_INTableAdapter.Fill(this.dSRwpd.View_RWPD_Multi_IN, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
                             }
                             else
@@ -191,7 +202,8 @@ namespace ERP_Production.RWPD
                         int TID = Convert.ToInt32(gridView.GetRowCellValue(selectedRowHandle, "TID"));
                         view_RWPD_Multi_INTableAdapter.DeleteQuery(TID);
                         MessageBox.Show("Record deleted successfuly");
-                        this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+                        //this.view_Multi_PO_ReportsTableAdapter.FillBy(dSRwpd.View_Multi_PO_Reports, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+                        this.view_RWPD_Multi_IN_BalanceTableAdapter.FillBy(dSRwpd.View_RWPD_Multi_IN_Balance, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
                         this.view_RWPD_Multi_INTableAdapter.Fill(this.dSRwpd.View_RWPD_Multi_IN, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
                     }
                     catch (Exception ex)
