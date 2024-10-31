@@ -420,8 +420,7 @@ namespace ERP_Production.RWPD
                     for (int t = 0; t < gridView.SelectedRowsCount; t++)
                     {
                         var rowHandle = gridView.GetSelectedRows()[t];
-                        //int id = Convert.ToInt32(gridView.GetRowCellValue(rowHandle, "8")); 
-
+                        
                         int TID = Convert.ToInt32(gridView.GetRowCellValue(rowHandle, "TransID"));
                         this.tbl_RPWD_OutTableAdapter.UpdateQuery(TID);
                     }
