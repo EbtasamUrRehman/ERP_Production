@@ -40,6 +40,8 @@ namespace ERP_Production.Label_Planning {
         
         private View_Multi_Label_Plan_AMDataTable tableView_Multi_Label_Plan_AM;
         
+        private tbl_Multi_LabelPlan1DataTable tabletbl_Multi_LabelPlan1;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -91,6 +93,9 @@ namespace ERP_Production.Label_Planning {
                 }
                 if ((ds.Tables["View_Multi_Label_Plan_AM"] != null)) {
                     base.Tables.Add(new View_Multi_Label_Plan_AMDataTable(ds.Tables["View_Multi_Label_Plan_AM"]));
+                }
+                if ((ds.Tables["tbl_Multi_LabelPlan1"] != null)) {
+                    base.Tables.Add(new tbl_Multi_LabelPlan1DataTable(ds.Tables["tbl_Multi_LabelPlan1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -192,6 +197,16 @@ namespace ERP_Production.Label_Planning {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public tbl_Multi_LabelPlan1DataTable tbl_Multi_LabelPlan1 {
+            get {
+                return this.tabletbl_Multi_LabelPlan1;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -281,6 +296,9 @@ namespace ERP_Production.Label_Planning {
                 if ((ds.Tables["View_Multi_Label_Plan_AM"] != null)) {
                     base.Tables.Add(new View_Multi_Label_Plan_AMDataTable(ds.Tables["View_Multi_Label_Plan_AM"]));
                 }
+                if ((ds.Tables["tbl_Multi_LabelPlan1"] != null)) {
+                    base.Tables.Add(new tbl_Multi_LabelPlan1DataTable(ds.Tables["tbl_Multi_LabelPlan1"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -362,6 +380,12 @@ namespace ERP_Production.Label_Planning {
                     this.tableView_Multi_Label_Plan_AM.InitVars();
                 }
             }
+            this.tabletbl_Multi_LabelPlan1 = ((tbl_Multi_LabelPlan1DataTable)(base.Tables["tbl_Multi_LabelPlan1"]));
+            if ((initTable == true)) {
+                if ((this.tabletbl_Multi_LabelPlan1 != null)) {
+                    this.tabletbl_Multi_LabelPlan1.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -388,6 +412,8 @@ namespace ERP_Production.Label_Planning {
             base.Tables.Add(this.tabletbl_Multi_PO_H);
             this.tableView_Multi_Label_Plan_AM = new View_Multi_Label_Plan_AMDataTable();
             base.Tables.Add(this.tableView_Multi_Label_Plan_AM);
+            this.tabletbl_Multi_LabelPlan1 = new tbl_Multi_LabelPlan1DataTable();
+            base.Tables.Add(this.tabletbl_Multi_LabelPlan1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -435,6 +461,12 @@ namespace ERP_Production.Label_Planning {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializeView_Multi_Label_Plan_AM() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializetbl_Multi_LabelPlan1() {
             return false;
         }
         
@@ -516,6 +548,9 @@ namespace ERP_Production.Label_Planning {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void View_Multi_Label_Plan_AMRowChangeEventHandler(object sender, View_Multi_Label_Plan_AMRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void tbl_Multi_LabelPlan1RowChangeEventHandler(object sender, tbl_Multi_LabelPlan1RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1617,6 +1652,8 @@ namespace ERP_Production.Label_Planning {
             
             private global::System.Data.DataColumn columnPOCode;
             
+            private global::System.Data.DataColumn columnPlanType;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public tbl_Multi_LabelPlanDataTable() {
@@ -1748,6 +1785,14 @@ namespace ERP_Production.Label_Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PlanTypeColumn {
+                get {
+                    return this.columnPlanType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1783,7 +1828,7 @@ namespace ERP_Production.Label_Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbl_Multi_LabelPlanRow Addtbl_Multi_LabelPlanRow(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, decimal PlanQty, System.DateTime PlanDate, System.DateTime EntryDATE, string FactoryCode, string POCode) {
+            public tbl_Multi_LabelPlanRow Addtbl_Multi_LabelPlanRow(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, decimal PlanQty, System.DateTime PlanDate, System.DateTime EntryDATE, string FactoryCode, string POCode, string PlanType) {
                 tbl_Multi_LabelPlanRow rowtbl_Multi_LabelPlanRow = ((tbl_Multi_LabelPlanRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1797,7 +1842,8 @@ namespace ERP_Production.Label_Planning {
                         PlanDate,
                         EntryDATE,
                         FactoryCode,
-                        POCode};
+                        POCode,
+                        PlanType};
                 rowtbl_Multi_LabelPlanRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_Multi_LabelPlanRow);
                 return rowtbl_Multi_LabelPlanRow;
@@ -1839,6 +1885,7 @@ namespace ERP_Production.Label_Planning {
                 this.columnEntryDATE = base.Columns["EntryDATE"];
                 this.columnFactoryCode = base.Columns["FactoryCode"];
                 this.columnPOCode = base.Columns["POCode"];
+                this.columnPlanType = base.Columns["PlanType"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1868,6 +1915,8 @@ namespace ERP_Production.Label_Planning {
                 base.Columns.Add(this.columnFactoryCode);
                 this.columnPOCode = new global::System.Data.DataColumn("POCode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPOCode);
+                this.columnPlanType = new global::System.Data.DataColumn("PlanType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlanType);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnTranID}, true));
                 this.columnTranID.AutoIncrement = true;
@@ -1885,6 +1934,7 @@ namespace ERP_Production.Label_Planning {
                 this.columnLAName.MaxLength = 150;
                 this.columnFactoryCode.MaxLength = 50;
                 this.columnPOCode.MaxLength = 50;
+                this.columnPlanType.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3369,6 +3419,14 @@ namespace ERP_Production.Label_Planning {
             
             private global::System.Data.DataColumn columnTranID;
             
+            private global::System.Data.DataColumn columnPlanType;
+            
+            private global::System.Data.DataColumn columnDay;
+            
+            private global::System.Data.DataColumn columnMonth;
+            
+            private global::System.Data.DataColumn columnYear;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_Multi_Label_Plan_AMDataTable() {
@@ -3484,6 +3542,38 @@ namespace ERP_Production.Label_Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PlanTypeColumn {
+                get {
+                    return this.columnPlanType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DayColumn {
+                get {
+                    return this.columnDay;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn MonthColumn {
+                get {
+                    return this.columnMonth;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn YearColumn {
+                get {
+                    return this.columnYear;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3519,7 +3609,7 @@ namespace ERP_Production.Label_Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public View_Multi_Label_Plan_AMRow AddView_Multi_Label_Plan_AMRow(int PO, string POCode, string ModelName, string ArtCode, string FactoryCode, System.DateTime EntryDATE, System.DateTime PlanDate, decimal PlanQty, string LAName, int TranID) {
+            public View_Multi_Label_Plan_AMRow AddView_Multi_Label_Plan_AMRow(int PO, string POCode, string ModelName, string ArtCode, string FactoryCode, System.DateTime EntryDATE, System.DateTime PlanDate, decimal PlanQty, string LAName, int TranID, string PlanType, int Day, int Month, int Year) {
                 View_Multi_Label_Plan_AMRow rowView_Multi_Label_Plan_AMRow = ((View_Multi_Label_Plan_AMRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PO,
@@ -3531,7 +3621,11 @@ namespace ERP_Production.Label_Planning {
                         PlanDate,
                         PlanQty,
                         LAName,
-                        TranID};
+                        TranID,
+                        PlanType,
+                        Day,
+                        Month,
+                        Year};
                 rowView_Multi_Label_Plan_AMRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowView_Multi_Label_Plan_AMRow);
                 return rowView_Multi_Label_Plan_AMRow;
@@ -3564,6 +3658,10 @@ namespace ERP_Production.Label_Planning {
                 this.columnPlanQty = base.Columns["PlanQty"];
                 this.columnLAName = base.Columns["LAName"];
                 this.columnTranID = base.Columns["TranID"];
+                this.columnPlanType = base.Columns["PlanType"];
+                this.columnDay = base.Columns["Day"];
+                this.columnMonth = base.Columns["Month"];
+                this.columnYear = base.Columns["Year"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3589,6 +3687,14 @@ namespace ERP_Production.Label_Planning {
                 base.Columns.Add(this.columnLAName);
                 this.columnTranID = new global::System.Data.DataColumn("TranID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTranID);
+                this.columnPlanType = new global::System.Data.DataColumn("PlanType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlanType);
+                this.columnDay = new global::System.Data.DataColumn("Day", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDay);
+                this.columnMonth = new global::System.Data.DataColumn("Month", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMonth);
+                this.columnYear = new global::System.Data.DataColumn("Year", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnYear);
                 this.columnPO.AllowDBNull = false;
                 this.columnPOCode.MaxLength = 50;
                 this.columnModelName.AllowDBNull = false;
@@ -3599,6 +3705,10 @@ namespace ERP_Production.Label_Planning {
                 this.columnLAName.AllowDBNull = false;
                 this.columnLAName.MaxLength = 150;
                 this.columnTranID.AllowDBNull = false;
+                this.columnPlanType.MaxLength = 50;
+                this.columnDay.ReadOnly = true;
+                this.columnMonth.ReadOnly = true;
+                this.columnYear.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3685,6 +3795,446 @@ namespace ERP_Production.Label_Planning {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "View_Multi_Label_Plan_AMDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class tbl_Multi_LabelPlan1DataTable : global::System.Data.TypedTableBase<tbl_Multi_LabelPlan1Row> {
+            
+            private global::System.Data.DataColumn columnTranID;
+            
+            private global::System.Data.DataColumn columnPO;
+            
+            private global::System.Data.DataColumn columnPOM;
+            
+            private global::System.Data.DataColumn columnClientID;
+            
+            private global::System.Data.DataColumn columnModelID;
+            
+            private global::System.Data.DataColumn columnArtID;
+            
+            private global::System.Data.DataColumn columnLAName;
+            
+            private global::System.Data.DataColumn columnPlanQty;
+            
+            private global::System.Data.DataColumn columnPlanDate;
+            
+            private global::System.Data.DataColumn columnEntryDATE;
+            
+            private global::System.Data.DataColumn columnPOCode;
+            
+            private global::System.Data.DataColumn columnFactoryCode;
+            
+            private global::System.Data.DataColumn columnPlanType;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_LabelPlan1DataTable() {
+                this.TableName = "tbl_Multi_LabelPlan1";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal tbl_Multi_LabelPlan1DataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected tbl_Multi_LabelPlan1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TranIDColumn {
+                get {
+                    return this.columnTranID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POColumn {
+                get {
+                    return this.columnPO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POMColumn {
+                get {
+                    return this.columnPOM;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ClientIDColumn {
+                get {
+                    return this.columnClientID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ModelIDColumn {
+                get {
+                    return this.columnModelID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ArtIDColumn {
+                get {
+                    return this.columnArtID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn LANameColumn {
+                get {
+                    return this.columnLAName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PlanQtyColumn {
+                get {
+                    return this.columnPlanQty;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PlanDateColumn {
+                get {
+                    return this.columnPlanDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn EntryDATEColumn {
+                get {
+                    return this.columnEntryDATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POCodeColumn {
+                get {
+                    return this.columnPOCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn FactoryCodeColumn {
+                get {
+                    return this.columnFactoryCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PlanTypeColumn {
+                get {
+                    return this.columnPlanType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_LabelPlan1Row this[int index] {
+                get {
+                    return ((tbl_Multi_LabelPlan1Row)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event tbl_Multi_LabelPlan1RowChangeEventHandler tbl_Multi_LabelPlan1RowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event tbl_Multi_LabelPlan1RowChangeEventHandler tbl_Multi_LabelPlan1RowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event tbl_Multi_LabelPlan1RowChangeEventHandler tbl_Multi_LabelPlan1RowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event tbl_Multi_LabelPlan1RowChangeEventHandler tbl_Multi_LabelPlan1RowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Addtbl_Multi_LabelPlan1Row(tbl_Multi_LabelPlan1Row row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_LabelPlan1Row Addtbl_Multi_LabelPlan1Row(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, decimal PlanQty, System.DateTime PlanDate, System.DateTime EntryDATE, string POCode, string FactoryCode, string PlanType) {
+                tbl_Multi_LabelPlan1Row rowtbl_Multi_LabelPlan1Row = ((tbl_Multi_LabelPlan1Row)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        PO,
+                        POM,
+                        ClientID,
+                        ModelID,
+                        ArtID,
+                        LAName,
+                        PlanQty,
+                        PlanDate,
+                        EntryDATE,
+                        POCode,
+                        FactoryCode,
+                        PlanType};
+                rowtbl_Multi_LabelPlan1Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_Multi_LabelPlan1Row);
+                return rowtbl_Multi_LabelPlan1Row;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_LabelPlan1Row FindByTranID(int TranID) {
+                return ((tbl_Multi_LabelPlan1Row)(this.Rows.Find(new object[] {
+                            TranID})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                tbl_Multi_LabelPlan1DataTable cln = ((tbl_Multi_LabelPlan1DataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new tbl_Multi_LabelPlan1DataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnTranID = base.Columns["TranID"];
+                this.columnPO = base.Columns["PO"];
+                this.columnPOM = base.Columns["POM"];
+                this.columnClientID = base.Columns["ClientID"];
+                this.columnModelID = base.Columns["ModelID"];
+                this.columnArtID = base.Columns["ArtID"];
+                this.columnLAName = base.Columns["LAName"];
+                this.columnPlanQty = base.Columns["PlanQty"];
+                this.columnPlanDate = base.Columns["PlanDate"];
+                this.columnEntryDATE = base.Columns["EntryDATE"];
+                this.columnPOCode = base.Columns["POCode"];
+                this.columnFactoryCode = base.Columns["FactoryCode"];
+                this.columnPlanType = base.Columns["PlanType"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnTranID = new global::System.Data.DataColumn("TranID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTranID);
+                this.columnPO = new global::System.Data.DataColumn("PO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPO);
+                this.columnPOM = new global::System.Data.DataColumn("POM", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOM);
+                this.columnClientID = new global::System.Data.DataColumn("ClientID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnClientID);
+                this.columnModelID = new global::System.Data.DataColumn("ModelID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnModelID);
+                this.columnArtID = new global::System.Data.DataColumn("ArtID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArtID);
+                this.columnLAName = new global::System.Data.DataColumn("LAName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLAName);
+                this.columnPlanQty = new global::System.Data.DataColumn("PlanQty", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlanQty);
+                this.columnPlanDate = new global::System.Data.DataColumn("PlanDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlanDate);
+                this.columnEntryDATE = new global::System.Data.DataColumn("EntryDATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEntryDATE);
+                this.columnPOCode = new global::System.Data.DataColumn("POCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOCode);
+                this.columnFactoryCode = new global::System.Data.DataColumn("FactoryCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFactoryCode);
+                this.columnPlanType = new global::System.Data.DataColumn("PlanType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlanType);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnTranID}, true));
+                this.columnTranID.AutoIncrement = true;
+                this.columnTranID.AutoIncrementSeed = -1;
+                this.columnTranID.AutoIncrementStep = -1;
+                this.columnTranID.AllowDBNull = false;
+                this.columnTranID.ReadOnly = true;
+                this.columnTranID.Unique = true;
+                this.columnPO.AllowDBNull = false;
+                this.columnPOM.AllowDBNull = false;
+                this.columnClientID.AllowDBNull = false;
+                this.columnModelID.AllowDBNull = false;
+                this.columnArtID.AllowDBNull = false;
+                this.columnLAName.AllowDBNull = false;
+                this.columnLAName.MaxLength = 150;
+                this.columnPOCode.MaxLength = 50;
+                this.columnFactoryCode.MaxLength = 50;
+                this.columnPlanType.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_LabelPlan1Row Newtbl_Multi_LabelPlan1Row() {
+                return ((tbl_Multi_LabelPlan1Row)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new tbl_Multi_LabelPlan1Row(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(tbl_Multi_LabelPlan1Row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.tbl_Multi_LabelPlan1RowChanged != null)) {
+                    this.tbl_Multi_LabelPlan1RowChanged(this, new tbl_Multi_LabelPlan1RowChangeEvent(((tbl_Multi_LabelPlan1Row)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.tbl_Multi_LabelPlan1RowChanging != null)) {
+                    this.tbl_Multi_LabelPlan1RowChanging(this, new tbl_Multi_LabelPlan1RowChangeEvent(((tbl_Multi_LabelPlan1Row)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.tbl_Multi_LabelPlan1RowDeleted != null)) {
+                    this.tbl_Multi_LabelPlan1RowDeleted(this, new tbl_Multi_LabelPlan1RowChangeEvent(((tbl_Multi_LabelPlan1Row)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.tbl_Multi_LabelPlan1RowDeleting != null)) {
+                    this.tbl_Multi_LabelPlan1RowDeleting(this, new tbl_Multi_LabelPlan1RowChangeEvent(((tbl_Multi_LabelPlan1Row)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Removetbl_Multi_LabelPlan1Row(tbl_Multi_LabelPlan1Row row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DSLabelPlanning ds = new DSLabelPlanning();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "tbl_Multi_LabelPlan1DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4345,6 +4895,22 @@ namespace ERP_Production.Label_Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PlanType {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_LabelPlan.PlanTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PlanType\' in table \'tbl_Multi_LabelPlan\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan.PlanTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsPlanQtyNull() {
                 return this.IsNull(this.tabletbl_Multi_LabelPlan.PlanQtyColumn);
             }
@@ -4401,6 +4967,18 @@ namespace ERP_Production.Label_Planning {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetPOCodeNull() {
                 this[this.tabletbl_Multi_LabelPlan.POCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPlanTypeNull() {
+                return this.IsNull(this.tabletbl_Multi_LabelPlan.PlanTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPlanTypeNull() {
+                this[this.tabletbl_Multi_LabelPlan.PlanTypeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5301,6 +5879,70 @@ namespace ERP_Production.Label_Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PlanType {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_Multi_Label_Plan_AM.PlanTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PlanType\' in table \'View_Multi_Label_Plan_AM\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_Multi_Label_Plan_AM.PlanTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Day {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_Multi_Label_Plan_AM.DayColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Day\' in table \'View_Multi_Label_Plan_AM\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_Multi_Label_Plan_AM.DayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Month {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_Multi_Label_Plan_AM.MonthColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Month\' in table \'View_Multi_Label_Plan_AM\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_Multi_Label_Plan_AM.MonthColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Year {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_Multi_Label_Plan_AM.YearColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Year\' in table \'View_Multi_Label_Plan_AM\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_Multi_Label_Plan_AM.YearColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsPOCodeNull() {
                 return this.IsNull(this.tableView_Multi_Label_Plan_AM.POCodeColumn);
             }
@@ -5357,6 +5999,314 @@ namespace ERP_Production.Label_Planning {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetPlanQtyNull() {
                 this[this.tableView_Multi_Label_Plan_AM.PlanQtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPlanTypeNull() {
+                return this.IsNull(this.tableView_Multi_Label_Plan_AM.PlanTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPlanTypeNull() {
+                this[this.tableView_Multi_Label_Plan_AM.PlanTypeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDayNull() {
+                return this.IsNull(this.tableView_Multi_Label_Plan_AM.DayColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDayNull() {
+                this[this.tableView_Multi_Label_Plan_AM.DayColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsMonthNull() {
+                return this.IsNull(this.tableView_Multi_Label_Plan_AM.MonthColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetMonthNull() {
+                this[this.tableView_Multi_Label_Plan_AM.MonthColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsYearNull() {
+                return this.IsNull(this.tableView_Multi_Label_Plan_AM.YearColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetYearNull() {
+                this[this.tableView_Multi_Label_Plan_AM.YearColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class tbl_Multi_LabelPlan1Row : global::System.Data.DataRow {
+            
+            private tbl_Multi_LabelPlan1DataTable tabletbl_Multi_LabelPlan1;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal tbl_Multi_LabelPlan1Row(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabletbl_Multi_LabelPlan1 = ((tbl_Multi_LabelPlan1DataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int TranID {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_LabelPlan1.TranIDColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.TranIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PO {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_LabelPlan1.POColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.POColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int POM {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_LabelPlan1.POMColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.POMColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ClientID {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_LabelPlan1.ClientIDColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.ClientIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ModelID {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_LabelPlan1.ModelIDColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.ModelIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ArtID {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_LabelPlan1.ArtIDColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.ArtIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string LAName {
+                get {
+                    return ((string)(this[this.tabletbl_Multi_LabelPlan1.LANameColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.LANameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal PlanQty {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Multi_LabelPlan1.PlanQtyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PlanQty\' in table \'tbl_Multi_LabelPlan1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.PlanQtyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime PlanDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbl_Multi_LabelPlan1.PlanDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PlanDate\' in table \'tbl_Multi_LabelPlan1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.PlanDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime EntryDATE {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbl_Multi_LabelPlan1.EntryDATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EntryDATE\' in table \'tbl_Multi_LabelPlan1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.EntryDATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string POCode {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_LabelPlan1.POCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'POCode\' in table \'tbl_Multi_LabelPlan1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.POCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string FactoryCode {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_LabelPlan1.FactoryCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FactoryCode\' in table \'tbl_Multi_LabelPlan1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.FactoryCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PlanType {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_LabelPlan1.PlanTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PlanType\' in table \'tbl_Multi_LabelPlan1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_LabelPlan1.PlanTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPlanQtyNull() {
+                return this.IsNull(this.tabletbl_Multi_LabelPlan1.PlanQtyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPlanQtyNull() {
+                this[this.tabletbl_Multi_LabelPlan1.PlanQtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPlanDateNull() {
+                return this.IsNull(this.tabletbl_Multi_LabelPlan1.PlanDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPlanDateNull() {
+                this[this.tabletbl_Multi_LabelPlan1.PlanDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsEntryDATENull() {
+                return this.IsNull(this.tabletbl_Multi_LabelPlan1.EntryDATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetEntryDATENull() {
+                this[this.tabletbl_Multi_LabelPlan1.EntryDATEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPOCodeNull() {
+                return this.IsNull(this.tabletbl_Multi_LabelPlan1.POCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPOCodeNull() {
+                this[this.tabletbl_Multi_LabelPlan1.POCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsFactoryCodeNull() {
+                return this.IsNull(this.tabletbl_Multi_LabelPlan1.FactoryCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetFactoryCodeNull() {
+                this[this.tabletbl_Multi_LabelPlan1.FactoryCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPlanTypeNull() {
+                return this.IsNull(this.tabletbl_Multi_LabelPlan1.PlanTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPlanTypeNull() {
+                this[this.tabletbl_Multi_LabelPlan1.PlanTypeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5618,6 +6568,40 @@ namespace ERP_Production.Label_Planning {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_Multi_Label_Plan_AMRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class tbl_Multi_LabelPlan1RowChangeEvent : global::System.EventArgs {
+            
+            private tbl_Multi_LabelPlan1Row eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_LabelPlan1RowChangeEvent(tbl_Multi_LabelPlan1Row row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_LabelPlan1Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -6397,10 +7381,11 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             tableMapping.ColumnMappings.Add("EntryDATE", "EntryDATE");
             tableMapping.ColumnMappings.Add("FactoryCode", "FactoryCode");
             tableMapping.ColumnMappings.Add("POCode", "POCode");
+            tableMapping.ColumnMappings.Add("PlanType", "PlanType");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [tbl_Multi_LabelPlan] WHERE (([TranID] = ?) AND ([PO] = ?) AND ([POM] = ?) AND ([ClientID] = ?) AND ([ModelID] = ?) AND ([ArtID] = ?) AND ([LAName] = ?) AND ((? = 1 AND [PlanQty] IS NULL) OR ([PlanQty] = ?)) AND ((? = 1 AND [PlanDate] IS NULL) OR ([PlanDate] = ?)) AND ((? = 1 AND [EntryDATE] IS NULL) OR ([EntryDATE] = ?)) AND ((? = 1 AND [POCode] IS NULL) OR ([POCode] = ?)) AND ((? = 1 AND [FactoryCode] IS NULL) OR ([FactoryCode] = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [tbl_Multi_LabelPlan] WHERE (([TranID] = ?) AND ([PO] = ?) AND ([POM] = ?) AND ([ClientID] = ?) AND ([ModelID] = ?) AND ([ArtID] = ?) AND ([LAName] = ?) AND ((? = 1 AND [PlanQty] IS NULL) OR ([PlanQty] = ?)) AND ((? = 1 AND [PlanDate] IS NULL) OR ([PlanDate] = ?)) AND ((? = 1 AND [EntryDATE] IS NULL) OR ([EntryDATE] = ?)) AND ((? = 1 AND [POCode] IS NULL) OR ([POCode] = ?)) AND ((? = 1 AND [FactoryCode] IS NULL) OR ([FactoryCode] = ?)) AND ((? = 1 AND [PlanType] IS NULL) OR ([PlanType] = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_TranID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TranID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Original, false, null));
@@ -6419,11 +7404,13 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_POCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_FactoryCode", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_PlanType", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PlanType", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [tbl_Multi_LabelPlan] ([PO], [POM], [ClientID], [ModelID], [ArtID], [" +
-                "LAName], [PlanQty], [PlanDate], [EntryDATE], [POCode], [FactoryCode]) VALUES (?," +
-                " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                "LAName], [PlanQty], [PlanDate], [EntryDATE], [POCode], [FactoryCode], [PlanType]" +
+                ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
@@ -6436,9 +7423,10 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanType", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.Odbc.OdbcCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [tbl_Multi_LabelPlan] SET [PO] = ?, [POM] = ?, [ClientID] = ?, [ModelID] = ?, [ArtID] = ?, [LAName] = ?, [PlanQty] = ?, [PlanDate] = ?, [EntryDATE] = ?, [POCode] = ?, [FactoryCode] = ? WHERE (([TranID] = ?) AND ([PO] = ?) AND ([POM] = ?) AND ([ClientID] = ?) AND ([ModelID] = ?) AND ([ArtID] = ?) AND ([LAName] = ?) AND ((? = 1 AND [PlanQty] IS NULL) OR ([PlanQty] = ?)) AND ((? = 1 AND [PlanDate] IS NULL) OR ([PlanDate] = ?)) AND ((? = 1 AND [EntryDATE] IS NULL) OR ([EntryDATE] = ?)) AND ((? = 1 AND [POCode] IS NULL) OR ([POCode] = ?)) AND ((? = 1 AND [FactoryCode] IS NULL) OR ([FactoryCode] = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [tbl_Multi_LabelPlan] SET [PO] = ?, [POM] = ?, [ClientID] = ?, [ModelID] = ?, [ArtID] = ?, [LAName] = ?, [PlanQty] = ?, [PlanDate] = ?, [EntryDATE] = ?, [POCode] = ?, [FactoryCode] = ?, [PlanType] = ? WHERE (([TranID] = ?) AND ([PO] = ?) AND ([POM] = ?) AND ([ClientID] = ?) AND ([ModelID] = ?) AND ([ArtID] = ?) AND ([LAName] = ?) AND ((? = 1 AND [PlanQty] IS NULL) OR ([PlanQty] = ?)) AND ((? = 1 AND [PlanDate] IS NULL) OR ([PlanDate] = ?)) AND ((? = 1 AND [EntryDATE] IS NULL) OR ([EntryDATE] = ?)) AND ((? = 1 AND [POCode] IS NULL) OR ([POCode] = ?)) AND ((? = 1 AND [FactoryCode] IS NULL) OR ([FactoryCode] = ?)) AND ((? = 1 AND [PlanType] IS NULL) OR ([PlanType] = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
@@ -6451,6 +7439,7 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanType", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_TranID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TranID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Original, false, null));
@@ -6468,6 +7457,8 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_POCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_FactoryCode", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_PlanType", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PlanType", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6480,12 +7471,12 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[3];
+            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[5];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        TranID, PO, POM, ClientID, ModelID, ArtID, LAName, PlanQty, PlanDat" +
-                "e, EntryDATE, POCode, FactoryCode\r\nFROM            tbl_Multi_LabelPlan\r\nWHERE   " +
-                "     PlanDate = ?";
+                "e, EntryDATE, POCode, FactoryCode,PlanType\r\nFROM            tbl_Multi_LabelPlan\r" +
+                "\nWHERE        PlanDate = ?";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
@@ -6510,6 +7501,42 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "INSERT INTO tbl_Multi_LabelPlan\r\n                         (PO, POM, ClientID, Mod" +
+                "elID, ArtID, LAName, PlanQty, PlanDate, EntryDATE, POCode, FactoryCode, PlanType" +
+                ")\r\nVALUES        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ModelID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ModelID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LAName", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanQty", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanType", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "INSERT INTO [tbl_Multi_LabelPlan] ([PO], [POM], [ClientID], [ModelID], [ArtID], [" +
+                "LAName], [PlanQty], [PlanDate], [EntryDATE], [POCode], [FactoryCode], [PlanType]" +
+                ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ModelID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ModelID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LAName", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanQty", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanType", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6581,7 +7608,7 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_TranID, int Original_PO, int Original_POM, int Original_ClientID, int Original_ModelID, int Original_ArtID, string Original_LAName, global::System.Nullable<decimal> Original_PlanQty, global::System.Nullable<global::System.DateTime> Original_PlanDate, global::System.Nullable<global::System.DateTime> Original_EntryDATE, string Original_POCode, string Original_FactoryCode) {
+        public virtual int Delete(int Original_TranID, int Original_PO, int Original_POM, int Original_ClientID, int Original_ModelID, int Original_ArtID, string Original_LAName, global::System.Nullable<decimal> Original_PlanQty, global::System.Nullable<global::System.DateTime> Original_PlanDate, global::System.Nullable<global::System.DateTime> Original_EntryDATE, string Original_POCode, string Original_FactoryCode, string Original_PlanType) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_TranID));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_PO));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_POM));
@@ -6634,6 +7661,14 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_FactoryCode));
             }
+            if ((Original_PlanType == null)) {
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_PlanType));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6654,7 +7689,7 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, global::System.Nullable<decimal> PlanQty, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> EntryDATE, string POCode, string FactoryCode) {
+        public virtual int Insert(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, global::System.Nullable<decimal> PlanQty, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> EntryDATE, string POCode, string FactoryCode, string PlanType) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(PO));
             this.Adapter.InsertCommand.Parameters[1].Value = ((int)(POM));
             this.Adapter.InsertCommand.Parameters[2].Value = ((int)(ClientID));
@@ -6696,6 +7731,12 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             else {
                 this.Adapter.InsertCommand.Parameters[10].Value = ((string)(FactoryCode));
             }
+            if ((PlanType == null)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(PlanType));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6728,6 +7769,7 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
                     global::System.Nullable<global::System.DateTime> EntryDATE, 
                     string POCode, 
                     string FactoryCode, 
+                    string PlanType, 
                     int Original_TranID, 
                     int Original_PO, 
                     int Original_POM, 
@@ -6739,7 +7781,8 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
                     global::System.Nullable<global::System.DateTime> Original_PlanDate, 
                     global::System.Nullable<global::System.DateTime> Original_EntryDATE, 
                     string Original_POCode, 
-                    string Original_FactoryCode) {
+                    string Original_FactoryCode, 
+                    string Original_PlanType) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(PO));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(POM));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(ClientID));
@@ -6781,57 +7824,71 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(FactoryCode));
             }
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_TranID));
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_PO));
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_POM));
-            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_ClientID));
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_ModelID));
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_ArtID));
+            if ((PlanType == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(PlanType));
+            }
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_TranID));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_PO));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_POM));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_ClientID));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_ModelID));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_ArtID));
             if ((Original_LAName == null)) {
                 throw new global::System.ArgumentNullException("Original_LAName");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_LAName));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_LAName));
             }
             if ((Original_PlanQty.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((decimal)(Original_PlanQty.Value));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((decimal)(Original_PlanQty.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             if ((Original_PlanDate.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((System.DateTime)(Original_PlanDate.Value));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((System.DateTime)(Original_PlanDate.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             if ((Original_EntryDATE.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((System.DateTime)(Original_EntryDATE.Value));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((System.DateTime)(Original_EntryDATE.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             if ((Original_POCode == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_POCode));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_POCode));
             }
             if ((Original_FactoryCode == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_FactoryCode));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_FactoryCode));
+            }
+            if ((Original_PlanType == null)) {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_PlanType));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6919,6 +7976,146 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             }
             else {
                 command.Parameters[10].Value = ((string)(FactoryCode));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, global::System.Nullable<decimal> PlanQty, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> EntryDATE, string POCode, string FactoryCode, string PlanType) {
+            global::System.Data.Odbc.OdbcCommand command = this.CommandCollection[3];
+            command.Parameters[0].Value = ((int)(PO));
+            command.Parameters[1].Value = ((int)(POM));
+            command.Parameters[2].Value = ((int)(ClientID));
+            command.Parameters[3].Value = ((int)(ModelID));
+            command.Parameters[4].Value = ((int)(ArtID));
+            if ((LAName == null)) {
+                throw new global::System.ArgumentNullException("LAName");
+            }
+            else {
+                command.Parameters[5].Value = ((string)(LAName));
+            }
+            if ((PlanQty.HasValue == true)) {
+                command.Parameters[6].Value = ((decimal)(PlanQty.Value));
+            }
+            else {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((PlanDate.HasValue == true)) {
+                command.Parameters[7].Value = ((System.DateTime)(PlanDate.Value));
+            }
+            else {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((EntryDATE.HasValue == true)) {
+                command.Parameters[8].Value = ((System.DateTime)(EntryDATE.Value));
+            }
+            else {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((POCode == null)) {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[9].Value = ((string)(POCode));
+            }
+            if ((FactoryCode == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(FactoryCode));
+            }
+            if ((PlanType == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(PlanType));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery1(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, global::System.Nullable<decimal> PlanQty, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> EntryDATE, string POCode, string FactoryCode, string PlanType) {
+            global::System.Data.Odbc.OdbcCommand command = this.CommandCollection[4];
+            command.Parameters[0].Value = ((int)(PO));
+            command.Parameters[1].Value = ((int)(POM));
+            command.Parameters[2].Value = ((int)(ClientID));
+            command.Parameters[3].Value = ((int)(ModelID));
+            command.Parameters[4].Value = ((int)(ArtID));
+            if ((LAName == null)) {
+                throw new global::System.ArgumentNullException("LAName");
+            }
+            else {
+                command.Parameters[5].Value = ((string)(LAName));
+            }
+            if ((PlanQty.HasValue == true)) {
+                command.Parameters[6].Value = ((decimal)(PlanQty.Value));
+            }
+            else {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((PlanDate.HasValue == true)) {
+                command.Parameters[7].Value = ((System.DateTime)(PlanDate.Value));
+            }
+            else {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((EntryDATE.HasValue == true)) {
+                command.Parameters[8].Value = ((System.DateTime)(EntryDATE.Value));
+            }
+            else {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((POCode == null)) {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[9].Value = ((string)(POCode));
+            }
+            if ((FactoryCode == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(FactoryCode));
+            }
+            if ((PlanType == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(PlanType));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7677,6 +8874,10 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
             tableMapping.ColumnMappings.Add("PlanQty", "PlanQty");
             tableMapping.ColumnMappings.Add("LAName", "LAName");
             tableMapping.ColumnMappings.Add("TranID", "TranID");
+            tableMapping.ColumnMappings.Add("PlanType", "PlanType");
+            tableMapping.ColumnMappings.Add("Day", "Day");
+            tableMapping.ColumnMappings.Add("Month", "Month");
+            tableMapping.ColumnMappings.Add("Year", "Year");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -7690,21 +8891,404 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
+            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[2];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        PO, POCode, ModelName, ArtCode, FactoryCode, EntryDATE, PlanDate, P" +
-                "lanQty, LAName, TranID\r\nFROM            View_Multi_Label_Plan_AM\r\nWHERE        (" +
-                "PlanDate = ?)";
+                "lanQty, LAName, TranID, PlanType, [Day], [Month], [Year]\r\nFROM            View_M" +
+                "ulti_Label_Plan_AM\r\nWHERE        ([Day] = ?) AND ([Month] = ?) AND ([Year] = ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Day", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Month", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Month", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Year", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Year", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT ArtCode, [Day], EntryDATE, FactoryCode, LAName, ModelName, [Month], PO, PO" +
+                "Code, PlanDate, PlanQty, PlanType, TranID, [Year] FROM View_Multi_Label_Plan_AM " +
+                "WHERE (PlanDate BETWEEN ? AND ?) AND (FactoryCode = ?)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DSLabelPlanning.View_Multi_Label_Plan_AMDataTable dataTable, global::System.Nullable<global::System.DateTime> PlanDate) {
+        public virtual int Fill(DSLabelPlanning.View_Multi_Label_Plan_AMDataTable dataTable, global::System.Nullable<int> Day, global::System.Nullable<int> Month, global::System.Nullable<int> Year) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Day.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Day.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((Month.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Month.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Year.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(Year.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DSLabelPlanning.View_Multi_Label_Plan_AMDataTable GetData(global::System.Nullable<int> Day, global::System.Nullable<int> Month, global::System.Nullable<int> Year) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Day.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Day.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((Month.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Month.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Year.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(Year.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            DSLabelPlanning.View_Multi_Label_Plan_AMDataTable dataTable = new DSLabelPlanning.View_Multi_Label_Plan_AMDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(DSLabelPlanning.View_Multi_Label_Plan_AMDataTable dataTable, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> PlanDate1, string FactoryCode) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((PlanDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(PlanDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((PlanDate1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(PlanDate1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((FactoryCode == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(FactoryCode));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DSLabelPlanning.View_Multi_Label_Plan_AMDataTable GetDataBy(global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> PlanDate1, string FactoryCode) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((PlanDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(PlanDate.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((PlanDate1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(PlanDate1.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((FactoryCode == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(FactoryCode));
+            }
+            DSLabelPlanning.View_Multi_Label_Plan_AMDataTable dataTable = new DSLabelPlanning.View_Multi_Label_Plan_AMDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class tbl_Multi_LabelPlan1TableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.Odbc.OdbcDataAdapter _adapter;
+        
+        private global::System.Data.Odbc.OdbcConnection _connection;
+        
+        private global::System.Data.Odbc.OdbcTransaction _transaction;
+        
+        private global::System.Data.Odbc.OdbcCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public tbl_Multi_LabelPlan1TableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.Odbc.OdbcDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.Odbc.OdbcConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.Odbc.OdbcCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.Odbc.OdbcTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.Odbc.OdbcCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.Odbc.OdbcDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "tbl_Multi_LabelPlan1";
+            tableMapping.ColumnMappings.Add("TranID", "TranID");
+            tableMapping.ColumnMappings.Add("PO", "PO");
+            tableMapping.ColumnMappings.Add("POM", "POM");
+            tableMapping.ColumnMappings.Add("ClientID", "ClientID");
+            tableMapping.ColumnMappings.Add("ModelID", "ModelID");
+            tableMapping.ColumnMappings.Add("ArtID", "ArtID");
+            tableMapping.ColumnMappings.Add("LAName", "LAName");
+            tableMapping.ColumnMappings.Add("PlanQty", "PlanQty");
+            tableMapping.ColumnMappings.Add("PlanDate", "PlanDate");
+            tableMapping.ColumnMappings.Add("EntryDATE", "EntryDATE");
+            tableMapping.ColumnMappings.Add("POCode", "POCode");
+            tableMapping.ColumnMappings.Add("FactoryCode", "FactoryCode");
+            tableMapping.ColumnMappings.Add("PlanType", "PlanType");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.Odbc.OdbcCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [tbl_Multi_LabelPlan] WHERE (([TranID] = ?) AND ([PO] = ?) AND ([POM] = ?) AND ([ClientID] = ?) AND ([ModelID] = ?) AND ([ArtID] = ?) AND ([LAName] = ?) AND ((? = 1 AND [PlanQty] IS NULL) OR ([PlanQty] = ?)) AND ((? = 1 AND [PlanDate] IS NULL) OR ([PlanDate] = ?)) AND ((? = 1 AND [EntryDATE] IS NULL) OR ([EntryDATE] = ?)) AND ((? = 1 AND [POCode] IS NULL) OR ([POCode] = ?)) AND ((? = 1 AND [FactoryCode] IS NULL) OR ([FactoryCode] = ?)) AND ((? = 1 AND [PlanType] IS NULL) OR ([PlanType] = ?)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_TranID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TranID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ClientID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ModelID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ModelID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ArtID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_LAName", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_PlanQty", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PlanQty", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_PlanDate", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_EntryDATE", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_POCode", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_POCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_FactoryCode", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_PlanType", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PlanType", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.InsertCommand = new global::System.Data.Odbc.OdbcCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [tbl_Multi_LabelPlan] ([PO], [POM], [ClientID], [ModelID], [ArtID], [" +
+                "LAName], [PlanQty], [PlanDate], [EntryDATE], [POCode], [FactoryCode], [PlanType]" +
+                ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientID", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ModelID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ModelID", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtID", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LAName", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanQty", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanType", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand = new global::System.Data.Odbc.OdbcCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [tbl_Multi_LabelPlan] SET [PO] = ?, [POM] = ?, [ClientID] = ?, [ModelID] = ?, [ArtID] = ?, [LAName] = ?, [PlanQty] = ?, [PlanDate] = ?, [EntryDATE] = ?, [POCode] = ?, [FactoryCode] = ?, [PlanType] = ? WHERE (([TranID] = ?) AND ([PO] = ?) AND ([POM] = ?) AND ([ClientID] = ?) AND ([ModelID] = ?) AND ([ArtID] = ?) AND ([LAName] = ?) AND ((? = 1 AND [PlanQty] IS NULL) OR ([PlanQty] = ?)) AND ((? = 1 AND [PlanDate] IS NULL) OR ([PlanDate] = ?)) AND ((? = 1 AND [EntryDATE] IS NULL) OR ([EntryDATE] = ?)) AND ((? = 1 AND [POCode] IS NULL) OR ([POCode] = ?)) AND ((? = 1 AND [FactoryCode] IS NULL) OR ([FactoryCode] = ?)) AND ((? = 1 AND [PlanType] IS NULL) OR ([PlanType] = ?)))";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientID", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ModelID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ModelID", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtID", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LAName", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanQty", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanType", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_TranID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TranID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ClientID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ModelID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ModelID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ArtID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtID", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_LAName", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_PlanQty", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PlanQty", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_PlanDate", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_EntryDATE", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_POCode", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_POCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_FactoryCode", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_PlanType", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PlanType", global::System.Data.Odbc.OdbcType.VarChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Original, false, null));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.Odbc.OdbcConnection();
+            this._connection.ConnectionString = global::ERP_Production.Properties.Settings.Default.FSCo;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[2];
+            this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        TranID, PO, POM, ClientID, ModelID, ArtID, LAName, PlanQty, PlanDat" +
+                "e, EntryDATE, POCode, FactoryCode, PlanType\r\nFROM            tbl_Multi_LabelPlan" +
+                "\r\nWHERE        (PlanDate = ?)";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "INSERT INTO [tbl_Multi_LabelPlan] ([PO], [POM], [ClientID], [ModelID], [ArtID], [" +
+                "LAName], [PlanQty], [PlanDate], [EntryDATE], [POCode], [FactoryCode], [PlanType]" +
+                ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ModelID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ModelID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtID", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LAName", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanQty", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(0)), "PlanQty", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDATE", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDATE", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanType", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanType", global::System.Data.DataRowVersion.Current, false, null));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DSLabelPlanning.tbl_Multi_LabelPlan1DataTable dataTable, global::System.Nullable<global::System.DateTime> PlanDate) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((PlanDate.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(PlanDate.Value));
@@ -7723,7 +9307,7 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DSLabelPlanning.View_Multi_Label_Plan_AMDataTable GetData(global::System.Nullable<global::System.DateTime> PlanDate) {
+        public virtual DSLabelPlanning.tbl_Multi_LabelPlan1DataTable GetData(global::System.Nullable<global::System.DateTime> PlanDate) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((PlanDate.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(PlanDate.Value));
@@ -7731,9 +9315,410 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DSLabelPlanning.View_Multi_Label_Plan_AMDataTable dataTable = new DSLabelPlanning.View_Multi_Label_Plan_AMDataTable();
+            DSLabelPlanning.tbl_Multi_LabelPlan1DataTable dataTable = new DSLabelPlanning.tbl_Multi_LabelPlan1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSLabelPlanning.tbl_Multi_LabelPlan1DataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSLabelPlanning dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_Multi_LabelPlan1");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_TranID, int Original_PO, int Original_POM, int Original_ClientID, int Original_ModelID, int Original_ArtID, string Original_LAName, global::System.Nullable<decimal> Original_PlanQty, global::System.Nullable<global::System.DateTime> Original_PlanDate, global::System.Nullable<global::System.DateTime> Original_EntryDATE, string Original_POCode, string Original_FactoryCode, string Original_PlanType) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_TranID));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_PO));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_POM));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_ClientID));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_ModelID));
+            this.Adapter.DeleteCommand.Parameters[5].Value = ((int)(Original_ArtID));
+            if ((Original_LAName == null)) {
+                throw new global::System.ArgumentNullException("Original_LAName");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_LAName));
+            }
+            if ((Original_PlanQty.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((decimal)(Original_PlanQty.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((Original_PlanDate.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((System.DateTime)(Original_PlanDate.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_EntryDATE.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((System.DateTime)(Original_EntryDATE.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_POCode == null)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_POCode));
+            }
+            if ((Original_FactoryCode == null)) {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_FactoryCode));
+            }
+            if ((Original_PlanType == null)) {
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_PlanType));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, global::System.Nullable<decimal> PlanQty, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> EntryDATE, string POCode, string FactoryCode, string PlanType) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(PO));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(POM));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(ClientID));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(ModelID));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(ArtID));
+            if ((LAName == null)) {
+                throw new global::System.ArgumentNullException("LAName");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(LAName));
+            }
+            if ((PlanQty.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(PlanQty.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((PlanDate.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((System.DateTime)(PlanDate.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((EntryDATE.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((System.DateTime)(EntryDATE.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((POCode == null)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(POCode));
+            }
+            if ((FactoryCode == null)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(FactoryCode));
+            }
+            if ((PlanType == null)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(PlanType));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int PO, 
+                    int POM, 
+                    int ClientID, 
+                    int ModelID, 
+                    int ArtID, 
+                    string LAName, 
+                    global::System.Nullable<decimal> PlanQty, 
+                    global::System.Nullable<global::System.DateTime> PlanDate, 
+                    global::System.Nullable<global::System.DateTime> EntryDATE, 
+                    string POCode, 
+                    string FactoryCode, 
+                    string PlanType, 
+                    int Original_TranID, 
+                    int Original_PO, 
+                    int Original_POM, 
+                    int Original_ClientID, 
+                    int Original_ModelID, 
+                    int Original_ArtID, 
+                    string Original_LAName, 
+                    global::System.Nullable<decimal> Original_PlanQty, 
+                    global::System.Nullable<global::System.DateTime> Original_PlanDate, 
+                    global::System.Nullable<global::System.DateTime> Original_EntryDATE, 
+                    string Original_POCode, 
+                    string Original_FactoryCode, 
+                    string Original_PlanType) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(PO));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(POM));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(ClientID));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(ModelID));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(ArtID));
+            if ((LAName == null)) {
+                throw new global::System.ArgumentNullException("LAName");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(LAName));
+            }
+            if ((PlanQty.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(PlanQty.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((PlanDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(PlanDate.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((EntryDATE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(EntryDATE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((POCode == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(POCode));
+            }
+            if ((FactoryCode == null)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(FactoryCode));
+            }
+            if ((PlanType == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(PlanType));
+            }
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_TranID));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_PO));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_POM));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_ClientID));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_ModelID));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_ArtID));
+            if ((Original_LAName == null)) {
+                throw new global::System.ArgumentNullException("Original_LAName");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_LAName));
+            }
+            if ((Original_PlanQty.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((decimal)(Original_PlanQty.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            if ((Original_PlanDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((System.DateTime)(Original_PlanDate.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((Original_EntryDATE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((System.DateTime)(Original_EntryDATE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            if ((Original_POCode == null)) {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_POCode));
+            }
+            if ((Original_FactoryCode == null)) {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_FactoryCode));
+            }
+            if ((Original_PlanType == null)) {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_PlanType));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, global::System.Nullable<decimal> PlanQty, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> EntryDATE, string POCode, string FactoryCode, string PlanType) {
+            global::System.Data.Odbc.OdbcCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(PO));
+            command.Parameters[1].Value = ((int)(POM));
+            command.Parameters[2].Value = ((int)(ClientID));
+            command.Parameters[3].Value = ((int)(ModelID));
+            command.Parameters[4].Value = ((int)(ArtID));
+            if ((LAName == null)) {
+                throw new global::System.ArgumentNullException("LAName");
+            }
+            else {
+                command.Parameters[5].Value = ((string)(LAName));
+            }
+            if ((PlanQty.HasValue == true)) {
+                command.Parameters[6].Value = ((decimal)(PlanQty.Value));
+            }
+            else {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((PlanDate.HasValue == true)) {
+                command.Parameters[7].Value = ((System.DateTime)(PlanDate.Value));
+            }
+            else {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((EntryDATE.HasValue == true)) {
+                command.Parameters[8].Value = ((System.DateTime)(EntryDATE.Value));
+            }
+            else {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((POCode == null)) {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[9].Value = ((string)(POCode));
+            }
+            if ((FactoryCode == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(FactoryCode));
+            }
+            if ((PlanType == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(PlanType));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -7752,6 +9737,8 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
         private tbl_Pro_ClientTableAdapter _tbl_Pro_ClientTableAdapter;
         
         private tbl_Multi_LabelPlanTableAdapter _tbl_Multi_LabelPlanTableAdapter;
+        
+        private tbl_Multi_LabelPlan1TableAdapter _tbl_Multi_LabelPlan1TableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -7798,6 +9785,20 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_Multi_LabelPlan1TableAdapter tbl_Multi_LabelPlan1TableAdapter {
+            get {
+                return this._tbl_Multi_LabelPlan1TableAdapter;
+            }
+            set {
+                this._tbl_Multi_LabelPlan1TableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -7823,6 +9824,10 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
                             && (this._tbl_Multi_LabelPlanTableAdapter.Connection != null))) {
                     return this._tbl_Multi_LabelPlanTableAdapter.Connection;
                 }
+                if (((this._tbl_Multi_LabelPlan1TableAdapter != null) 
+                            && (this._tbl_Multi_LabelPlan1TableAdapter.Connection != null))) {
+                    return this._tbl_Multi_LabelPlan1TableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -7840,6 +9845,9 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
                     count = (count + 1);
                 }
                 if ((this._tbl_Multi_LabelPlanTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tbl_Multi_LabelPlan1TableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -7871,6 +9879,15 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._tbl_Multi_LabelPlan1TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Multi_LabelPlan1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_Multi_LabelPlan1TableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -7897,6 +9914,14 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._tbl_Multi_LabelPlan1TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_Multi_LabelPlan1.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_Multi_LabelPlan1TableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -7907,6 +9932,14 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(DSLabelPlanning dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._tbl_Multi_LabelPlan1TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Multi_LabelPlan1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_Multi_LabelPlan1TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._tbl_Multi_LabelPlanTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tbl_Multi_LabelPlan.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -7972,6 +10005,11 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
+            if (((this._tbl_Multi_LabelPlan1TableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_Multi_LabelPlan1TableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -8020,6 +10058,15 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
                     if (this._tbl_Multi_LabelPlanTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._tbl_Multi_LabelPlanTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_Multi_LabelPlanTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tbl_Multi_LabelPlan1TableAdapter != null)) {
+                    revertConnections.Add(this._tbl_Multi_LabelPlan1TableAdapter, this._tbl_Multi_LabelPlan1TableAdapter.Connection);
+                    this._tbl_Multi_LabelPlan1TableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(workConnection));
+                    this._tbl_Multi_LabelPlan1TableAdapter.Transaction = ((global::System.Data.Odbc.OdbcTransaction)(workTransaction));
+                    if (this._tbl_Multi_LabelPlan1TableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_Multi_LabelPlan1TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_Multi_LabelPlan1TableAdapter.Adapter);
                     }
                 }
                 // 
@@ -8087,6 +10134,10 @@ WHERE        tbl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID =
                 if ((this._tbl_Multi_LabelPlanTableAdapter != null)) {
                     this._tbl_Multi_LabelPlanTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._tbl_Multi_LabelPlanTableAdapter]));
                     this._tbl_Multi_LabelPlanTableAdapter.Transaction = null;
+                }
+                if ((this._tbl_Multi_LabelPlan1TableAdapter != null)) {
+                    this._tbl_Multi_LabelPlan1TableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._tbl_Multi_LabelPlan1TableAdapter]));
+                    this._tbl_Multi_LabelPlan1TableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

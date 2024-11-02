@@ -1,4 +1,4 @@
-﻿using ERP_Production;
+﻿using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,51 +10,105 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApplication1;
 
-namespace Erp_Production_Label
+namespace ERP_Production.Label_Planning
 {
-    public partial class FrmLabelPlan : Form
+    public partial class NewLabelPlan : DevExpress.XtraEditors.XtraForm
     {
-        public FrmLabelPlan()
+        public NewLabelPlan()
         {
             InitializeComponent();
         }
 
-        private void labelControl1_Click(object sender, EventArgs e)
+        private void fillToolStripButton_Click(object sender, EventArgs e)
         {
+            //try
+            //{
+            //    this.view_Multi_LabelPlanning_FinalCompleteTableAdapter.Fill(this.dSLabelPlanning.View_Multi_LabelPlanning_FinalComplete, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(secondConfDateToolStripTextBox.Text, typeof(System.DateTime))))), new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(secondConfDate1ToolStripTextBox.Text, typeof(System.DateTime))))), factoryCodeToolStripTextBox.Text);
+            //}
+            //catch (System.Exception ex)
+            //{
+            //    System.Windows.Forms.MessageBox.Show(ex.Message);
+            //}
 
         }
 
-        private void tbl_Pro_ClientBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void fillToolStripButton_Click_1(object sender, EventArgs e)
         {
-            this.Validate();
-            this.tbl_Pro_ClientBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dSLabelPlanning);
+            //try
+            //{
+            //    this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning.View_Multi_Label_Plan_AM, new System.Nullable<int>(((int)(System.Convert.ChangeType(dayToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(monthToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(yearToolStripTextBox.Text, typeof(int))))));
+            //}
+            //catch (System.Exception ex)
+            //{
+            //    System.Windows.Forms.MessageBox.Show(ex.Message);
+            //}
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void simpleButton3_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dSLabelPlanning.View_Multi_LabelPlanning_Final' table. You can move, or remove it, as needed.
-            //this.view_Multi_LabelPlanning_FinalTableAdapter.Fill(this.dSLabelPlanning.View_Multi_LabelPlanning_Final);
-            // TODO: This line of code loads data into the 'dSLabelPlanning.tbl_Pro_Client' table. You can move, or remove it, as needed.
-            this.tbl_Pro_ClientTableAdapter.Fill(this.dSLabelPlanning.tbl_Pro_Client);
-            //this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, (DateTime?)dateEdit1.EditValue);
-            dateEdit1.EditValue = DateTime.Now;
-            dateEdit4.EditValue = DateTime.Now;
-            dateEdit9.EditValue = DateTime.Now;
-            this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
+            if (!string.IsNullOrEmpty(dateEdit1.Text))
+            {
+                // Create an instance of Form1
+                Form1 objFrmFilter = new Form1();
+
+                // Path to your Crystal Report file
+                string reportName = @"\\dnsserver\MyReports$\ERPPPS\labeling\LabelMultiPlan.rpt";
+
+
+
+
+
+
+
+                string parameters = "";
+                // Construct the selection formula string
+                string selectionFormula = "";
+                var requisitionDate = ((DateTime)dateEdit1.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
+
+                // Create the selection formula with proper formatting
+                selectionFormula = $"{{View_Multi_Label_Plan_rpt.PlanDate}} = DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")})";
+
+
+                //selectionFormula = $"{{View_Multi_PO_Reports.CustReqDate}} in DateTime ({formattedDate1Start}) to DateTime ({formattedDate2End})";
+
+                // View the report
+                if (objFrmFilter.ViewReport(reportName, selectionFormula))
+                {
+                    FrmMain mainForm = (FrmMain)Application.OpenForms.OfType<FrmMain>().FirstOrDefault();
+                    if (mainForm != null)
+                    {
+                        objFrmFilter.ShowDialog();
+                        //await mainForm.ShowReportAsync<objFrmFilter>();
+                    }
+                    else
+                    {
+                        MessageBox.Show(" form not found.");
+                    }
+
+
+                    //await FrmMain.ShowOrToggleFormAsync<objFrmFilter>();
+                    // Show the form
+                    //objFrmFilter.ShowDialog(); // Use ShowDialog if you want it as a modal form or Show if it should be modeless
+                }
+
+                else
+                {
+                    // Handle the case where the report could not be loaded
+                    MessageBox.Show("Failed to load the report.");
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select Date First.");
+
+            }
         }
 
-        private void panelControl25_Paint(object sender, PaintEventArgs e)
+        private void dateEdit1_EditValueChanged(object sender, EventArgs e)
         {
-
-        }
-
-
-        private void simpleButton4_Click(object sender, EventArgs e)
-        {
-            //this.tbl_Multi_PO_HTableAdapter.Fill(this.dSLabelPlanning.tbl_Multi_PO_H, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
-
+            this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
@@ -63,15 +117,13 @@ namespace Erp_Production_Label
             {
                 this.view_Multi_LabelPlanning_FinalCompleteTableAdapter.Fill(this.dSLabelPlanning.View_Multi_LabelPlanning_FinalComplete, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, comboBoxEdit3.Text);
                 //this.view_Multi_Label_Plan_AMTableAdapter.FillBy(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, comboBoxEdit3.Text);
-                this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
+                this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
             }
             catch (System.Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-
         }
-
 
         private void repositoryItemButtonEdit1_Click(object sender, EventArgs e)
         {
@@ -156,7 +208,7 @@ namespace Erp_Production_Label
 
                                 MessageBox.Show("Data inserted successfully!");
 
-                                this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
+                                this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
                                 //this.view_Multi_Label_Plan_AMTableAdapter.FillBy(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, comboBoxEdit3.Text);
                                 this.view_Multi_LabelPlanning_FinalCompleteTableAdapter.Fill(this.dSLabelPlanning.View_Multi_LabelPlanning_FinalComplete, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, comboBoxEdit3.Text);
 
@@ -185,28 +237,19 @@ namespace Erp_Production_Label
             {
                 MessageBox.Show("No row selected!");
             }
-
         }
 
-        private void searchLookUpEdit2_EditValueChanged(object sender, EventArgs e)
+        private void fillToolStripButton_Click_2(object sender, EventArgs e)
         {
+            try
             {
-                try
-                {
-                    this.view_Multi_LabelPlanning_FinalCompleteTableAdapter.Fill(this.dSLabelPlanning.View_Multi_LabelPlanning_FinalComplete, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, comboBoxEdit3.Text);
-                }
-                catch (System.Exception ex)
-                {
-                    System.Windows.Forms.MessageBox.Show(ex.Message);
-                }
-
+                //this.tbl_Multi_LabelPlan1TableAdapter.Fill(this.dSLabelPlanning.tbl_Multi_LabelPlan1, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(planDateToolStripTextBox.Text, typeof(System.DateTime))))));
             }
-        }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
-        private void dateEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-            this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
-            //this.view_Multi_Label_Plan_AMTableAdapter.FillBy(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
         }
 
         private void repositoryItemButtonEdit3_Click(object sender, EventArgs e)
@@ -226,7 +269,7 @@ namespace Erp_Production_Label
                         MessageBox.Show("Data deleted");
                         this.view_Multi_LabelPlanning_FinalCompleteTableAdapter.Fill(this.dSLabelPlanning.View_Multi_LabelPlanning_FinalComplete, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, comboBoxEdit3.Text);
                         //this.view_Multi_Label_Plan_AMTableAdapter.FillBy(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, comboBoxEdit3.Text);
-                        this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
+                        this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
                     }
                     catch (Exception ex)
                     {
@@ -239,77 +282,11 @@ namespace Erp_Production_Label
             }
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(dateEdit1.Text))
-            {
-                // Create an instance of Form1
-                Form1 objFrmFilter = new Form1();
-
-                // Path to your Crystal Report file
-                string reportName = @"\\dnsserver\MyReports$\ERPPPS\labeling\LabelMultiPlan.rpt";
-
-
-
-
-
-
-
-                string parameters = "";
-                // Construct the selection formula string
-                string selectionFormula = "";
-                var requisitionDate = ((DateTime)dateEdit1.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
-
-                // Create the selection formula with proper formatting
-                selectionFormula = $"{{View_Multi_Label_Plan_rpt.PlanDate}} = DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")})";
-
-
-                //selectionFormula = $"{{View_Multi_PO_Reports.CustReqDate}} in DateTime ({formattedDate1Start}) to DateTime ({formattedDate2End})";
-
-                // View the report
-                if (objFrmFilter.ViewReport(reportName, selectionFormula))
-                {
-                    FrmMain mainForm = (FrmMain)Application.OpenForms.OfType<FrmMain>().FirstOrDefault();
-                    if (mainForm != null)
-                    {
-                        objFrmFilter.ShowDialog();
-                        //await mainForm.ShowReportAsync<objFrmFilter>();
-                    }
-                    else
-                    {
-                        MessageBox.Show(" form not found.");
-                    }
-
-
-                    //await FrmMain.ShowOrToggleFormAsync<objFrmFilter>();
-                    // Show the form
-                    //objFrmFilter.ShowDialog(); // Use ShowDialog if you want it as a modal form or Show if it should be modeless
-                }
-
-                else
-                {
-                    // Handle the case where the report could not be loaded
-                    MessageBox.Show("Failed to load the report.");
-
-                }
-            }
-            else
-            {
-                MessageBox.Show("Select Date First.");
-
-            }
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fillToolStripButton_Click(object sender, EventArgs e)
+        private void fillToolStripButton1_Click(object sender, EventArgs e)
         {
             try
             {
-                //this.tbl_Multi_LabelPlan1TableAdapter.Fill(this.dSLabelPlanning1.tbl_Multi_LabelPlan1, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(planDateToolStripTextBox.Text, typeof(System.DateTime))))));
+                //this.tbl_Multi_LabelPlanTableAdapter.Fill(this.dSLabelPlanning.tbl_Multi_LabelPlan, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(planDateToolStripTextBox1.Text, typeof(System.DateTime))))));
             }
             catch (System.Exception ex)
             {
@@ -317,11 +294,5 @@ namespace Erp_Production_Label
             }
 
         }
-
-        private void dateEdit4_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

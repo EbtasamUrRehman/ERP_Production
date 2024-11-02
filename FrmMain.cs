@@ -434,6 +434,16 @@ namespace ERP_Production
             ShowOrToggleFormAsync<RWPD.FrmRwpdTransection>();
         }
 
+        private void accordionControlElement22_Click(object sender, EventArgs e)
+        {
+            if (!IsLoggedIn)
+            {
+                MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            ShowOrToggleFormAsync<Label_Planning.NewLabelPlan>();
+        }
+
         //private void accordionControlElement11_Click(object sender, EventArgs e)
         //{
 

@@ -5991,7 +5991,7 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, global::System.Nullable<decimal> PlanQty, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> EntryDATE, string POCode, string FactoryCode) {
+        public virtual int Insert(int PO, int POM, int ClientID, int ModelID, int ArtID, string LAName, global::System.Nullable<decimal> PlanQty, global::System.Nullable<global::System.DateTime> PlanDate, global::System.Nullable<global::System.DateTime> EntryDATE, string POCode, string FactoryCode, string planType) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(PO));
             this.Adapter.InsertCommand.Parameters[1].Value = ((int)(POM));
             this.Adapter.InsertCommand.Parameters[2].Value = ((int)(ClientID));
