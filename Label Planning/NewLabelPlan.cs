@@ -14,6 +14,19 @@ namespace ERP_Production.Label_Planning
 {
     public partial class NewLabelPlan : DevExpress.XtraEditors.XtraForm
     {
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dSLabelPlanning.View_Multi_LabelPlanning_Final' table. You can move, or remove it, as needed.
+            //this.view_Multi_LabelPlanning_FinalTableAdapter.Fill(this.dSLabelPlanning.View_Multi_LabelPlanning_Final);
+            // TODO: This line of code loads data into the 'dSLabelPlanning.tbl_Pro_Client' table. You can move, or remove it, as needed.
+            //this.tbl_Pro_ClientTableAdapter.Fill(this.dSLabelPlanning.tbl_Pro_Client);
+            //this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning1.View_Multi_Label_Plan_AM, (DateTime?)dateEdit1.EditValue);
+            dateEdit1.EditValue = DateTime.Now;
+            dateEdit4.EditValue = DateTime.Now;
+            dateEdit9.EditValue = DateTime.Now;
+            this.view_Multi_Label_Plan_AMTableAdapter.Fill(this.dSLabelPlanning.View_Multi_Label_Plan_AM, ((DateTime?)dateEdit1.EditValue).Value.Day, ((DateTime?)dateEdit1.EditValue).Value.Month, ((DateTime?)dateEdit1.EditValue).Value.Year);
+        }
+
         public NewLabelPlan()
         {
             InitializeComponent();
