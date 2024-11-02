@@ -153,7 +153,7 @@ namespace ERP_Production.PackingList
                                 if (endPackage > 0)
                                 {
                                     endPackage = maxPackage + endPackage;
-                                    this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)CartonID);
+                                    this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.EditValue + comboBoxEdit1.Text, (int)CartonID);
 
 
                                     maxPackNo = (int)this.tbl_Multi_PackListTableAdapter.ScalarQueryMaxPackNo(po, pom, pos);
@@ -172,7 +172,7 @@ namespace ERP_Production.PackingList
                                     {
                                         maxPackage = 0;
                                     }
-                                    this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, (int?)CartonID);
+                                    this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.EditValue + comboBoxEdit1.Text, (int?)CartonID);
                                     //this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
                                     //InsertRecord(po, pom, pos, maxPackage + 1, maxPackage + 1,
                                     //    remainder, searchLookUpEdit1.Text + codeValue, (int)orderQty, (int)CartonQty);

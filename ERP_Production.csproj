@@ -263,6 +263,12 @@
     <Compile Include="Label Planning\frmLabelPlanning.Designer.cs">
       <DependentUpon>frmLabelPlanning.cs</DependentUpon>
     </Compile>
+    <Compile Include="Label Planning\NewLabelPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Label Planning\NewLabelPlan.Designer.cs">
+      <DependentUpon>NewLabelPlan.cs</DependentUpon>
+    </Compile>
     <Compile Include="loadedModules.cs" />
     <Compile Include="Login\FrmChangePassword.cs">
       <SubType>Form</SubType>
@@ -449,6 +455,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Label Planning\frmLabelPlanning.resx">
       <DependentUpon>frmLabelPlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Label Planning\NewLabelPlan.resx">
+      <DependentUpon>NewLabelPlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\FrmChangePassword.resx">
       <DependentUpon>FrmChangePassword.cs</DependentUpon>

@@ -343,7 +343,7 @@ namespace ERP_Production.Reports
                 {
                     Filter = $"{{View_Rpt_PO_Plan_Status.ClientID}} = {ClientNameComboBox.SelectedValue} " +
                              $"AND {{View_Rpt_PO_Plan_Status.ArtCode}} = '{ArtCodeComboBox.SelectedValue}' " +
-                             $"AND {{View_Rpt_PO_Plan_Status.ArtSize}} in '{ArtSizeComboBox.SelectedValue}' to '{ArtSizeComboBox1.SelectedValue}' " +
+                             $"AND {{View_Rpt_PO_Plan_Status.ArtSize}} in '{ArtSizeComboBox.SelectedValue}' to '{ArtSizeComboBox1.Text}' " +
                              $"AND {{View_Rpt_PO_Plan_Status.FactoryCode}} in '{FactoryCodeComboBox.Text}' to '{FactoryCodeComboBox1.Text}' " +
                              $"AND {{View_Rpt_PO_Plan_Status.SecondConfDate}} in #{DTPicker1.Value.ToString("MM/dd/yyyy")}# to #{DTPicker2.Value.ToString("MM/dd/yyyy")}# " +
                              $"AND {{View_Rpt_PO_Plan_Status.BalanceQty}} >= 0 " +
