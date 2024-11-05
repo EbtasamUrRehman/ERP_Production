@@ -8,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApplication1;
 
 namespace ERP_Production.RWPD
 {
     public partial class FrmRwpdTransection : DevExpress.XtraEditors.XtraForm
     {
+
         public FrmRwpdTransection()
         {
             InitializeComponent();
@@ -120,7 +122,7 @@ namespace ERP_Production.RWPD
                         string Size = gridView.GetRowCellValue(selectedRowHandle, "Size") != DBNull.Value
                         ? gridView.GetRowCellValue(selectedRowHandle, "Size").ToString()
                         : null;
-
+                        string Warehouse = (string)comboBoxEdit1.EditValue;
                         int RackNo = Convert.ToInt32(searchLookUpEdit1.EditValue);
 
                         DateTime? DeliverDate = gridView.GetRowCellValue(selectedRowHandle, "DD") != DBNull.Value
@@ -159,7 +161,7 @@ namespace ERP_Production.RWPD
                                 if (PartialQty <= balance)
                             {
 
-                                view_RWPD_Multi_INTableAdapter.InsertQuery(PO, POCode,  ArtCode,Size, (decimal?)totalPlanQty, RackNo, DeliverDate, EntryDate, null,ReceiveDate, factoryCode);
+                                view_RWPD_Multi_INTableAdapter.InsertQuery(PO, POCode,  ArtCode,Size, (decimal?)totalPlanQty, RackNo, DeliverDate, EntryDate, null,ReceiveDate, factoryCode, Warehouse);
 
 
 
@@ -435,6 +437,197 @@ namespace ERP_Production.RWPD
                 }
 
             }
+        }
+
+        
+
+        private void simpleButton10_Click(object sender, EventArgs e)
+        {
+            string gtpOne = "";
+            foreach (Control ctrl in groupControl1.Controls)
+            {
+                if (ctrl is RadioButton radioButton && radioButton.Checked)
+                {
+                    gtpOne = radioButton.Text;
+                    
+                }
+            }
+
+            string gtpTwo = "";
+            foreach (Control ctrl in groupControl3.Controls)
+            {
+                if (ctrl is RadioButton radioButton && radioButton.Checked)
+                {
+                    gtpTwo = radioButton.Text;
+                }
+            }
+
+            string selectionFormula = "";
+            string parameters = "";
+            string reportName = "";
+            var factoryCode = "";
+            var POCode = "";
+            var Article = "";
+            // Construct the selection formula string
+
+            var requisitionDate = ((DateTime)dateEdit7.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
+            var requisitionDate2 = ((DateTime)dateEdit6.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
+            try
+            {
+                factoryCode = comboBoxEdit4.EditValue.ToString();
+            }
+            catch(Exception ex) { }
+            try
+            {
+                POCode = textEdit1.EditValue.ToString();
+            }
+            catch (Exception ex) { }
+            try
+            {
+                Article = textEdit2.EditValue.ToString();
+            }
+            catch (Exception ex) { }
+
+            
+            Form1 objFrmFilter = new Form1();
+
+            if (gtpOne == "RWPD Transaction")
+            {
+                reportName = @"\\dnsserver\MyReports$\FSERPPC\Dispatch\RWPD\rptRWPDMultiReport.rpt";
+                if (radioButton5.Checked == true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Rpt.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")})";
+
+                }
+                if (radioButton4.Checked == true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Rpt.FactoryCode}} = '{factoryCode}'";
+
+                }
+                if (radioButton6.Checked == true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Rpt.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}'";
+                }
+                if (radioButton7.Checked == true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Rpt.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
+                }
+                if (radioButton8.Checked == true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Rpt.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}' and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
+
+                }
+                
+            }
+            else if (gtpOne == "By In Transaction")
+                {
+                reportName = @"\\dnsserver\MyReports$\ERPPPS\labeling\LabelMultiPlan.rpt";
+                if (radioButton5.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")})";
+
+                }
+                if (radioButton4.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_IN.FactoryCode}} = '{factoryCode}'";
+
+                }
+                if (radioButton6.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}'";
+                }
+                if (radioButton7.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
+                }
+                if (radioButton8.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}' and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
+
+                }
+            }
+            else
+            {
+                reportName = @"\\dnsserver\MyReports$\ERPPPS\labeling\LabelMultiPlan.rpt";
+                if (radioButton5.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")})";
+
+                }
+                if (radioButton4.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Out.FactoryCode}} = '{factoryCode}'";
+
+                }
+                if (radioButton6.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}'";
+                }
+                if (radioButton7.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
+                }
+                if (radioButton8.Checked = true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}' and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
+
+                }
+            }
+
+            if (objFrmFilter.ViewReport(reportName, selectionFormula))
+            {
+                FrmMain mainForm = (FrmMain)Application.OpenForms.OfType<FrmMain>().FirstOrDefault();
+                if (mainForm != null)
+                {
+                    objFrmFilter.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show(" form not found.");
+                }
+
+            }
+
+            else
+            {
+                MessageBox.Show("Failed to load the report.");
+            }
+
+
+            //if (!string.IsNullOrEmpty(dateEdit1.Text))
+            //{
+            //    // Create an instance of Form1
+                
+
+            //    // Path to your Crystal Report file
+                
+
+
+
+
+
+
+
+                
+
+            //    // Create the selection formula with proper formatting
+ 
+
+            //    //selectionFormula = $"{{View_Multi_PO_Reports.CustReqDate}} in DateTime ({formattedDate1Start}) to DateTime ({formattedDate2End})";
+
+            //    // View the report
+                
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Select Date First.");
+
+            //}
+        }
+
+        private void tabNavigationPage3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

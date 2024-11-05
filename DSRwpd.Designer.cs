@@ -1545,6 +1545,8 @@ namespace ERP_Production {
             
             private global::System.Data.DataColumn columnPartielQty;
             
+            private global::System.Data.DataColumn columnWarehouse;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_RWPD_Multi_INDataTable() {
@@ -1732,6 +1734,14 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn WarehouseColumn {
+                get {
+                    return this.columnWarehouse;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1786,7 +1796,8 @@ namespace ERP_Production {
                         string FactoryCode, 
                         bool S4Status, 
                         decimal AlreadyOut, 
-                        int PartielQty) {
+                        int PartielQty, 
+                        string Warehouse) {
                 View_RWPD_Multi_INRow rowView_RWPD_Multi_INRow = ((View_RWPD_Multi_INRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         TID,
@@ -1807,7 +1818,8 @@ namespace ERP_Production {
                         FactoryCode,
                         S4Status,
                         AlreadyOut,
-                        PartielQty};
+                        PartielQty,
+                        Warehouse};
                 rowView_RWPD_Multi_INRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowView_RWPD_Multi_INRow);
                 return rowView_RWPD_Multi_INRow;
@@ -1858,6 +1870,7 @@ namespace ERP_Production {
                 this.columnS4Status = base.Columns["S4Status"];
                 this.columnAlreadyOut = base.Columns["AlreadyOut"];
                 this.columnPartielQty = base.Columns["PartielQty"];
+                this.columnWarehouse = base.Columns["Warehouse"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1901,6 +1914,8 @@ namespace ERP_Production {
                 base.Columns.Add(this.columnAlreadyOut);
                 this.columnPartielQty = new global::System.Data.DataColumn("PartielQty", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPartielQty);
+                this.columnWarehouse = new global::System.Data.DataColumn("Warehouse", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWarehouse);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnTID,
                                 this.columnTranInID,
@@ -1917,6 +1932,7 @@ namespace ERP_Production {
                 this.columnSysIP.MaxLength = 50;
                 this.columnFactoryCode.MaxLength = 50;
                 this.columnAlreadyOut.ReadOnly = true;
+                this.columnWarehouse.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2414,6 +2430,8 @@ namespace ERP_Production {
             
             private global::System.Data.DataColumn columnBINFStatus;
             
+            private global::System.Data.DataColumn columnWarehouse;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_RWPD_Multi_IN_BalanceDataTable() {
@@ -2689,6 +2707,14 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn WarehouseColumn {
+                get {
+                    return this.columnWarehouse;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2754,7 +2780,8 @@ namespace ERP_Production {
                         string CompanyCode, 
                         int CountryID, 
                         string ModelNo, 
-                        bool BINFStatus) {
+                        bool BINFStatus, 
+                        string Warehouse) {
                 View_RWPD_Multi_IN_BalanceRow rowView_RWPD_Multi_IN_BalanceRow = ((View_RWPD_Multi_IN_BalanceRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         OrderQty,
@@ -2786,7 +2813,8 @@ namespace ERP_Production {
                         CompanyCode,
                         CountryID,
                         ModelNo,
-                        BINFStatus};
+                        BINFStatus,
+                        Warehouse};
                 rowView_RWPD_Multi_IN_BalanceRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowView_RWPD_Multi_IN_BalanceRow);
                 return rowView_RWPD_Multi_IN_BalanceRow;
@@ -2839,6 +2867,7 @@ namespace ERP_Production {
                 this.columnCountryID = base.Columns["CountryID"];
                 this.columnModelNo = base.Columns["ModelNo"];
                 this.columnBINFStatus = base.Columns["BINFStatus"];
+                this.columnWarehouse = base.Columns["Warehouse"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2904,6 +2933,8 @@ namespace ERP_Production {
                 base.Columns.Add(this.columnModelNo);
                 this.columnBINFStatus = new global::System.Data.DataColumn("BINFStatus", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBINFStatus);
+                this.columnWarehouse = new global::System.Data.DataColumn("Warehouse", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWarehouse);
                 this.columnOrderQty.AllowDBNull = false;
                 this.columnPOCode.AllowDBNull = false;
                 this.columnPOCode.MaxLength = 150;
@@ -2935,6 +2966,7 @@ namespace ERP_Production {
                 this.columnCountryID.ReadOnly = true;
                 this.columnModelNo.AllowDBNull = false;
                 this.columnModelNo.MaxLength = 50;
+                this.columnWarehouse.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3568,6 +3600,8 @@ namespace ERP_Production {
             
             private global::System.Data.DataColumn columnRackNo;
             
+            private global::System.Data.DataColumn columnWarehouse;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public DataTable1DataTable() {
@@ -3691,6 +3725,14 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn WarehouseColumn {
+                get {
+                    return this.columnWarehouse;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3726,7 +3768,7 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(int PO, string POCode, string Article, decimal Quantity, System.DateTime DeliveryDate, string ArtSize, bool LockStatus, System.DateTime ReceivedDate, bool S4Status, string RackNo) {
+            public DataTable1Row AddDataTable1Row(int PO, string POCode, string Article, decimal Quantity, System.DateTime DeliveryDate, string ArtSize, bool LockStatus, System.DateTime ReceivedDate, bool S4Status, string RackNo, string Warehouse) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PO,
@@ -3739,7 +3781,8 @@ namespace ERP_Production {
                         LockStatus,
                         ReceivedDate,
                         S4Status,
-                        RackNo};
+                        RackNo,
+                        Warehouse};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -3780,6 +3823,7 @@ namespace ERP_Production {
                 this.columnReceivedDate = base.Columns["ReceivedDate"];
                 this.columnS4Status = base.Columns["S4Status"];
                 this.columnRackNo = base.Columns["RackNo"];
+                this.columnWarehouse = base.Columns["Warehouse"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3807,6 +3851,8 @@ namespace ERP_Production {
                 base.Columns.Add(this.columnS4Status);
                 this.columnRackNo = new global::System.Data.DataColumn("RackNo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRackNo);
+                this.columnWarehouse = new global::System.Data.DataColumn("Warehouse", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWarehouse);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnTransID}, true));
                 this.columnPOCode.MaxLength = 50;
@@ -3819,6 +3865,7 @@ namespace ERP_Production {
                 this.columnTransID.ReadOnly = true;
                 this.columnTransID.Unique = true;
                 this.columnRackNo.MaxLength = 50;
+                this.columnWarehouse.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4979,6 +5026,22 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Warehouse {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_RWPD_Multi_IN.WarehouseColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Warehouse\' in table \'View_RWPD_Multi_IN\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN.WarehouseColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsRackNoNull() {
                 return this.IsNull(this.tableView_RWPD_Multi_IN.RackNoColumn);
             }
@@ -5167,6 +5230,18 @@ namespace ERP_Production {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetPartielQtyNull() {
                 this[this.tableView_RWPD_Multi_IN.PartielQtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsWarehouseNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN.WarehouseColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetWarehouseNull() {
+                this[this.tableView_RWPD_Multi_IN.WarehouseColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5763,6 +5838,23 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Warehouse {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_RWPD_Multi_IN_Balance.WarehouseColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Warehouse\' in table \'View_RWPD_Multi_IN_Balance\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableView_RWPD_Multi_IN_Balance.WarehouseColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsAlreadyInNull() {
                 return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.AlreadyInColumn);
             }
@@ -5951,6 +6043,18 @@ namespace ERP_Production {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetBINFStatusNull() {
                 this[this.tableView_RWPD_Multi_IN_Balance.BINFStatusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsWarehouseNull() {
+                return this.IsNull(this.tableView_RWPD_Multi_IN_Balance.WarehouseColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetWarehouseNull() {
+                this[this.tableView_RWPD_Multi_IN_Balance.WarehouseColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -6587,6 +6691,22 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Warehouse {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.WarehouseColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Warehouse\' in table \'DataTable1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.WarehouseColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsPONull() {
                 return this.IsNull(this.tableDataTable1.POColumn);
             }
@@ -6703,6 +6823,18 @@ namespace ERP_Production {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetRackNoNull() {
                 this[this.tableDataTable1.RackNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsWarehouseNull() {
+                return this.IsNull(this.tableDataTable1.WarehouseColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetWarehouseNull() {
+                this[this.tableDataTable1.WarehouseColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -7759,6 +7891,7 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             tableMapping.ColumnMappings.Add("S4Status", "S4Status");
             tableMapping.ColumnMappings.Add("AlreadyOut", "AlreadyOut");
             tableMapping.ColumnMappings.Add("PartielQty", "PartielQty");
+            tableMapping.ColumnMappings.Add("Warehouse", "Warehouse");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -7775,7 +7908,7 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[3];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        TID, TranInID, RackID, RackNo, RackNoinfo, PO, POCode, Article, [Size], Quantity, DeliverDate, balance, EntryDate, SysIP, ReceivedDate, FactoryCode, S4Status, AlreadyOut, PartielQty
+            this._commandCollection[0].CommandText = @"SELECT        TID, TranInID, RackID, RackNo, RackNoinfo, PO, POCode, Article, [Size], Quantity, DeliverDate, balance, EntryDate, SysIP, ReceivedDate, FactoryCode, S4Status, AlreadyOut, PartielQty, Warehouse
 FROM            View_RWPD_Multi_IN
 WHERE        (ReceivedDate BETWEEN ? AND ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
@@ -7790,7 +7923,7 @@ WHERE        (ReceivedDate BETWEEN ? AND ?)";
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "INSERT INTO tbl_RWPD_IN\r\n                         (PO, POCode, Article, [Size], Q" +
                 "uantity, RackNo, DeliverDate, EntryDate, SysIP, ReceivedDate, FactoryCode, S4Sta" +
-                "tus)\r\nVALUES        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,1)";
+                "tus, Warehouse)\r\nVALUES        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1, ?)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POCode", global::System.Data.Odbc.OdbcType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POCode", global::System.Data.DataRowVersion.Current, false, null));
@@ -7803,6 +7936,7 @@ WHERE        (ReceivedDate BETWEEN ? AND ?)";
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("SysIP", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "SysIP", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ReceivedDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ReceivedDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Warehouse", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Warehouse", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7881,7 +8015,7 @@ WHERE        (ReceivedDate BETWEEN ? AND ?)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertQuery(global::System.Nullable<int> PO, string POCode, string Article, string Size, global::System.Nullable<decimal> Quantity, global::System.Nullable<int> RackNo, global::System.Nullable<global::System.DateTime> DeliverDate, global::System.Nullable<global::System.DateTime> EntryDate, string SysIP, global::System.Nullable<global::System.DateTime> ReceivedDate, string FactoryCode) {
+        public virtual int InsertQuery(global::System.Nullable<int> PO, string POCode, string Article, string Size, global::System.Nullable<decimal> Quantity, global::System.Nullable<int> RackNo, global::System.Nullable<global::System.DateTime> DeliverDate, global::System.Nullable<global::System.DateTime> EntryDate, string SysIP, global::System.Nullable<global::System.DateTime> ReceivedDate, string FactoryCode, string Warehouse) {
             global::System.Data.Odbc.OdbcCommand command = this.CommandCollection[2];
             if ((PO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PO.Value));
@@ -7948,6 +8082,12 @@ WHERE        (ReceivedDate BETWEEN ? AND ?)";
             }
             else {
                 command.Parameters[10].Value = ((string)(FactoryCode));
+            }
+            if ((Warehouse == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(Warehouse));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8290,6 +8430,7 @@ WHERE        (ReceivedDate BETWEEN ? AND ?)";
             tableMapping.ColumnMappings.Add("CountryID", "CountryID");
             tableMapping.ColumnMappings.Add("ModelNo", "ModelNo");
             tableMapping.ColumnMappings.Add("BINFStatus", "BINFStatus");
+            tableMapping.ColumnMappings.Add("Warehouse", "Warehouse");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -8307,15 +8448,12 @@ WHERE        (ReceivedDate BETWEEN ? AND ?)";
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        OrderQty, POCode, PO, [Size], AlreadyIn, Balance, ClientID, ModelID, ArtID, ArtCode, Line, ClientName, ModelName, FactoryCode, CustomerOrderNo, LAName, DD, SecondConfDate, StockAdj, PlanQty, CountryName, 
-                         CustomerName, POS, POM, PartielQty, CustID, CompanyCode, CountryID, ModelNo, BINFStatus
+                         CustomerName, POS, POM, PartielQty, CustID, CompanyCode, CountryID, ModelNo, BINFStatus, Warehouse
 FROM            View_RWPD_Multi_IN_Balance";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        OrderQty, POCode, PO, [Size], AlreadyIn, Balance, ClientID, ModelID, ArtID, ArtCode, Line, ClientName, ModelName, FactoryCode, CustomerOrderNo, LAName, DD, SecondConfDate, StockAdj, PlanQty, CountryName, 
-                         CustomerName, POS, POM, PartielQty, CustID, CompanyCode, CountryID, ModelNo, BINFStatus
-FROM            View_RWPD_Multi_IN_Balance
-WHERE        (SecondConfDate BETWEEN ? AND ?)";
+            this._commandCollection[1].CommandText = @"SELECT AlreadyIn, ArtCode, ArtID, BINFStatus, Balance, ClientID, ClientName, CompanyCode, CountryID, CountryName, CustID, CustomerName, CustomerOrderNo, DD, FactoryCode, LAName, Line, ModelID, ModelName, ModelNo, OrderQty, PO, POCode, POM, POS, PartielQty, PlanQty, SecondConfDate, [Size], StockAdj, Warehouse FROM View_RWPD_Multi_IN_Balance WHERE (SecondConfDate BETWEEN ? AND ?)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("SecondConfDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "SecondConfDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("SecondConfDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "SecondConfDate", global::System.Data.DataRowVersion.Current, false, null));
@@ -9565,6 +9703,7 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             tableMapping.ColumnMappings.Add("ReceivedDate", "ReceivedDate");
             tableMapping.ColumnMappings.Add("S4Status", "S4Status");
             tableMapping.ColumnMappings.Add("RackNo", "RackNo");
+            tableMapping.ColumnMappings.Add("Warehouse", "Warehouse");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -9581,11 +9720,11 @@ WHERE        (SecondConfDate BETWEEN ? AND ?)";
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        dbo.tbl_RackNO.RackNo, dbo.tbl_RPWD_Out.PO, dbo.tbl_RPWD_Out.POCode, dbo.tbl_RPWD_Out.Article, dbo.tbl_RPWD_Out.Quantity, dbo.tbl_RPWD_Out.DeliveryDate, dbo.tbl_RPWD_Out.ArtSize, dbo.tbl_RPWD_Out.TransID, 
-                         dbo.tbl_RPWD_Out.LockStatus, dbo.tbl_RPWD_Out.S4Status, dbo.tbl_RPWD_Out.ReceivedDate
-FROM            dbo.tbl_RPWD_Out LEFT OUTER JOIN
-                         dbo.tbl_RackNO ON dbo.tbl_RPWD_Out.RackNo = dbo.tbl_RackNO.ID
-WHERE        (dbo.tbl_RPWD_Out.S4Status = 1) AND (dbo.tbl_RPWD_Out.ReceivedDate BETWEEN ? AND ?)";
+            this._commandCollection[0].CommandText = @"SELECT        tbl_RackNO.RackNo, tbl_RPWD_Out.PO, tbl_RPWD_Out.POCode, tbl_RPWD_Out.Article, tbl_RPWD_Out.Quantity, tbl_RPWD_Out.DeliveryDate, tbl_RPWD_Out.ArtSize, tbl_RPWD_Out.TransID, tbl_RPWD_Out.LockStatus, 
+                         tbl_RPWD_Out.S4Status, tbl_RPWD_Out.ReceivedDate, tbl_RWPD_IN.Warehouse
+FROM            tbl_RWPD_IN, { oj tbl_RPWD_Out LEFT OUTER JOIN
+                         tbl_RackNO ON tbl_RPWD_Out.RackNo = tbl_RackNO.ID }
+WHERE        tbl_RPWD_Out.TID = tbl_RWPD_IN.TID AND tbl_RPWD_Out.TID = tbl_RWPD_IN.TID AND (tbl_RPWD_Out.S4Status = 1) AND (tbl_RPWD_Out.ReceivedDate BETWEEN ? AND ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ReceivedDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ReceivedDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ReceivedDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ReceivedDate", global::System.Data.DataRowVersion.Current, false, null));
