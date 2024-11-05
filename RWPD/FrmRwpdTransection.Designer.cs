@@ -1314,10 +1314,10 @@ namespace ERP_Production.RWPD
             // panelControl17
             // 
             this.panelControl17.Controls.Add(this.gridControl4);
-            this.panelControl17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl17.Location = new System.Drawing.Point(0, 431);
             this.panelControl17.Name = "panelControl17";
-            this.panelControl17.Size = new System.Drawing.Size(1488, 305);
+            this.panelControl17.Size = new System.Drawing.Size(1488, 312);
             this.panelControl17.TabIndex = 13;
             // 
             // gridControl4
@@ -1330,7 +1330,7 @@ namespace ERP_Production.RWPD
             this.gridControl4.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit5,
             this.repositoryItemButtonEdit6});
-            this.gridControl4.Size = new System.Drawing.Size(1484, 301);
+            this.gridControl4.Size = new System.Drawing.Size(1484, 308);
             this.gridControl4.TabIndex = 2;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5});
