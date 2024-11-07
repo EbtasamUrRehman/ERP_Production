@@ -468,27 +468,38 @@ namespace ERP_Production.RWPD
             var factoryCode = "";
             var POCode = "";
             var Article = "";
+            var Warehouse = "";
             // Construct the selection formula string
 
             var requisitionDate = ((DateTime)dateEdit7.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
             var requisitionDate2 = ((DateTime)dateEdit6.EditValue).ToString("yyyy-MM-dd HH-mm-ss");
+
             try
             {
                 factoryCode = comboBoxEdit4.EditValue.ToString();
             }
             catch(Exception ex) { }
+
             try
             {
                 POCode = textEdit1.EditValue.ToString();
             }
             catch (Exception ex) { }
+
             try
             {
                 Article = textEdit2.EditValue.ToString();
             }
             catch (Exception ex) { }
 
-            
+            try
+            {
+                Warehouse = comboBoxEdit2.EditValue.ToString();
+            }
+            catch (Exception ex) { }
+
+
+
             Form1 objFrmFilter = new Form1();
 
             if (gtpOne == "RWPD Transaction")
@@ -515,9 +526,12 @@ namespace ERP_Production.RWPD
                 if (radioButton8.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_Rpt.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}' and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
-
                 }
-                
+                if (radioButton9.Checked == true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Rpt.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.Warehouse}} = '{Warehouse}'";
+                }
+
             }
             else if (gtpOne == "By In Transaction")
                 {
@@ -534,16 +548,19 @@ namespace ERP_Production.RWPD
                 }
                 if (radioButton6.Checked = true)
                 {
-                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}'";
+                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_IN.POCode}} = '{POCode}'";
                 }
                 if (radioButton7.Checked = true)
                 {
-                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
+                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_IN.Article}} = '{Article}'";
                 }
                 if (radioButton8.Checked = true)
                 {
-                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}' and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
-
+                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_IN.POCode}} = '{POCode}' and {{View_RWPD_Multi_IN.Article}} = '{Article}'";
+                }
+                if (radioButton9.Checked == true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_IN.Warehouse}} = '{Warehouse}'";
                 }
             }
             else
@@ -561,16 +578,19 @@ namespace ERP_Production.RWPD
                 }
                 if (radioButton6.Checked = true)
                 {
-                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}'";
+                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Out.POCode}} = '{POCode}'";
                 }
                 if (radioButton7.Checked = true)
                 {
-                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
+                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Out.Article}} = '{Article}'";
                 }
                 if (radioButton8.Checked = true)
                 {
-                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Rpt.POCode}} = '{POCode}' and {{View_RWPD_Multi_Rpt.Article}} = '{Article}'";
-
+                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Out.POCode}} = '{POCode}' and {{View_RWPD_Multi_Out.Article}} = '{Article}'";
+                }
+                if (radioButton9.Checked == true)
+                {
+                    selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Out.Warehouse}} = '{Warehouse}'";
                 }
             }
 
@@ -593,41 +613,203 @@ namespace ERP_Production.RWPD
                 MessageBox.Show("Failed to load the report.");
             }
 
-
-            //if (!string.IsNullOrEmpty(dateEdit1.Text))
-            //{
-            //    // Create an instance of Form1
-                
-
-            //    // Path to your Crystal Report file
-                
-
-
-
-
-
-
-
-                
-
-            //    // Create the selection formula with proper formatting
- 
-
-            //    //selectionFormula = $"{{View_Multi_PO_Reports.CustReqDate}} in DateTime ({formattedDate1Start}) to DateTime ({formattedDate2End})";
-
-            //    // View the report
-                
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Select Date First.");
-
-            //}
         }
 
         private void tabNavigationPage3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton5.Checked == true)
+            {
+                try
+                {
+                    dateEdit7.Enabled = true;
+                    dateEdit6.Enabled = true;
+                    comboBoxEdit4.Enabled = false;
+                    textEdit1.Enabled = false;
+                    textEdit2.Enabled = false;
+                    comboBoxEdit2.Enabled = false;
+                }
+                catch (Exception ex)
+                { }
+            }
+            else
+            {
+                try
+                {
+                    dateEdit7.Enabled = false;
+                    dateEdit6.Enabled = false;
+                    comboBoxEdit4.Enabled = true;
+                    textEdit1.Enabled = true;
+                    textEdit2.Enabled = true;
+                    comboBoxEdit2.Enabled = true;
+                }
+                catch (Exception ex)
+                { }
+            }
+        }
+       
+        private void radioButton4_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked == true)
+            {
+                try
+                {
+                    dateEdit7.Enabled = false;
+                    dateEdit6.Enabled = false;
+                    comboBoxEdit4.Enabled = true;
+                    textEdit1.Enabled = false;
+                    textEdit2.Enabled = false;
+                    comboBoxEdit2.Enabled = false;
+                }
+                catch (Exception ex)
+                { }
+            }
+            else
+            {
+                try
+                {
+                    dateEdit7.Enabled = true;
+                    dateEdit6.Enabled = true;
+                    comboBoxEdit4.Enabled = false;
+                    textEdit1.Enabled = true;
+                    textEdit2.Enabled = true;
+                    comboBoxEdit2.Enabled = true;
+                }
+                catch (Exception ex)
+                { }
+            }
+        }
+
+        private void radioButton6_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (radioButton6.Checked == true)
+            {
+                try
+                {
+                    dateEdit7.Enabled = true;
+                    dateEdit6.Enabled = true;
+                    comboBoxEdit4.Enabled = false;
+                    textEdit1.Enabled = true;
+                    textEdit2.Enabled = false;
+                    comboBoxEdit2.Enabled = false;
+                }
+                catch (Exception ex)
+                { }
+            }
+            else
+            {
+                try
+                {
+                    dateEdit7.Enabled = false;
+                    dateEdit6.Enabled = false;
+                    comboBoxEdit4.Enabled = true;
+                    textEdit1.Enabled = false;
+                    textEdit2.Enabled = true;
+                    comboBoxEdit2.Enabled = true;
+                }
+                catch (Exception ex)
+                { }
+            }
+        }
+
+        private void radioButton7_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (radioButton7.Checked == true)
+            {
+                try
+                {
+                    dateEdit7.Enabled = true;
+                    dateEdit6.Enabled = true;
+                    comboBoxEdit4.Enabled = false;
+                    textEdit1.Enabled = false;
+                    textEdit2.Enabled = true;
+                    comboBoxEdit2.Enabled = false;
+                }
+                catch (Exception ex)
+                { }
+            }
+            else
+            {
+                try
+                {
+                    dateEdit7.Enabled = false;
+                    dateEdit6.Enabled = false;
+                    comboBoxEdit4.Enabled = true;
+                    textEdit1.Enabled = true;
+                    textEdit2.Enabled = false;
+                    comboBoxEdit2.Enabled = true;
+                }
+                catch (Exception ex)
+                { }
+            }
+        }
+
+        private void radioButton8_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (radioButton8.Checked == true)
+            {
+                try
+                {
+                    dateEdit7.Enabled = true;
+                    dateEdit6.Enabled = true;
+                    comboBoxEdit4.Enabled = false;
+                    textEdit1.Enabled = true;
+                    textEdit2.Enabled = true;
+                    comboBoxEdit2.Enabled = false;
+                }
+                catch (Exception ex)
+                { }
+            }
+            else
+            {
+                try
+                {
+                    dateEdit7.Enabled = false;
+                    dateEdit6.Enabled = false;
+                    comboBoxEdit4.Enabled = true;
+                    textEdit1.Enabled = false;
+                    textEdit2.Enabled = false;
+                    comboBoxEdit2.Enabled = true;
+                }
+                catch (Exception ex)
+                { }
+            }
+        }
+
+        private void radioButton9_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                try
+                {
+                    dateEdit7.Enabled = true;
+                    dateEdit6.Enabled = true;
+                    comboBoxEdit4.Enabled = false;
+                    textEdit1.Enabled = false;
+                    textEdit2.Enabled = false;
+                    comboBoxEdit2.Enabled = true;
+                }
+                catch (Exception ex)
+                { }
+            }
+            else
+            {
+                try
+                {
+                    dateEdit7.Enabled = false;
+                    dateEdit6.Enabled = false;
+                    comboBoxEdit4.Enabled = true;
+                    textEdit1.Enabled = true;
+                    textEdit2.Enabled = true;
+                    comboBoxEdit2.Enabled = false;
+                }
+                catch (Exception ex)
+                { }
+            }
         }
     }
 }
