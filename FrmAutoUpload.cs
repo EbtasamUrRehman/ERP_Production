@@ -377,7 +377,7 @@ namespace ERP_Production
                             catch (Exception ex)
                             {
                                 // Log the exception or handle it as required
-                                LogDatabaseError("tbl_Multi_PO_HTableAdapter.Insert", row, PoCode, logFilePath, ex);
+                                //LogDatabaseError("tbl_Multi_PO_HTableAdapter.Insert", row, PoCode, logFilePath, ex);
                                 PO = this.tbl_Multi_PO_HTableAdapter.ScalarQuery(PoCode); // You might want to handle this differently
                             }
 
@@ -496,7 +496,7 @@ namespace ERP_Production
                 if (ex != null)
                 {
                     //sw.WriteLine($"This Record may b duplicatd or field error ");
-                    sw.WriteLine($"{DateTime.Now}: This record may be duplicated or there is a field error.");
+                    //sw.WriteLine($"{DateTime.Now}: This record may be duplicated or there is a field error.");
                     //sw.WriteLine($"Exception Message: {ex.Message}");
                     //sw.WriteLine($"Stack Trace: {ex.StackTrace}");
                 }
