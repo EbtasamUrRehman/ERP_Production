@@ -113,6 +113,8 @@ namespace ERP_Production
             {
                 await LoadDefaultFormAsync();
             }
+
+
         }
 
         private async Task LoadDefaultFormAsync()
@@ -442,6 +444,16 @@ namespace ERP_Production
                 return;
             }
             ShowOrToggleFormAsync<Label_Planning.NewLabelPlan>();
+        }
+
+        private async void accordionControlElement19_Click_1(object sender, EventArgs e)
+        {
+            if (!IsLoggedIn)
+            {
+                MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            await ShowOrToggleFormAsync<frmMasterPlanningReports>();
         }
 
         //private void accordionControlElement11_Click(object sender, EventArgs e)

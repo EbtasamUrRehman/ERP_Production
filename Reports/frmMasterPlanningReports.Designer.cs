@@ -29,6 +29,7 @@ namespace ERP_Production.Reports
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.Label5 = new System.Windows.Forms.Label();
@@ -37,17 +38,24 @@ namespace ERP_Production.Reports
             this.CbSize = new System.Windows.Forms.ComboBox();
             this.ArtSizeLabel = new System.Windows.Forms.Label();
             this.ArtSizeComboBox = new System.Windows.Forms.ComboBox();
+            this.tbl_Pro_Article_DBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_Pro_Article1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSMP = new ERP_Production.Reports.DSMP();
             this.ArtCodeLabel = new System.Windows.Forms.Label();
             this.ArtCodeComboBox = new System.Windows.Forms.ComboBox();
             this.MPIDLabel1 = new System.Windows.Forms.Label();
             this.MPIDComboBox1 = new System.Windows.Forms.ComboBox();
+            this.tbl_Pro_Plan1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_Pro_ClientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.MPIDLabel = new System.Windows.Forms.Label();
             this.MPIDComboBox = new System.Windows.Forms.ComboBox();
+            this.tbl_Pro_Plan2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ClientIDLabel = new System.Windows.Forms.Label();
             this.ClientIDComboBox = new System.Windows.Forms.ComboBox();
             this.PrdLineNameLabel = new System.Windows.Forms.Label();
             this.btnReport = new System.Windows.Forms.Button();
             this.PrdLineNameComboBox = new System.Windows.Forms.ComboBox();
+            this.tbl_Prd_LinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.DateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -82,9 +90,23 @@ namespace ERP_Production.Reports
             this.RadioButton3 = new System.Windows.Forms.RadioButton();
             this.RadioButton2 = new System.Windows.Forms.RadioButton();
             this.RadioButton1 = new System.Windows.Forms.RadioButton();
+            this.tbl_Pro_ClientTableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_ClientTableAdapter();
+            this.tableAdapterManager = new ERP_Production.Reports.DSMPTableAdapters.TableAdapterManager();
+            this.tbl_Prd_LinesTableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Prd_LinesTableAdapter();
+            this.tbl_Pro_Article_DTableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_Article_DTableAdapter();
+            this.tbl_Pro_Article1TableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_Article1TableAdapter();
+            this.tbl_Pro_Plan1TableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_Plan1TableAdapter();
+            this.tbl_Pro_Plan2TableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_Plan2TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.GroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Article_DBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Article1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSMP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Plan1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ClientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Plan2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Prd_LinesBindingSource)).BeginInit();
             this.GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,7 +144,7 @@ namespace ERP_Production.Reports
             this.GroupBox2.Controls.Add(this.Label1);
             this.GroupBox2.Controls.Add(this.DateTimePicker2);
             this.GroupBox2.Controls.Add(this.DateTimePicker1);
-            this.GroupBox2.Location = new System.Drawing.Point(432, 48);
+            this.GroupBox2.Location = new System.Drawing.Point(485, 48);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Size = new System.Drawing.Size(334, 693);
             this.GroupBox2.TabIndex = 3;
@@ -190,6 +212,7 @@ namespace ERP_Production.Reports
             // 
             this.ArtSizeComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.ArtSizeComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ArtSizeComboBox.DataSource = this.tbl_Pro_Article_DBindingSource;
             this.ArtSizeComboBox.DisplayMember = "ArtSize";
             this.ArtSizeComboBox.FormattingEnabled = true;
             this.ArtSizeComboBox.Location = new System.Drawing.Point(105, 135);
@@ -197,6 +220,21 @@ namespace ERP_Production.Reports
             this.ArtSizeComboBox.Size = new System.Drawing.Size(154, 23);
             this.ArtSizeComboBox.TabIndex = 15;
             this.ArtSizeComboBox.ValueMember = "ArtSize";
+            // 
+            // tbl_Pro_Article_DBindingSource
+            // 
+            this.tbl_Pro_Article_DBindingSource.DataMember = "tbl_Pro_Article1_tbl_Pro_Article_D";
+            this.tbl_Pro_Article_DBindingSource.DataSource = this.tbl_Pro_Article1BindingSource;
+            // 
+            // tbl_Pro_Article1BindingSource
+            // 
+            this.tbl_Pro_Article1BindingSource.DataMember = "tbl_Pro_Article1";
+            this.tbl_Pro_Article1BindingSource.DataSource = this.dSMP;
+            // 
+            // dSMP
+            // 
+            this.dSMP.DataSetName = "DSMP";
+            this.dSMP.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ArtCodeLabel
             // 
@@ -211,6 +249,7 @@ namespace ERP_Production.Reports
             // 
             this.ArtCodeComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.ArtCodeComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ArtCodeComboBox.DataSource = this.tbl_Pro_Article1BindingSource;
             this.ArtCodeComboBox.DisplayMember = "ArtCode";
             this.ArtCodeComboBox.FormattingEnabled = true;
             this.ArtCodeComboBox.Location = new System.Drawing.Point(105, 106);
@@ -232,6 +271,7 @@ namespace ERP_Production.Reports
             // 
             this.MPIDComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.MPIDComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.MPIDComboBox1.DataSource = this.tbl_Pro_Plan1BindingSource;
             this.MPIDComboBox1.DisplayMember = "MPID";
             this.MPIDComboBox1.FormattingEnabled = true;
             this.MPIDComboBox1.Location = new System.Drawing.Point(105, 188);
@@ -239,6 +279,16 @@ namespace ERP_Production.Reports
             this.MPIDComboBox1.Size = new System.Drawing.Size(154, 23);
             this.MPIDComboBox1.TabIndex = 11;
             this.MPIDComboBox1.ValueMember = "MPID";
+            // 
+            // tbl_Pro_Plan1BindingSource
+            // 
+            this.tbl_Pro_Plan1BindingSource.DataMember = "tbl_Pro_Client_tbl_Pro_Plan1";
+            this.tbl_Pro_Plan1BindingSource.DataSource = this.tbl_Pro_ClientBindingSource;
+            // 
+            // tbl_Pro_ClientBindingSource
+            // 
+            this.tbl_Pro_ClientBindingSource.DataMember = "tbl_Pro_Client";
+            this.tbl_Pro_ClientBindingSource.DataSource = this.dSMP;
             // 
             // MPIDLabel
             // 
@@ -253,6 +303,7 @@ namespace ERP_Production.Reports
             // 
             this.MPIDComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.MPIDComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.MPIDComboBox.DataSource = this.tbl_Pro_Plan2BindingSource;
             this.MPIDComboBox.DisplayMember = "MPID";
             this.MPIDComboBox.FormattingEnabled = true;
             this.MPIDComboBox.Location = new System.Drawing.Point(105, 161);
@@ -260,6 +311,11 @@ namespace ERP_Production.Reports
             this.MPIDComboBox.Size = new System.Drawing.Size(154, 23);
             this.MPIDComboBox.TabIndex = 10;
             this.MPIDComboBox.ValueMember = "MPID";
+            // 
+            // tbl_Pro_Plan2BindingSource
+            // 
+            this.tbl_Pro_Plan2BindingSource.DataMember = "tbl_Pro_Client_tbl_Pro_Plan2";
+            this.tbl_Pro_Plan2BindingSource.DataSource = this.tbl_Pro_ClientBindingSource;
             // 
             // ClientIDLabel
             // 
@@ -274,6 +330,7 @@ namespace ERP_Production.Reports
             // 
             this.ClientIDComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.ClientIDComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ClientIDComboBox.DataSource = this.tbl_Pro_ClientBindingSource;
             this.ClientIDComboBox.DisplayMember = "ClientName";
             this.ClientIDComboBox.FormattingEnabled = true;
             this.ClientIDComboBox.Location = new System.Drawing.Point(105, 27);
@@ -299,11 +356,13 @@ namespace ERP_Production.Reports
             this.btnReport.TabIndex = 3;
             this.btnReport.Text = "Show Report";
             this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click_1);
             // 
             // PrdLineNameComboBox
             // 
             this.PrdLineNameComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.PrdLineNameComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.PrdLineNameComboBox.DataSource = this.tbl_Prd_LinesBindingSource;
             this.PrdLineNameComboBox.DisplayMember = "PrdLineName";
             this.PrdLineNameComboBox.FormattingEnabled = true;
             this.PrdLineNameComboBox.Location = new System.Drawing.Point(105, 53);
@@ -311,6 +370,11 @@ namespace ERP_Production.Reports
             this.PrdLineNameComboBox.Size = new System.Drawing.Size(154, 23);
             this.PrdLineNameComboBox.TabIndex = 6;
             this.PrdLineNameComboBox.ValueMember = "PrdLine";
+            // 
+            // tbl_Prd_LinesBindingSource
+            // 
+            this.tbl_Prd_LinesBindingSource.DataMember = "tbl_Prd_Lines";
+            this.tbl_Prd_LinesBindingSource.DataSource = this.dSMP;
             // 
             // Label2
             // 
@@ -482,6 +546,7 @@ namespace ERP_Production.Reports
             this.RadioButton19.TabIndex = 22;
             this.RadioButton19.Text = "(B34005) Master Plan Line Balances All";
             this.RadioButton19.UseVisualStyleBackColor = true;
+            this.RadioButton19.CheckedChanged += new System.EventHandler(this.RadioButton19_CheckedChanged);
             // 
             // RadioButton18
             // 
@@ -618,6 +683,7 @@ namespace ERP_Production.Reports
             this.RadioButton8.TabIndex = 9;
             this.RadioButton8.Text = "Master Plan Materials";
             this.RadioButton8.UseVisualStyleBackColor = true;
+            this.RadioButton8.CheckedChanged += new System.EventHandler(this.RadioButton8_CheckedChanged);
             // 
             // RadioButton7
             // 
@@ -630,6 +696,7 @@ namespace ERP_Production.Reports
             this.RadioButton7.TabStop = true;
             this.RadioButton7.Text = "Master Plan Report";
             this.RadioButton7.UseVisualStyleBackColor = true;
+            this.RadioButton7.CheckedChanged += new System.EventHandler(this.RadioButton7_CheckedChanged);
             // 
             // RadioButton5
             // 
@@ -692,6 +759,44 @@ namespace ERP_Production.Reports
             this.RadioButton1.Text = "Master Plan R2I Balances";
             this.RadioButton1.UseVisualStyleBackColor = true;
             // 
+            // tbl_Pro_ClientTableAdapter
+            // 
+            this.tbl_Pro_ClientTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.tbl_Prd_LinesTableAdapter = this.tbl_Prd_LinesTableAdapter;
+            this.tableAdapterManager.tbl_Pro_Article_DTableAdapter = this.tbl_Pro_Article_DTableAdapter;
+            this.tableAdapterManager.tbl_Pro_Article1TableAdapter = this.tbl_Pro_Article1TableAdapter;
+            this.tableAdapterManager.tbl_Pro_ArticleTableAdapter = null;
+            this.tableAdapterManager.tbl_Pro_ClientTableAdapter = this.tbl_Pro_ClientTableAdapter;
+            this.tableAdapterManager.tbl_Pro_ModelTableAdapter = null;
+            this.tableAdapterManager.tbl_Pro_Plan1TableAdapter = this.tbl_Pro_Plan1TableAdapter;
+            this.tableAdapterManager.tbl_Pro_Plan2TableAdapter = this.tbl_Pro_Plan2TableAdapter;
+            this.tableAdapterManager.tbl_Pro_PlanTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ERP_Production.Reports.DSMPTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // tbl_Prd_LinesTableAdapter
+            // 
+            this.tbl_Prd_LinesTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_Pro_Article_DTableAdapter
+            // 
+            this.tbl_Pro_Article_DTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_Pro_Article1TableAdapter
+            // 
+            this.tbl_Pro_Article1TableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_Pro_Plan1TableAdapter
+            // 
+            this.tbl_Pro_Plan1TableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_Pro_Plan2TableAdapter
+            // 
+            this.tbl_Pro_Plan2TableAdapter.ClearBeforeFill = true;
+            // 
             // frmMasterPlanningReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -700,9 +805,17 @@ namespace ERP_Production.Reports
             this.Controls.Add(this.groupControl1);
             this.Name = "frmMasterPlanningReports";
             this.Text = "frmMasterPlanningReports";
+            this.Load += new System.EventHandler(this.frmMasterPlanningReports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.GroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Article_DBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Article1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSMP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Plan1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ClientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Plan2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Prd_LinesBindingSource)).EndInit();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -712,28 +825,6 @@ namespace ERP_Production.Reports
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        internal System.Windows.Forms.GroupBox GroupBox2;
-        internal System.Windows.Forms.Label Label5;
-        internal System.Windows.Forms.ComboBox FactoryCodeComboBox1;
-        internal System.Windows.Forms.Label Label4;
-        internal System.Windows.Forms.ComboBox CbSize;
-        internal System.Windows.Forms.Label ArtSizeLabel;
-        internal System.Windows.Forms.ComboBox ArtSizeComboBox;
-        internal System.Windows.Forms.Label ArtCodeLabel;
-        internal System.Windows.Forms.ComboBox ArtCodeComboBox;
-        internal System.Windows.Forms.Label MPIDLabel1;
-        internal System.Windows.Forms.ComboBox MPIDComboBox1;
-        internal System.Windows.Forms.Label MPIDLabel;
-        internal System.Windows.Forms.ComboBox MPIDComboBox;
-        internal System.Windows.Forms.Label ClientIDLabel;
-        internal System.Windows.Forms.ComboBox ClientIDComboBox;
-        internal System.Windows.Forms.Label PrdLineNameLabel;
-        internal System.Windows.Forms.Button btnReport;
-        internal System.Windows.Forms.ComboBox PrdLineNameComboBox;
-        internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.DateTimePicker DateTimePicker2;
-        internal System.Windows.Forms.DateTimePicker DateTimePicker1;
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.RadioButton RadioButton27;
         internal System.Windows.Forms.RadioButton RadioButton26;
@@ -764,5 +855,41 @@ namespace ERP_Production.Reports
         internal System.Windows.Forms.RadioButton RadioButton3;
         internal System.Windows.Forms.RadioButton RadioButton2;
         internal System.Windows.Forms.RadioButton RadioButton1;
+        private DSMP dSMP;
+        private System.Windows.Forms.BindingSource tbl_Pro_ClientBindingSource;
+        private DSMPTableAdapters.tbl_Pro_ClientTableAdapter tbl_Pro_ClientTableAdapter;
+        private DSMPTableAdapters.TableAdapterManager tableAdapterManager;
+        private DSMPTableAdapters.tbl_Pro_Article1TableAdapter tbl_Pro_Article1TableAdapter;
+        private System.Windows.Forms.BindingSource tbl_Pro_Article1BindingSource;
+        private DSMPTableAdapters.tbl_Pro_Article_DTableAdapter tbl_Pro_Article_DTableAdapter;
+        private System.Windows.Forms.BindingSource tbl_Pro_Article_DBindingSource;
+        private DSMPTableAdapters.tbl_Pro_Plan1TableAdapter tbl_Pro_Plan1TableAdapter;
+        private System.Windows.Forms.BindingSource tbl_Pro_Plan1BindingSource;
+        private DSMPTableAdapters.tbl_Pro_Plan2TableAdapter tbl_Pro_Plan2TableAdapter;
+        private System.Windows.Forms.BindingSource tbl_Pro_Plan2BindingSource;
+        private DSMPTableAdapters.tbl_Prd_LinesTableAdapter tbl_Prd_LinesTableAdapter;
+        private System.Windows.Forms.BindingSource tbl_Prd_LinesBindingSource;
+        internal System.Windows.Forms.GroupBox GroupBox2;
+        internal System.Windows.Forms.Label Label5;
+        internal System.Windows.Forms.ComboBox FactoryCodeComboBox1;
+        internal System.Windows.Forms.Label Label4;
+        internal System.Windows.Forms.ComboBox CbSize;
+        internal System.Windows.Forms.Label ArtSizeLabel;
+        internal System.Windows.Forms.ComboBox ArtSizeComboBox;
+        internal System.Windows.Forms.Label ArtCodeLabel;
+        internal System.Windows.Forms.ComboBox ArtCodeComboBox;
+        internal System.Windows.Forms.Label MPIDLabel1;
+        internal System.Windows.Forms.ComboBox MPIDComboBox1;
+        internal System.Windows.Forms.Label MPIDLabel;
+        internal System.Windows.Forms.ComboBox MPIDComboBox;
+        internal System.Windows.Forms.Label ClientIDLabel;
+        internal System.Windows.Forms.ComboBox ClientIDComboBox;
+        internal System.Windows.Forms.Label PrdLineNameLabel;
+        internal System.Windows.Forms.Button btnReport;
+        internal System.Windows.Forms.ComboBox PrdLineNameComboBox;
+        internal System.Windows.Forms.Label Label2;
+        internal System.Windows.Forms.Label Label1;
+        internal System.Windows.Forms.DateTimePicker DateTimePicker2;
+        internal System.Windows.Forms.DateTimePicker DateTimePicker1;
     }
 }

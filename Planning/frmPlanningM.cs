@@ -31,6 +31,8 @@ namespace ERP_Production.Planning
 
         private void frmPlanningM_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dSPlanning.View_Multi_Requisition_Date' table. You can move, or remove it, as needed.
+            this.view_Multi_Requisition_DateTableAdapter.Fill(this.dSPlanning.View_Multi_Requisition_Date);
             dateEdit1.EditValue = DateTime.Now.Date;
             dateEdit2.EditValue = DateTime.Now.Date;
             // TODO: This line of code loads data into the 'dSPlanning.tbl_MaterialName' table. You can move, or remove it, as needed.
@@ -49,9 +51,16 @@ namespace ERP_Production.Planning
                 //Console.WriteLine("An error occurred: " + ex.Message);
                 // You can also use logging frameworks or display a message box in a UI application
             }
-
+           var a  =  this.view_Multi_Requisition_DateTableAdapter.Fill(this.dSPlanning.View_Multi_Requisition_Date);
+            if (a > 0)
+            {
+                for (int k = 0; k < a; k++)
+                {
+                    this.view_Multi_Requisition_DateTableAdapter.UpdateQuery(DateTime.Now.Date, Convert.ToInt32(this.dSPlanning.View_Multi_Requisition_Date.Rows[k]["ReqID"]));
+                }
+            }
             // TODO: This line of code loads data into the 'mISDataSet.tbl_Multi_PO_Req' table. You can move, or remove it, as needed.
-           
+
             // TODO: This line of code loads data into the 'dSPlanning.View_Mtlti_po_ReqFinel' table. You can move, or remove it, as needed.
             //this.view_Mtlti_po_ReqFinelTableAdapter.Fill(this.dSPlanning.View_Mtlti_po_ReqFinel);
             // TODO: This line of code loads data into the 'dSPlanning.View_Multi_po_planningFectory' table. You can move, or remove it, as needed.

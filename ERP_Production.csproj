@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>100</ApplicationRevision>
+    <ApplicationRevision>101</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -410,6 +410,14 @@
     <Compile Include="PurchaseOrderReport.Designer.cs">
       <DependentUpon>PurchaseOrderReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\DSMP.cs">
+      <DependentUpon>DSMP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DSMP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMP.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reports\frmMasterPlanningReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -721,6 +729,17 @@
     </None>
     <None Include="Purchase Order\DSPurchaseOrderNew.xss">
       <DependentUpon>DSPurchaseOrderNew.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DSMP.xsc">
+      <DependentUpon>DSMP.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DSMP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\DSMP.xss">
+      <DependentUpon>DSMP.xsd</DependentUpon>
     </None>
     <None Include="Resources\saveandclose.svg" />
   </ItemGroup>

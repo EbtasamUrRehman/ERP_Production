@@ -54,6 +54,7 @@ namespace ERP_Production
             this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -240,7 +241,8 @@ namespace ERP_Production
             // 
             this.accordionControlElement12.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement15,
-            this.accordionControlElement16});
+            this.accordionControlElement16,
+            this.accordionControlElement19});
             this.accordionControlElement12.Expanded = true;
             this.accordionControlElement12.Name = "accordionControlElement12";
             this.accordionControlElement12.Text = "Reports";
@@ -258,6 +260,13 @@ namespace ERP_Production
             this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement16.Text = "Planning Reports";
             this.accordionControlElement16.Click += new System.EventHandler(this.accordionControlElement16_Click);
+            // 
+            // accordionControlElement19
+            // 
+            this.accordionControlElement19.Name = "accordionControlElement19";
+            this.accordionControlElement19.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement19.Text = "Master Planning Reports";
+            this.accordionControlElement19.Click += new System.EventHandler(this.accordionControlElement19_Click_1);
             // 
             // accordionControlElement13
             // 
@@ -380,5 +389,6 @@ namespace ERP_Production
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement20;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement21;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement22;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement19;
     }
 }

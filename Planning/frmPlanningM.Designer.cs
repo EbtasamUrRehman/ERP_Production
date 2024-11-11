@@ -112,6 +112,7 @@ namespace ERP_Production.Planning
             this.colModelName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPartielQty = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colArtCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCountryName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemPlan = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
@@ -274,6 +275,8 @@ namespace ERP_Production.Planning
             this.searchLookUpEdit2 = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.tbl_MaterialNameBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.searchLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn68 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn69 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tokenEdit1 = new DevExpress.XtraEditors.TokenEdit();
             this.comboBoxEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
@@ -431,9 +434,8 @@ namespace ERP_Production.Planning
             this.view_Inv_Mat_AvailableTableAdapter = new ERP_Production.Planning.DSPlanningTableAdapters.View_Inv_Mat_AvailableTableAdapter();
             this.view_Multi_requsitionMaterialTableAdapter = new ERP_Production.Planning.DSPlanningTableAdapters.View_Multi_requsitionMaterialTableAdapter();
             this.tbl_MaterialNameTableAdapter = new ERP_Production.Planning.DSPlanningTableAdapters.tbl_MaterialNameTableAdapter();
-            this.colCountryName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn68 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn69 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.view_Multi_Requisition_DateBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.view_Multi_Requisition_DateTableAdapter = new ERP_Production.Planning.DSPlanningTableAdapters.View_Multi_Requisition_DateTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
@@ -604,6 +606,7 @@ namespace ERP_Production.Planning
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_ReqInsertBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_Plan2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_Inv_Mat_AvailableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_Requisition_DateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // repositoryItemButtonEdit3
@@ -671,9 +674,9 @@ namespace ERP_Production.Planning
             // 
             this.panelControl13.Controls.Add(this.gridControl1);
             this.panelControl13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl13.Location = new System.Drawing.Point(2, 112);
+            this.panelControl13.Location = new System.Drawing.Point(2, 111);
             this.panelControl13.Name = "panelControl13";
-            this.panelControl13.Size = new System.Drawing.Size(1799, 692);
+            this.panelControl13.Size = new System.Drawing.Size(1799, 693);
             this.panelControl13.TabIndex = 3;
             // 
             // gridControl1
@@ -686,7 +689,7 @@ namespace ERP_Production.Planning
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPlan,
             this.repositoryItemComboBox1});
-            this.gridControl1.Size = new System.Drawing.Size(1795, 688);
+            this.gridControl1.Size = new System.Drawing.Size(1795, 689);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1016,6 +1019,13 @@ namespace ERP_Production.Planning
             this.colArtCode.VisibleIndex = 2;
             this.colArtCode.Width = 105;
             // 
+            // colCountryName
+            // 
+            this.colCountryName.FieldName = "CountryName";
+            this.colCountryName.Name = "colCountryName";
+            this.colCountryName.Visible = true;
+            this.colCountryName.VisibleIndex = 10;
+            // 
             // gridColumn1
             // 
             this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
@@ -1055,7 +1065,7 @@ namespace ERP_Production.Planning
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl4.Location = new System.Drawing.Point(2, 2);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1799, 110);
+            this.panelControl4.Size = new System.Drawing.Size(1799, 109);
             this.panelControl4.TabIndex = 2;
             this.panelControl4.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl4_Paint);
             // 
@@ -1065,7 +1075,7 @@ namespace ERP_Production.Planning
             this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
             this.groupControl1.Controls.Add(this.panelControl16);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(2, 46);
+            this.groupControl1.Location = new System.Drawing.Point(2, 45);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(1795, 62);
             this.groupControl1.TabIndex = 2;
@@ -1266,7 +1276,7 @@ namespace ERP_Production.Planning
             this.panelControl7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl7.Location = new System.Drawing.Point(2, 2);
             this.panelControl7.Name = "panelControl7";
-            this.panelControl7.Size = new System.Drawing.Size(1795, 44);
+            this.panelControl7.Size = new System.Drawing.Size(1795, 43);
             this.panelControl7.TabIndex = 6;
             // 
             // labelControl4
@@ -2037,7 +2047,7 @@ namespace ERP_Production.Planning
             this.panelControl25.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl25.Location = new System.Drawing.Point(2, 2);
             this.panelControl25.Name = "panelControl25";
-            this.panelControl25.Size = new System.Drawing.Size(1033, 80);
+            this.panelControl25.Size = new System.Drawing.Size(1074, 80);
             this.panelControl25.TabIndex = 29;
             // 
             // panelControl26
@@ -2054,7 +2064,7 @@ namespace ERP_Production.Planning
             this.panelControl26.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl26.Location = new System.Drawing.Point(2, 2);
             this.panelControl26.Name = "panelControl26";
-            this.panelControl26.Size = new System.Drawing.Size(1029, 37);
+            this.panelControl26.Size = new System.Drawing.Size(1070, 37);
             this.panelControl26.TabIndex = 30;
             // 
             // labelControl24
@@ -2174,7 +2184,7 @@ namespace ERP_Production.Planning
             this.panelControl17.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl17.Location = new System.Drawing.Point(2, 42);
             this.panelControl17.Name = "panelControl17";
-            this.panelControl17.Size = new System.Drawing.Size(1029, 36);
+            this.panelControl17.Size = new System.Drawing.Size(1070, 36);
             this.panelControl17.TabIndex = 28;
             // 
             // labelControl34
@@ -2202,7 +2212,7 @@ namespace ERP_Production.Planning
             // 
             // checkButton1
             // 
-            this.checkButton1.Location = new System.Drawing.Point(947, 8);
+            this.checkButton1.Location = new System.Drawing.Point(997, 6);
             this.checkButton1.Name = "checkButton1";
             this.checkButton1.Size = new System.Drawing.Size(68, 22);
             this.checkButton1.TabIndex = 27;
@@ -2598,6 +2608,22 @@ namespace ERP_Production.Planning
             this.searchLookUpEdit2View.Name = "searchLookUpEdit2View";
             this.searchLookUpEdit2View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit2View.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn68
+            // 
+            this.gridColumn68.FieldName = "L4Name";
+            this.gridColumn68.Name = "gridColumn68";
+            this.gridColumn68.Visible = true;
+            this.gridColumn68.VisibleIndex = 0;
+            this.gridColumn68.Width = 1060;
+            // 
+            // gridColumn69
+            // 
+            this.gridColumn69.FieldName = "Code";
+            this.gridColumn69.Name = "gridColumn69";
+            this.gridColumn69.Visible = true;
+            this.gridColumn69.VisibleIndex = 1;
+            this.gridColumn69.Width = 271;
             // 
             // tokenEdit1
             // 
@@ -3915,28 +3941,14 @@ namespace ERP_Production.Planning
             // 
             this.tbl_MaterialNameTableAdapter.ClearBeforeFill = true;
             // 
-            // colCountryName
+            // view_Multi_Requisition_DateBindingSource
             // 
-            this.colCountryName.FieldName = "CountryName";
-            this.colCountryName.Name = "colCountryName";
-            this.colCountryName.Visible = true;
-            this.colCountryName.VisibleIndex = 10;
+            this.view_Multi_Requisition_DateBindingSource.DataSource = this.dSPlanning;
+            this.view_Multi_Requisition_DateBindingSource.Position = 0;
             // 
-            // gridColumn68
+            // view_Multi_Requisition_DateTableAdapter
             // 
-            this.gridColumn68.FieldName = "L4Name";
-            this.gridColumn68.Name = "gridColumn68";
-            this.gridColumn68.Visible = true;
-            this.gridColumn68.VisibleIndex = 0;
-            this.gridColumn68.Width = 1060;
-            // 
-            // gridColumn69
-            // 
-            this.gridColumn69.FieldName = "Code";
-            this.gridColumn69.Name = "gridColumn69";
-            this.gridColumn69.Visible = true;
-            this.gridColumn69.VisibleIndex = 1;
-            this.gridColumn69.Width = 271;
+            this.view_Multi_Requisition_DateTableAdapter.ClearBeforeFill = true;
             // 
             // frmPlanningM
             // 
@@ -4138,6 +4150,7 @@ namespace ERP_Production.Planning
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_ReqInsertBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Multi_PO_Plan2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_Inv_Mat_AvailableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_Requisition_DateBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4512,6 +4525,8 @@ namespace ERP_Production.Planning
         private DevExpress.XtraGrid.Columns.GridColumn colCountryName;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn68;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn69;
+        private System.Windows.Forms.BindingSource view_Multi_Requisition_DateBindingSource;
+        private DSPlanningTableAdapters.View_Multi_Requisition_DateTableAdapter view_Multi_Requisition_DateTableAdapter;
         //private DSPlanningTableAdapters.View_Mtlti_po_ReqFinelTableAdapter view_Mtlti_po_ReqFinelTableAdapter;
     }
 }
