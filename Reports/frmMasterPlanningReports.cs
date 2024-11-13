@@ -446,7 +446,7 @@ namespace ERP_Production.Reports
                 {
                     Filter = "{View_PC_Plan1.ClientID} = " + this.ClientIDComboBox.SelectedValue + " AND {View_PC_Plan1.CustReqDate} in #" + this.DateTimePicker1.Value.ToString("MM/dd/yyyy") + "# to #" + this.DateTimePicker2.Value.ToString("MM/dd/yyyy") + "#";
                 }
-                Path = @"\\dnsserver\MyReports$\FSERPPC\Issue\PlanIssueBalance.rpt";
+                Path = @"\\dnsserver\MyReports$\FSERPPC\Issue\s4PlanIssueBalance.rpt";
             }
             if (this.RadioButton4.Checked == true)
             {
@@ -762,6 +762,34 @@ namespace ERP_Production.Reports
 
         this.Label4.Enabled = false;
         this.CbSize.Enabled = false;
+        }
+
+        private void RadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            this.Label1.Enabled = true;
+            this.Label2.Enabled = true;
+
+            this.FactoryCodeComboBox1.Enabled = false;
+            this.DateTimePicker1.Enabled = true;
+            this.DateTimePicker2.Enabled = true;
+
+            this.PrdLineNameLabel.Enabled = false;
+            this.PrdLineNameComboBox.Enabled = false;
+
+            this.MPIDLabel.Enabled = false;
+            this.MPIDLabel1.Enabled = false;
+            this.MPIDComboBox.Enabled = false;
+            this.MPIDComboBox1.Enabled = false;
+
+            this.ArtCodeLabel.Enabled = false;
+            this.ArtCodeComboBox.Enabled = false;
+
+            this.ArtSizeLabel.Enabled = false;
+            this.ArtSizeComboBox.Enabled = false;
+
+            this.Label4.Enabled = false;
+            this.CbSize.Enabled = false;
+
         }
     }
 }

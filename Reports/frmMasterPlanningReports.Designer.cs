@@ -738,6 +738,7 @@ namespace ERP_Production.Reports
             this.RadioButton3.TabIndex = 5;
             this.RadioButton3.Text = "PO Issue Balance by Customer Req Date";
             this.RadioButton3.UseVisualStyleBackColor = true;
+            this.RadioButton3.CheckedChanged += new System.EventHandler(this.RadioButton3_CheckedChanged);
             // 
             // RadioButton2
             // 
