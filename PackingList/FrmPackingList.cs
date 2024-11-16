@@ -100,7 +100,7 @@ namespace ERP_Production.PackingList
                 {
                     var orderQty = dSPackingList.View_MultiLine_Packing_List1.Rows[i]["orderQty"]; // replace with actual column name
                     var CartonQty = dSPackingList.View_MultiLine_Packing_List1.Rows[i]["CartonQty"];
-                   
+                    var POCode = dSPackingList.View_MultiLine_Packing_List1.Rows[i]["POCode"];
                     int pos = (int)dSPackingList.View_MultiLine_Packing_List1.Rows[i]["POS"];
                     int pom = (int)dSPackingList.View_MultiLine_Packing_List1.Rows[i]["POM"];
                     object cartonIdValue = dSPackingList.View_MultiLine_Packing_List1.Rows[i]["CartonID"];
@@ -153,7 +153,7 @@ namespace ERP_Production.PackingList
                                 if (endPackage > 0)
                                 {
                                     endPackage = maxPackage + endPackage;
-                                    this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.EditValue + comboBoxEdit1.Text, (int)CartonID);
+                                    this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, POCode + comboBoxEdit1.Text, (int)orderQty, po.ToString() + comboBoxEdit1.Text, (int)CartonID);
 
 
                                     maxPackNo = (int)this.tbl_Multi_PackListTableAdapter.ScalarQueryMaxPackNo(po, pom, pos);
@@ -172,7 +172,7 @@ namespace ERP_Production.PackingList
                                     {
                                         maxPackage = 0;
                                     }
-                                    this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.EditValue + comboBoxEdit1.Text, (int?)CartonID);
+                                    this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, POCode + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.EditValue + comboBoxEdit1.Text, (int?)CartonID);
                                     //this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
                                     //InsertRecord(po, pom, pos, maxPackage + 1, maxPackage + 1,
                                     //    remainder, searchLookUpEdit1.Text + codeValue, (int)orderQty, (int)CartonQty);
@@ -230,7 +230,7 @@ namespace ERP_Production.PackingList
         }
             private void InsertRecord(int po, int pom, int pod, int startPackage, int endPackage, int perPackage, string poCode, int orderQty, int ctnId)
             {
-                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pod, startPackage, endPackage, perPackage, null, null, poCode + comboBoxEdit1.Text, orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, ctnId);
+                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pod, startPackage, endPackage, perPackage, null, null, poCode + comboBoxEdit1.Text, orderQty,this.searchLookUpEdit1.EditValue + comboBoxEdit1.Text, ctnId);
 
             }
 
@@ -530,7 +530,7 @@ namespace ERP_Production.PackingList
                                             if (endPackage > 0)
                                             {
                                                 endPackage = maxPackage + endPackage;
-                                                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)CartonID);
+                                                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty,this.searchLookUpEdit1.EditValue + comboBoxEdit1.Text, (int)CartonID);
                                                 //tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, (int)searchLookUpEdit1.EditValue);
                                                 //this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
 
@@ -550,7 +550,7 @@ namespace ERP_Production.PackingList
                                                 {
                                                     maxPackage = 0;
                                                 }
-                                                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, (int?)CartonID);
+                                                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty,this.searchLookUpEdit1.EditValue + comboBoxEdit1.Text, (int?)CartonID);
                                                 //this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
                                                 //InsertRecord(po, pom, pos, maxPackage + 1, maxPackage + 1,
                                                 //    remainder, searchLookUpEdit1.Text + codeValue, (int)orderQty, (int)CartonQty);
@@ -697,7 +697,7 @@ namespace ERP_Production.PackingList
                                         if (endPackage > 0)
                                         {
                                             endPackage = maxPackage + endPackage;
-                                            this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, PoCode + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)CartonID);
+                                            this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, PoCode + comboBoxEdit1.Text, (int)orderQty, po.ToString() + comboBoxEdit1.Text, (int)CartonID);
 
 
                                             maxPackNo = (int)this.tbl_Multi_PackListTableAdapter.ScalarQueryMaxPackNo(po, pom, pos);
@@ -716,7 +716,7 @@ namespace ERP_Production.PackingList
                                             {
                                                 maxPackage = 0;
                                             }
-                                            this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, PoCode + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, (int?)CartonID);
+                                            this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, PoCode + comboBoxEdit1.Text, (int)orderQty, po.ToString() + comboBoxEdit1.Text, (int?)CartonID);
                                             //this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
                                             //InsertRecord(po, pom, pos, maxPackage + 1, maxPackage + 1,
                                             //    remainder, searchLookUpEdit1.Text + codeValue, (int)orderQty, (int)CartonQty);
@@ -940,7 +940,7 @@ namespace ERP_Production.PackingList
                                             if (endPackage > 0)
                                             {
                                                 endPackage = maxPackage + endPackage;
-                                                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)CartonID);
+                                                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, startPackage, endPackage, (decimal)CartonQty, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, po.ToString() + comboBoxEdit1.Text, (int)CartonID);
                                                 //tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, (int)searchLookUpEdit1.EditValue);
                                                 //this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
 
@@ -960,7 +960,7 @@ namespace ERP_Production.PackingList
                                                 {
                                                     maxPackage = 0;
                                                 }
-                                                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, this.searchLookUpEdit1.Text + comboBoxEdit1.Text, (int?)CartonID);
+                                                this.view_MultiLine_Packing_ListTableAdapter.InsertQuery(po, pom, pos, maxPackage + 1, maxPackage + 1, remainder, null, null, searchLookUpEdit1.Text + comboBoxEdit1.Text, (int)orderQty, po.ToString() + comboBoxEdit1.Text, (int?)CartonID);
                                                 //this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
                                                 //InsertRecord(po, pom, pos, maxPackage + 1, maxPackage + 1,
                                                 //    remainder, searchLookUpEdit1.Text + codeValue, (int)orderQty, (int)CartonQty);

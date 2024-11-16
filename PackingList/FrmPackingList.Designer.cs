@@ -125,6 +125,7 @@ namespace ERP_Production.PackingList
             this.colCustomerOrderNo1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colArtCode1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMarketPO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPO4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -230,6 +231,7 @@ namespace ERP_Production.PackingList
             this.tbl_Pro_Cust_IdentTableAdapter = new ERP_Production.PackingList.DSPackingListTableAdapters.tbl_Pro_Cust_IdentTableAdapter();
             this.tbl_carton_nameTableAdapter = new ERP_Production.PackingList.DSPackingListTableAdapters.tbl_carton_nameTableAdapter();
             this.tbl_Multi_PO_HMPackingTableAdapter = new ERP_Production.PackingList.DSPackingListTableAdapters.tbl_Multi_PO_HMPackingTableAdapter();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.CreatePackingList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -1110,7 +1112,8 @@ namespace ERP_Production.PackingList
             this.coluser_id,
             this.colCustomerOrderNo1,
             this.colArtCode1,
-            this.colMarketPO});
+            this.colMarketPO,
+            this.colPO4});
             this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -1182,6 +1185,13 @@ namespace ERP_Production.PackingList
             // 
             this.colMarketPO.FieldName = "MarketPO";
             this.colMarketPO.Name = "colMarketPO";
+            // 
+            // colPO4
+            // 
+            this.colPO4.FieldName = "PO";
+            this.colPO4.Name = "colPO4";
+            this.colPO4.Visible = true;
+            this.colPO4.VisibleIndex = 1;
             // 
             // labelControl1
             // 
@@ -1519,26 +1529,27 @@ namespace ERP_Production.PackingList
             this.tabPane3.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabNavigationPage5,
             this.tabNavigationPage4});
-            this.tabPane3.RegularSize = new System.Drawing.Size(455, 544);
+            this.tabPane3.RegularSize = new System.Drawing.Size(572, 544);
             this.tabPane3.SelectedPage = this.tabNavigationPage4;
-            this.tabPane3.Size = new System.Drawing.Size(455, 544);
+            this.tabPane3.Size = new System.Drawing.Size(572, 544);
             this.tabPane3.TabIndex = 23;
             this.tabPane3.Text = "tabPane3";
             // 
             // tabNavigationPage4
             // 
             this.tabNavigationPage4.Caption = "Copy PO";
+            this.tabNavigationPage4.Controls.Add(this.simpleButton10);
             this.tabNavigationPage4.Controls.Add(this.panelControl18);
             this.tabNavigationPage4.Controls.Add(this.panelControl17);
             this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(455, 513);
+            this.tabNavigationPage4.Size = new System.Drawing.Size(572, 513);
             // 
             // panelControl18
             // 
             this.panelControl18.Controls.Add(this.listBoxControl1);
-            this.panelControl18.Location = new System.Drawing.Point(271, 15);
+            this.panelControl18.Location = new System.Drawing.Point(298, 3);
             this.panelControl18.Name = "panelControl18";
-            this.panelControl18.Size = new System.Drawing.Size(181, 325);
+            this.panelControl18.Size = new System.Drawing.Size(268, 508);
             this.panelControl18.TabIndex = 25;
             // 
             // listBoxControl1
@@ -1546,7 +1557,7 @@ namespace ERP_Production.PackingList
             this.listBoxControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxControl1.Location = new System.Drawing.Point(2, 2);
             this.listBoxControl1.Name = "listBoxControl1";
-            this.listBoxControl1.Size = new System.Drawing.Size(177, 321);
+            this.listBoxControl1.Size = new System.Drawing.Size(264, 504);
             this.listBoxControl1.TabIndex = 0;
             // 
             // panelControl17
@@ -1574,7 +1585,7 @@ namespace ERP_Production.PackingList
             this.tabNavigationPage5.Controls.Add(this.panelControl15);
             this.tabNavigationPage5.Controls.Add(this.panelControl14);
             this.tabNavigationPage5.Name = "tabNavigationPage5";
-            this.tabNavigationPage5.Size = new System.Drawing.Size(455, 537);
+            this.tabNavigationPage5.Size = new System.Drawing.Size(569, 513);
             // 
             // panelControl15
             // 
@@ -1582,7 +1593,7 @@ namespace ERP_Production.PackingList
             this.panelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl15.Location = new System.Drawing.Point(0, 42);
             this.panelControl15.Name = "panelControl15";
-            this.panelControl15.Size = new System.Drawing.Size(455, 495);
+            this.panelControl15.Size = new System.Drawing.Size(569, 471);
             this.panelControl15.TabIndex = 25;
             // 
             // checkedListBoxControl1
@@ -1607,7 +1618,7 @@ namespace ERP_Production.PackingList
             this.checkedListBoxControl1.MultiColumn = true;
             this.checkedListBoxControl1.Name = "checkedListBoxControl1";
             this.checkedListBoxControl1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.checkedListBoxControl1.Size = new System.Drawing.Size(451, 491);
+            this.checkedListBoxControl1.Size = new System.Drawing.Size(565, 467);
             this.checkedListBoxControl1.TabIndex = 19;
             this.checkedListBoxControl1.ValueMember = "PO";
             // 
@@ -1621,7 +1632,7 @@ namespace ERP_Production.PackingList
             this.panelControl14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl14.Location = new System.Drawing.Point(0, 0);
             this.panelControl14.Name = "panelControl14";
-            this.panelControl14.Size = new System.Drawing.Size(455, 42);
+            this.panelControl14.Size = new System.Drawing.Size(569, 42);
             this.panelControl14.TabIndex = 24;
             // 
             // dateEdit5
@@ -2087,6 +2098,15 @@ namespace ERP_Production.PackingList
             // 
             this.tbl_Multi_PO_HMPackingTableAdapter.ClearBeforeFill = true;
             // 
+            // simpleButton10
+            // 
+            this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
+            this.simpleButton10.Location = new System.Drawing.Point(250, 186);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton10.Size = new System.Drawing.Size(42, 44);
+            this.simpleButton10.TabIndex = 26;
+            // 
             // FrmPackingList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2423,5 +2443,7 @@ namespace ERP_Production.PackingList
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private System.Windows.Forms.BindingSource tbl_Multi_PO_HMPackingBindingSource;
         private DSPackingListTableAdapters.tbl_Multi_PO_HMPackingTableAdapter tbl_Multi_PO_HMPackingTableAdapter;
+        private DevExpress.XtraGrid.Columns.GridColumn colPO4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
     }
 }
