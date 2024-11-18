@@ -1074,7 +1074,7 @@ namespace ERP_Production {
             
             private global::System.Data.DataColumn columnPOCode;
             
-            private global::System.Data.DataColumn columnEntryDate;
+            private global::System.Data.DataColumn columnPODD;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -1127,9 +1127,9 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn EntryDateColumn {
+            public global::System.Data.DataColumn PODDColumn {
                 get {
-                    return this.columnEntryDate;
+                    return this.columnPODD;
                 }
             }
             
@@ -1170,12 +1170,12 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbl_Multi_PO_HRow Addtbl_Multi_PO_HRow(string POCode, System.DateTime EntryDate) {
+            public tbl_Multi_PO_HRow Addtbl_Multi_PO_HRow(string POCode, System.DateTime PODD) {
                 tbl_Multi_PO_HRow rowtbl_Multi_PO_HRow = ((tbl_Multi_PO_HRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         POCode,
-                        EntryDate};
+                        PODD};
                 rowtbl_Multi_PO_HRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_Multi_PO_HRow);
                 return rowtbl_Multi_PO_HRow;
@@ -1200,7 +1200,7 @@ namespace ERP_Production {
             internal void InitVars() {
                 this.columnPO = base.Columns["PO"];
                 this.columnPOCode = base.Columns["POCode"];
-                this.columnEntryDate = base.Columns["EntryDate"];
+                this.columnPODD = base.Columns["PODD"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1210,8 +1210,8 @@ namespace ERP_Production {
                 base.Columns.Add(this.columnPO);
                 this.columnPOCode = new global::System.Data.DataColumn("POCode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPOCode);
-                this.columnEntryDate = new global::System.Data.DataColumn("EntryDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEntryDate);
+                this.columnPODD = new global::System.Data.DataColumn("PODD", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPODD);
                 this.columnPO.AutoIncrement = true;
                 this.columnPO.AutoIncrementSeed = -1;
                 this.columnPO.AutoIncrementStep = -1;
@@ -4543,30 +4543,30 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime EntryDate {
+            public System.DateTime PODD {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tabletbl_Multi_PO_H.EntryDateColumn]));
+                        return ((global::System.DateTime)(this[this.tabletbl_Multi_PO_H.PODDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'EntryDate\' in table \'tbl_Multi_PO_H\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'PODD\' in table \'tbl_Multi_PO_H\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_Multi_PO_H.EntryDateColumn] = value;
+                    this[this.tabletbl_Multi_PO_H.PODDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsEntryDateNull() {
-                return this.IsNull(this.tabletbl_Multi_PO_H.EntryDateColumn);
+            public bool IsPODDNull() {
+                return this.IsNull(this.tabletbl_Multi_PO_H.PODDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetEntryDateNull() {
-                this[this.tabletbl_Multi_PO_H.EntryDateColumn] = global::System.Convert.DBNull;
+            public void SetPODDNull() {
+                this[this.tabletbl_Multi_PO_H.PODDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -8227,7 +8227,7 @@ WHERE        (PO = ?)";
             tableMapping.DataSetTable = "tbl_Multi_PO_H";
             tableMapping.ColumnMappings.Add("PO", "PO");
             tableMapping.ColumnMappings.Add("POCode", "POCode");
-            tableMapping.ColumnMappings.Add("EntryDate", "EntryDate");
+            tableMapping.ColumnMappings.Add("PODD", "PODD");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -8244,27 +8244,27 @@ WHERE        (PO = ?)";
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        PO, POCode, EntryDate\r\nFROM            View_Multi_PO_Reports\r\nWHERE" +
-                "        (EntryDate BETWEEN ? AND ?)";
+            this._commandCollection[0].CommandText = "SELECT        PO, POCode, PODD\r\nFROM            View_Multi_PO_Reports\r\nWHERE     " +
+                "   (PODD BETWEEN ? AND ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDate", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EntryDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EntryDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DSPackingMaterial.tbl_Multi_PO_HDataTable dataTable, global::System.Nullable<global::System.DateTime> EntryDate, global::System.Nullable<global::System.DateTime> EntryDate1) {
+        public virtual int Fill(DSPackingMaterial.tbl_Multi_PO_HDataTable dataTable, global::System.Nullable<global::System.DateTime> PODD, global::System.Nullable<global::System.DateTime> PODD1) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((EntryDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(EntryDate.Value));
+            if ((PODD.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(PODD.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((EntryDate1.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(EntryDate1.Value));
+            if ((PODD1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(PODD1.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -8280,16 +8280,16 @@ WHERE        (PO = ?)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DSPackingMaterial.tbl_Multi_PO_HDataTable GetData(global::System.Nullable<global::System.DateTime> EntryDate, global::System.Nullable<global::System.DateTime> EntryDate1) {
+        public virtual DSPackingMaterial.tbl_Multi_PO_HDataTable GetData(global::System.Nullable<global::System.DateTime> PODD, global::System.Nullable<global::System.DateTime> PODD1) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((EntryDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(EntryDate.Value));
+            if ((PODD.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(PODD.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((EntryDate1.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(EntryDate1.Value));
+            if ((PODD1.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(PODD1.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
