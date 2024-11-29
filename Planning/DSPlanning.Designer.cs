@@ -4353,6 +4353,8 @@ namespace ERP_Production.Planning {
             
             private global::System.Data.DataColumn columnAvailableQty;
             
+            private global::System.Data.DataColumn columnAvailableQty1;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_Multi_Plan_ReqDataTable() {
@@ -4732,6 +4734,14 @@ namespace ERP_Production.Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn AvailableQty1Column {
+                get {
+                    return this.columnAvailableQty1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -4810,7 +4820,8 @@ namespace ERP_Production.Planning {
                         System.DateTime FPD, 
                         System.DateTime PODD, 
                         int PartialQty1, 
-                        decimal AvailableQty) {
+                        decimal AvailableQty, 
+                        int AvailableQty1) {
                 View_Multi_Plan_ReqRow rowView_Multi_Plan_ReqRow = ((View_Multi_Plan_ReqRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         LAName,
@@ -4855,7 +4866,8 @@ namespace ERP_Production.Planning {
                         FPD,
                         PODD,
                         PartialQty1,
-                        AvailableQty};
+                        AvailableQty,
+                        AvailableQty1};
                 rowView_Multi_Plan_ReqRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowView_Multi_Plan_ReqRow);
                 return rowView_Multi_Plan_ReqRow;
@@ -4921,6 +4933,7 @@ namespace ERP_Production.Planning {
                 this.columnPODD = base.Columns["PODD"];
                 this.columnPartialQty1 = base.Columns["PartialQty1"];
                 this.columnAvailableQty = base.Columns["AvailableQty"];
+                this.columnAvailableQty1 = base.Columns["AvailableQty1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5012,6 +5025,8 @@ namespace ERP_Production.Planning {
                 base.Columns.Add(this.columnPartialQty1);
                 this.columnAvailableQty = new global::System.Data.DataColumn("AvailableQty", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAvailableQty);
+                this.columnAvailableQty1 = new global::System.Data.DataColumn("AvailableQty1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAvailableQty1);
                 this.columnLAName.AllowDBNull = false;
                 this.columnLAName.MaxLength = 150;
                 this.columnMPID.AllowDBNull = false;
@@ -5042,6 +5057,8 @@ namespace ERP_Production.Planning {
                 this.columnRequiredQty.ReadOnly = true;
                 this.columnPartialQty1.Caption = "PartialQty";
                 this.columnAvailableQty.ReadOnly = true;
+                this.columnAvailableQty1.ReadOnly = true;
+                this.columnAvailableQty1.Caption = "AvailableQty";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7718,6 +7735,10 @@ namespace ERP_Production.Planning {
             
             private global::System.Data.DataColumn columnBarCode;
             
+            private global::System.Data.DataColumn columnPOCode;
+            
+            private global::System.Data.DataColumn columnPlanDate1;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public View_Multi_po_PlanRECDataTable() {
@@ -7985,6 +8006,22 @@ namespace ERP_Production.Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POCodeColumn {
+                get {
+                    return this.columnPOCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PlanDate1Column {
+                get {
+                    return this.columnPlanDate1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -8049,7 +8086,9 @@ namespace ERP_Production.Planning {
                         System.DateTime PSDD, 
                         System.DateTime FPD, 
                         System.DateTime PODD, 
-                        string BarCode) {
+                        string BarCode, 
+                        string POCode, 
+                        System.DateTime PlanDate1) {
                 View_Multi_po_PlanRECRow rowView_Multi_po_PlanRECRow = ((View_Multi_po_PlanRECRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         LAName,
@@ -8080,7 +8119,9 @@ namespace ERP_Production.Planning {
                         PSDD,
                         FPD,
                         PODD,
-                        BarCode};
+                        BarCode,
+                        POCode,
+                        PlanDate1};
                 rowView_Multi_po_PlanRECRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowView_Multi_po_PlanRECRow);
                 return rowView_Multi_po_PlanRECRow;
@@ -8132,6 +8173,8 @@ namespace ERP_Production.Planning {
                 this.columnFPD = base.Columns["FPD"];
                 this.columnPODD = base.Columns["PODD"];
                 this.columnBarCode = base.Columns["BarCode"];
+                this.columnPOCode = base.Columns["POCode"];
+                this.columnPlanDate1 = base.Columns["PlanDate1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8195,6 +8238,10 @@ namespace ERP_Production.Planning {
                 base.Columns.Add(this.columnPODD);
                 this.columnBarCode = new global::System.Data.DataColumn("BarCode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBarCode);
+                this.columnPOCode = new global::System.Data.DataColumn("POCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOCode);
+                this.columnPlanDate1 = new global::System.Data.DataColumn("PlanDate1", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlanDate1);
                 this.columnLAName.AllowDBNull = false;
                 this.columnLAName.MaxLength = 150;
                 this.columnMPID.AllowDBNull = false;
@@ -8206,15 +8253,13 @@ namespace ERP_Production.Planning {
                 this.columnPrdLine.AllowDBNull = false;
                 this.columnCustomerName.MaxLength = 250;
                 this.columnCompanyCode.MaxLength = 250;
-                this.columnCustID.AllowDBNull = false;
                 this.columnSize.AllowDBNull = false;
                 this.columnSize.MaxLength = 150;
-                this.columnModelName.AllowDBNull = false;
                 this.columnModelName.MaxLength = 100;
-                this.columnArtCode.AllowDBNull = false;
                 this.columnArtCode.MaxLength = 50;
                 this.columnPlantCode.MaxLength = 150;
                 this.columnBarCode.MaxLength = 50;
+                this.columnPOCode.MaxLength = 150;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17449,6 +17494,22 @@ namespace ERP_Production.Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int AvailableQty1 {
+                get {
+                    try {
+                        return ((int)(this[this.tableView_Multi_Plan_Req.AvailableQty1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AvailableQty1\' in table \'View_Multi_Plan_Req\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_Multi_Plan_Req.AvailableQty1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsExFactoryDateNull() {
                 return this.IsNull(this.tableView_Multi_Plan_Req.ExFactoryDateColumn);
             }
@@ -17817,6 +17878,18 @@ namespace ERP_Production.Planning {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetAvailableQtyNull() {
                 this[this.tableView_Multi_Plan_Req.AvailableQtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsAvailableQty1Null() {
+                return this.IsNull(this.tableView_Multi_Plan_Req.AvailableQty1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetAvailableQty1Null() {
+                this[this.tableView_Multi_Plan_Req.AvailableQty1Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -20445,7 +20518,12 @@ namespace ERP_Production.Planning {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int CustID {
                 get {
-                    return ((int)(this[this.tableView_Multi_po_PlanREC.CustIDColumn]));
+                    try {
+                        return ((int)(this[this.tableView_Multi_po_PlanREC.CustIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CustID\' in table \'View_Multi_po_PlanREC\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableView_Multi_po_PlanREC.CustIDColumn] = value;
@@ -20548,7 +20626,12 @@ namespace ERP_Production.Planning {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string ModelName {
                 get {
-                    return ((string)(this[this.tableView_Multi_po_PlanREC.ModelNameColumn]));
+                    try {
+                        return ((string)(this[this.tableView_Multi_po_PlanREC.ModelNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ModelName\' in table \'View_Multi_po_PlanREC\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableView_Multi_po_PlanREC.ModelNameColumn] = value;
@@ -20559,7 +20642,12 @@ namespace ERP_Production.Planning {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string ArtCode {
                 get {
-                    return ((string)(this[this.tableView_Multi_po_PlanREC.ArtCodeColumn]));
+                    try {
+                        return ((string)(this[this.tableView_Multi_po_PlanREC.ArtCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArtCode\' in table \'View_Multi_po_PlanREC\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableView_Multi_po_PlanREC.ArtCodeColumn] = value;
@@ -20643,6 +20731,38 @@ namespace ERP_Production.Planning {
                 }
                 set {
                     this[this.tableView_Multi_po_PlanREC.BarCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string POCode {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_Multi_po_PlanREC.POCodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'POCode\' in table \'View_Multi_po_PlanREC\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_Multi_po_PlanREC.POCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime PlanDate1 {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableView_Multi_po_PlanREC.PlanDate1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PlanDate1\' in table \'View_Multi_po_PlanREC\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_Multi_po_PlanREC.PlanDate1Column] = value;
                 }
             }
             
@@ -20756,6 +20876,18 @@ namespace ERP_Production.Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCustIDNull() {
+                return this.IsNull(this.tableView_Multi_po_PlanREC.CustIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCustIDNull() {
+                this[this.tableView_Multi_po_PlanREC.CustIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsLPDateNull() {
                 return this.IsNull(this.tableView_Multi_po_PlanREC.LPDateColumn);
             }
@@ -20816,6 +20948,30 @@ namespace ERP_Production.Planning {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsModelNameNull() {
+                return this.IsNull(this.tableView_Multi_po_PlanREC.ModelNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetModelNameNull() {
+                this[this.tableView_Multi_po_PlanREC.ModelNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsArtCodeNull() {
+                return this.IsNull(this.tableView_Multi_po_PlanREC.ArtCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetArtCodeNull() {
+                this[this.tableView_Multi_po_PlanREC.ArtCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsPlantCodeNull() {
                 return this.IsNull(this.tableView_Multi_po_PlanREC.PlantCodeColumn);
             }
@@ -20872,6 +21028,30 @@ namespace ERP_Production.Planning {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetBarCodeNull() {
                 this[this.tableView_Multi_po_PlanREC.BarCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPOCodeNull() {
+                return this.IsNull(this.tableView_Multi_po_PlanREC.POCodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPOCodeNull() {
+                this[this.tableView_Multi_po_PlanREC.POCodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPlanDate1Null() {
+                return this.IsNull(this.tableView_Multi_po_PlanREC.PlanDate1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPlanDate1Null() {
+                this[this.tableView_Multi_po_PlanREC.PlanDate1Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -29625,7 +29805,7 @@ VALUES        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
             tableMapping.ColumnMappings.Add("FPD", "FPD");
             tableMapping.ColumnMappings.Add("PODD", "PODD");
             tableMapping.ColumnMappings.Add("PartialQty", "PartialQty1");
-            tableMapping.ColumnMappings.Add("AvailableQty", "AvailableQty");
+            tableMapping.ColumnMappings.Add("AvailableQty", "AvailableQty1");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -29646,7 +29826,7 @@ VALUES        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
                          MatFormula, PrdLine, RecQty, PlantCode, CustomerName, CompanyCode, CustID, LPDate, SecondConfDate, LastEditDate, CreationDate, EntryDate, [Size], PrdLineName, Balance, RequiredQty, PartialQty, PSDD, FPD, PODD, 
                          AvailableQty
 FROM            View_Multi_Plan_Req
-WHERE        (MPID = ?) AND (Balance > 0)";
+WHERE        (MPID = ?) ";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("MPID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MPID", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
@@ -29655,13 +29835,13 @@ WHERE        (MPID = ?) AND (Balance > 0)";
                          MatFormula, PrdLine, RecQty, PlantCode, CustomerName, CompanyCode, CustID, LPDate, SecondConfDate, LastEditDate, CreationDate, EntryDate, [Size], PrdLineName, Balance, RequiredQty, PartialQty, PSDD, FPD, PODD, 
                          AvailableQty
 FROM            View_Multi_Plan_reqMS
-WHERE        (MPID = ?) AND (Balance > 0) AND (PrdLine = ?)";
+WHERE        (MPID = ?) AND (PrdLine = ?)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("MPID", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MPID", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PrdLine", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PrdLine", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = @"SELECT ArtID, AvailableQty, Balance, BarCode, ClientID, Code, CompanyCode, CreationDate, CustID, CustReqDate, CustomerName, EntryDate, ExFactoryDate, FPD, FactoryCode, L4Name, LAName, LPDate, LastEditDate, MPID, MatFormula, MatNumber, MatStatus, MaterialType, MaterialWastage, ModelID, NETWght, PODD, PSDD, PartialQty, PlanDate, PlanType, PlantCode, PrdLine, PrdLineName, RecQty, RequiredQty, SecondConfDate, [Size], TotPlanQty, TotalQty, Unit FROM View_Multi_Plan_Req WHERE (Balance > 0) AND (PlanDate BETWEEN ? AND ?) AND (Code = ?)";
+            this._commandCollection[2].CommandText = @"SELECT ArtID, AvailableQty, Balance, BarCode, ClientID, Code, CompanyCode, CreationDate, CustID, CustReqDate, CustomerName, EntryDate, ExFactoryDate, FPD, FactoryCode, L4Name, LAName, LPDate, LastEditDate, MPID, MatFormula, MatNumber, MatStatus, MaterialType, MaterialWastage, ModelID, NETWght, PODD, PSDD, PartialQty, PlanDate, PlanType, PlantCode, PrdLine, PrdLineName, RecQty, RequiredQty, SecondConfDate, [Size], TotPlanQty, TotalQty, Unit FROM View_Multi_Plan_Req WHERE   (PlanDate BETWEEN ? AND ?) AND (Code = ?)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
@@ -29672,7 +29852,7 @@ WHERE        (MPID = ?) AND (Balance > 0) AND (PrdLine = ?)";
                          MatFormula, PrdLine, RecQty, PlantCode, CustomerName, CompanyCode, CustID, LPDate, SecondConfDate, LastEditDate, CreationDate, EntryDate, [Size], PrdLineName, Balance, RequiredQty, PartialQty, PSDD, FPD, PODD, 
                          AvailableQty
 FROM            View_Multi_Plan_reqMS
-WHERE        (PlanDate BETWEEN ? AND ?) AND (Code = ?) AND (Balance > 0) AND (PrdLine = ?)";
+WHERE        (PlanDate BETWEEN ? AND ?) AND (Code = ?) AND (PrdLine = ?)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[3].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PlanDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PlanDate", global::System.Data.DataRowVersion.Current, false, null));
@@ -31274,6 +31454,8 @@ WHERE        (ExFactoryDate BETWEEN ? AND ?)";
             tableMapping.ColumnMappings.Add("FPD", "FPD");
             tableMapping.ColumnMappings.Add("PODD", "PODD");
             tableMapping.ColumnMappings.Add("BarCode", "BarCode");
+            tableMapping.ColumnMappings.Add("POCode", "POCode");
+            tableMapping.ColumnMappings.Add("PlanDate1", "PlanDate1");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -31291,7 +31473,7 @@ WHERE        (ExFactoryDate BETWEEN ? AND ?)";
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        LAName, MPID, ClientID, ModelID, ArtID, ExFactoryDate, CustReqDate, PlanType, PlanDate, FactoryCode, TotPlanQty, TotalQty, PrdLine, CustomerName, CompanyCode, CustID, LPDate, SecondConfDate, LastEditDate, 
-                         CreationDate, EntryDate, [Size], ModelName, ArtCode, PlantCode, PSDD, FPD, PODD, BarCode
+                         CreationDate, EntryDate, [Size], ModelName, ArtCode, PlantCode, PSDD, FPD, PODD, BarCode, POCode, PlanDate1
 FROM            View_Multi_po_PlanREC
 WHERE        (MPID = ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;

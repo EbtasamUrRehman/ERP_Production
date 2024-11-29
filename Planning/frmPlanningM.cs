@@ -1931,5 +1931,10 @@ namespace ERP_Production.Planning
         {
 
         }
+
+        private void labelControl26_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

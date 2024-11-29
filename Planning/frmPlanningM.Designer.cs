@@ -30,42 +30,42 @@ namespace ERP_Production.Planning
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlanningM));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions11 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject41 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject42 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject43 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject44 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions12 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject45 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject46 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject47 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject48 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions13 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject49 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject50 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject51 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject52 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions14 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject53 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject54 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject55 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject56 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
             this.repositoryItemButtonEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
@@ -225,7 +225,10 @@ namespace ERP_Production.Planning
             this.panelControl20 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl25 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl26 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
+            this.view_Multi_po_PlanRECBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dateEdit9 = new DevExpress.XtraEditors.DateEdit();
             this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
@@ -237,7 +240,6 @@ namespace ERP_Production.Planning
             this.panelControl17 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            this.view_Multi_po_PlanRECBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
@@ -502,6 +504,8 @@ namespace ERP_Production.Planning
             this.panelControl25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl26)).BeginInit();
             this.panelControl26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_po_PlanRECBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
@@ -510,7 +514,6 @@ namespace ERP_Production.Planning
             ((System.ComponentModel.ISupportInitialize)(this.panelControl17)).BeginInit();
             this.panelControl17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_po_PlanRECBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
@@ -612,18 +615,18 @@ namespace ERP_Production.Planning
             // repositoryItemButtonEdit3
             // 
             this.repositoryItemButtonEdit3.AutoHeight = false;
-            editorButtonImageOptions8.Image = global::ERP_Production.Properties.Resources.apply_16x164;
+            editorButtonImageOptions1.Image = global::ERP_Production.Properties.Resources.apply_16x164;
             this.repositoryItemButtonEdit3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit3.Name = "repositoryItemButtonEdit3";
             this.repositoryItemButtonEdit3.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // repositoryItemButtonEdit1
             // 
             this.repositoryItemButtonEdit1.AutoHeight = false;
-            editorButtonImageOptions9.Image = global::ERP_Production.Properties.Resources.apply_16x162;
+            editorButtonImageOptions2.Image = global::ERP_Production.Properties.Resources.apply_16x162;
             this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
@@ -1040,9 +1043,9 @@ namespace ERP_Production.Planning
             // repositoryItemPlan
             // 
             this.repositoryItemPlan.AutoHeight = false;
-            editorButtonImageOptions10.Image = global::ERP_Production.Properties.Resources.apply_16x161;
+            editorButtonImageOptions3.Image = global::ERP_Production.Properties.Resources.apply_16x161;
             this.repositoryItemPlan.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemPlan.Name = "repositoryItemPlan";
             this.repositoryItemPlan.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemPlan.Click += new System.EventHandler(this.repositoryItemPlan_Click);
@@ -1577,9 +1580,9 @@ namespace ERP_Production.Planning
             // repositoryItemButtonEdit4
             // 
             this.repositoryItemButtonEdit4.AutoHeight = false;
-            editorButtonImageOptions11.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions11.Image")));
+            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
             this.repositoryItemButtonEdit4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions11, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject41, serializableAppearanceObject42, serializableAppearanceObject43, serializableAppearanceObject44, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit4.Name = "repositoryItemButtonEdit4";
             this.repositoryItemButtonEdit4.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEdit4.Click += new System.EventHandler(this.repositoryItemButtonEdit4_Click);
@@ -1983,9 +1986,9 @@ namespace ERP_Production.Planning
             // repositoryItemButtonEdit2
             // 
             this.repositoryItemButtonEdit2.AutoHeight = false;
-            editorButtonImageOptions12.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions12.Image")));
+            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
             this.repositoryItemButtonEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions12, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject45, serializableAppearanceObject46, serializableAppearanceObject47, serializableAppearanceObject48, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit2.Name = "repositoryItemButtonEdit2";
             this.repositoryItemButtonEdit2.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEdit2.Click += new System.EventHandler(this.repositoryItemButtonEdit2_Click_1);
@@ -2047,12 +2050,14 @@ namespace ERP_Production.Planning
             this.panelControl25.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl25.Location = new System.Drawing.Point(2, 2);
             this.panelControl25.Name = "panelControl25";
-            this.panelControl25.Size = new System.Drawing.Size(1074, 80);
+            this.panelControl25.Size = new System.Drawing.Size(1066, 80);
             this.panelControl25.TabIndex = 29;
             // 
             // panelControl26
             // 
+            this.panelControl26.Controls.Add(this.labelControl26);
             this.panelControl26.Controls.Add(this.labelControl24);
+            this.panelControl26.Controls.Add(this.textEdit10);
             this.panelControl26.Controls.Add(this.dateEdit9);
             this.panelControl26.Controls.Add(this.comboBoxEdit3);
             this.panelControl26.Controls.Add(this.simpleButton5);
@@ -2064,8 +2069,17 @@ namespace ERP_Production.Planning
             this.panelControl26.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl26.Location = new System.Drawing.Point(2, 2);
             this.panelControl26.Name = "panelControl26";
-            this.panelControl26.Size = new System.Drawing.Size(1070, 37);
+            this.panelControl26.Size = new System.Drawing.Size(1062, 37);
             this.panelControl26.TabIndex = 30;
+            // 
+            // labelControl26
+            // 
+            this.labelControl26.Location = new System.Drawing.Point(583, 10);
+            this.labelControl26.Name = "labelControl26";
+            this.labelControl26.Size = new System.Drawing.Size(47, 15);
+            this.labelControl26.TabIndex = 31;
+            this.labelControl26.Text = "PO Code";
+            this.labelControl26.Click += new System.EventHandler(this.labelControl26_Click);
             // 
             // labelControl24
             // 
@@ -2074,6 +2088,20 @@ namespace ERP_Production.Planning
             this.labelControl24.Size = new System.Drawing.Size(54, 15);
             this.labelControl24.TabIndex = 32;
             this.labelControl24.Text = "Start Date:";
+            // 
+            // textEdit10
+            // 
+            this.textEdit10.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.view_Multi_po_PlanRECBindingSource, "POCode", true));
+            this.textEdit10.Location = new System.Drawing.Point(636, 6);
+            this.textEdit10.Name = "textEdit10";
+            this.textEdit10.Properties.ReadOnly = true;
+            this.textEdit10.Size = new System.Drawing.Size(157, 22);
+            this.textEdit10.TabIndex = 30;
+            // 
+            // view_Multi_po_PlanRECBindingSource
+            // 
+            this.view_Multi_po_PlanRECBindingSource.DataMember = "View_Multi_po_PlanREC";
+            this.view_Multi_po_PlanRECBindingSource.DataSource = this.dSPlanning;
             // 
             // dateEdit9
             // 
@@ -2109,7 +2137,7 @@ namespace ERP_Production.Planning
             // simpleButton5
             // 
             this.simpleButton5.ImageOptions.Image = global::ERP_Production.Properties.Resources.trash_16x16;
-            this.simpleButton5.Location = new System.Drawing.Point(715, 6);
+            this.simpleButton5.Location = new System.Drawing.Point(909, 7);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(57, 25);
             this.simpleButton5.TabIndex = 24;
@@ -2120,7 +2148,7 @@ namespace ERP_Production.Planning
             // simpleButton4
             // 
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(594, 6);
+            this.simpleButton4.Location = new System.Drawing.Point(799, 6);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(104, 23);
             this.simpleButton4.TabIndex = 8;
@@ -2184,12 +2212,12 @@ namespace ERP_Production.Planning
             this.panelControl17.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl17.Location = new System.Drawing.Point(2, 42);
             this.panelControl17.Name = "panelControl17";
-            this.panelControl17.Size = new System.Drawing.Size(1070, 36);
+            this.panelControl17.Size = new System.Drawing.Size(1062, 36);
             this.panelControl17.TabIndex = 28;
             // 
             // labelControl34
             // 
-            this.labelControl34.Location = new System.Drawing.Point(840, 11);
+            this.labelControl34.Location = new System.Drawing.Point(876, 12);
             this.labelControl34.Name = "labelControl34";
             this.labelControl34.Size = new System.Drawing.Size(20, 15);
             this.labelControl34.TabIndex = 29;
@@ -2199,20 +2227,15 @@ namespace ERP_Production.Planning
             // textEdit9
             // 
             this.textEdit9.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.view_Multi_po_PlanRECBindingSource, "Size", true));
-            this.textEdit9.Location = new System.Drawing.Point(866, 8);
+            this.textEdit9.Location = new System.Drawing.Point(902, 8);
             this.textEdit9.Name = "textEdit9";
             this.textEdit9.Properties.ReadOnly = true;
             this.textEdit9.Size = new System.Drawing.Size(74, 22);
             this.textEdit9.TabIndex = 28;
             // 
-            // view_Multi_po_PlanRECBindingSource
-            // 
-            this.view_Multi_po_PlanRECBindingSource.DataMember = "View_Multi_po_PlanREC";
-            this.view_Multi_po_PlanRECBindingSource.DataSource = this.dSPlanning;
-            // 
             // checkButton1
             // 
-            this.checkButton1.Location = new System.Drawing.Point(997, 6);
+            this.checkButton1.Location = new System.Drawing.Point(982, 7);
             this.checkButton1.Name = "checkButton1";
             this.checkButton1.Size = new System.Drawing.Size(68, 22);
             this.checkButton1.TabIndex = 27;
@@ -2221,7 +2244,7 @@ namespace ERP_Production.Planning
             // 
             // labelControl23
             // 
-            this.labelControl23.Location = new System.Drawing.Point(707, 11);
+            this.labelControl23.Location = new System.Drawing.Point(743, 12);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(47, 15);
             this.labelControl23.TabIndex = 27;
@@ -2230,7 +2253,7 @@ namespace ERP_Production.Planning
             // textEdit2
             // 
             this.textEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.view_Multi_po_PlanRECBindingSource, "BarCode", true));
-            this.textEdit2.Location = new System.Drawing.Point(463, 7);
+            this.textEdit2.Location = new System.Drawing.Point(499, 8);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.ReadOnly = true;
             this.textEdit2.Size = new System.Drawing.Size(74, 22);
@@ -2239,7 +2262,7 @@ namespace ERP_Production.Planning
             // 
             // labelControl18
             // 
-            this.labelControl18.Location = new System.Drawing.Point(393, 11);
+            this.labelControl18.Location = new System.Drawing.Point(429, 12);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(51, 15);
             this.labelControl18.TabIndex = 17;
@@ -2249,7 +2272,7 @@ namespace ERP_Production.Planning
             // textEdit6
             // 
             this.textEdit6.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.view_Multi_po_PlanRECBindingSource, "ModelName", true));
-            this.textEdit6.Location = new System.Drawing.Point(624, 7);
+            this.textEdit6.Location = new System.Drawing.Point(660, 8);
             this.textEdit6.Name = "textEdit6";
             this.textEdit6.Properties.ReadOnly = true;
             this.textEdit6.Size = new System.Drawing.Size(74, 22);
@@ -2257,15 +2280,15 @@ namespace ERP_Production.Planning
             // 
             // labelControl17
             // 
-            this.labelControl17.Location = new System.Drawing.Point(277, 11);
+            this.labelControl17.Location = new System.Drawing.Point(277, 12);
             this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(25, 15);
+            this.labelControl17.Size = new System.Drawing.Size(52, 15);
             this.labelControl17.TabIndex = 15;
-            this.labelControl17.Text = "Line:";
+            this.labelControl17.Text = "Plan date:";
             // 
             // labelControl21
             // 
-            this.labelControl21.Location = new System.Drawing.Point(546, 11);
+            this.labelControl21.Location = new System.Drawing.Point(582, 12);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(72, 15);
             this.labelControl21.TabIndex = 26;
@@ -2282,7 +2305,7 @@ namespace ERP_Production.Planning
             // textEdit5
             // 
             this.textEdit5.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.view_Multi_po_PlanRECBindingSource, "ArtCode", true));
-            this.textEdit5.Location = new System.Drawing.Point(760, 7);
+            this.textEdit5.Location = new System.Drawing.Point(796, 8);
             this.textEdit5.Name = "textEdit5";
             this.textEdit5.Properties.ReadOnly = true;
             this.textEdit5.Size = new System.Drawing.Size(74, 22);
@@ -2315,7 +2338,7 @@ namespace ERP_Production.Planning
             // 
             // labelControl15
             // 
-            this.labelControl15.Location = new System.Drawing.Point(145, 11);
+            this.labelControl15.Location = new System.Drawing.Point(145, 12);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(48, 15);
             this.labelControl15.TabIndex = 11;
@@ -2325,7 +2348,7 @@ namespace ERP_Production.Planning
             // textEdit1
             // 
             this.textEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.view_Multi_po_PlanRECBindingSource, "TotPlanQty", true));
-            this.textEdit1.Location = new System.Drawing.Point(200, 7);
+            this.textEdit1.Location = new System.Drawing.Point(200, 8);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.ReadOnly = true;
             this.textEdit1.Size = new System.Drawing.Size(74, 22);
@@ -2333,11 +2356,11 @@ namespace ERP_Production.Planning
             // 
             // textEdit4
             // 
-            this.textEdit4.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.view_Multi_po_PlanRECBindingSource, "LAName", true));
-            this.textEdit4.Location = new System.Drawing.Point(309, 7);
+            this.textEdit4.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.view_Multi_po_PlanRECBindingSource, "PlanDate", true));
+            this.textEdit4.Location = new System.Drawing.Point(335, 8);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Properties.ReadOnly = true;
-            this.textEdit4.Size = new System.Drawing.Size(74, 22);
+            this.textEdit4.Size = new System.Drawing.Size(85, 22);
             this.textEdit4.TabIndex = 20;
             // 
             // panelControl21
@@ -3015,9 +3038,9 @@ namespace ERP_Production.Planning
             // repositoryItemButtonEdit6
             // 
             this.repositoryItemButtonEdit6.AutoHeight = false;
-            editorButtonImageOptions13.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions13.Image")));
+            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
             this.repositoryItemButtonEdit6.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions13, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject49, serializableAppearanceObject50, serializableAppearanceObject51, serializableAppearanceObject52, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Delete, "", -1, true, true, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit6.Name = "repositoryItemButtonEdit6";
             this.repositoryItemButtonEdit6.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEdit6.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.repositoryItemButtonEdit6_ButtonClick);
@@ -3383,9 +3406,9 @@ namespace ERP_Production.Planning
             // repositoryItemButtonEdit5
             // 
             this.repositoryItemButtonEdit5.AutoHeight = false;
-            editorButtonImageOptions14.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions14.Image")));
+            editorButtonImageOptions7.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions7.Image")));
             this.repositoryItemButtonEdit5.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions14, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject53, serializableAppearanceObject54, serializableAppearanceObject55, serializableAppearanceObject56, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemButtonEdit5.Name = "repositoryItemButtonEdit5";
             this.repositoryItemButtonEdit5.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repositoryItemButtonEdit5.Click += new System.EventHandler(this.repositoryItemButtonEdit5_Click);
@@ -4034,6 +4057,8 @@ namespace ERP_Production.Planning
             ((System.ComponentModel.ISupportInitialize)(this.panelControl26)).EndInit();
             this.panelControl26.ResumeLayout(false);
             this.panelControl26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_po_PlanRECBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
@@ -4043,7 +4068,6 @@ namespace ERP_Production.Planning
             this.panelControl17.ResumeLayout(false);
             this.panelControl17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.view_Multi_po_PlanRECBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
@@ -4527,6 +4551,8 @@ namespace ERP_Production.Planning
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn69;
         private System.Windows.Forms.BindingSource view_Multi_Requisition_DateBindingSource;
         private DSPlanningTableAdapters.View_Multi_Requisition_DateTableAdapter view_Multi_Requisition_DateTableAdapter;
+        private DevExpress.XtraEditors.LabelControl labelControl26;
+        private DevExpress.XtraEditors.TextEdit textEdit10;
         //private DSPlanningTableAdapters.View_Mtlti_po_ReqFinelTableAdapter view_Mtlti_po_ReqFinelTableAdapter;
     }
 }
