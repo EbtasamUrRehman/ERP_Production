@@ -75,7 +75,7 @@ namespace ERP_Production
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1515, 30);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1525, 29);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -209,11 +209,11 @@ namespace ERP_Production
             this.accordionControlElement14,
             this.accordionControlElement18,
             this.accordionControlElement20});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 30);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 29);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Auto;
             this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.accordionControl1.Size = new System.Drawing.Size(303, 681);
+            this.accordionControl1.Size = new System.Drawing.Size(303, 687);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             this.accordionControl1.Click += new System.EventHandler(this.accordionControl1_Click);
@@ -319,9 +319,9 @@ namespace ERP_Production
             // fluentDesignFormContainer
             // 
             this.fluentDesignFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer.Location = new System.Drawing.Point(303, 30);
+            this.fluentDesignFormContainer.Location = new System.Drawing.Point(303, 29);
             this.fluentDesignFormContainer.Name = "fluentDesignFormContainer";
-            this.fluentDesignFormContainer.Size = new System.Drawing.Size(1212, 681);
+            this.fluentDesignFormContainer.Size = new System.Drawing.Size(1222, 687);
             this.fluentDesignFormContainer.TabIndex = 0;
             this.fluentDesignFormContainer.Click += new System.EventHandler(this.fluentDesignFormContainer_Click);
             // 
@@ -337,7 +337,7 @@ namespace ERP_Production
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1515, 711);
+            this.ClientSize = new System.Drawing.Size(1525, 716);
             this.ControlContainer = this.fluentDesignFormContainer;
             this.Controls.Add(this.fluentDesignFormContainer);
             this.Controls.Add(this.accordionControl1);

@@ -645,9 +645,9 @@ namespace ERP_Production.Planning
             this.tabNavigationPage2,
             this.tabNavigationPage4,
             this.tabNavigationPage3});
-            this.tabPane1.RegularSize = new System.Drawing.Size(1803, 854);
+            this.tabPane1.RegularSize = new System.Drawing.Size(1833, 872);
             this.tabPane1.SelectedPage = this.tabNavigationPage1;
-            this.tabPane1.Size = new System.Drawing.Size(1803, 854);
+            this.tabPane1.Size = new System.Drawing.Size(1833, 872);
             this.tabPane1.TabIndex = 0;
             this.tabPane1.Text = "tabPane1";
             this.tabPane1.Click += new System.EventHandler(this.tabPane1_Click);
@@ -660,7 +660,7 @@ namespace ERP_Production.Planning
             this.tabNavigationPage1.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage1.Name = "tabNavigationPage1";
             this.tabNavigationPage1.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage1.Size = new System.Drawing.Size(1803, 806);
+            this.tabNavigationPage1.Size = new System.Drawing.Size(1833, 832);
             this.tabNavigationPage1.Paint += new System.Windows.Forms.PaintEventHandler(this.tabNavigationPage1_Paint);
             // 
             // panelControl8
@@ -670,16 +670,16 @@ namespace ERP_Production.Planning
             this.panelControl8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl8.Location = new System.Drawing.Point(0, 0);
             this.panelControl8.Name = "panelControl8";
-            this.panelControl8.Size = new System.Drawing.Size(1803, 806);
+            this.panelControl8.Size = new System.Drawing.Size(1833, 832);
             this.panelControl8.TabIndex = 7;
             // 
             // panelControl13
             // 
             this.panelControl13.Controls.Add(this.gridControl1);
             this.panelControl13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl13.Location = new System.Drawing.Point(2, 111);
+            this.panelControl13.Location = new System.Drawing.Point(2, 113);
             this.panelControl13.Name = "panelControl13";
-            this.panelControl13.Size = new System.Drawing.Size(1799, 693);
+            this.panelControl13.Size = new System.Drawing.Size(1829, 717);
             this.panelControl13.TabIndex = 3;
             // 
             // gridControl1
@@ -692,7 +692,7 @@ namespace ERP_Production.Planning
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPlan,
             this.repositoryItemComboBox1});
-            this.gridControl1.Size = new System.Drawing.Size(1795, 689);
+            this.gridControl1.Size = new System.Drawing.Size(1825, 713);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1068,7 +1068,7 @@ namespace ERP_Production.Planning
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl4.Location = new System.Drawing.Point(2, 2);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1799, 109);
+            this.panelControl4.Size = new System.Drawing.Size(1829, 111);
             this.panelControl4.TabIndex = 2;
             this.panelControl4.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl4_Paint);
             // 
@@ -1080,7 +1080,7 @@ namespace ERP_Production.Planning
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(2, 45);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1795, 62);
+            this.groupControl1.Size = new System.Drawing.Size(1825, 64);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Show Record";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
@@ -1101,9 +1101,9 @@ namespace ERP_Production.Planning
             this.panelControl16.Controls.Add(this.dateEdit6);
             this.panelControl16.Controls.Add(this.labelControl12);
             this.panelControl16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl16.Location = new System.Drawing.Point(2, 21);
+            this.panelControl16.Location = new System.Drawing.Point(2, 23);
             this.panelControl16.Name = "panelControl16";
-            this.panelControl16.Size = new System.Drawing.Size(1791, 39);
+            this.panelControl16.Size = new System.Drawing.Size(1821, 39);
             this.panelControl16.TabIndex = 7;
             // 
             // panelControl23
@@ -1111,7 +1111,7 @@ namespace ERP_Production.Planning
             this.panelControl23.Controls.Add(this.PrdLine);
             this.panelControl23.Controls.Add(this.labelControl1);
             this.panelControl23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl23.Location = new System.Drawing.Point(1526, 2);
+            this.panelControl23.Location = new System.Drawing.Point(1556, 2);
             this.panelControl23.Name = "panelControl23";
             this.panelControl23.Size = new System.Drawing.Size(263, 35);
             this.panelControl23.TabIndex = 8;
@@ -1279,7 +1279,7 @@ namespace ERP_Production.Planning
             this.panelControl7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl7.Location = new System.Drawing.Point(2, 2);
             this.panelControl7.Name = "panelControl7";
-            this.panelControl7.Size = new System.Drawing.Size(1795, 43);
+            this.panelControl7.Size = new System.Drawing.Size(1825, 43);
             this.panelControl7.TabIndex = 6;
             // 
             // labelControl4
@@ -1316,7 +1316,7 @@ namespace ERP_Production.Planning
             this.tabNavigationPage2.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage2.Name = "tabNavigationPage2";
             this.tabNavigationPage2.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage2.Size = new System.Drawing.Size(1803, 806);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(1823, 826);
             // 
             // panelControl11
             // 
@@ -1325,7 +1325,7 @@ namespace ERP_Production.Planning
             this.panelControl11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl11.Location = new System.Drawing.Point(0, 0);
             this.panelControl11.Name = "panelControl11";
-            this.panelControl11.Size = new System.Drawing.Size(1803, 806);
+            this.panelControl11.Size = new System.Drawing.Size(1823, 826);
             this.panelControl11.TabIndex = 8;
             // 
             // panelControl12
@@ -1334,7 +1334,7 @@ namespace ERP_Production.Planning
             this.panelControl12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl12.Location = new System.Drawing.Point(2, 510);
             this.panelControl12.Name = "panelControl12";
-            this.panelControl12.Size = new System.Drawing.Size(1799, 294);
+            this.panelControl12.Size = new System.Drawing.Size(1819, 314);
             this.panelControl12.TabIndex = 8;
             // 
             // panelControl6
@@ -1344,7 +1344,7 @@ namespace ERP_Production.Planning
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl6.Location = new System.Drawing.Point(2, 2);
             this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(1795, 290);
+            this.panelControl6.Size = new System.Drawing.Size(1815, 310);
             this.panelControl6.TabIndex = 6;
             // 
             // gridControl3
@@ -1356,7 +1356,7 @@ namespace ERP_Production.Planning
             this.gridControl3.Name = "gridControl3";
             this.gridControl3.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit4});
-            this.gridControl3.Size = new System.Drawing.Size(1791, 236);
+            this.gridControl3.Size = new System.Drawing.Size(1811, 256);
             this.gridControl3.TabIndex = 4;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -1597,7 +1597,7 @@ namespace ERP_Production.Planning
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl5.Location = new System.Drawing.Point(2, 2);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(1791, 50);
+            this.panelControl5.Size = new System.Drawing.Size(1811, 50);
             this.panelControl5.TabIndex = 5;
             this.panelControl5.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl3_Paint);
             // 
@@ -1635,7 +1635,7 @@ namespace ERP_Production.Planning
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(2, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1799, 508);
+            this.panelControl2.Size = new System.Drawing.Size(1819, 508);
             this.panelControl2.TabIndex = 7;
             // 
             // panelControl15
@@ -1644,7 +1644,7 @@ namespace ERP_Production.Planning
             this.panelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl15.Location = new System.Drawing.Point(2, 166);
             this.panelControl15.Name = "panelControl15";
-            this.panelControl15.Size = new System.Drawing.Size(1795, 340);
+            this.panelControl15.Size = new System.Drawing.Size(1815, 340);
             this.panelControl15.TabIndex = 12;
             // 
             // panelControl10
@@ -1653,7 +1653,7 @@ namespace ERP_Production.Planning
             this.panelControl10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl10.Location = new System.Drawing.Point(2, 2);
             this.panelControl10.Name = "panelControl10";
-            this.panelControl10.Size = new System.Drawing.Size(1791, 336);
+            this.panelControl10.Size = new System.Drawing.Size(1811, 336);
             this.panelControl10.TabIndex = 10;
             // 
             // gridControl2
@@ -1666,7 +1666,7 @@ namespace ERP_Production.Planning
             this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit2,
             this.repositoryItemButtonEditAvaBala});
-            this.gridControl2.Size = new System.Drawing.Size(1787, 332);
+            this.gridControl2.Size = new System.Drawing.Size(1807, 332);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -2018,7 +2018,7 @@ namespace ERP_Production.Planning
             this.panelControl14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl14.Location = new System.Drawing.Point(2, 57);
             this.panelControl14.Name = "panelControl14";
-            this.panelControl14.Size = new System.Drawing.Size(1795, 109);
+            this.panelControl14.Size = new System.Drawing.Size(1815, 109);
             this.panelControl14.TabIndex = 11;
             // 
             // groupControl2
@@ -2028,7 +2028,7 @@ namespace ERP_Production.Planning
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(2, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1791, 105);
+            this.groupControl2.Size = new System.Drawing.Size(1811, 105);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Show Record";
             // 
@@ -2037,9 +2037,9 @@ namespace ERP_Production.Planning
             this.panelControl20.Controls.Add(this.panelControl25);
             this.panelControl20.Controls.Add(this.panelControl21);
             this.panelControl20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl20.Location = new System.Drawing.Point(2, 21);
+            this.panelControl20.Location = new System.Drawing.Point(2, 23);
             this.panelControl20.Name = "panelControl20";
-            this.panelControl20.Size = new System.Drawing.Size(1787, 84);
+            this.panelControl20.Size = new System.Drawing.Size(1807, 84);
             this.panelControl20.TabIndex = 23;
             this.panelControl20.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl20_Paint);
             // 
@@ -2367,7 +2367,7 @@ namespace ERP_Production.Planning
             // 
             this.panelControl21.Controls.Add(this.panelControl18);
             this.panelControl21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl21.Location = new System.Drawing.Point(1543, 2);
+            this.panelControl21.Location = new System.Drawing.Point(1563, 2);
             this.panelControl21.Name = "panelControl21";
             this.panelControl21.Size = new System.Drawing.Size(242, 80);
             this.panelControl21.TabIndex = 27;
@@ -2407,7 +2407,7 @@ namespace ERP_Production.Planning
             this.panelControl19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl19.Location = new System.Drawing.Point(2, 2);
             this.panelControl19.Name = "panelControl19";
-            this.panelControl19.Size = new System.Drawing.Size(1791, 105);
+            this.panelControl19.Size = new System.Drawing.Size(1811, 105);
             this.panelControl19.TabIndex = 0;
             this.panelControl19.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl19_Paint);
             // 
@@ -2417,7 +2417,7 @@ namespace ERP_Production.Planning
             this.panelControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl9.Location = new System.Drawing.Point(2, 2);
             this.panelControl9.Name = "panelControl9";
-            this.panelControl9.Size = new System.Drawing.Size(1795, 55);
+            this.panelControl9.Size = new System.Drawing.Size(1815, 55);
             this.panelControl9.TabIndex = 9;
             // 
             // panelControl3
@@ -2435,7 +2435,7 @@ namespace ERP_Production.Planning
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl3.Location = new System.Drawing.Point(2, 2);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1791, 50);
+            this.panelControl3.Size = new System.Drawing.Size(1811, 50);
             this.panelControl3.TabIndex = 8;
             // 
             // simpleButton1
@@ -2444,7 +2444,7 @@ namespace ERP_Production.Planning
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(1696, 0);
+            this.simpleButton1.Location = new System.Drawing.Point(1716, 0);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton1.Size = new System.Drawing.Size(41, 50);
@@ -2459,7 +2459,7 @@ namespace ERP_Production.Planning
             this.panelControl22.AutoSize = true;
             this.panelControl22.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl22.Location = new System.Drawing.Point(1737, 0);
+            this.panelControl22.Location = new System.Drawing.Point(1757, 0);
             this.panelControl22.Name = "panelControl22";
             this.panelControl22.Size = new System.Drawing.Size(0, 50);
             this.panelControl22.TabIndex = 28;
@@ -2492,7 +2492,7 @@ namespace ERP_Production.Planning
             // 
             this.simpleButton6.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.Location = new System.Drawing.Point(1737, 0);
+            this.simpleButton6.Location = new System.Drawing.Point(1757, 0);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton6.Size = new System.Drawing.Size(54, 50);
@@ -2781,7 +2781,7 @@ namespace ERP_Production.Planning
             this.tabNavigationPage4.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage4.Name = "tabNavigationPage4";
             this.tabNavigationPage4.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage4.Size = new System.Drawing.Size(1803, 806);
+            this.tabNavigationPage4.Size = new System.Drawing.Size(1823, 826);
             // 
             // panelControl24
             // 
@@ -2789,7 +2789,7 @@ namespace ERP_Production.Planning
             this.panelControl24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl24.Location = new System.Drawing.Point(0, 161);
             this.panelControl24.Name = "panelControl24";
-            this.panelControl24.Size = new System.Drawing.Size(1803, 645);
+            this.panelControl24.Size = new System.Drawing.Size(1823, 665);
             this.panelControl24.TabIndex = 15;
             // 
             // panelControl40
@@ -2799,7 +2799,7 @@ namespace ERP_Production.Planning
             this.panelControl40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl40.Location = new System.Drawing.Point(2, 2);
             this.panelControl40.Name = "panelControl40";
-            this.panelControl40.Size = new System.Drawing.Size(1799, 641);
+            this.panelControl40.Size = new System.Drawing.Size(1819, 661);
             this.panelControl40.TabIndex = 12;
             // 
             // gridControl5
@@ -2811,7 +2811,7 @@ namespace ERP_Production.Planning
             this.gridControl5.Name = "gridControl5";
             this.gridControl5.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit6});
-            this.gridControl5.Size = new System.Drawing.Size(1795, 361);
+            this.gridControl5.Size = new System.Drawing.Size(1815, 381);
             this.gridControl5.TabIndex = 5;
             this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5});
@@ -3055,7 +3055,7 @@ namespace ERP_Production.Planning
             this.gridControl4.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit5,
             this.repositoryItemCheckEdit1});
-            this.gridControl4.Size = new System.Drawing.Size(1795, 276);
+            this.gridControl4.Size = new System.Drawing.Size(1815, 276);
             this.gridControl4.TabIndex = 0;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
@@ -3429,7 +3429,7 @@ namespace ERP_Production.Planning
             this.panelControl28.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl28.Location = new System.Drawing.Point(0, 55);
             this.panelControl28.Name = "panelControl28";
-            this.panelControl28.Size = new System.Drawing.Size(1803, 106);
+            this.panelControl28.Size = new System.Drawing.Size(1823, 106);
             this.panelControl28.TabIndex = 14;
             // 
             // groupControl3
@@ -3439,7 +3439,7 @@ namespace ERP_Production.Planning
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl3.Location = new System.Drawing.Point(2, 2);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1799, 102);
+            this.groupControl3.Size = new System.Drawing.Size(1819, 102);
             this.groupControl3.TabIndex = 3;
             this.groupControl3.Text = "Show Record";
             // 
@@ -3448,9 +3448,9 @@ namespace ERP_Production.Planning
             this.panelControl29.Controls.Add(this.panelControl30);
             this.panelControl29.Controls.Add(this.panelControl33);
             this.panelControl29.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl29.Location = new System.Drawing.Point(2, 21);
+            this.panelControl29.Location = new System.Drawing.Point(2, 23);
             this.panelControl29.Name = "panelControl29";
-            this.panelControl29.Size = new System.Drawing.Size(1795, 78);
+            this.panelControl29.Size = new System.Drawing.Size(1815, 78);
             this.panelControl29.TabIndex = 23;
             this.panelControl29.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl29_Paint);
             // 
@@ -3673,7 +3673,7 @@ namespace ERP_Production.Planning
             // 
             this.panelControl33.Controls.Add(this.panelControl34);
             this.panelControl33.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl33.Location = new System.Drawing.Point(1551, 2);
+            this.panelControl33.Location = new System.Drawing.Point(1571, 2);
             this.panelControl33.Name = "panelControl33";
             this.panelControl33.Size = new System.Drawing.Size(242, 74);
             this.panelControl33.TabIndex = 27;
@@ -3712,7 +3712,7 @@ namespace ERP_Production.Planning
             this.panelControl35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl35.Location = new System.Drawing.Point(2, 2);
             this.panelControl35.Name = "panelControl35";
-            this.panelControl35.Size = new System.Drawing.Size(1799, 102);
+            this.panelControl35.Size = new System.Drawing.Size(1819, 102);
             this.panelControl35.TabIndex = 0;
             // 
             // panelControl36
@@ -3721,7 +3721,7 @@ namespace ERP_Production.Planning
             this.panelControl36.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl36.Location = new System.Drawing.Point(0, 0);
             this.panelControl36.Name = "panelControl36";
-            this.panelControl36.Size = new System.Drawing.Size(1803, 55);
+            this.panelControl36.Size = new System.Drawing.Size(1823, 55);
             this.panelControl36.TabIndex = 13;
             // 
             // panelControl37
@@ -3739,7 +3739,7 @@ namespace ERP_Production.Planning
             this.panelControl37.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl37.Location = new System.Drawing.Point(2, 2);
             this.panelControl37.Name = "panelControl37";
-            this.panelControl37.Size = new System.Drawing.Size(1799, 50);
+            this.panelControl37.Size = new System.Drawing.Size(1819, 50);
             this.panelControl37.TabIndex = 8;
             // 
             // simpleButton9
@@ -3748,7 +3748,7 @@ namespace ERP_Production.Planning
             this.simpleButton9.Appearance.Options.UseBorderColor = true;
             this.simpleButton9.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton9.ImageOptions.SvgImage")));
-            this.simpleButton9.Location = new System.Drawing.Point(1704, 0);
+            this.simpleButton9.Location = new System.Drawing.Point(1724, 0);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton9.Size = new System.Drawing.Size(41, 50);
@@ -3762,7 +3762,7 @@ namespace ERP_Production.Planning
             this.panelControl38.AutoSize = true;
             this.panelControl38.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl38.Location = new System.Drawing.Point(1745, 0);
+            this.panelControl38.Location = new System.Drawing.Point(1765, 0);
             this.panelControl38.Name = "panelControl38";
             this.panelControl38.Size = new System.Drawing.Size(0, 50);
             this.panelControl38.TabIndex = 28;
@@ -3795,7 +3795,7 @@ namespace ERP_Production.Planning
             // 
             this.simpleButton10.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
-            this.simpleButton10.Location = new System.Drawing.Point(1745, 0);
+            this.simpleButton10.Location = new System.Drawing.Point(1765, 0);
             this.simpleButton10.Name = "simpleButton10";
             this.simpleButton10.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton10.Size = new System.Drawing.Size(54, 50);
@@ -3860,7 +3860,7 @@ namespace ERP_Production.Planning
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1803, 854);
+            this.panel1.Size = new System.Drawing.Size(1833, 872);
             this.panel1.TabIndex = 1;
             // 
             // tbl_Prd_LinesTableAdapter
@@ -3977,7 +3977,7 @@ namespace ERP_Production.Planning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1803, 854);
+            this.ClientSize = new System.Drawing.Size(1833, 872);
             this.Controls.Add(this.panel1);
             this.Name = "frmPlanningM";
             this.Text = "frmPlanningM";

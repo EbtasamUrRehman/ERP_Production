@@ -158,6 +158,7 @@ namespace ERP_Production.PackingList
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.tabPane3 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl18 = new DevExpress.XtraEditors.PanelControl();
             this.listBoxControl1 = new DevExpress.XtraEditors.ListBoxControl();
             this.panelControl17 = new DevExpress.XtraEditors.PanelControl();
@@ -231,7 +232,6 @@ namespace ERP_Production.PackingList
             this.tbl_Pro_Cust_IdentTableAdapter = new ERP_Production.PackingList.DSPackingListTableAdapters.tbl_Pro_Cust_IdentTableAdapter();
             this.tbl_carton_nameTableAdapter = new ERP_Production.PackingList.DSPackingListTableAdapters.tbl_carton_nameTableAdapter();
             this.tbl_Multi_PO_HMPackingTableAdapter = new ERP_Production.PackingList.DSPackingListTableAdapters.tbl_Multi_PO_HMPackingTableAdapter();
-            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.CreatePackingList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -380,7 +380,7 @@ namespace ERP_Production.PackingList
             this.tabNavigationPage1.Controls.Add(this.panelControl3);
             this.tabNavigationPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNavigationPage1.ImageOptions.Image")));
             this.tabNavigationPage1.Name = "tabNavigationPage1";
-            this.tabNavigationPage1.Size = new System.Drawing.Size(1645, 583);
+            this.tabNavigationPage1.Size = new System.Drawing.Size(1645, 591);
             // 
             // panelControl6
             // 
@@ -389,7 +389,7 @@ namespace ERP_Production.PackingList
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl6.Location = new System.Drawing.Point(0, 258);
             this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(1645, 325);
+            this.panelControl6.Size = new System.Drawing.Size(1645, 333);
             this.panelControl6.TabIndex = 2;
             // 
             // panelControl8
@@ -398,7 +398,7 @@ namespace ERP_Production.PackingList
             this.panelControl8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl8.Location = new System.Drawing.Point(2, 31);
             this.panelControl8.Name = "panelControl8";
-            this.panelControl8.Size = new System.Drawing.Size(1641, 292);
+            this.panelControl8.Size = new System.Drawing.Size(1641, 300);
             this.panelControl8.TabIndex = 2;
             // 
             // gridControl1
@@ -413,7 +413,7 @@ namespace ERP_Production.PackingList
             this.Size,
             this.repositoryItemButtonDelete,
             this.repositoryItemUpdate});
-            this.gridControl1.Size = new System.Drawing.Size(1637, 288);
+            this.gridControl1.Size = new System.Drawing.Size(1637, 296);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1394,7 +1394,7 @@ namespace ERP_Production.PackingList
             this.tabNavigationPage3.Controls.Add(this.panelControl1);
             this.tabNavigationPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("tabNavigationPage3.ImageOptions.Image")));
             this.tabNavigationPage3.Name = "tabNavigationPage3";
-            this.tabNavigationPage3.Size = new System.Drawing.Size(1641, 548);
+            this.tabNavigationPage3.Size = new System.Drawing.Size(1641, 556);
             // 
             // panelControl1
             // 
@@ -1403,7 +1403,7 @@ namespace ERP_Production.PackingList
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1641, 548);
+            this.panelControl1.Size = new System.Drawing.Size(1641, 556);
             this.panelControl1.TabIndex = 19;
             // 
             // panelControl16
@@ -1413,7 +1413,7 @@ namespace ERP_Production.PackingList
             this.panelControl16.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelControl16.Location = new System.Drawing.Point(1236, 2);
             this.panelControl16.Name = "panelControl16";
-            this.panelControl16.Size = new System.Drawing.Size(403, 544);
+            this.panelControl16.Size = new System.Drawing.Size(403, 552);
             this.panelControl16.TabIndex = 24;
             // 
             // panelControl12
@@ -1529,9 +1529,9 @@ namespace ERP_Production.PackingList
             this.tabPane3.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabNavigationPage5,
             this.tabNavigationPage4});
-            this.tabPane3.RegularSize = new System.Drawing.Size(572, 544);
+            this.tabPane3.RegularSize = new System.Drawing.Size(572, 552);
             this.tabPane3.SelectedPage = this.tabNavigationPage4;
-            this.tabPane3.Size = new System.Drawing.Size(572, 544);
+            this.tabPane3.Size = new System.Drawing.Size(572, 552);
             this.tabPane3.TabIndex = 23;
             this.tabPane3.Text = "tabPane3";
             // 
@@ -1542,7 +1542,16 @@ namespace ERP_Production.PackingList
             this.tabNavigationPage4.Controls.Add(this.panelControl18);
             this.tabNavigationPage4.Controls.Add(this.panelControl17);
             this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(572, 513);
+            this.tabNavigationPage4.Size = new System.Drawing.Size(572, 521);
+            // 
+            // simpleButton10
+            // 
+            this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
+            this.simpleButton10.Location = new System.Drawing.Point(250, 186);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton10.Size = new System.Drawing.Size(42, 44);
+            this.simpleButton10.TabIndex = 26;
             // 
             // panelControl18
             // 
@@ -1566,7 +1575,7 @@ namespace ERP_Production.PackingList
             this.panelControl17.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl17.Location = new System.Drawing.Point(0, 0);
             this.panelControl17.Name = "panelControl17";
-            this.panelControl17.Size = new System.Drawing.Size(244, 513);
+            this.panelControl17.Size = new System.Drawing.Size(244, 521);
             this.panelControl17.TabIndex = 25;
             // 
             // TextBox1
@@ -1576,7 +1585,7 @@ namespace ERP_Production.PackingList
             this.TextBox1.Multiline = true;
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.TextBox1.Size = new System.Drawing.Size(240, 509);
+            this.TextBox1.Size = new System.Drawing.Size(240, 517);
             this.TextBox1.TabIndex = 19;
             // 
             // tabNavigationPage5
@@ -2097,15 +2106,6 @@ namespace ERP_Production.PackingList
             // tbl_Multi_PO_HMPackingTableAdapter
             // 
             this.tbl_Multi_PO_HMPackingTableAdapter.ClearBeforeFill = true;
-            // 
-            // simpleButton10
-            // 
-            this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
-            this.simpleButton10.Location = new System.Drawing.Point(250, 186);
-            this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton10.Size = new System.Drawing.Size(42, 44);
-            this.simpleButton10.TabIndex = 26;
             // 
             // FrmPackingList
             // 

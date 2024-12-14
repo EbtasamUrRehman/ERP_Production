@@ -900,7 +900,7 @@ namespace ERP_Production.Planning
         {
             try
             {
-                tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, (string)comboBoxEdit3.EditValue);
+                tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (string)comboBoxEdit3.EditValue,(DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue );
                 if (checkButton1.Checked)
                 {
                     this.view_Multi_Plan_ReqTableAdapter.FillBy(this.dSPlanning.View_Multi_Plan_Req, (int)comboBoxEdit2.EditValue, 22);
@@ -1028,7 +1028,7 @@ namespace ERP_Production.Planning
                         if (rowsAffectedD > 0 || rowsAffected > 0)
                         {
                             MessageBox.Show("Records deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            this.tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, (string)comboBoxEdit3.EditValue);
+                            this.tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (string)comboBoxEdit3.EditValue,(DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
                             this.view_Multi_po_PlanRECTableAdapter.Fill(dSPlanning.View_Multi_po_PlanREC, (int)comboBoxEdit2.EditValue);
                         }
                         else
@@ -1172,17 +1172,17 @@ namespace ERP_Production.Planning
 
         private void dateEdit9_EditValueChanged(object sender, EventArgs e)
         {
-            tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, (string)comboBoxEdit3.EditValue);
+            tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (string)comboBoxEdit3.EditValue,(DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
         }
 
         private void dateEdit4_EditValueChanged_1(object sender, EventArgs e)
         {
-            tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, (string)comboBoxEdit3.EditValue);
+            tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (string)comboBoxEdit3.EditValue, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
         }
 
         private void comboBoxEdit3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue, (string)comboBoxEdit3.EditValue);
+            tbl_Multi_PO_Plan1TableAdapter.Fill(dSPlanning.tbl_Multi_PO_Plan1, (string)comboBoxEdit3.EditValue,(DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
         }
 
         private void tokenEdit1_SelectedItemsChanged(object sender, ListChangedEventArgs e)

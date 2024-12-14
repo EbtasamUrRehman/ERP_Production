@@ -2022,7 +2022,7 @@ namespace ERP_Production.Purchase_Order
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.ComboBoxEdit1.Properties.Items.AddRange(new object[] {
             "B-Grade Order",
-            "Forcast Stock",
+            "Forecast Stock",
             "Original Order",
             "Cancel Order"});
             this.ComboBoxEdit1.Properties.NullText = "Original Order";

@@ -378,7 +378,7 @@ namespace ERP_Production.Reports
 
             else if (RadioButton8.Checked)
             {
-                string path = @"\\dnsserver\MyReports$\ERPPPS\PPS\POrders.rpt";
+                Path = @"\\dnsserver\MyReports$\ERPPPS\PPS\POrders.rpt";
                 DateTime firstDate = new DateTime(this.DTPicker1.Value.Year, this.DTPicker1.Value.Month, 1);
                 DateTime secondDate = GetLastDayOfMonth(DTPicker2.Value.Date); // Assuming GetLastDayOfMonth is a method that returns a DateTime.
 
@@ -386,6 +386,13 @@ namespace ERP_Production.Reports
                 // Note: Adjust the filter string to match your data access method.
                 string filter = $"{{View_PO_Orders_15ThCuttOff.ClientID}} = 1 and {{View_PO_Orders_15ThCuttOff.SecondConfDate}} in #{firstDate:MM/dd/yyyy}# to #{secondDate:MM/dd/yyyy}#";
             }
+
+            
+
+
+
+
+
 
 
             if (RadioButton10.Checked)
