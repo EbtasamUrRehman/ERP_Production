@@ -24,7 +24,15 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // TODO: This line of code loads data into the 'dSPackingMaterial.View_Multi_requisition_Packing' table. You can move, or remove it, as needed.
            
             // TODO: This line of code loads data into the 'dSPackingMaterial.tbl_Multi_PO_Req1' table. You can move, or remove it, as needed.
+            try
+            {
+
             this.tbl_Multi_PO_Req1TableAdapter.Fill(this.dSPackingMaterial.tbl_Multi_PO_Req1);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             // TODO: This line of code loads data into the 'dSPackingMaterial.tbl_Multi_PO_Req' table. You can move, or remove it, as needed.
             //this.tbl_Multi_PO_ReqTableAdapter.Fill(this.dSPackingMaterial.tbl_Multi_PO_Req);
             // TODO: This line of code loads data into the 'dSPackingMaterial.tbl_Multi_PO_H' table. You can move, or remove it, as needed.
