@@ -535,26 +535,26 @@ namespace ERP_Production.RWPD
             }
             else if (gtpOne == "By In Transaction")
                 {
-                reportName = @"\\dnsserver\MyReports$\ERPPPS\labeling\LabelMultiPlan.rpt";
-                if (radioButton5.Checked = true)
+                reportName = @"\\dnsserver\MyReports$\FSERPPC\Dispatch\RWPD\rptRWPDMultiIn.rpt";
+                if (radioButton5.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")})";
 
                 }
-                if (radioButton4.Checked = true)
+                if (radioButton4.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_IN.FactoryCode}} = '{factoryCode}'";
 
                 }
-                if (radioButton6.Checked = true)
+                if (radioButton6.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_IN.POCode}} = '{POCode}'";
                 }
-                if (radioButton7.Checked = true)
+                if (radioButton7.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_IN.Article}} = '{Article}'";
                 }
-                if (radioButton8.Checked = true)
+                if (radioButton8.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_IN.POCode}} = '{POCode}' and {{View_RWPD_Multi_IN.Article}} = '{Article}'";
                 }
@@ -565,26 +565,26 @@ namespace ERP_Production.RWPD
             }
             else
             {
-                reportName = @"\\dnsserver\MyReports$\ERPPPS\labeling\LabelMultiPlan.rpt";
-                if (radioButton5.Checked = true)
+                reportName = @"\\dnsserver\MyReports$\FSERPPC\Dispatch\RWPD\rptRWPDMultiOut.rpt";
+                if (radioButton5.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")})";
 
                 }
-                if (radioButton4.Checked = true)
+                if (radioButton4.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_Out.FactoryCode}} = '{factoryCode}'";
 
                 }
-                if (radioButton6.Checked = true)
+                if (radioButton6.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Out.POCode}} = '{POCode}'";
                 }
-                if (radioButton7.Checked = true)
+                if (radioButton7.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Out.Article}} = '{Article}'";
                 }
-                if (radioButton8.Checked = true)
+                if (radioButton8.Checked == true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")}) and {{View_RWPD_Multi_Out.POCode}} = '{POCode}' and {{View_RWPD_Multi_Out.Article}} = '{Article}'";
                 }
