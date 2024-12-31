@@ -481,14 +481,8 @@ namespace ERP_Production.Packing_Mateial_Requisition
             if (searchLookUpEdit1.EditValue != null && (int)searchLookUpEdit1.EditValue > 0)
             {
                 int selectedValue = (int)searchLookUpEdit1.EditValue;
-                try
-                {
 
                 this.view_MullinePacking_requTableAdapter.Fill(this.dSPackingMaterial.View_MullinePacking_requ, selectedValue);
-                }
-                catch(Exception ex){
-                    Console.WriteLine(ex.Message);
-                }
                 this.view_Multi_requisition_PackingTableAdapter.Fill(this.dSPackingMaterial.View_Multi_requisition_Packing, selectedValue);
             }
 

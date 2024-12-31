@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>110</ApplicationRevision>
+    <ApplicationRevision>108</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -167,18 +167,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Approval\frmMatRepAudit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Approval\frmMatRepAudit.Designer.cs">
-      <DependentUpon>frmMatRepAudit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Approval\FrmMatRepHOD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Approval\FrmMatRepHOD.Designer.cs">
-      <DependentUpon>FrmMatRepHOD.cs</DependentUpon>
-    </Compile>
     <Compile Include="Dashboard\FrmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,19 +177,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DSMatRep.cs">
-      <DependentUpon>DSMatRep.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DSMatRep.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DSMatRep.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DSMatRepHOD.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DSMatRepHOD.xsd</DependentUpon>
     </Compile>
     <Compile Include="DSPackingMaterial.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -310,18 +285,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NewDS.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MatReplacement\frmMatReplacement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MatReplacement\frmMatReplacement.Designer.cs">
-      <DependentUpon>frmMatReplacement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MatReq\frmMatReq.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MatReq\frmMatReq.Designer.cs">
-      <DependentUpon>frmMatReq.cs</DependentUpon>
     </Compile>
     <Compile Include="MISDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -479,12 +442,6 @@
     <Compile Include="RWPD\FrmRwpdTransection.Designer.cs">
       <DependentUpon>FrmRwpdTransection.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Approval\frmMatRepAudit.resx">
-      <DependentUpon>frmMatRepAudit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Approval\FrmMatRepHOD.resx">
-      <DependentUpon>FrmMatRepHOD.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -514,12 +471,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\FrmChangePassword.resx">
       <DependentUpon>FrmChangePassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MatReplacement\frmMatReplacement.resx">
-      <DependentUpon>frmMatReplacement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MatReq\frmMatReq.resx">
-      <DependentUpon>frmMatReq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Packing Mateial Requisition\FrmPackingRequisition.resx">
       <DependentUpon>FrmPackingRequisition.cs</DependentUpon>
@@ -594,28 +545,6 @@
     </None>
     <None Include="DSLabelPlanning.xss">
       <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
-    </None>
-    <None Include="DSMatRep.xsc">
-      <DependentUpon>DSMatRep.xsd</DependentUpon>
-    </None>
-    <None Include="DSMatRep.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSMatRep.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DSMatRep.xss">
-      <DependentUpon>DSMatRep.xsd</DependentUpon>
-    </None>
-    <None Include="DSMatRepHOD.xsc">
-      <DependentUpon>DSMatRepHOD.xsd</DependentUpon>
-    </None>
-    <None Include="DSMatRepHOD.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSMatRepHOD.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DSMatRepHOD.xss">
-      <DependentUpon>DSMatRepHOD.xsd</DependentUpon>
     </None>
     <None Include="DSPackingMaterial.xsc">
       <DependentUpon>DSPackingMaterial.xsd</DependentUpon>
