@@ -1183,6 +1183,13 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_PO_HRow FindByPO(int PO) {
+                return ((tbl_Multi_PO_HRow)(this.Rows.Find(new object[] {
+                            PO})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 tbl_Multi_PO_HDataTable cln = ((tbl_Multi_PO_HDataTable)(base.Clone()));
                 cln.InitVars();
@@ -1212,11 +1219,14 @@ namespace ERP_Production {
                 base.Columns.Add(this.columnPOCode);
                 this.columnPODD = new global::System.Data.DataColumn("PODD", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPODD);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnPO}, true));
                 this.columnPO.AutoIncrement = true;
                 this.columnPO.AutoIncrementSeed = -1;
                 this.columnPO.AutoIncrementStep = -1;
                 this.columnPO.AllowDBNull = false;
                 this.columnPO.ReadOnly = true;
+                this.columnPO.Unique = true;
                 this.columnPOCode.AllowDBNull = false;
                 this.columnPOCode.MaxLength = 150;
             }
@@ -8244,8 +8254,8 @@ WHERE        (PO = ?)";
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        PO, POCode, PODD\r\nFROM            View_Multi_PO_Reports\r\nWHERE     " +
-                "   (PODD BETWEEN ? AND ?)";
+            this._commandCollection[0].CommandText = "SELECT        PO, POCode, PODD\r\nFROM            View_Multi_PO_Reports\r\nGROUP BY P" +
+                "O, POCode, PODD\r\nHAVING        (PODD BETWEEN ? AND ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));

@@ -535,7 +535,7 @@ namespace ERP_Production.RWPD
             }
             else if (gtpOne == "By In Transaction")
                 {
-                reportName = @"\\dnsserver\MyReports$\FSERPPC\Dispatch\RWPD\rptRWPDMultiIn.rpt";
+                reportName = @"\\dnsserver\MyReports$\ERPPPS\labeling\LabelMultiPlan.rpt";
                 if (radioButton5.Checked = true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_IN.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")})";
@@ -565,7 +565,7 @@ namespace ERP_Production.RWPD
             }
             else
             {
-                reportName = @"\\dnsserver\MyReports$\FSERPPC\Dispatch\RWPD\rptRWPDMultiOut.rpt";
+                reportName = @"\\dnsserver\MyReports$\ERPPPS\labeling\LabelMultiPlan.rpt";
                 if (radioButton5.Checked = true)
                 {
                     selectionFormula = $"{{View_RWPD_Multi_Out.DeliverDate}} in DateTime({requisitionDate.Replace("-", ",").Replace(" ", ",")}) to DateTime({requisitionDate2.Replace("-", ",").Replace(" ", ",")})";

@@ -456,6 +456,52 @@ namespace ERP_Production
             await ShowOrToggleFormAsync<frmMasterPlanningReports>();
         }
 
+        private void accordionControlElement13_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accordionControlElement24_Click(object sender, EventArgs e)
+        {
+            if (!IsLoggedIn)
+            {
+                MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            ShowOrToggleFormAsync<MatReplacement.frmMatReplacement>();
+        }
+
+        private void accordionControlElement26_Click(object sender, EventArgs e)
+        {
+            if (!IsLoggedIn)
+            {
+                MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            ShowOrToggleFormAsync<Approval.FrmMatRepHOD>();
+        }
+
+        private void accordionControlElement27_Click(object sender, EventArgs e)
+        {
+            if (!IsLoggedIn)
+            {
+                MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            ShowOrToggleFormAsync<Approval.frmMatRepAudit>();
+        }
+
+        private void accordionControlElement28_Click(object sender, EventArgs e)
+        {
+            if (!IsLoggedIn)
+            {
+                MessageBox.Show("You must be logged in to access this section.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            ShowOrToggleFormAsync<MatReq.frmMatReq>();
+        }
+
+
         //private void accordionControlElement11_Click(object sender, EventArgs e)
         //{
 
