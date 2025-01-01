@@ -775,7 +775,7 @@ namespace ERP_Production.RWPD
                     textEdit2.Enabled = false;
                     comboBoxEdit2.Enabled = true;
                 }
-                catch (Exception ex)
+                catch (Exception ex2)
                 { }
             }
         }

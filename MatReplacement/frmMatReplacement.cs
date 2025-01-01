@@ -193,11 +193,11 @@ namespace ERP_Production.MatReplacement
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to generate a replacement request?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
+            int count = 0;
             if (result == DialogResult.Yes)
             {
                 // Check if the quantity entered is not zero
-                if (int.Parse(textBox1.Text) != 0)
+                if (textBox1.Text != "")
                 {
                     DateTime ReqDate = (DateTime)dateEdit1.EditValue;
                     int ReqQty = int.Parse(textBox1.Text);
@@ -226,6 +226,7 @@ namespace ERP_Production.MatReplacement
                         // Get the GridView instance from the focused grid control
                         var gridView = (DevExpress.XtraGrid.Views.Grid.GridView)gridControl2.FocusedView;
 
+
                         // Loop through all rows in the GridView (not just selected rows)
                         for (int i = 0; i < gridView.RowCount; i++)
                         {
@@ -234,6 +235,7 @@ namespace ERP_Production.MatReplacement
 
                             if (isSelected) // If the CheckEdit is checked (Status is true)
                             {
+                                count += 1;
                                 try
                                 {
                                     // Retrieve data for the current row
@@ -278,16 +280,18 @@ namespace ERP_Production.MatReplacement
                                     MessageBox.Show($"Error: {ex.Message}");
                                 }
                             }
-                            else
-                            {
-                                // Optionally log or show a message for skipped rows
-                                // MessageBox.Show($"Row {i} is not selected.");
-                            }
                         }
-                        MessageBox.Show($"repalcement generated sucecsfully");
+                        if (count == 0)
+                        {
+                            System.Windows.Forms.MessageBox.Show("No Entry selected");
+                        }
 
-                        // Reload the data to refresh the UI
-                        load();
+                        else
+                        {
+                            MessageBox.Show($"repalcement generated sucecsfully");
+
+                            load();
+                        }
                     }
                 }
                 else
@@ -393,7 +397,15 @@ namespace ERP_Production.MatReplacement
 
         private void comboBoxEdit3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try
+            {
+
             this.tbl_Multi_PO_HTableAdapter.Fill(this.dSMatRep.tbl_Multi_PO_H, comboBoxEdit3.Text, (DateTime?)dateEdit9.EditValue, (DateTime?)dateEdit4.EditValue);
+            }
+            catch
+            {
+
+            }
 
         }
     }
