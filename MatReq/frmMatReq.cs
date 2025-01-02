@@ -204,5 +204,70 @@ namespace ERP_Production.MatReq
             }
 
         }
+
+        private decimal GlobalSum = 0;
+
+        private decimal SumVal(decimal Sum2)
+        {
+            // Update the global sum by adding the new value
+            GlobalSum += Sum2;
+
+            // Update the textEdit1 with the new sum value
+            textEdit1.Text = GlobalSum.ToString(); // You can format it as currency or decimal as needed
+
+            // Return the updated sum (optional)
+            return GlobalSum;
+        }
+
+        private decimal SumVal2(decimal Sum2)
+        {
+            // Update the global sum by adding the new value
+            GlobalSum -= Sum2;
+
+            // Update the textEdit1 with the new sum value
+            textEdit1.Text = GlobalSum.ToString(); // You can format it as currency or decimal as needed
+
+            // Return the updated sum (optional)
+            return GlobalSum;
+        }
+
+        private void repositoryItemCheckEdit2_CheckedChanged_1(object sender, EventArgs e)
+        {
+            var gridView = (DevExpress.XtraGrid.Views.Grid.GridView)gridControl4.FocusedView;
+            DevExpress.XtraEditors.CheckEdit checkEdit = sender as DevExpress.XtraEditors.CheckEdit;
+            // Get the 'Status' value of the currently focused row
+            //object value = gridView.GetFocusedRowCellValue("Status");
+            //object isChecked = this.repositoryItemCheckEdit2;
+            if (checkEdit != null && checkEdit.Checked)
+            {
+                //    // Get the Balance value from the focused row
+                decimal Balance = (decimal)gridView.GetFocusedRowCellValue("Balance");
+
+                //    // Get the PartialQty value (or 0 if it's DBNull or null)
+                object partialQtyValue = gridView.GetFocusedRowCellValue("PartialQty");
+                decimal PartialQty = partialQtyValue == DBNull.Value ? 0 : (decimal)partialQtyValue;
+
+                //    // Calculate the required quantity (use Balance if PartialQty is 0)
+                decimal reqqty = PartialQty == 0 ? Balance : PartialQty;
+
+                //    // Call SumVal to update the global sum and the textbox
+                SumVal(reqqty);
+            }
+            else
+            {
+                decimal Balance = (decimal)gridView.GetFocusedRowCellValue("Balance");
+
+                //    // Get the PartialQty value (or 0 if it's DBNull or null)
+                object partialQtyValue = gridView.GetFocusedRowCellValue("PartialQty");
+                decimal PartialQty = partialQtyValue == DBNull.Value ? 0 : (decimal)partialQtyValue;
+
+                //    // Calculate the required quantity (use Balance if PartialQty is 0)
+                decimal reqqty = PartialQty == 0 ? Balance : PartialQty;
+
+                //    // Call SumVal to update the global sum and the textbox
+                SumVal2(reqqty);
+            }
+        }
+
     }
 }
