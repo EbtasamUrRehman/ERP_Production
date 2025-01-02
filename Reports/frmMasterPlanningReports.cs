@@ -342,6 +342,8 @@ namespace ERP_Production.Reports
 
         private void frmMasterPlanningReports_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dSMP.tbl_Pro_Client1' table. You can move, or remove it, as needed.
+            this.tbl_Pro_Client1TableAdapter.Fill(this.dSMP.tbl_Pro_Client1);
             // TODO: This line of code loads data into the 'dSMP.tbl_Prd_Lines' table. You can move, or remove it, as needed.
             this.tbl_Prd_LinesTableAdapter.Fill(this.dSMP.tbl_Prd_Lines);
             // TODO: This line of code loads data into the 'dSMP.tbl_Pro_Plan2' table. You can move, or remove it, as needed.
@@ -353,7 +355,7 @@ namespace ERP_Production.Reports
             // TODO: This line of code loads data into the 'dSMP.tbl_Pro_Article1' table. You can move, or remove it, as needed.
             this.tbl_Pro_Article1TableAdapter.Fill(this.dSMP.tbl_Pro_Article1);
             // TODO: This line of code loads data into the 'dSMP.tbl_Pro_Client' table. You can move, or remove it, as needed.
-            this.tbl_Pro_ClientTableAdapter.Fill(this.dSMP.tbl_Pro_Client);
+            //this.tbl_Pro_ClientTableAdapter.Fill(this.dSMP.tbl_Pro_Client);
 
         }
 

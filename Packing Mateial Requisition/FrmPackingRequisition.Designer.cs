@@ -227,7 +227,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1586, 807);
+            this.panel1.Size = new System.Drawing.Size(1656, 849);
             this.panel1.TabIndex = 2;
             // 
             // tabPane1
@@ -239,9 +239,9 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.tabPane1.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabNavigationPage2});
-            this.tabPane1.RegularSize = new System.Drawing.Size(1586, 807);
+            this.tabPane1.RegularSize = new System.Drawing.Size(1656, 849);
             this.tabPane1.SelectedPage = this.tabNavigationPage2;
-            this.tabPane1.Size = new System.Drawing.Size(1586, 807);
+            this.tabPane1.Size = new System.Drawing.Size(1656, 849);
             this.tabPane1.TabIndex = 0;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -254,7 +254,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.tabNavigationPage2.ItemShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
             this.tabNavigationPage2.Name = "tabNavigationPage2";
             this.tabNavigationPage2.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.tabNavigationPage2.Size = new System.Drawing.Size(1586, 759);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(1646, 795);
             // 
             // panelControl11
             // 
@@ -263,7 +263,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl11.Location = new System.Drawing.Point(0, 0);
             this.panelControl11.Name = "panelControl11";
-            this.panelControl11.Size = new System.Drawing.Size(1586, 759);
+            this.panelControl11.Size = new System.Drawing.Size(1646, 795);
             this.panelControl11.TabIndex = 8;
             // 
             // panelControl12
@@ -272,7 +272,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl12.Location = new System.Drawing.Point(2, 510);
             this.panelControl12.Name = "panelControl12";
-            this.panelControl12.Size = new System.Drawing.Size(1582, 247);
+            this.panelControl12.Size = new System.Drawing.Size(1642, 283);
             this.panelControl12.TabIndex = 8;
             // 
             // panelControl6
@@ -282,7 +282,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl6.Location = new System.Drawing.Point(2, 2);
             this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(1578, 243);
+            this.panelControl6.Size = new System.Drawing.Size(1638, 279);
             this.panelControl6.TabIndex = 6;
             // 
             // gridControl3
@@ -294,7 +294,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.gridControl3.Name = "gridControl3";
             this.gridControl3.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit4});
-            this.gridControl3.Size = new System.Drawing.Size(1574, 189);
+            this.gridControl3.Size = new System.Drawing.Size(1634, 225);
             this.gridControl3.TabIndex = 4;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3,
@@ -523,7 +523,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl5.Location = new System.Drawing.Point(2, 2);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(1574, 50);
+            this.panelControl5.Size = new System.Drawing.Size(1634, 50);
             this.panelControl5.TabIndex = 5;
             // 
             // labelControl2
@@ -558,7 +558,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(2, 2);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1582, 508);
+            this.panelControl2.Size = new System.Drawing.Size(1642, 508);
             this.panelControl2.TabIndex = 7;
             // 
             // panelControl15
@@ -567,7 +567,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl15.Location = new System.Drawing.Point(2, 166);
             this.panelControl15.Name = "panelControl15";
-            this.panelControl15.Size = new System.Drawing.Size(1578, 340);
+            this.panelControl15.Size = new System.Drawing.Size(1638, 340);
             this.panelControl15.TabIndex = 12;
             // 
             // panelControl10
@@ -576,7 +576,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl10.Location = new System.Drawing.Point(2, 2);
             this.panelControl10.Name = "panelControl10";
-            this.panelControl10.Size = new System.Drawing.Size(1574, 336);
+            this.panelControl10.Size = new System.Drawing.Size(1634, 336);
             this.panelControl10.TabIndex = 10;
             // 
             // gridControl2
@@ -589,7 +589,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit2,
             this.repositoryItemButtonEditAvaBala});
-            this.gridControl2.Size = new System.Drawing.Size(1570, 332);
+            this.gridControl2.Size = new System.Drawing.Size(1630, 332);
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -783,7 +783,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl14.Location = new System.Drawing.Point(2, 57);
             this.panelControl14.Name = "panelControl14";
-            this.panelControl14.Size = new System.Drawing.Size(1578, 109);
+            this.panelControl14.Size = new System.Drawing.Size(1638, 109);
             this.panelControl14.TabIndex = 11;
             // 
             // groupControl2
@@ -793,7 +793,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(2, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(1574, 105);
+            this.groupControl2.Size = new System.Drawing.Size(1634, 105);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Show Record";
             // 
@@ -802,9 +802,9 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl20.Controls.Add(this.panelControl25);
             this.panelControl20.Controls.Add(this.panelControl21);
             this.panelControl20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl20.Location = new System.Drawing.Point(2, 21);
+            this.panelControl20.Location = new System.Drawing.Point(2, 23);
             this.panelControl20.Name = "panelControl20";
-            this.panelControl20.Size = new System.Drawing.Size(1570, 84);
+            this.panelControl20.Size = new System.Drawing.Size(1630, 84);
             this.panelControl20.TabIndex = 23;
             this.panelControl20.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl20_Paint);
             // 
@@ -1003,7 +1003,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // 
             this.panelControl21.Controls.Add(this.panelControl18);
             this.panelControl21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl21.Location = new System.Drawing.Point(1326, 2);
+            this.panelControl21.Location = new System.Drawing.Point(1386, 2);
             this.panelControl21.Name = "panelControl21";
             this.panelControl21.Size = new System.Drawing.Size(242, 80);
             this.panelControl21.TabIndex = 27;
@@ -1042,7 +1042,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl19.Location = new System.Drawing.Point(2, 2);
             this.panelControl19.Name = "panelControl19";
-            this.panelControl19.Size = new System.Drawing.Size(1574, 105);
+            this.panelControl19.Size = new System.Drawing.Size(1634, 105);
             this.panelControl19.TabIndex = 0;
             // 
             // panelControl9
@@ -1051,7 +1051,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl9.Location = new System.Drawing.Point(2, 2);
             this.panelControl9.Name = "panelControl9";
-            this.panelControl9.Size = new System.Drawing.Size(1578, 55);
+            this.panelControl9.Size = new System.Drawing.Size(1638, 55);
             this.panelControl9.TabIndex = 9;
             // 
             // panelControl3
@@ -1069,7 +1069,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl3.Location = new System.Drawing.Point(2, 2);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1574, 50);
+            this.panelControl3.Size = new System.Drawing.Size(1634, 50);
             this.panelControl3.TabIndex = 8;
             // 
             // simpleButton1
@@ -1078,7 +1078,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.simpleButton1.Appearance.Options.UseBorderColor = true;
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(1479, 0);
+            this.simpleButton1.Location = new System.Drawing.Point(1539, 0);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton1.Size = new System.Drawing.Size(41, 50);
@@ -1092,7 +1092,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             this.panelControl22.AutoSize = true;
             this.panelControl22.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl22.Location = new System.Drawing.Point(1520, 0);
+            this.panelControl22.Location = new System.Drawing.Point(1580, 0);
             this.panelControl22.Name = "panelControl22";
             this.panelControl22.Size = new System.Drawing.Size(0, 50);
             this.panelControl22.TabIndex = 28;
@@ -1125,7 +1125,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // 
             this.simpleButton6.Dock = System.Windows.Forms.DockStyle.Right;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.Location = new System.Drawing.Point(1520, 0);
+            this.simpleButton6.Location = new System.Drawing.Point(1580, 0);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.simpleButton6.Size = new System.Drawing.Size(54, 50);
@@ -1181,7 +1181,7 @@ namespace ERP_Production.Packing_Mateial_Requisition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1586, 807);
+            this.ClientSize = new System.Drawing.Size(1656, 849);
             this.Controls.Add(this.panel1);
             this.Name = "FrmPackingRequisition";
             this.Text = "FrmPackingRequisition";

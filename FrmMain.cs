@@ -132,8 +132,8 @@ namespace ERP_Production
                         FrmDashboard dashboardForm = new FrmDashboard
                         {
                             TopLevel = false,
-                            FormBorderStyle = FormBorderStyle.None,
-                            Dock = DockStyle.Fill,
+                            FormBorderStyle = FormBorderStyle.FixedDialog,
+                            Dock = DockStyle.None,
                             Name = "FrmDashboard"
                         };
 
@@ -194,7 +194,7 @@ namespace ERP_Production
                     T formToEmbed = new T
                     {
                         TopLevel = false,
-                        FormBorderStyle = FormBorderStyle.None,
+                        FormBorderStyle = FormBorderStyle.FixedDialog,
                         Dock = DockStyle.Fill
                     };
 

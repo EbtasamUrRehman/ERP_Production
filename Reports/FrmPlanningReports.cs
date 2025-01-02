@@ -384,7 +384,7 @@ namespace ERP_Production.Reports
 
                 // Assuming you want to use the month and year from the DateTime objects for filtering.
                 // Note: Adjust the filter string to match your data access method.
-                string filter = $"{{View_PO_Orders_15ThCuttOff.ClientID}} = 1 and {{View_PO_Orders_15ThCuttOff.SecondConfDate}} in #{firstDate:MM/dd/yyyy}# to #{secondDate:MM/dd/yyyy}#";
+                 Filter = $"{{View_PO_Orders_15ThCuttOff.ClientID}} = 1 and {{View_PO_Orders_15ThCuttOff.SecondConfDate}} in #{firstDate:MM/dd/yyyy}# to #{secondDate:MM/dd/yyyy}#";
             }
 
             
@@ -649,14 +649,14 @@ namespace ERP_Production.Reports
             //else
             {
                 this.OrderTypeComboBox.Items.Add("Original Order");
-                this.OrderTypeComboBox.Items.Add("Forecast Stock");
+                this.OrderTypeComboBox.Items.Add("Forcast Stock");
                 this.OrderTypeComboBox.Items.Add("B-Grade Order");
                 this.OrderTypeComboBox.Items.Add("Cancel Order");
                 this.OrderTypeComboBox.Items.Add("RND Ball");
                 this.OrderTypeComboBox.Items.Add("Dev Ball");
                 this.OrderTypeComboBox.Items.Add("SMS Ball");
                 this.OrderTypeComboBox1.Items.Add("Original Order");
-                this.OrderTypeComboBox1.Items.Add("Forecast Stock");
+                this.OrderTypeComboBox1.Items.Add("Forcast Stock");
                 this.OrderTypeComboBox1.Items.Add("B-Grade Order");
                 this.OrderTypeComboBox1.Items.Add("Cancel Order");
                 this.OrderTypeComboBox1.Items.Add("RND Ball");

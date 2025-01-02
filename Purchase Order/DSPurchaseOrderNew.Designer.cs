@@ -12546,9 +12546,11 @@ FROM            tbl_Multi_PO_M";
             this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LAName", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT        POM\r\nFROM            tbl_Multi_PO_M\r\nWHERE        (PO = ?)";
+            this._commandCollection[2].CommandText = "SELECT        POM\r\nFROM            MIS.dbo.tbl_Multi_PO_M\r\nWHERE        (PO = ?) " +
+                "AND (LAName = ?)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LAName", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LAName", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[3] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = "UPDATE       tbl_Multi_PO_M\r\nSET                PODD = ?, LPDate = ?\r\nWHERE      " +
@@ -13747,9 +13749,15 @@ FROM            tbl_Multi_PO_M";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual object ScalarQuery(int PO) {
+        public virtual object ScalarQuery(int PO, string LAName) {
             global::System.Data.Odbc.OdbcCommand command = this.CommandCollection[2];
             command.Parameters[0].Value = ((int)(PO));
+            if ((LAName == null)) {
+                throw new global::System.ArgumentNullException("LAName");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(LAName));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {

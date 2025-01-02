@@ -44,6 +44,7 @@ namespace ERP_Production.Reports
             System.Windows.Forms.Label ClientNameLabel;
             System.Windows.Forms.Label Label2;
             System.Windows.Forms.Label Label3;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPlanningReports));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.RadioButton31 = new System.Windows.Forms.RadioButton();
@@ -259,15 +260,20 @@ namespace ERP_Production.Reports
             // 
             // groupControl1
             // 
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupControl1.AppearanceCaption.FontStyleDelta = System.Drawing.FontStyle.Italic;
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
             this.groupControl1.Controls.Add(this.GroupBox1);
             this.groupControl1.Controls.Add(this.GroupBox7);
             this.groupControl1.Controls.Add(this.GroupBox5);
             this.groupControl1.Controls.Add(this.GroupBox3);
             this.groupControl1.Controls.Add(this.GroupBox2);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Card;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1744, 942);
+            this.groupControl1.Size = new System.Drawing.Size(1784, 966);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Planning Reports";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
@@ -277,7 +283,7 @@ namespace ERP_Production.Reports
             this.GroupBox1.Controls.Add(this.RadioButton31);
             this.GroupBox1.Controls.Add(this.RadioButton27);
             this.GroupBox1.Controls.Add(this.RadioButton26);
-            this.GroupBox1.Location = new System.Drawing.Point(355, 206);
+            this.GroupBox1.Location = new System.Drawing.Point(515, 264);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(147, 100);
             this.GroupBox1.TabIndex = 49;
@@ -324,7 +330,7 @@ namespace ERP_Production.Reports
             this.GroupBox7.Controls.Add(this.ComboBox1);
             this.GroupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox7.ForeColor = System.Drawing.Color.Blue;
-            this.GroupBox7.Location = new System.Drawing.Point(355, 354);
+            this.GroupBox7.Location = new System.Drawing.Point(515, 412);
             this.GroupBox7.Name = "GroupBox7";
             this.GroupBox7.Size = new System.Drawing.Size(354, 169);
             this.GroupBox7.TabIndex = 48;
@@ -434,9 +440,9 @@ namespace ERP_Production.Reports
             this.GroupBox5.Controls.Add(this.CheckBox1);
             this.GroupBox5.Controls.Add(this.RadioButton2);
             this.GroupBox5.Controls.Add(this.RadioButton1);
-            this.GroupBox5.Location = new System.Drawing.Point(27, 31);
+            this.GroupBox5.Location = new System.Drawing.Point(35, 75);
             this.GroupBox5.Name = "GroupBox5";
-            this.GroupBox5.Size = new System.Drawing.Size(322, 679);
+            this.GroupBox5.Size = new System.Drawing.Size(440, 679);
             this.GroupBox5.TabIndex = 47;
             this.GroupBox5.TabStop = false;
             this.GroupBox5.Text = "Select Report Type";
@@ -759,7 +765,7 @@ namespace ERP_Production.Reports
             this.CheckBox1.AutoSize = true;
             this.CheckBox1.Checked = true;
             this.CheckBox1.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.CheckBox1.Location = new System.Drawing.Point(231, 63);
+            this.CheckBox1.Location = new System.Drawing.Point(290, 61);
             this.CheckBox1.Name = "CheckBox1";
             this.CheckBox1.Size = new System.Drawing.Size(88, 19);
             this.CheckBox1.TabIndex = 8;
@@ -799,7 +805,7 @@ namespace ERP_Production.Reports
             this.GroupBox3.Controls.Add(this.ExFactoryDate);
             this.GroupBox3.Controls.Add(this.LastConfDate);
             this.GroupBox3.Controls.Add(this.CustReqDate);
-            this.GroupBox3.Location = new System.Drawing.Point(355, 31);
+            this.GroupBox3.Location = new System.Drawing.Point(515, 89);
             this.GroupBox3.Name = "GroupBox3";
             this.GroupBox3.Size = new System.Drawing.Size(263, 169);
             this.GroupBox3.TabIndex = 46;
@@ -891,7 +897,7 @@ namespace ERP_Production.Reports
             this.GroupBox2.Controls.Add(this.DTPicker2);
             this.GroupBox2.Controls.Add(Label2);
             this.GroupBox2.Controls.Add(Label3);
-            this.GroupBox2.Location = new System.Drawing.Point(715, 31);
+            this.GroupBox2.Location = new System.Drawing.Point(898, 75);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Size = new System.Drawing.Size(263, 400);
             this.GroupBox2.TabIndex = 45;
@@ -1136,7 +1142,7 @@ namespace ERP_Production.Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1744, 942);
+            this.ClientSize = new System.Drawing.Size(1784, 966);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmPlanningReports";
             this.Text = "FrmPlanningReports";

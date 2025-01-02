@@ -322,12 +322,15 @@ namespace ERP_Production
 
                 //DateTime.TryParse(worksheet.Cells[row, 38].Value?.ToString(), out DateTime LastProductionDate);
                 DateTime.TryParse(worksheet.Cells[row, 25].Value?.ToString(), out DateTime CRD);
+                DateTime.TryParse(worksheet.Cells[row, 25].Value?.ToString(), out DateTime LPD);
+                DateTime.TryParse(worksheet.Cells[row, 25].Value?.ToString(), out DateTime PSDD);
+                DateTime.TryParse(worksheet.Cells[row, 25].Value?.ToString(), out DateTime PODD);
                 DateTime.TryParse(worksheet.Cells[row, 26].Value?.ToString(), out DateTime PlanDate);
                 DateTime.TryParse(worksheet.Cells[row, 27].Value?.ToString(), out DateTime BatchDate);
-                DateTime.TryParse(worksheet.Cells[row, 35].Value?.ToString(), out DateTime PSDD);
-                DateTime.TryParse(worksheet.Cells[row, 36].Value?.ToString(), out DateTime PODD);
+                //DateTime.TryParse(worksheet.Cells[row, 35].Value?.ToString(), out DateTime PSDD);
+                //DateTime.TryParse(worksheet.Cells[row, 36].Value?.ToString(), out DateTime PODD);
                 DateTime.TryParse(worksheet.Cells[row, 37].Value?.ToString(), out DateTime FPDD);
-                DateTime.TryParse(worksheet.Cells[row, 38].Value?.ToString(), out DateTime LPD);
+                //DateTime.TryParse(worksheet.Cells[row, 38].Value?.ToString(), out DateTime LPD);
                   int UnitPrice;
                 if (!int.TryParse(worksheet.Cells[row, 43].Value?.ToString(), out UnitPrice))
                 {
@@ -337,7 +340,7 @@ namespace ERP_Production
                 if (string.IsNullOrEmpty(ArtCode) || string.IsNullOrEmpty(PoCode) || string.IsNullOrEmpty(OrderType))
                 {
                     // Log missing data details to a text file
-                    LogMissingData(row, PoCode, POLineAggregator, POLineItem, ArtCode, MarketPO, PlantCode, OrderType, size, TotalQty, ShipMode, CRD, PlanDate, BatchDate, CRD, CRD, FPDD, LPD, logFilePath);
+                    LogMissingData(row, PoCode, POLineAggregator, POLineItem, ArtCode, MarketPO, PlantCode, OrderType, size, TotalQty, ShipMode, CRD, PlanDate, BatchDate, CRD, CRD, FPDD, CRD, logFilePath);
                     continue; // Skip this row and move to the next one
                 }
 
@@ -391,8 +394,8 @@ namespace ERP_Production
                                     int rowsAffected = this.tbl_Multi_PO_MTableAdapter.Insert(
                                                        (int)PO, Client, modelId, artId, POLineAggregator, OrderType,
                                                        null, null, PlantCode, POLineItem, ShipMode, DateTime.Now.Date, CRD,
-                                                       null, LPD, null, LPD, null, null, null, null, null, null,
-                                                       PlanDate, null, null, PSDD, FPDD, PODD, BatchDate,CustomerCode,CustomerPO,GPSCustomer
+                                                       null, CRD, null, CRD, null, null, null, null, null, null,
+                                                       PlanDate, null, null, CRD, FPDD, CRD, BatchDate,CustomerCode,CustomerPO,GPSCustomer
                                                    );
 
                                     // Check if the insert was successful
@@ -415,32 +418,45 @@ namespace ERP_Production
                             // Process Multi_PO_S
                             try
                             {
-                                var pom = this.tbl_Multi_PO_MTableAdapter.ScalarQuery((int)PO);
+                                var pom = this.tbl_Multi_PO_MTableAdapter.ScalarQuery((int)PO, POLineAggregator);
                                 var artSizeResult = this.tbl_Pro_Article_DTableAdapter.ScalarQuery(size, Client, modelId, artId);
 
                                 // Convert the result to string
                                 string artSize = artSizeResult != null ? artSizeResult.ToString() : null;
 
-                                bool recordExists1 = this.tbl_Multi_PO_STableAdapter.CheckExistence(this.dSPurchaseOrderNew.tbl_Multi_PO_S, (int)PO, artSize, POLineAggregator) > 0;
-
+                                //bool recordExists1 = this.tbl_Multi_PO_STableAdapter.CheckExistence(this.dSPurchaseOrderNew.tbl_Multi_PO_S, (int)PO, artSize, POLineAggregator) > 0;
+                                bool recordExists1 = false;
                                 if (!recordExists1)
-                                {
-                                    int rowsAffected = this.tbl_Multi_PO_STableAdapter.Insert(
-                                                       (int)PO, (int)pom, Client, modelId, artId, POLineAggregator, artSize, TotalQty, POLineItem,
-                                                       null, DateTime.Now.Date, null, "Original Order", null, 0, OrderType,UnitPrice
-                                                   );
 
-                                    // Check if the insert was successful
-                                    if (rowsAffected <= 0)
+                                {
+                                    int rowsAffected = 0;
+
+                                    try
                                     {
-                                        LogDatabaseError("tbl_Multi_PO_STableAdapter.Insert", row, PoCode, logFilePath);
+                                         rowsAffected = this.tbl_Multi_PO_STableAdapter.Insert(
+                                                       (int)PO, (int)pom, Client, modelId, artId, POLineAggregator, artSize, TotalQty, POLineItem,
+                                                       null, DateTime.Now.Date, null, "Original Order", null, 0, OrderType, UnitPrice
+                                                   );
                                     }
+                                    catch (Exception ex)
+                                    {
+                                        //MessageBox.Show($"{pom}");
+                                        if (rowsAffected <= 0)
+                                        {
+                                            LogDatabaseError("", row, PoCode, logFilePath,ex);
+                                        }// Log the exception or handle it as required
+
+                                    }
+                                    
+                                  
+                                    // Check if the insert was successful
+                                   
                                 }
                             }
                             catch (Exception ex)
                             {
                                 // Log the exception or handle it as required
-                                LogDatabaseError("tbl_Multi_PO_STableAdapter.Insert", row, PoCode, logFilePath, ex);
+                                LogDatabaseError("", row, PoCode, logFilePath, ex);
                                 worksheet.Rows[row].FillColor = Color.Red;
                             }
                         }
@@ -475,6 +491,7 @@ namespace ERP_Production
 
         }
 
+      
 
         private void LogMissingData(int row, string poCode, string poLineAggregator, int poLineItem, string artCode, string marketPO, string plantCode, string orderType, string size, int totalQty, string shipMode, DateTime crd, DateTime planDate, DateTime batchDate, DateTime psdd, DateTime podd, DateTime fpdd, DateTime lpd, string logFilePath)
         {
@@ -491,18 +508,18 @@ namespace ERP_Production
             }
         }
 
-        private void LogDatabaseError(string methodName, int row, string poCode, string logFilePath, Exception ex = null)
+        private void LogDatabaseError(string methodName, int row, string poCode, string logFilePath, Exception ex = null,  string size = null)
         {
             using (StreamWriter sw = File.AppendText(logFilePath))
             {
                 sw.WriteLine($"Error in row {row} PoCode {poCode} with that error'");
                 sw.WriteLine($"{methodName}'");
-                //sw.WriteLine($" Record is not inserted Error in row {row} with PoCode {poCode}:");
+                sw.WriteLine($" Record is not inserted Error in row {row} with PoCode {poCode}:");
                 if (ex != null)
                 {
                     //sw.WriteLine($"This Record may b duplicatd or field error ");
                     //sw.WriteLine($"{DateTime.Now}: This record may be duplicated or there is a field error.");
-                    //sw.WriteLine($"Exception Message: {ex.Message}");
+                    sw.WriteLine($"Exception Message: {ex.Message}");
                     //sw.WriteLine($"Stack Trace: {ex.StackTrace}");
                 }
                 else

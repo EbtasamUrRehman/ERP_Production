@@ -112,7 +112,7 @@ namespace ERP_Production
             this.spreadsheetControl1.Location = new System.Drawing.Point(2, 2);
             this.spreadsheetControl1.MenuManager = this.barManager1;
             this.spreadsheetControl1.Name = "spreadsheetControl1";
-            this.spreadsheetControl1.Size = new System.Drawing.Size(1088, 907);
+            this.spreadsheetControl1.Size = new System.Drawing.Size(1148, 943);
             this.spreadsheetControl1.TabIndex = 0;
             this.spreadsheetControl1.Text = "spreadsheetControl1";
             this.spreadsheetControl1.Click += new System.EventHandler(this.spreadsheetControl1_Click);
@@ -259,15 +259,15 @@ namespace ERP_Production
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1274, 27);
+            this.barDockControlTop.Size = new System.Drawing.Size(1334, 27);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 971);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1007);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1274, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1334, 0);
             // 
             // barDockControlLeft
             // 
@@ -275,15 +275,15 @@ namespace ERP_Production
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 27);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 944);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 980);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1274, 27);
+            this.barDockControlRight.Location = new System.Drawing.Point(1334, 27);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 944);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 980);
             // 
             // spreadsheetBarController1
             // 
@@ -365,11 +365,11 @@ namespace ERP_Production
             // progressBarControl1
             // 
             this.progressBarControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progressBarControl1.Location = new System.Drawing.Point(0, 938);
+            this.progressBarControl1.Location = new System.Drawing.Point(0, 974);
             this.progressBarControl1.MenuManager = this.barManager1;
             this.progressBarControl1.Name = "progressBarControl1";
             this.progressBarControl1.Properties.ShowTitle = true;
-            this.progressBarControl1.Size = new System.Drawing.Size(1274, 33);
+            this.progressBarControl1.Size = new System.Drawing.Size(1334, 33);
             this.progressBarControl1.TabIndex = 0;
             // 
             // panelControl1
@@ -379,7 +379,7 @@ namespace ERP_Production
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl1.Location = new System.Drawing.Point(0, 27);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(182, 911);
+            this.panelControl1.Size = new System.Drawing.Size(182, 947);
             this.panelControl1.TabIndex = 5;
             // 
             // panelControl3
@@ -517,7 +517,7 @@ namespace ERP_Production
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl2.Location = new System.Drawing.Point(182, 27);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1092, 911);
+            this.panelControl2.Size = new System.Drawing.Size(1152, 947);
             this.panelControl2.TabIndex = 10;
             // 
             // stepProgressBarItem2
@@ -529,7 +529,7 @@ namespace ERP_Production
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1274, 971);
+            this.ClientSize = new System.Drawing.Size(1334, 1007);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.progressBarControl1);

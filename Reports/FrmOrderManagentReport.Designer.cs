@@ -41,6 +41,7 @@ namespace ERP_Production.Reports
             System.Windows.Forms.Label Label4;
             System.Windows.Forms.Label Label2;
             System.Windows.Forms.Label Label3;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOrderManagentReport));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.GroupBox5 = new System.Windows.Forms.GroupBox();
             this.RadioButton18 = new System.Windows.Forms.RadioButton();
@@ -100,6 +101,8 @@ namespace ERP_Production.Reports
             this.tbl_Pro_Client1TableAdapter = new ERP_Production.DSReportsTableAdapters.tbl_Pro_Client1TableAdapter();
             this.tbl_Pro_ClientTableAdapter = new ERP_Production.DSReportsTableAdapters.tbl_Pro_ClientTableAdapter();
             this.tbl_Pro_CustomerTableAdapter = new ERP_Production.DSReportsTableAdapters.tbl_Pro_CustomerTableAdapter();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             Label10 = new System.Windows.Forms.Label();
             Label9 = new System.Windows.Forms.Label();
             Label8 = new System.Windows.Forms.Label();
@@ -123,6 +126,10 @@ namespace ERP_Production.Reports
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ArticleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ClientBindingSource)).BeginInit();
             this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Label10
@@ -226,18 +233,18 @@ namespace ERP_Production.Reports
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.GroupBox5);
-            this.groupControl1.Controls.Add(this.GroupBox4);
-            this.groupControl1.Controls.Add(this.RadioButton7);
-            this.groupControl1.Controls.Add(this.RadioButton6);
-            this.groupControl1.Controls.Add(this.RadioButton5);
-            this.groupControl1.Controls.Add(this.GroupBox3);
-            this.groupControl1.Controls.Add(this.GroupBox2);
-            this.groupControl1.Controls.Add(this.GroupBox1);
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.AppearanceCaption.Options.UseTextOptions = true;
+            this.groupControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.groupControl1.AppearanceCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
+            this.groupControl1.Controls.Add(this.groupControl3);
+            this.groupControl1.Controls.Add(this.groupControl2);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1472, 944);
+            this.groupControl1.Size = new System.Drawing.Size(1224, 637);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Order Managment Report";
             // 
@@ -252,9 +259,10 @@ namespace ERP_Production.Reports
             this.GroupBox5.Controls.Add(this.RadioButton9);
             this.GroupBox5.Controls.Add(this.RadioButton10);
             this.GroupBox5.Controls.Add(this.RadioButton11);
-            this.GroupBox5.Location = new System.Drawing.Point(44, 78);
+            this.GroupBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox5.Location = new System.Drawing.Point(14, 40);
             this.GroupBox5.Name = "GroupBox5";
-            this.GroupBox5.Size = new System.Drawing.Size(245, 355);
+            this.GroupBox5.Size = new System.Drawing.Size(313, 355);
             this.GroupBox5.TabIndex = 21;
             this.GroupBox5.TabStop = false;
             this.GroupBox5.Text = "Select Report Type";
@@ -264,30 +272,33 @@ namespace ERP_Production.Reports
             this.RadioButton18.AutoSize = true;
             this.RadioButton18.Location = new System.Drawing.Point(12, 52);
             this.RadioButton18.Name = "RadioButton18";
-            this.RadioButton18.Size = new System.Drawing.Size(240, 19);
+            this.RadioButton18.Size = new System.Drawing.Size(243, 19);
             this.RadioButton18.TabIndex = 18;
             this.RadioButton18.Text = "All PO Verticle Reports With Working No.";
             this.RadioButton18.UseVisualStyleBackColor = true;
+            this.RadioButton18.CheckedChanged += new System.EventHandler(this.RadioButton18_CheckedChanged);
             // 
             // RadioButton17
             // 
             this.RadioButton17.AutoSize = true;
             this.RadioButton17.Location = new System.Drawing.Point(12, 225);
             this.RadioButton17.Name = "RadioButton17";
-            this.RadioButton17.Size = new System.Drawing.Size(223, 34);
+            this.RadioButton17.Size = new System.Drawing.Size(222, 34);
             this.RadioButton17.TabIndex = 17;
             this.RadioButton17.Text = "Factory Code And Client Wise Report \r\nWith Entry Date";
             this.RadioButton17.UseVisualStyleBackColor = true;
+            this.RadioButton17.CheckedChanged += new System.EventHandler(this.RadioButton17_CheckedChanged);
             // 
             // RadioButton16
             // 
             this.RadioButton16.AutoSize = true;
             this.RadioButton16.Location = new System.Drawing.Point(12, 202);
             this.RadioButton16.Name = "RadioButton16";
-            this.RadioButton16.Size = new System.Drawing.Size(227, 19);
+            this.RadioButton16.Size = new System.Drawing.Size(230, 19);
             this.RadioButton16.TabIndex = 16;
             this.RadioButton16.Text = "All PO Verticle Reports With Entry Date";
             this.RadioButton16.UseVisualStyleBackColor = true;
+            this.RadioButton16.CheckedChanged += new System.EventHandler(this.RadioButton16_CheckedChanged);
             // 
             // RadioButton15
             // 
@@ -298,6 +309,7 @@ namespace ERP_Production.Reports
             this.RadioButton15.TabIndex = 15;
             this.RadioButton15.Text = "Factory Code And Client Wise Report With \r\nWorking No.";
             this.RadioButton15.UseVisualStyleBackColor = true;
+            this.RadioButton15.CheckedChanged += new System.EventHandler(this.RadioButton15_CheckedChanged);
             // 
             // RadioButton12
             // 
@@ -308,16 +320,18 @@ namespace ERP_Production.Reports
             this.RadioButton12.TabIndex = 14;
             this.RadioButton12.Text = "Client Wise Reports";
             this.RadioButton12.UseVisualStyleBackColor = true;
+            this.RadioButton12.CheckedChanged += new System.EventHandler(this.RadioButton12_CheckedChanged);
             // 
             // RadioButton8
             // 
             this.RadioButton8.AutoSize = true;
             this.RadioButton8.Location = new System.Drawing.Point(12, 145);
             this.RadioButton8.Name = "RadioButton8";
-            this.RadioButton8.Size = new System.Drawing.Size(220, 19);
+            this.RadioButton8.Size = new System.Drawing.Size(219, 19);
             this.RadioButton8.TabIndex = 6;
             this.RadioButton8.Text = "Factory Code And Client Wise Report";
             this.RadioButton8.UseVisualStyleBackColor = true;
+            this.RadioButton8.CheckedChanged += new System.EventHandler(this.RadioButton8_CheckedChanged);
             // 
             // RadioButton9
             // 
@@ -325,21 +339,23 @@ namespace ERP_Production.Reports
             this.RadioButton9.Checked = true;
             this.RadioButton9.Location = new System.Drawing.Point(12, 27);
             this.RadioButton9.Name = "RadioButton9";
-            this.RadioButton9.Size = new System.Drawing.Size(145, 19);
+            this.RadioButton9.Size = new System.Drawing.Size(146, 19);
             this.RadioButton9.TabIndex = 7;
             this.RadioButton9.TabStop = true;
             this.RadioButton9.Text = "All PO Verticle Reports ";
             this.RadioButton9.UseVisualStyleBackColor = true;
+            this.RadioButton9.CheckedChanged += new System.EventHandler(this.RadioButton9_CheckedChanged);
             // 
             // RadioButton10
             // 
             this.RadioButton10.AutoSize = true;
             this.RadioButton10.Location = new System.Drawing.Point(12, 73);
             this.RadioButton10.Name = "RadioButton10";
-            this.RadioButton10.Size = new System.Drawing.Size(130, 19);
+            this.RadioButton10.Size = new System.Drawing.Size(131, 19);
             this.RadioButton10.TabIndex = 8;
             this.RadioButton10.Text = "Article Wise Reports";
             this.RadioButton10.UseVisualStyleBackColor = true;
+            this.RadioButton10.CheckedChanged += new System.EventHandler(this.RadioButton10_CheckedChanged);
             // 
             // RadioButton11
             // 
@@ -350,6 +366,7 @@ namespace ERP_Production.Reports
             this.RadioButton11.TabIndex = 9;
             this.RadioButton11.Text = "Factory Code And Article Wise Reports";
             this.RadioButton11.UseVisualStyleBackColor = true;
+            this.RadioButton11.CheckedChanged += new System.EventHandler(this.RadioButton11_CheckedChanged);
             // 
             // GroupBox4
             // 
@@ -358,7 +375,7 @@ namespace ERP_Production.Reports
             this.GroupBox4.Controls.Add(this.RadioButton2);
             this.GroupBox4.Controls.Add(this.RadioButton3);
             this.GroupBox4.Controls.Add(this.RadioButton4);
-            this.GroupBox4.Location = new System.Drawing.Point(77, 78);
+            this.GroupBox4.Location = new System.Drawing.Point(47, 40);
             this.GroupBox4.Name = "GroupBox4";
             this.GroupBox4.Size = new System.Drawing.Size(245, 355);
             this.GroupBox4.TabIndex = 19;
@@ -420,7 +437,7 @@ namespace ERP_Production.Reports
             // RadioButton7
             // 
             this.RadioButton7.AutoSize = true;
-            this.RadioButton7.Location = new System.Drawing.Point(328, 50);
+            this.RadioButton7.Location = new System.Drawing.Point(256, 40);
             this.RadioButton7.Name = "RadioButton7";
             this.RadioButton7.Size = new System.Drawing.Size(106, 19);
             this.RadioButton7.TabIndex = 20;
@@ -431,24 +448,26 @@ namespace ERP_Production.Reports
             // RadioButton6
             // 
             this.RadioButton6.AutoSize = true;
-            this.RadioButton6.Location = new System.Drawing.Point(208, 50);
+            this.RadioButton6.Location = new System.Drawing.Point(136, 40);
             this.RadioButton6.Name = "RadioButton6";
             this.RadioButton6.Size = new System.Drawing.Size(107, 19);
             this.RadioButton6.TabIndex = 18;
             this.RadioButton6.Text = "Models Reports";
             this.RadioButton6.UseVisualStyleBackColor = true;
+            this.RadioButton6.CheckedChanged += new System.EventHandler(this.RadioButton6_CheckedChanged);
             // 
             // RadioButton5
             // 
             this.RadioButton5.AutoSize = true;
             this.RadioButton5.Checked = true;
-            this.RadioButton5.Location = new System.Drawing.Point(86, 50);
+            this.RadioButton5.Location = new System.Drawing.Point(14, 40);
             this.RadioButton5.Name = "RadioButton5";
             this.RadioButton5.Size = new System.Drawing.Size(111, 19);
             this.RadioButton5.TabIndex = 17;
             this.RadioButton5.TabStop = true;
             this.RadioButton5.Text = "Country Reports";
             this.RadioButton5.UseVisualStyleBackColor = true;
+            this.RadioButton5.CheckedChanged += new System.EventHandler(this.RadioButton5_CheckedChanged);
             // 
             // GroupBox3
             // 
@@ -459,7 +478,8 @@ namespace ERP_Production.Reports
             this.GroupBox3.Controls.Add(this.ExFactoryDate);
             this.GroupBox3.Controls.Add(this.LastConfDate);
             this.GroupBox3.Controls.Add(this.CustReqDate);
-            this.GroupBox3.Location = new System.Drawing.Point(324, 78);
+            this.GroupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox3.Location = new System.Drawing.Point(406, 40);
             this.GroupBox3.Name = "GroupBox3";
             this.GroupBox3.Size = new System.Drawing.Size(264, 355);
             this.GroupBox3.TabIndex = 16;
@@ -474,6 +494,7 @@ namespace ERP_Production.Reports
             this.RadioButton19.TabIndex = 21;
             this.RadioButton19.Text = "Status";
             this.RadioButton19.UseVisualStyleBackColor = true;
+            this.RadioButton19.CheckedChanged += new System.EventHandler(this.RadioButton19_CheckedChanged);
             // 
             // LPDate
             // 
@@ -492,27 +513,30 @@ namespace ERP_Production.Reports
             this.BothDateButton.TabIndex = 19;
             this.BothDateButton.Text = "Entry Date And Producton/Plan Date";
             this.BothDateButton.UseVisualStyleBackColor = true;
+            this.BothDateButton.CheckedChanged += new System.EventHandler(this.BothDateButton_CheckedChanged);
             // 
             // EntryDate
             // 
             this.EntryDate.Checked = true;
             this.EntryDate.Location = new System.Drawing.Point(6, 25);
             this.EntryDate.Name = "EntryDate";
-            this.EntryDate.Size = new System.Drawing.Size(141, 17);
+            this.EntryDate.Size = new System.Drawing.Size(141, 21);
             this.EntryDate.TabIndex = 18;
             this.EntryDate.TabStop = true;
             this.EntryDate.Text = "Entry Date";
             this.EntryDate.UseVisualStyleBackColor = true;
+            this.EntryDate.CheckedChanged += new System.EventHandler(this.EntryDate_CheckedChanged);
             // 
             // ExFactoryDate
             // 
             this.ExFactoryDate.AutoSize = true;
             this.ExFactoryDate.Location = new System.Drawing.Point(6, 75);
             this.ExFactoryDate.Name = "ExFactoryDate";
-            this.ExFactoryDate.Size = new System.Drawing.Size(139, 19);
+            this.ExFactoryDate.Size = new System.Drawing.Size(140, 19);
             this.ExFactoryDate.TabIndex = 14;
             this.ExFactoryDate.Text = "Production/Plan Date";
             this.ExFactoryDate.UseVisualStyleBackColor = true;
+            this.ExFactoryDate.CheckedChanged += new System.EventHandler(this.ExFactoryDate_CheckedChanged);
             // 
             // LastConfDate
             // 
@@ -522,6 +546,7 @@ namespace ERP_Production.Reports
             this.LastConfDate.TabIndex = 15;
             this.LastConfDate.Text = "Delivery Date";
             this.LastConfDate.UseVisualStyleBackColor = true;
+            this.LastConfDate.CheckedChanged += new System.EventHandler(this.LastConfDate_CheckedChanged);
             // 
             // CustReqDate
             // 
@@ -532,6 +557,7 @@ namespace ERP_Production.Reports
             this.CustReqDate.TabIndex = 17;
             this.CustReqDate.Text = "Customer Required Date";
             this.CustReqDate.UseVisualStyleBackColor = true;
+            this.CustReqDate.CheckedChanged += new System.EventHandler(this.CustReqDate_CheckedChanged);
             // 
             // GroupBox2
             // 
@@ -560,7 +586,7 @@ namespace ERP_Production.Reports
             this.GroupBox2.Controls.Add(Label2);
             this.GroupBox2.Controls.Add(this.CBFactoryCode);
             this.GroupBox2.Controls.Add(Label3);
-            this.GroupBox2.Location = new System.Drawing.Point(594, 77);
+            this.GroupBox2.Location = new System.Drawing.Point(676, 39);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Size = new System.Drawing.Size(387, 355);
             this.GroupBox2.TabIndex = 15;
@@ -765,7 +791,7 @@ namespace ERP_Production.Reports
             this.GroupBox1.Controls.Add(this.AllCountries);
             this.GroupBox1.Controls.Add(this.CountryAndFactoryCode);
             this.GroupBox1.Controls.Add(this.FactoryCode);
-            this.GroupBox1.Location = new System.Drawing.Point(77, 78);
+            this.GroupBox1.Location = new System.Drawing.Point(47, 40);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Size = new System.Drawing.Size(245, 355);
             this.GroupBox1.TabIndex = 14;
@@ -853,18 +879,51 @@ namespace ERP_Production.Reports
             // 
             this.tbl_Pro_CustomerTableAdapter.ClearBeforeFill = true;
             // 
+            // groupControl2
+            // 
+            this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupControl2.AppearanceCaption.FontStyleDelta = System.Drawing.FontStyle.Italic;
+            this.groupControl2.AppearanceCaption.Options.UseFont = true;
+            this.groupControl2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupControl2.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl2.CaptionImageOptions.Image")));
+            this.groupControl2.Controls.Add(this.RadioButton7);
+            this.groupControl2.Controls.Add(this.RadioButton6);
+            this.groupControl2.Controls.Add(this.RadioButton5);
+            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            this.groupControl2.Location = new System.Drawing.Point(2, 42);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(1220, 70);
+            this.groupControl2.TabIndex = 21;
+            this.groupControl2.Text = "Select Report";
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl3.CaptionImageOptions.Image")));
+            this.groupControl3.Controls.Add(this.GroupBox5);
+            this.groupControl3.Controls.Add(this.GroupBox1);
+            this.groupControl3.Controls.Add(this.GroupBox2);
+            this.groupControl3.Controls.Add(this.GroupBox4);
+            this.groupControl3.Controls.Add(this.GroupBox3);
+            this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl3.Location = new System.Drawing.Point(2, 112);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.ShowCaption = false;
+            this.groupControl3.Size = new System.Drawing.Size(1220, 523);
+            this.groupControl3.TabIndex = 22;
+            this.groupControl3.Text = "groupControl3";
+            // 
             // FrmOrderManagentReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1472, 944);
+            this.ClientSize = new System.Drawing.Size(1224, 637);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmOrderManagentReport";
             this.Text = "FrmOrderManagentReport";
             this.Load += new System.EventHandler(this.FrmOrderManagentReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
             this.GroupBox5.ResumeLayout(false);
             this.GroupBox5.PerformLayout();
             this.GroupBox4.ResumeLayout(false);
@@ -879,6 +938,11 @@ namespace ERP_Production.Reports
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_ClientBindingSource)).EndInit();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -944,5 +1008,7 @@ namespace ERP_Production.Reports
         private System.Windows.Forms.BindingSource tbl_Pro_Client1BindingSource;
         private System.Windows.Forms.BindingSource tbl_Pro_CustomerBindingSource;
         private DSReportsTableAdapters.tbl_Pro_CustomerTableAdapter tbl_Pro_CustomerTableAdapter;
+        private DevExpress.XtraEditors.GroupControl groupControl3;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
     }
 }
