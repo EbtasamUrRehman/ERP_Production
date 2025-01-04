@@ -99,7 +99,7 @@ namespace ERP_Production.Approval
 
                     if (Status == "Approved")
                     {
-                        Msg = "Verified";
+                        Msg = "Entry Verified";
                         Status = "Verified";
                     }
                     else
