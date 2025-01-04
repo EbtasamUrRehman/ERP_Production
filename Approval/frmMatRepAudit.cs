@@ -88,36 +88,28 @@ namespace ERP_Production.Approval
                     // Check if the value is DBNull or null before attempting to convert it to decimal
                     decimal VerifiedQty = value != DBNull.Value ? Convert.ToDecimal(value) : 0m;
                     decimal newQty;
-
-                    if (!string.IsNullOrEmpty(Status))
+                    if(VerifiedQty == 0)
                     {
-                        if (VerifiedQty == 0)
-                        {
-                            newQty = Convert.ToDecimal(RQuantity);
-                        }
-                        else
-                        {
-                            newQty = VerifiedQty;
-                        }
-
-                        if (Status == "Approved")
-                        {
-                            Msg = "Verified";
-                            Status = "Verified";
-                        }
-                        else
-                        {
-                            Msg = "Cancelled";
-                        }
-                        //System.Windows.Forms.MessageBox.Show($"Status: {Status}");
-                        this.view_mat_multi_replace_verify2TableAdapter.UpdateQuery1(Status, DateTime.Now, int.Parse(userIDLabel1.Text), newQty, ApprovedByName, TID);
-                        this.view_mat_multi_replace_verify2TableAdapter.FillBy(dSMatRepHOD.view_mat_multi_replace_verify2, comboBoxEdit1.Text);
-                        System.Windows.Forms.MessageBox.Show($"{Msg} successfully");
+                        newQty = Convert.ToDecimal(RQuantity);
                     }
                     else
                     {
-                        System.Windows.Forms.MessageBox.Show("no status selected");
+                        newQty = VerifiedQty;
                     }
+
+                    if (Status == "Approved")
+                    {
+                        Msg = "Verified";
+                        Status = "Verified";
+                    }
+                    else
+                    {
+                        Msg = "Cancelled";
+                    }
+                    //System.Windows.Forms.MessageBox.Show($"Status: {Status}");
+                    this.view_mat_multi_replace_verify2TableAdapter.UpdateQuery1(Status, DateTime.Now, int.Parse(userIDLabel1.Text), newQty,ApprovedByName, TID);
+                    this.view_mat_multi_replace_verify2TableAdapter.FillBy(dSMatRepHOD.view_mat_multi_replace_verify2,comboBoxEdit1.Text);
+                    System.Windows.Forms.MessageBox.Show($"{Msg} successfully");
                 }
             }
         }
@@ -186,38 +178,31 @@ namespace ERP_Production.Approval
                     // Check if the value is DBNull or null before attempting to convert it to decimal
                     decimal VerifiedQty = value != DBNull.Value ? Convert.ToDecimal(value) : 0m;
                     decimal newQty;
-                    if (!string.IsNullOrEmpty(Status))
+                    String ApprovedByName = (String)loginNameLabel1.Text;
+                    if (VerifiedQty == 0)
                     {
-                        String ApprovedByName = (String)loginNameLabel1.Text;
-                        if (VerifiedQty == 0)
-                        {
-                            newQty = Convert.ToDecimal(RQuantity);
-                        }
-                        else
-                        {
-                            newQty = VerifiedQty;
-                        }
-                        if (Status == "Approved")
-                        {
-                            Msg = "Verified";
-                            Status = "Verified";
-                        }
-                        else
-                        {
-                            Msg = "Cancelled";
-                        }
-                        //System.Windows.Forms.MessageBox.Show($"Status: {Status}");
-                        this.dataTable3TableAdapter.UpdateQuery2(Status, DateTime.Now, int.Parse(userIDLabel1.Text), newQty, ApprovedByName, TID);
-                        this.dataTable3TableAdapter.FillByFullBall(dSMatRep.DataTable3, comboBoxEdit1.Text);
-                        this.dataTable7TableAdapter.Fill(dSMatRep.DataTable7, comboBoxEdit1.Text, PO, POD);
-                        decimal updateQty = (decimal)dSMatRep.DataTable7.Rows[0]["VerifiedQty"];
-                        this.dataTable7TableAdapter.UpdateQuery(updateQty, PO, POD);
-                        System.Windows.Forms.MessageBox.Show($"{Msg} successfully");
+                        newQty = Convert.ToDecimal(RQuantity);
                     }
                     else
                     {
-                        System.Windows.Forms.MessageBox.Show("no status selected");
+                        newQty = VerifiedQty;
                     }
+                    if (Status == "Approved")
+                    {
+                        Msg = "Verified";
+                        Status = "Verified";
+                    }
+                    else
+                    {
+                        Msg = "Cancelled";
+                    }
+                    //System.Windows.Forms.MessageBox.Show($"Status: {Status}");
+                    this.dataTable3TableAdapter.UpdateQuery2(Status, DateTime.Now, int.Parse(userIDLabel1.Text), newQty, ApprovedByName, TID);
+                    this.dataTable3TableAdapter.FillByFullBall(dSMatRep.DataTable3, comboBoxEdit1.Text);
+                    this.dataTable7TableAdapter.Fill(dSMatRep.DataTable7, comboBoxEdit1.Text, PO, POD);
+                    decimal updateQty = (decimal)dSMatRep.DataTable7.Rows[0]["VerifiedQty"];
+                    this.dataTable7TableAdapter.UpdateQuery(updateQty, PO, POD);
+                    System.Windows.Forms.MessageBox.Show($"{Msg} successfully");
                 }
             }
         }
