@@ -30,6 +30,7 @@ namespace ERP_Production.Reports
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMasterPlanningReports));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.Label5 = new System.Windows.Forms.Label();
@@ -97,6 +98,8 @@ namespace ERP_Production.Reports
             this.tbl_Pro_Article1TableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_Article1TableAdapter();
             this.tbl_Pro_Plan1TableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_Plan1TableAdapter();
             this.tbl_Pro_Plan2TableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_Plan2TableAdapter();
+            this.tbl_Pro_Client1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_Pro_Client1TableAdapter = new ERP_Production.Reports.DSMPTableAdapters.tbl_Pro_Client1TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.GroupBox2.SuspendLayout();
@@ -108,18 +111,23 @@ namespace ERP_Production.Reports
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Plan2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Prd_LinesBindingSource)).BeginInit();
             this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Client1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
             this.groupControl1.Controls.Add(this.GroupBox2);
             this.groupControl1.Controls.Add(this.GroupBox1);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Card;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(1924, 1062);
             this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "groupControl1";
+            this.groupControl1.Text = "Master Planning Reports";
             // 
             // GroupBox2
             // 
@@ -144,7 +152,7 @@ namespace ERP_Production.Reports
             this.GroupBox2.Controls.Add(this.Label1);
             this.GroupBox2.Controls.Add(this.DateTimePicker2);
             this.GroupBox2.Controls.Add(this.DateTimePicker1);
-            this.GroupBox2.Location = new System.Drawing.Point(485, 48);
+            this.GroupBox2.Location = new System.Drawing.Point(509, 48);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Size = new System.Drawing.Size(334, 693);
             this.GroupBox2.TabIndex = 3;
@@ -330,7 +338,7 @@ namespace ERP_Production.Reports
             // 
             this.ClientIDComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.ClientIDComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.ClientIDComboBox.DataSource = this.tbl_Pro_ClientBindingSource;
+            this.ClientIDComboBox.DataSource = this.tbl_Pro_Client1BindingSource;
             this.ClientIDComboBox.DisplayMember = "ClientName";
             this.ClientIDComboBox.FormattingEnabled = true;
             this.ClientIDComboBox.Location = new System.Drawing.Point(105, 27);
@@ -771,6 +779,7 @@ namespace ERP_Production.Reports
             this.tableAdapterManager.tbl_Pro_Article_DTableAdapter = this.tbl_Pro_Article_DTableAdapter;
             this.tableAdapterManager.tbl_Pro_Article1TableAdapter = this.tbl_Pro_Article1TableAdapter;
             this.tableAdapterManager.tbl_Pro_ArticleTableAdapter = null;
+            this.tableAdapterManager.tbl_Pro_Client1TableAdapter = null;
             this.tableAdapterManager.tbl_Pro_ClientTableAdapter = this.tbl_Pro_ClientTableAdapter;
             this.tableAdapterManager.tbl_Pro_ModelTableAdapter = null;
             this.tableAdapterManager.tbl_Pro_Plan1TableAdapter = this.tbl_Pro_Plan1TableAdapter;
@@ -798,6 +807,15 @@ namespace ERP_Production.Reports
             // 
             this.tbl_Pro_Plan2TableAdapter.ClearBeforeFill = true;
             // 
+            // tbl_Pro_Client1BindingSource
+            // 
+            this.tbl_Pro_Client1BindingSource.DataMember = "tbl_Pro_Client1";
+            this.tbl_Pro_Client1BindingSource.DataSource = this.dSMP;
+            // 
+            // tbl_Pro_Client1TableAdapter
+            // 
+            this.tbl_Pro_Client1TableAdapter.ClearBeforeFill = true;
+            // 
             // frmMasterPlanningReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -819,6 +837,7 @@ namespace ERP_Production.Reports
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Prd_LinesBindingSource)).EndInit();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_Pro_Client1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -892,5 +911,7 @@ namespace ERP_Production.Reports
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.DateTimePicker DateTimePicker2;
         internal System.Windows.Forms.DateTimePicker DateTimePicker1;
+        private System.Windows.Forms.BindingSource tbl_Pro_Client1BindingSource;
+        private DSMPTableAdapters.tbl_Pro_Client1TableAdapter tbl_Pro_Client1TableAdapter;
     }
 }

@@ -34,7 +34,6 @@ namespace ERP_Production
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.fluentFormDefaultManager2 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.accordionControlPlanning = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -70,7 +69,6 @@ namespace ERP_Production
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement28 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.SuspendLayout();
@@ -79,15 +77,14 @@ namespace ERP_Production
             // 
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
+<<<<<<< HEAD
             this.fluentDesignFormControl1.Size = new System.Drawing.Size(1515, 30);
+=======
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1565, 30);
+>>>>>>> master
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
-            // 
-            // fluentFormDefaultManager1
-            // 
-            this.fluentFormDefaultManager1.Form = this;
             // 
             // fluentFormDefaultManager2
             // 
@@ -214,14 +211,22 @@ namespace ERP_Production
             this.accordionControlElement13,
             this.accordionControlElement14,
             this.accordionControlElement18,
+<<<<<<< HEAD
             this.accordionControlElement20,
             this.accordionControlElement23,
             this.accordionControlElement25});
+=======
+            this.accordionControlElement20});
+>>>>>>> master
             this.accordionControl1.Location = new System.Drawing.Point(0, 30);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Auto;
             this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
+<<<<<<< HEAD
             this.accordionControl1.Size = new System.Drawing.Size(303, 681);
+=======
+            this.accordionControl1.Size = new System.Drawing.Size(253, 563);
+>>>>>>> master
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             this.accordionControl1.Click += new System.EventHandler(this.accordionControl1_Click);
@@ -377,9 +382,15 @@ namespace ERP_Production
             // fluentDesignFormContainer
             // 
             this.fluentDesignFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+<<<<<<< HEAD
             this.fluentDesignFormContainer.Location = new System.Drawing.Point(303, 30);
             this.fluentDesignFormContainer.Name = "fluentDesignFormContainer";
             this.fluentDesignFormContainer.Size = new System.Drawing.Size(1212, 681);
+=======
+            this.fluentDesignFormContainer.Location = new System.Drawing.Point(253, 30);
+            this.fluentDesignFormContainer.Name = "fluentDesignFormContainer";
+            this.fluentDesignFormContainer.Size = new System.Drawing.Size(1312, 563);
+>>>>>>> master
             this.fluentDesignFormContainer.TabIndex = 0;
             this.fluentDesignFormContainer.Click += new System.EventHandler(this.fluentDesignFormContainer_Click);
             // 
@@ -402,7 +413,11 @@ namespace ERP_Production
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1515, 711);
+=======
+            this.ClientSize = new System.Drawing.Size(1565, 593);
+>>>>>>> master
             this.ControlContainer = this.fluentDesignFormContainer;
             this.Controls.Add(this.fluentDesignFormContainer);
             this.Controls.Add(this.accordionControl1);
@@ -415,7 +430,6 @@ namespace ERP_Production
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             this.ResumeLayout(false);
@@ -426,7 +440,6 @@ namespace ERP_Production
 
         #endregion
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
-        private DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager fluentFormDefaultManager1;
         private DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager fluentFormDefaultManager2;
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fluentDesignFormContainer;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;

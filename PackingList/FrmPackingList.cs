@@ -20,6 +20,8 @@ namespace ERP_Production.PackingList
 
         private void FrmPackingList_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dSPackingList.tbl_Multi_PackList1' table. You can move, or remove it, as needed.
+            //this.tbl_Multi_PackList1TableAdapter.Fill(this.dSPackingList.tbl_Multi_PackList1);
             // TODO: This line of code loads data into the 'dSPackingList.tbl_carton_name' table. You can move, or remove it, as needed.
             this.tbl_carton_nameTableAdapter.Fill(this.dSPackingList.tbl_carton_name);
             // TODO: This line of code loads data into the 'dSPackingList.tbl_Pro_Cust_Ident' table. You can move, or remove it, as needed.
@@ -62,7 +64,7 @@ namespace ERP_Production.PackingList
             try
             {
                 this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
-                this.tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, (int)searchLookUpEdit1.EditValue);
+                this.tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, (int)searchLookUpEdit1.EditValue);
             }
             catch (Exception)
             {
@@ -220,7 +222,7 @@ namespace ERP_Production.PackingList
              
                 // Fill the updated packing list
                 this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
-                this.tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, po);
+                this.tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, po);
                 }
 
 
@@ -325,7 +327,7 @@ namespace ERP_Production.PackingList
                             MessageBox.Show("Data inserted successfully!");
 
                             // Refresh the data in the view
-                            tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, PONumber);
+                            tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, PONumber);
                             this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
                         }
                         catch (Exception ex)
@@ -381,7 +383,7 @@ namespace ERP_Production.PackingList
                                 MessageBox.Show("Data Updated successfully!");
 
                                 // Refresh the data in the view
-                                tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, PONumber);
+                                tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, PONumber);
                             }
                             catch (Exception ex)
                             {
@@ -559,7 +561,7 @@ namespace ERP_Production.PackingList
                                                 maxPackNo = this.tbl_Multi_PackListTableAdapter.MaxPackNo(dSPackingList.tbl_Multi_PackList, po, pom, pos);
                                                 //this.tbl_Multi_PackListTableAdapter.UpdateQuery(tbl_Multi_PackListTableAdapter.CartonId(dSPackingList.tbl_Multi_PackList, maxPackNo), maxPackNo);
                                                 this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
-                                                this.tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, po);
+                                                this.tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, po);
                                             }
 
                                             if (Convert.ToInt32(CartonQty) > Convert.ToInt32(orderQty))
@@ -589,7 +591,7 @@ namespace ERP_Production.PackingList
                                     MessageBox.Show($"An error occurred while checking order quantities: {ex.Message}");
                                 }
 
-                                tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, (int)searchLookUpEdit1.EditValue);
+                                tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, (int)searchLookUpEdit1.EditValue);
                                 this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
 
 
@@ -842,7 +844,15 @@ namespace ERP_Production.PackingList
         {
             if (dateEdit1.Text != null && dateEdit2.Text != null)
             {
-                this.tbl_Multi_PO_HMTableAdapter.Fill(this.dSPackingList.tbl_Multi_PO_HM, (DateTime?)dateEdit1.EditValue, (DateTime?)dateEdit2.EditValue);
+                try 
+                { 
+                    this.tbl_Multi_PO_HMTableAdapter.Fill(this.dSPackingList.tbl_Multi_PO_HM, (DateTime?)dateEdit1.EditValue, (DateTime?)dateEdit2.EditValue); 
+                }
+                catch
+                {
+
+                }
+               
             }
         }
 
@@ -872,9 +882,13 @@ namespace ERP_Production.PackingList
                                 int pom = Convert.ToInt32(gridView.GetRowCellValue(selectedRowHandle, "POM") ?? 0);
                                 int pos = Convert.ToInt32(gridView.GetRowCellValue(selectedRowHandle, "POS") ?? 0);
                                 int packNo = Convert.ToInt32(gridView.GetRowCellValue(selectedRowHandle, "PackNo") ?? 0);
-                                int orderQty = Convert.ToInt32(gridView.GetRowCellValue(selectedRowHandle, "orderQty") ?? 0);
+                                int orderQty = Convert.ToInt32(gridView.GetRowCellValue(selectedRowHandle, "OrderQty") ?? 0);
                                 int CartonQty = Convert.ToInt32(gridView.GetRowCellValue(selectedRowHandle, "CartonQty") ?? 0);
-                                object cartonIdValue = Convert.ToInt32(gridView.GetRowCellValue(selectedRowHandle, "CartonID") ?? 0);
+
+                                object cartonIdValue = gridView.GetRowCellValue(selectedRowHandle, "CartonID");
+                                int cartonId = cartonIdValue == DBNull.Value
+                                    ? 0
+                                    : Convert.ToInt32(cartonIdValue);
                                 int CartonID;
 
                                 if (cartonIdValue != DBNull.Value)
@@ -969,7 +983,7 @@ namespace ERP_Production.PackingList
                                                 maxPackNo = this.tbl_Multi_PackListTableAdapter.MaxPackNo(dSPackingList.tbl_Multi_PackList, po, pom, pos);
                                                 //this.tbl_Multi_PackListTableAdapter.UpdateQuery(tbl_Multi_PackListTableAdapter.CartonId(dSPackingList.tbl_Multi_PackList, maxPackNo), maxPackNo);
                                                 this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
-                                                this.tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, po);
+                                                this.tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, po);
                                             }
 
                                             if (Convert.ToInt32(CartonQty) > Convert.ToInt32(orderQty))
@@ -999,7 +1013,7 @@ namespace ERP_Production.PackingList
                                     MessageBox.Show($"An error occurred while checking order quantities: {ex.Message}");
                                 }
 
-                                tbl_Multi_PackListTableAdapter.Fill(dSPackingList.tbl_Multi_PackList, (int)searchLookUpEdit1.EditValue);
+                                tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, (int)searchLookUpEdit1.EditValue);
                                 this.view_MultiLine_Packing_List_FinelTableAdapter.Fill(this.dSPackingList.View_MultiLine_Packing_List_Finel, (int)searchLookUpEdit1.EditValue);
 
 
@@ -1154,6 +1168,80 @@ namespace ERP_Production.PackingList
         private void simpleButton9_Click(object sender, EventArgs e)
         {
             this.tbl_Multi_PO_HMPackingTableAdapter.Fill(this.dSPackingList.tbl_Multi_PO_HMPacking, (DateTime?)dateEdit3.EditValue, (DateTime?)dateEdit4.EditValue);
+        }
+
+        private void dataNavigator1_ButtonClick(object sender, DevExpress.XtraEditors.NavigatorButtonClickEventArgs e)
+        {
+            if (e.Button.ButtonType == DevExpress.XtraEditors.NavigatorButtonType.Custom)
+            {
+                // Handle the custom button click here
+                // Example: Show a message box or perform a custom action
+                this.Validate();
+                this.tbl_Multi_PackList1BindingSource.EndEdit();
+
+                this.tbl_Multi_PackList1TableAdapter.Update(this.dSPackingList.tbl_Multi_PackList1);
+                MessageBox.Show("Operation Successfully Completed!");
+
+                // You can also prevent the default behavior if needed
+                // e.Handled = true; // Uncomment this if you want to stop the default behavior
+            }
+            if (e.Button.ButtonType == DevExpress.XtraEditors.NavigatorButtonType.CancelEdit)
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    // If the user confirms, perform the delete action
+                    this.tbl_Multi_PackList1TableAdapter.DeleteQuery((int)searchLookUpEdit1.EditValue);
+                    MessageBox.Show("Operation Successfully Completed!");
+                    this.tbl_Multi_PackList1TableAdapter.Fill(dSPackingList.tbl_Multi_PackList1, (int)searchLookUpEdit1.EditValue);
+
+                }
+
+                // You can also prevent the default behavior if needed
+                // e.Handled = true; // Uncomment this if you want to stop the default behavior
+            }
+        }
+        private void AddTextToListBox()
+        {
+            string inputText = TextBox1.Text;  // Get text from TextBox1
+
+            // Split the input text by new lines to handle multiple lines
+            string[] lines = inputText.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+
+            foreach (string line in lines)
+            {
+                if (!string.IsNullOrWhiteSpace(line))  // Ensure non-empty lines are added
+                {
+                    listBoxControl1.Items.Add(line);
+                    listBox1.Items.Add(line);
+                }
+            }
+
+            TextBox1.Clear();  // Clear the TextBox after adding
+        }
+        //private void AddTextToListBox()
+        //{
+        //    string inputText = TextBox1.Text;  // Get text from TextBox1
+
+        //    if (!string.IsNullOrWhiteSpace(inputText))  // Check if text is not empty
+        //    {
+        //        listBoxControl1.Items.Add(inputText);   // Add text to ListBoxControl1
+        //        TextBox1.Clear();
+        //        listBox1.Items.Add(inputText);   // Add text to ListBoxControl1
+        //        TextBox1.Clear(); // Clear the TextBox after adding
+        //    }
+        //}
+        private void simpleButton10_Click(object sender, EventArgs e)
+        {
+           
+                AddTextToListBox();  // Call the method to add text to ListBoxControl1
+            
+        }
+
+        private void listBoxControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

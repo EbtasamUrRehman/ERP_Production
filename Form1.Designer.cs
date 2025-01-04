@@ -41,7 +41,7 @@
             this.CRViewer.Location = new System.Drawing.Point(0, 0);
             this.CRViewer.Name = "CRViewer";
             this.CRViewer.SelectionFormula = "";
-            this.CRViewer.Size = new System.Drawing.Size(1109, 592);
+            this.CRViewer.Size = new System.Drawing.Size(1149, 616);
             this.CRViewer.TabIndex = 0;
             this.CRViewer.ToolPanelWidth = 233;
             this.CRViewer.ViewTimeSelectionFormula = "";
@@ -54,7 +54,7 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1109, 592);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1149, 616);
             this.crystalReportViewer1.TabIndex = 1;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
@@ -63,7 +63,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1109, 592);
+            this.ClientSize = new System.Drawing.Size(1149, 616);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.CRViewer);
             this.Name = "Form1";

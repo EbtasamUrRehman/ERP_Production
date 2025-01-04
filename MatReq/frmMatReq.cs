@@ -75,6 +75,10 @@ namespace ERP_Production.MatReq
 
             if (result == DialogResult.Yes)
             {
+<<<<<<< HEAD
+=======
+                int count = 0;
+>>>>>>> master
                 
                     DateTime RequestDate = (DateTime)dateEdit1.EditValue;
 
@@ -98,6 +102,10 @@ namespace ERP_Production.MatReq
 
                     if (isSelected) // If the CheckEdit is checked (Status is true)
                     {
+<<<<<<< HEAD
+=======
+                        count += 1;
+>>>>>>> master
                         //try
                         //{
                             // Retrieve data for the current row
@@ -154,7 +162,16 @@ namespace ERP_Production.MatReq
                         //}
                     
                     }
+<<<<<<< HEAD
                         
+=======
+                    if (count == 0)
+                    {
+                        System.Windows.Forms.MessageBox.Show("No Entry Selected");
+                    }
+
+
+>>>>>>> master
                 }
                 this.view_Multi_MatRep_Balance1TableAdapter.Fill(this.dSMatRep.View_Multi_MatRep_Balance1, comboBoxEdit3.Text);
                 this.dataTable6TableAdapter.Fill(this.dSMatRep.DataTable6, comboBoxEdit3.Text);

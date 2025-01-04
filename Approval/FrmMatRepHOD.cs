@@ -75,6 +75,7 @@ namespace ERP_Production.Approval
                     String ApprovedByName = (loginNameLabel1.Text) as String;
                     int TID = (int)gridView.GetRowCellValue(selectedRowHandle, "TID");
                     String Status = gridView.GetRowCellValue(selectedRowHandle, "HODStatus") as String;
+<<<<<<< HEAD
                     if(Status == "Approved")
                     {
                         Msg = "Approved";
@@ -87,6 +88,27 @@ namespace ERP_Production.Approval
                     this.view_mat_multi_replace_verifyTableAdapter.UpdateQuery1(Status, DateTime.Now, int.Parse(userIDLabel1.Text), ApprovedByName,TID);
                     this.view_mat_multi_replace_verifyTableAdapter.Fill(dSMatRepHOD.view_mat_multi_replace_verify, int.Parse(deptIDLabel1.Text));
                     System.Windows.Forms.MessageBox.Show($"{Msg} successfully");
+=======
+                    if (!string.IsNullOrEmpty(Status))
+                    {
+                        if (Status == "Approved")
+                        {
+                            Msg = "Approved";
+                        }
+                        else
+                        {
+                            Msg = "Cancelled";
+                        }
+                        //System.Windows.Forms.MessageBox.Show($"Status: {Status}");
+                        this.view_mat_multi_replace_verifyTableAdapter.UpdateQuery1(Status, DateTime.Now, int.Parse(userIDLabel1.Text), ApprovedByName, TID);
+                        this.view_mat_multi_replace_verifyTableAdapter.Fill(dSMatRepHOD.view_mat_multi_replace_verify, int.Parse(deptIDLabel1.Text));
+                        System.Windows.Forms.MessageBox.Show($"{Msg} successfully");
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("no status selected");
+                    }
+>>>>>>> master
                 }
             }
         }
@@ -155,6 +177,7 @@ namespace ERP_Production.Approval
                     String ApprovedByName = (loginNameLabel1.Text) as String;
                     int TID = (int)gridView.GetRowCellValue(selectedRowHandle, "TID");
                     String Status = gridView.GetRowCellValue(selectedRowHandle, "HODStatus") as String;
+<<<<<<< HEAD
                     if (Status == "Approved")
                     {
                         Msg = "Approved";
@@ -168,6 +191,28 @@ namespace ERP_Production.Approval
                     this.dataTable3TableAdapter.FillBy(dSMatRep.DataTable3, int.Parse(deptIDLabel1.Text));
 
                     System.Windows.Forms.MessageBox.Show($"{Msg} successfully");
+=======
+                    if (!string.IsNullOrEmpty(Status))
+                    {
+                        if (Status == "Approved")
+                        {
+                            Msg = "Approved";
+                        }
+                        else
+                        {
+                            Msg = "Cancelled";
+                        }
+                        //System.Windows.Forms.MessageBox.Show($"Status: {Status}");
+                        this.dataTable3TableAdapter.UpdateQuery1(Status, DateTime.Now, int.Parse(userIDLabel1.Text), ApprovedByName, TID);
+                        this.dataTable3TableAdapter.FillBy(dSMatRep.DataTable3, int.Parse(deptIDLabel1.Text));
+
+                        System.Windows.Forms.MessageBox.Show($"{Msg} successfully");
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("no status selected");
+                    }
+>>>>>>> master
                 }
             }
         }

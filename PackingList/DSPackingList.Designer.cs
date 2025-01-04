@@ -50,6 +50,8 @@ namespace ERP_Production.PackingList {
         
         private tbl_Multi_PO_HMPackingDataTable tabletbl_Multi_PO_HMPacking;
         
+        private tbl_Multi_PackList1DataTable tabletbl_Multi_PackList1;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -116,6 +118,9 @@ namespace ERP_Production.PackingList {
                 }
                 if ((ds.Tables["tbl_Multi_PO_HMPacking"] != null)) {
                     base.Tables.Add(new tbl_Multi_PO_HMPackingDataTable(ds.Tables["tbl_Multi_PO_HMPacking"]));
+                }
+                if ((ds.Tables["tbl_Multi_PackList1"] != null)) {
+                    base.Tables.Add(new tbl_Multi_PackList1DataTable(ds.Tables["tbl_Multi_PackList1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -267,6 +272,16 @@ namespace ERP_Production.PackingList {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public tbl_Multi_PackList1DataTable tbl_Multi_PackList1 {
+            get {
+                return this.tabletbl_Multi_PackList1;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -370,6 +385,9 @@ namespace ERP_Production.PackingList {
                 }
                 if ((ds.Tables["tbl_Multi_PO_HMPacking"] != null)) {
                     base.Tables.Add(new tbl_Multi_PO_HMPackingDataTable(ds.Tables["tbl_Multi_PO_HMPacking"]));
+                }
+                if ((ds.Tables["tbl_Multi_PackList1"] != null)) {
+                    base.Tables.Add(new tbl_Multi_PackList1DataTable(ds.Tables["tbl_Multi_PackList1"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -482,6 +500,12 @@ namespace ERP_Production.PackingList {
                     this.tabletbl_Multi_PO_HMPacking.InitVars();
                 }
             }
+            this.tabletbl_Multi_PackList1 = ((tbl_Multi_PackList1DataTable)(base.Tables["tbl_Multi_PackList1"]));
+            if ((initTable == true)) {
+                if ((this.tabletbl_Multi_PackList1 != null)) {
+                    this.tabletbl_Multi_PackList1.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -518,6 +542,8 @@ namespace ERP_Production.PackingList {
             base.Tables.Add(this.tabletbl_carton_name);
             this.tabletbl_Multi_PO_HMPacking = new tbl_Multi_PO_HMPackingDataTable();
             base.Tables.Add(this.tabletbl_Multi_PO_HMPacking);
+            this.tabletbl_Multi_PackList1 = new tbl_Multi_PackList1DataTable();
+            base.Tables.Add(this.tabletbl_Multi_PackList1);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -595,6 +621,12 @@ namespace ERP_Production.PackingList {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializetbl_Multi_PO_HMPacking() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializetbl_Multi_PackList1() {
             return false;
         }
         
@@ -691,6 +723,9 @@ namespace ERP_Production.PackingList {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void tbl_Multi_PO_HMPackingRowChangeEventHandler(object sender, tbl_Multi_PO_HMPackingRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void tbl_Multi_PackList1RowChangeEventHandler(object sender, tbl_Multi_PackList1RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -4144,9 +4179,9 @@ namespace ERP_Production.PackingList {
             
             private global::System.Data.DataColumn columnPOCode;
             
-            private global::System.Data.DataColumn columnPODD;
-            
             private global::System.Data.DataColumn columnPO;
+            
+            private global::System.Data.DataColumn columnPODD;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -4191,17 +4226,17 @@ namespace ERP_Production.PackingList {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn PODDColumn {
+            public global::System.Data.DataColumn POColumn {
                 get {
-                    return this.columnPODD;
+                    return this.columnPO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn POColumn {
+            public global::System.Data.DataColumn PODDColumn {
                 get {
-                    return this.columnPO;
+                    return this.columnPODD;
                 }
             }
             
@@ -4242,12 +4277,12 @@ namespace ERP_Production.PackingList {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbl_Multi_PO_HMRow Addtbl_Multi_PO_HMRow(string POCode, System.DateTime PODD, int PO) {
+            public tbl_Multi_PO_HMRow Addtbl_Multi_PO_HMRow(string POCode, int PO, System.DateTime PODD) {
                 tbl_Multi_PO_HMRow rowtbl_Multi_PO_HMRow = ((tbl_Multi_PO_HMRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         POCode,
-                        PODD,
-                        PO};
+                        PO,
+                        PODD};
                 rowtbl_Multi_PO_HMRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_Multi_PO_HMRow);
                 return rowtbl_Multi_PO_HMRow;
@@ -4278,8 +4313,8 @@ namespace ERP_Production.PackingList {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnPOCode = base.Columns["POCode"];
-                this.columnPODD = base.Columns["PODD"];
                 this.columnPO = base.Columns["PO"];
+                this.columnPODD = base.Columns["PODD"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4287,10 +4322,10 @@ namespace ERP_Production.PackingList {
             private void InitClass() {
                 this.columnPOCode = new global::System.Data.DataColumn("POCode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPOCode);
-                this.columnPODD = new global::System.Data.DataColumn("PODD", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPODD);
                 this.columnPO = new global::System.Data.DataColumn("PO", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPO);
+                this.columnPODD = new global::System.Data.DataColumn("PODD", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPODD);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnPOCode}, true));
                 this.columnPOCode.AllowDBNull = false;
@@ -4483,6 +4518,10 @@ namespace ERP_Production.PackingList {
             private global::System.Data.DataColumn columnPartielQty;
             
             private global::System.Data.DataColumn columnBalance;
+            
+            private global::System.Data.DataColumn columnFactoryCode;
+            
+            private global::System.Data.DataColumn columnIdentifier;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -4735,6 +4774,22 @@ namespace ERP_Production.PackingList {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn FactoryCodeColumn {
+                get {
+                    return this.columnFactoryCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IdentifierColumn {
+                get {
+                    return this.columnIdentifier;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -4797,7 +4852,9 @@ namespace ERP_Production.PackingList {
                         int CartonID, 
                         string PlantCode, 
                         int PartielQty, 
-                        decimal Balance) {
+                        decimal Balance, 
+                        string FactoryCode, 
+                        string Identifier) {
                 View_MultiLine_Packing_List_FinelRow rowView_MultiLine_Packing_List_FinelRow = ((View_MultiLine_Packing_List_FinelRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PO,
@@ -4826,7 +4883,9 @@ namespace ERP_Production.PackingList {
                         CartonID,
                         PlantCode,
                         PartielQty,
-                        Balance};
+                        Balance,
+                        FactoryCode,
+                        Identifier};
                 rowView_MultiLine_Packing_List_FinelRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowView_MultiLine_Packing_List_FinelRow);
                 return rowView_MultiLine_Packing_List_FinelRow;
@@ -4876,6 +4935,8 @@ namespace ERP_Production.PackingList {
                 this.columnPlantCode = base.Columns["PlantCode"];
                 this.columnPartielQty = base.Columns["PartielQty"];
                 this.columnBalance = base.Columns["Balance"];
+                this.columnFactoryCode = base.Columns["FactoryCode"];
+                this.columnIdentifier = base.Columns["Identifier"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4935,6 +4996,10 @@ namespace ERP_Production.PackingList {
                 base.Columns.Add(this.columnPartielQty);
                 this.columnBalance = new global::System.Data.DataColumn("Balance", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBalance);
+                this.columnFactoryCode = new global::System.Data.DataColumn("FactoryCode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFactoryCode);
+                this.columnIdentifier = new global::System.Data.DataColumn("Identifier", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdentifier);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnPO}, false));
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint3", new global::System.Data.DataColumn[] {
@@ -4963,6 +5028,9 @@ namespace ERP_Production.PackingList {
                 this.columnCartonID.AllowDBNull = false;
                 this.columnPlantCode.MaxLength = 250;
                 this.columnBalance.ReadOnly = true;
+                this.columnFactoryCode.AllowDBNull = false;
+                this.columnFactoryCode.MaxLength = 50;
+                this.columnIdentifier.MaxLength = 250;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6293,6 +6361,8 @@ namespace ERP_Production.PackingList {
             
             private global::System.Data.DataColumn columnPO;
             
+            private global::System.Data.DataColumn columnPOM;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public tbl_Multi_PO_HMPackingDataTable() {
@@ -6352,6 +6422,14 @@ namespace ERP_Production.PackingList {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POMColumn {
+                get {
+                    return this.columnPOM;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -6387,12 +6465,13 @@ namespace ERP_Production.PackingList {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbl_Multi_PO_HMPackingRow Addtbl_Multi_PO_HMPackingRow(string POCode, System.DateTime PODD, int PO) {
+            public tbl_Multi_PO_HMPackingRow Addtbl_Multi_PO_HMPackingRow(string POCode, System.DateTime PODD, int PO, int POM) {
                 tbl_Multi_PO_HMPackingRow rowtbl_Multi_PO_HMPackingRow = ((tbl_Multi_PO_HMPackingRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         POCode,
                         PODD,
-                        PO};
+                        PO,
+                        POM};
                 rowtbl_Multi_PO_HMPackingRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_Multi_PO_HMPackingRow);
                 return rowtbl_Multi_PO_HMPackingRow;
@@ -6425,6 +6504,7 @@ namespace ERP_Production.PackingList {
                 this.columnPOCode = base.Columns["POCode"];
                 this.columnPODD = base.Columns["PODD"];
                 this.columnPO = base.Columns["PO"];
+                this.columnPOM = base.Columns["POM"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6436,12 +6516,15 @@ namespace ERP_Production.PackingList {
                 base.Columns.Add(this.columnPODD);
                 this.columnPO = new global::System.Data.DataColumn("PO", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPO);
+                this.columnPOM = new global::System.Data.DataColumn("POM", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOM);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnPOCode}, true));
                 this.columnPOCode.AllowDBNull = false;
                 this.columnPOCode.Unique = true;
                 this.columnPOCode.MaxLength = 150;
                 this.columnPO.AllowDBNull = false;
+                this.columnPOM.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6528,6 +6611,748 @@ namespace ERP_Production.PackingList {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "tbl_Multi_PO_HMPackingDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class tbl_Multi_PackList1DataTable : global::System.Data.TypedTableBase<tbl_Multi_PackList1Row> {
+            
+            private global::System.Data.DataColumn columnPO;
+            
+            private global::System.Data.DataColumn columnPOM;
+            
+            private global::System.Data.DataColumn columnPOD;
+            
+            private global::System.Data.DataColumn columnPackNo;
+            
+            private global::System.Data.DataColumn columnClientId;
+            
+            private global::System.Data.DataColumn columnStartPackage;
+            
+            private global::System.Data.DataColumn columnEndPackage;
+            
+            private global::System.Data.DataColumn columnPerPackage;
+            
+            private global::System.Data.DataColumn columnLastEditDate;
+            
+            private global::System.Data.DataColumn columnCreationDate;
+            
+            private global::System.Data.DataColumn columnPONumber;
+            
+            private global::System.Data.DataColumn columnOrderQty;
+            
+            private global::System.Data.DataColumn columnPINo;
+            
+            private global::System.Data.DataColumn columnPIDNo;
+            
+            private global::System.Data.DataColumn columnPageRefNo;
+            
+            private global::System.Data.DataColumn columnCartonStatus;
+            
+            private global::System.Data.DataColumn columnDescription;
+            
+            private global::System.Data.DataColumn columnCartonId;
+            
+            private global::System.Data.DataColumn columnArtSize;
+            
+            private global::System.Data.DataColumn columnNetWeight;
+            
+            private global::System.Data.DataColumn columnGrossWeight;
+            
+            private global::System.Data.DataColumn columnTotalGossWright;
+            
+            private global::System.Data.DataColumn columnCBM;
+            
+            private global::System.Data.DataColumn columnTotalGoods;
+            
+            private global::System.Data.DataColumn columnEgyptStaus;
+            
+            private global::System.Data.DataColumn columnEgPINo;
+            
+            private global::System.Data.DataColumn columnEgPIDD;
+            
+            private global::System.Data.DataColumn columnL4Name;
+            
+            private global::System.Data.DataColumn columnCode;
+            
+            private global::System.Data.DataColumn columnNetNetWeight;
+            
+            private global::System.Data.DataColumn columnUOM;
+            
+            private global::System.Data.DataColumn columnSize;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_PackList1DataTable() {
+                this.TableName = "tbl_Multi_PackList1";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal tbl_Multi_PackList1DataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected tbl_Multi_PackList1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POColumn {
+                get {
+                    return this.columnPO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn POMColumn {
+                get {
+                    return this.columnPOM;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PODColumn {
+                get {
+                    return this.columnPOD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PackNoColumn {
+                get {
+                    return this.columnPackNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ClientIdColumn {
+                get {
+                    return this.columnClientId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn StartPackageColumn {
+                get {
+                    return this.columnStartPackage;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn EndPackageColumn {
+                get {
+                    return this.columnEndPackage;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PerPackageColumn {
+                get {
+                    return this.columnPerPackage;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn LastEditDateColumn {
+                get {
+                    return this.columnLastEditDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CreationDateColumn {
+                get {
+                    return this.columnCreationDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PONumberColumn {
+                get {
+                    return this.columnPONumber;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn OrderQtyColumn {
+                get {
+                    return this.columnOrderQty;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PINoColumn {
+                get {
+                    return this.columnPINo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PIDNoColumn {
+                get {
+                    return this.columnPIDNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PageRefNoColumn {
+                get {
+                    return this.columnPageRefNo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CartonStatusColumn {
+                get {
+                    return this.columnCartonStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DescriptionColumn {
+                get {
+                    return this.columnDescription;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CartonIdColumn {
+                get {
+                    return this.columnCartonId;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ArtSizeColumn {
+                get {
+                    return this.columnArtSize;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NetWeightColumn {
+                get {
+                    return this.columnNetWeight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn GrossWeightColumn {
+                get {
+                    return this.columnGrossWeight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TotalGossWrightColumn {
+                get {
+                    return this.columnTotalGossWright;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CBMColumn {
+                get {
+                    return this.columnCBM;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TotalGoodsColumn {
+                get {
+                    return this.columnTotalGoods;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn EgyptStausColumn {
+                get {
+                    return this.columnEgyptStaus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn EgPINoColumn {
+                get {
+                    return this.columnEgPINo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn EgPIDDColumn {
+                get {
+                    return this.columnEgPIDD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn L4NameColumn {
+                get {
+                    return this.columnL4Name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CodeColumn {
+                get {
+                    return this.columnCode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NetNetWeightColumn {
+                get {
+                    return this.columnNetNetWeight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn UOMColumn {
+                get {
+                    return this.columnUOM;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SizeColumn {
+                get {
+                    return this.columnSize;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_PackList1Row this[int index] {
+                get {
+                    return ((tbl_Multi_PackList1Row)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event tbl_Multi_PackList1RowChangeEventHandler tbl_Multi_PackList1RowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event tbl_Multi_PackList1RowChangeEventHandler tbl_Multi_PackList1RowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event tbl_Multi_PackList1RowChangeEventHandler tbl_Multi_PackList1RowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event tbl_Multi_PackList1RowChangeEventHandler tbl_Multi_PackList1RowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Addtbl_Multi_PackList1Row(tbl_Multi_PackList1Row row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_PackList1Row Addtbl_Multi_PackList1Row(
+                        int PO, 
+                        int POM, 
+                        int POD, 
+                        int ClientId, 
+                        int StartPackage, 
+                        int EndPackage, 
+                        decimal PerPackage, 
+                        System.DateTime LastEditDate, 
+                        System.DateTime CreationDate, 
+                        string PONumber, 
+                        int OrderQty, 
+                        int PINo, 
+                        int PIDNo, 
+                        string PageRefNo, 
+                        bool CartonStatus, 
+                        string Description, 
+                        int CartonId, 
+                        string ArtSize, 
+                        decimal NetWeight, 
+                        decimal GrossWeight, 
+                        decimal TotalGossWright, 
+                        decimal CBM, 
+                        decimal TotalGoods, 
+                        bool EgyptStaus, 
+                        int EgPINo, 
+                        int EgPIDD, 
+                        string L4Name, 
+                        string Code, 
+                        decimal NetNetWeight, 
+                        string UOM, 
+                        string Size) {
+                tbl_Multi_PackList1Row rowtbl_Multi_PackList1Row = ((tbl_Multi_PackList1Row)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        PO,
+                        POM,
+                        POD,
+                        null,
+                        ClientId,
+                        StartPackage,
+                        EndPackage,
+                        PerPackage,
+                        LastEditDate,
+                        CreationDate,
+                        PONumber,
+                        OrderQty,
+                        PINo,
+                        PIDNo,
+                        PageRefNo,
+                        CartonStatus,
+                        Description,
+                        CartonId,
+                        ArtSize,
+                        NetWeight,
+                        GrossWeight,
+                        TotalGossWright,
+                        CBM,
+                        TotalGoods,
+                        EgyptStaus,
+                        EgPINo,
+                        EgPIDD,
+                        L4Name,
+                        Code,
+                        NetNetWeight,
+                        UOM,
+                        Size};
+                rowtbl_Multi_PackList1Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_Multi_PackList1Row);
+                return rowtbl_Multi_PackList1Row;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_PackList1Row FindByPackNo(int PackNo) {
+                return ((tbl_Multi_PackList1Row)(this.Rows.Find(new object[] {
+                            PackNo})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                tbl_Multi_PackList1DataTable cln = ((tbl_Multi_PackList1DataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new tbl_Multi_PackList1DataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnPO = base.Columns["PO"];
+                this.columnPOM = base.Columns["POM"];
+                this.columnPOD = base.Columns["POD"];
+                this.columnPackNo = base.Columns["PackNo"];
+                this.columnClientId = base.Columns["ClientId"];
+                this.columnStartPackage = base.Columns["StartPackage"];
+                this.columnEndPackage = base.Columns["EndPackage"];
+                this.columnPerPackage = base.Columns["PerPackage"];
+                this.columnLastEditDate = base.Columns["LastEditDate"];
+                this.columnCreationDate = base.Columns["CreationDate"];
+                this.columnPONumber = base.Columns["PONumber"];
+                this.columnOrderQty = base.Columns["OrderQty"];
+                this.columnPINo = base.Columns["PINo"];
+                this.columnPIDNo = base.Columns["PIDNo"];
+                this.columnPageRefNo = base.Columns["PageRefNo"];
+                this.columnCartonStatus = base.Columns["CartonStatus"];
+                this.columnDescription = base.Columns["Description"];
+                this.columnCartonId = base.Columns["CartonId"];
+                this.columnArtSize = base.Columns["ArtSize"];
+                this.columnNetWeight = base.Columns["NetWeight"];
+                this.columnGrossWeight = base.Columns["GrossWeight"];
+                this.columnTotalGossWright = base.Columns["TotalGossWright"];
+                this.columnCBM = base.Columns["CBM"];
+                this.columnTotalGoods = base.Columns["TotalGoods"];
+                this.columnEgyptStaus = base.Columns["EgyptStaus"];
+                this.columnEgPINo = base.Columns["EgPINo"];
+                this.columnEgPIDD = base.Columns["EgPIDD"];
+                this.columnL4Name = base.Columns["L4Name"];
+                this.columnCode = base.Columns["Code"];
+                this.columnNetNetWeight = base.Columns["NetNetWeight"];
+                this.columnUOM = base.Columns["UOM"];
+                this.columnSize = base.Columns["Size"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnPO = new global::System.Data.DataColumn("PO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPO);
+                this.columnPOM = new global::System.Data.DataColumn("POM", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOM);
+                this.columnPOD = new global::System.Data.DataColumn("POD", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPOD);
+                this.columnPackNo = new global::System.Data.DataColumn("PackNo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPackNo);
+                this.columnClientId = new global::System.Data.DataColumn("ClientId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnClientId);
+                this.columnStartPackage = new global::System.Data.DataColumn("StartPackage", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStartPackage);
+                this.columnEndPackage = new global::System.Data.DataColumn("EndPackage", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEndPackage);
+                this.columnPerPackage = new global::System.Data.DataColumn("PerPackage", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPerPackage);
+                this.columnLastEditDate = new global::System.Data.DataColumn("LastEditDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLastEditDate);
+                this.columnCreationDate = new global::System.Data.DataColumn("CreationDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreationDate);
+                this.columnPONumber = new global::System.Data.DataColumn("PONumber", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPONumber);
+                this.columnOrderQty = new global::System.Data.DataColumn("OrderQty", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOrderQty);
+                this.columnPINo = new global::System.Data.DataColumn("PINo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPINo);
+                this.columnPIDNo = new global::System.Data.DataColumn("PIDNo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPIDNo);
+                this.columnPageRefNo = new global::System.Data.DataColumn("PageRefNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPageRefNo);
+                this.columnCartonStatus = new global::System.Data.DataColumn("CartonStatus", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCartonStatus);
+                this.columnDescription = new global::System.Data.DataColumn("Description", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescription);
+                this.columnCartonId = new global::System.Data.DataColumn("CartonId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCartonId);
+                this.columnArtSize = new global::System.Data.DataColumn("ArtSize", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArtSize);
+                this.columnNetWeight = new global::System.Data.DataColumn("NetWeight", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNetWeight);
+                this.columnGrossWeight = new global::System.Data.DataColumn("GrossWeight", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGrossWeight);
+                this.columnTotalGossWright = new global::System.Data.DataColumn("TotalGossWright", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalGossWright);
+                this.columnCBM = new global::System.Data.DataColumn("CBM", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCBM);
+                this.columnTotalGoods = new global::System.Data.DataColumn("TotalGoods", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalGoods);
+                this.columnEgyptStaus = new global::System.Data.DataColumn("EgyptStaus", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEgyptStaus);
+                this.columnEgPINo = new global::System.Data.DataColumn("EgPINo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEgPINo);
+                this.columnEgPIDD = new global::System.Data.DataColumn("EgPIDD", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEgPIDD);
+                this.columnL4Name = new global::System.Data.DataColumn("L4Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnL4Name);
+                this.columnCode = new global::System.Data.DataColumn("Code", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCode);
+                this.columnNetNetWeight = new global::System.Data.DataColumn("NetNetWeight", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNetNetWeight);
+                this.columnUOM = new global::System.Data.DataColumn("UOM", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUOM);
+                this.columnSize = new global::System.Data.DataColumn("Size", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSize);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnPackNo}, true));
+                this.columnPO.AllowDBNull = false;
+                this.columnPOM.AllowDBNull = false;
+                this.columnPOD.AllowDBNull = false;
+                this.columnPackNo.AutoIncrement = true;
+                this.columnPackNo.AutoIncrementSeed = -1;
+                this.columnPackNo.AutoIncrementStep = -1;
+                this.columnPackNo.AllowDBNull = false;
+                this.columnPackNo.ReadOnly = true;
+                this.columnPackNo.Unique = true;
+                this.columnStartPackage.AllowDBNull = false;
+                this.columnEndPackage.AllowDBNull = false;
+                this.columnPerPackage.AllowDBNull = false;
+                this.columnPONumber.MaxLength = 50;
+                this.columnPageRefNo.MaxLength = 50;
+                this.columnDescription.MaxLength = 550;
+                this.columnArtSize.MaxLength = 50;
+                this.columnL4Name.MaxLength = 150;
+                this.columnCode.MaxLength = 50;
+                this.columnUOM.MaxLength = 50;
+                this.columnSize.AllowDBNull = false;
+                this.columnSize.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_PackList1Row Newtbl_Multi_PackList1Row() {
+                return ((tbl_Multi_PackList1Row)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new tbl_Multi_PackList1Row(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(tbl_Multi_PackList1Row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.tbl_Multi_PackList1RowChanged != null)) {
+                    this.tbl_Multi_PackList1RowChanged(this, new tbl_Multi_PackList1RowChangeEvent(((tbl_Multi_PackList1Row)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.tbl_Multi_PackList1RowChanging != null)) {
+                    this.tbl_Multi_PackList1RowChanging(this, new tbl_Multi_PackList1RowChangeEvent(((tbl_Multi_PackList1Row)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.tbl_Multi_PackList1RowDeleted != null)) {
+                    this.tbl_Multi_PackList1RowDeleted(this, new tbl_Multi_PackList1RowChangeEvent(((tbl_Multi_PackList1Row)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.tbl_Multi_PackList1RowDeleting != null)) {
+                    this.tbl_Multi_PackList1RowDeleting(this, new tbl_Multi_PackList1RowChangeEvent(((tbl_Multi_PackList1Row)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Removetbl_Multi_PackList1Row(tbl_Multi_PackList1Row row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DSPackingList ds = new DSPackingList();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "tbl_Multi_PackList1DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -8826,6 +9651,17 @@ namespace ERP_Production.PackingList {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PO {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_PO_HM.POColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PO_HM.POColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public System.DateTime PODD {
                 get {
                     try {
@@ -8837,17 +9673,6 @@ namespace ERP_Production.PackingList {
                 }
                 set {
                     this[this.tabletbl_Multi_PO_HM.PODDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int PO {
-                get {
-                    return ((int)(this[this.tabletbl_Multi_PO_HM.POColumn]));
-                }
-                set {
-                    this[this.tabletbl_Multi_PO_HM.POColumn] = value;
                 }
             }
             
@@ -9279,6 +10104,34 @@ namespace ERP_Production.PackingList {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string FactoryCode {
+                get {
+                    return ((string)(this[this.tableView_MultiLine_Packing_List_Finel.FactoryCodeColumn]));
+                }
+                set {
+                    this[this.tableView_MultiLine_Packing_List_Finel.FactoryCodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Identifier {
+                get {
+                    try {
+                        return ((string)(this[this.tableView_MultiLine_Packing_List_Finel.IdentifierColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Identifier\' in table \'View_MultiLine_Packing_List_Finel\' is" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableView_MultiLine_Packing_List_Finel.IdentifierColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsLineNull() {
                 return this.IsNull(this.tableView_MultiLine_Packing_List_Finel.LineColumn);
             }
@@ -9479,6 +10332,18 @@ namespace ERP_Production.PackingList {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetBalanceNull() {
                 this[this.tableView_MultiLine_Packing_List_Finel.BalanceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsIdentifierNull() {
+                return this.IsNull(this.tableView_MultiLine_Packing_List_Finel.IdentifierColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetIdentifierNull() {
+                this[this.tableView_MultiLine_Packing_List_Finel.IdentifierColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -10269,6 +11134,17 @@ namespace ERP_Production.PackingList {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int POM {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_PO_HMPacking.POMColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PO_HMPacking.POMColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsPODDNull() {
                 return this.IsNull(this.tabletbl_Multi_PO_HMPacking.PODDColumn);
             }
@@ -10277,6 +11153,781 @@ namespace ERP_Production.PackingList {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetPODDNull() {
                 this[this.tabletbl_Multi_PO_HMPacking.PODDColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class tbl_Multi_PackList1Row : global::System.Data.DataRow {
+            
+            private tbl_Multi_PackList1DataTable tabletbl_Multi_PackList1;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal tbl_Multi_PackList1Row(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabletbl_Multi_PackList1 = ((tbl_Multi_PackList1DataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PO {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_PackList1.POColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.POColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int POM {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_PackList1.POMColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.POMColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int POD {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_PackList1.PODColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.PODColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PackNo {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_PackList1.PackNoColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.PackNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ClientId {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Multi_PackList1.ClientIdColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ClientId\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.ClientIdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int StartPackage {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_PackList1.StartPackageColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.StartPackageColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int EndPackage {
+                get {
+                    return ((int)(this[this.tabletbl_Multi_PackList1.EndPackageColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.EndPackageColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal PerPackage {
+                get {
+                    return ((decimal)(this[this.tabletbl_Multi_PackList1.PerPackageColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.PerPackageColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime LastEditDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbl_Multi_PackList1.LastEditDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'LastEditDate\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.LastEditDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public System.DateTime CreationDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbl_Multi_PackList1.CreationDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CreationDate\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.CreationDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PONumber {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_PackList1.PONumberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PONumber\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.PONumberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int OrderQty {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Multi_PackList1.OrderQtyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OrderQty\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.OrderQtyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PINo {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Multi_PackList1.PINoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PINo\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.PINoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PIDNo {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Multi_PackList1.PIDNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PIDNo\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.PIDNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PageRefNo {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_PackList1.PageRefNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PageRefNo\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.PageRefNoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool CartonStatus {
+                get {
+                    try {
+                        return ((bool)(this[this.tabletbl_Multi_PackList1.CartonStatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CartonStatus\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.CartonStatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Description {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_PackList1.DescriptionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Description\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.DescriptionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int CartonId {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Multi_PackList1.CartonIdColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CartonId\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.CartonIdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ArtSize {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_PackList1.ArtSizeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ArtSize\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.ArtSizeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal NetWeight {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Multi_PackList1.NetWeightColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NetWeight\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.NetWeightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal GrossWeight {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Multi_PackList1.GrossWeightColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'GrossWeight\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.GrossWeightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal TotalGossWright {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Multi_PackList1.TotalGossWrightColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalGossWright\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.TotalGossWrightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal CBM {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Multi_PackList1.CBMColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CBM\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.CBMColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal TotalGoods {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Multi_PackList1.TotalGoodsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalGoods\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.TotalGoodsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool EgyptStaus {
+                get {
+                    try {
+                        return ((bool)(this[this.tabletbl_Multi_PackList1.EgyptStausColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EgyptStaus\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.EgyptStausColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int EgPINo {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Multi_PackList1.EgPINoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EgPINo\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.EgPINoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int EgPIDD {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Multi_PackList1.EgPIDDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EgPIDD\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.EgPIDDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string L4Name {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_PackList1.L4NameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'L4Name\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.L4NameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Code {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_PackList1.CodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Code\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.CodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal NetNetWeight {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_Multi_PackList1.NetNetWeightColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NetNetWeight\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.NetNetWeightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string UOM {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_Multi_PackList1.UOMColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UOM\' in table \'tbl_Multi_PackList1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.UOMColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Size {
+                get {
+                    return ((string)(this[this.tabletbl_Multi_PackList1.SizeColumn]));
+                }
+                set {
+                    this[this.tabletbl_Multi_PackList1.SizeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsClientIdNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.ClientIdColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetClientIdNull() {
+                this[this.tabletbl_Multi_PackList1.ClientIdColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsLastEditDateNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.LastEditDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetLastEditDateNull() {
+                this[this.tabletbl_Multi_PackList1.LastEditDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCreationDateNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.CreationDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCreationDateNull() {
+                this[this.tabletbl_Multi_PackList1.CreationDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPONumberNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.PONumberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPONumberNull() {
+                this[this.tabletbl_Multi_PackList1.PONumberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsOrderQtyNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.OrderQtyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetOrderQtyNull() {
+                this[this.tabletbl_Multi_PackList1.OrderQtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPINoNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.PINoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPINoNull() {
+                this[this.tabletbl_Multi_PackList1.PINoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPIDNoNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.PIDNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPIDNoNull() {
+                this[this.tabletbl_Multi_PackList1.PIDNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPageRefNoNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.PageRefNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPageRefNoNull() {
+                this[this.tabletbl_Multi_PackList1.PageRefNoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCartonStatusNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.CartonStatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCartonStatusNull() {
+                this[this.tabletbl_Multi_PackList1.CartonStatusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDescriptionNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.DescriptionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDescriptionNull() {
+                this[this.tabletbl_Multi_PackList1.DescriptionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCartonIdNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.CartonIdColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCartonIdNull() {
+                this[this.tabletbl_Multi_PackList1.CartonIdColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsArtSizeNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.ArtSizeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetArtSizeNull() {
+                this[this.tabletbl_Multi_PackList1.ArtSizeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNetWeightNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.NetWeightColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNetWeightNull() {
+                this[this.tabletbl_Multi_PackList1.NetWeightColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsGrossWeightNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.GrossWeightColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetGrossWeightNull() {
+                this[this.tabletbl_Multi_PackList1.GrossWeightColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTotalGossWrightNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.TotalGossWrightColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTotalGossWrightNull() {
+                this[this.tabletbl_Multi_PackList1.TotalGossWrightColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCBMNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.CBMColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCBMNull() {
+                this[this.tabletbl_Multi_PackList1.CBMColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsTotalGoodsNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.TotalGoodsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetTotalGoodsNull() {
+                this[this.tabletbl_Multi_PackList1.TotalGoodsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsEgyptStausNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.EgyptStausColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetEgyptStausNull() {
+                this[this.tabletbl_Multi_PackList1.EgyptStausColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsEgPINoNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.EgPINoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetEgPINoNull() {
+                this[this.tabletbl_Multi_PackList1.EgPINoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsEgPIDDNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.EgPIDDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetEgPIDDNull() {
+                this[this.tabletbl_Multi_PackList1.EgPIDDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsL4NameNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.L4NameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetL4NameNull() {
+                this[this.tabletbl_Multi_PackList1.L4NameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCodeNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.CodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCodeNull() {
+                this[this.tabletbl_Multi_PackList1.CodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNetNetWeightNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.NetNetWeightColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNetNetWeightNull() {
+                this[this.tabletbl_Multi_PackList1.NetNetWeightColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsUOMNull() {
+                return this.IsNull(this.tabletbl_Multi_PackList1.UOMColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetUOMNull() {
+                this[this.tabletbl_Multi_PackList1.UOMColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -10708,6 +12359,40 @@ namespace ERP_Production.PackingList {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public tbl_Multi_PO_HMPackingRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class tbl_Multi_PackList1RowChangeEvent : global::System.EventArgs {
+            
+            private tbl_Multi_PackList1Row eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_PackList1RowChangeEvent(tbl_Multi_PackList1Row row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public tbl_Multi_PackList1Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -12370,6 +14055,44 @@ WHERE        (PO = ?)";
             tableMapping.ColumnMappings.Add("EndPackage", "EndPackage");
             tableMapping.ColumnMappings.Add("PerPackage", "PerPackage");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.UpdateCommand = new global::System.Data.Odbc.OdbcCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE       tbl_Multi_PackList
+SET                PO = ?, POM = ?, POD = ?, ClientId = ?, StartPackage = ?, EndPackage = ?, PerPackage = ?, LastEditDate = ?, CreationDate = ?, PONumber = ?, OrderQty = ?, PINo = ?, PIDNo = ?, PageRefNo = ?, CartonStatus = ?, Description = ?,
+                          CartonId = ?, ArtSize = ?, NetWeight = ?, GrossWeight = ?, TotalGossWright = ?, CBM = ?, TotalGoods = ?, EgyptStaus = ?, EgPINo = ?, EgPIDD = ?, L4Name = ?, Code = ?, NetNetWeight = ?, UOM = ?
+WHERE        (PackNo = ?)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POD", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POD", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientId", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientId", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("StartPackage", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartPackage", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EndPackage", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndPackage", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PerPackage", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(4)), "PerPackage", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LastEditDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LastEditDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CreationDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CreationDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PONumber", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PONumber", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("OrderQty", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OrderQty", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PINo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PINo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PIDNo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PIDNo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PageRefNo", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PageRefNo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CartonStatus", global::System.Data.Odbc.OdbcType.Bit, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CartonStatus", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Description", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Description", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CartonId", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CartonId", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtSize", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtSize", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NetWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "NetWeight", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("GrossWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "GrossWeight", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TotalGossWright", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "TotalGossWright", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CBM", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "CBM", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TotalGoods", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "TotalGoods", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgyptStaus", global::System.Data.Odbc.OdbcType.Bit, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgyptStaus", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgPINo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgPINo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgPIDD", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgPIDD", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("L4Name", global::System.Data.Odbc.OdbcType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "L4Name", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Code", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Code", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NetNetWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "NetNetWeight", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("UOM", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UOM", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PackNo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PackNo", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12554,6 +14277,35 @@ WHERE        tbl_Multi_PO_S.PO = tbl_Multi_PackList.PO AND tbl_Multi_PO_S.POM = 
             DSPackingList.tbl_Multi_PackListDataTable dataTable = new DSPackingList.tbl_Multi_PackListDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSPackingList.tbl_Multi_PackListDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSPackingList dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_Multi_PackList");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13468,8 +15220,8 @@ WHERE        (PO = ?) AND (POM = ?) AND (POS = ?)";
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "tbl_Multi_PO_HM";
             tableMapping.ColumnMappings.Add("POCode", "POCode");
-            tableMapping.ColumnMappings.Add("PODD", "PODD");
             tableMapping.ColumnMappings.Add("PO", "PO");
+            tableMapping.ColumnMappings.Add("PODD", "PODD");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -13486,10 +15238,10 @@ WHERE        (PO = ?) AND (POM = ?) AND (POS = ?)";
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        tbl_Multi_PO_H.POCode, tbl_Multi_PO_M.PODD, tbl_Multi_PO_M.PO
+            this._commandCollection[0].CommandText = @"SELECT        tbl_Multi_PO_H.POCode, tbl_Multi_PO_M.PO, tbl_Multi_PO_M.PODD
 FROM            tbl_Multi_PO_M, tbl_Multi_PO_H
 WHERE        tbl_Multi_PO_M.PO = tbl_Multi_PO_H.PO
-GROUP BY tbl_Multi_PO_H.POCode, tbl_Multi_PO_M.PODD, tbl_Multi_PO_M.PO
+GROUP BY tbl_Multi_PO_H.POCode, tbl_Multi_PO_M.PO, tbl_Multi_PO_M.PODD
 HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));
@@ -13693,6 +15445,8 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
             tableMapping.ColumnMappings.Add("PlantCode", "PlantCode");
             tableMapping.ColumnMappings.Add("PartielQty", "PartielQty");
             tableMapping.ColumnMappings.Add("Balance", "Balance");
+            tableMapping.ColumnMappings.Add("FactoryCode", "FactoryCode");
+            tableMapping.ColumnMappings.Add("Identifier", "Identifier");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -13710,7 +15464,7 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        PO, Line, POCode, LAName, ArtCode, [Size], OrderQty, CustID, CartonName, CartonItemQty, CustomerOrderNo, DD, LPDate, PSDD, FPD, PODD, CountryName, CustomerName, OrderType, POS, POM, ModelName, CartonQty, 
-                         CartonID, PlantCode, PartielQty, Balance
+                         CartonID, PlantCode, PartielQty, Balance, FactoryCode, Identifier
 FROM            View_MultiLine_Packing_List_Finel
 WHERE        (PO = ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
@@ -15633,6 +17387,7 @@ WHERE        (PO = ?)";
             tableMapping.ColumnMappings.Add("POCode", "POCode");
             tableMapping.ColumnMappings.Add("PODD", "PODD");
             tableMapping.ColumnMappings.Add("PO", "PO");
+            tableMapping.ColumnMappings.Add("POM", "POM");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -15649,11 +17404,8 @@ WHERE        (PO = ?)";
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        tbl_Multi_PO_H.POCode, tbl_Multi_PO_M.PODD, tbl_Multi_PO_M.PO
-FROM            tbl_Multi_PO_M, tbl_Multi_PO_H
-WHERE        tbl_Multi_PO_M.PO = tbl_Multi_PO_H.PO
-GROUP BY tbl_Multi_PO_H.POCode, tbl_Multi_PO_M.PODD, tbl_Multi_PO_M.PO
-HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
+            this._commandCollection[0].CommandText = "SELECT        POCode, PODD, PO, POM\r\nFROM            View_Multi_packing_po\r\nWHERE" +
+                "        (PODD BETWEEN ? AND ?)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));
@@ -15709,6 +17461,392 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class tbl_Multi_PackList1TableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.Odbc.OdbcDataAdapter _adapter;
+        
+        private global::System.Data.Odbc.OdbcConnection _connection;
+        
+        private global::System.Data.Odbc.OdbcTransaction _transaction;
+        
+        private global::System.Data.Odbc.OdbcCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public tbl_Multi_PackList1TableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.Odbc.OdbcDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.Odbc.OdbcConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.Odbc.OdbcCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.Odbc.OdbcTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.Odbc.OdbcCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.Odbc.OdbcDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "tbl_Multi_PackList1";
+            tableMapping.ColumnMappings.Add("PO", "PO");
+            tableMapping.ColumnMappings.Add("POM", "POM");
+            tableMapping.ColumnMappings.Add("POD", "POD");
+            tableMapping.ColumnMappings.Add("PackNo", "PackNo");
+            tableMapping.ColumnMappings.Add("ClientId", "ClientId");
+            tableMapping.ColumnMappings.Add("StartPackage", "StartPackage");
+            tableMapping.ColumnMappings.Add("EndPackage", "EndPackage");
+            tableMapping.ColumnMappings.Add("PerPackage", "PerPackage");
+            tableMapping.ColumnMappings.Add("LastEditDate", "LastEditDate");
+            tableMapping.ColumnMappings.Add("CreationDate", "CreationDate");
+            tableMapping.ColumnMappings.Add("PONumber", "PONumber");
+            tableMapping.ColumnMappings.Add("OrderQty", "OrderQty");
+            tableMapping.ColumnMappings.Add("PINo", "PINo");
+            tableMapping.ColumnMappings.Add("PIDNo", "PIDNo");
+            tableMapping.ColumnMappings.Add("PageRefNo", "PageRefNo");
+            tableMapping.ColumnMappings.Add("CartonStatus", "CartonStatus");
+            tableMapping.ColumnMappings.Add("Description", "Description");
+            tableMapping.ColumnMappings.Add("CartonId", "CartonId");
+            tableMapping.ColumnMappings.Add("ArtSize", "ArtSize");
+            tableMapping.ColumnMappings.Add("NetWeight", "NetWeight");
+            tableMapping.ColumnMappings.Add("GrossWeight", "GrossWeight");
+            tableMapping.ColumnMappings.Add("TotalGossWright", "TotalGossWright");
+            tableMapping.ColumnMappings.Add("CBM", "CBM");
+            tableMapping.ColumnMappings.Add("TotalGoods", "TotalGoods");
+            tableMapping.ColumnMappings.Add("EgyptStaus", "EgyptStaus");
+            tableMapping.ColumnMappings.Add("EgPINo", "EgPINo");
+            tableMapping.ColumnMappings.Add("EgPIDD", "EgPIDD");
+            tableMapping.ColumnMappings.Add("L4Name", "L4Name");
+            tableMapping.ColumnMappings.Add("Code", "Code");
+            tableMapping.ColumnMappings.Add("NetNetWeight", "NetNetWeight");
+            tableMapping.ColumnMappings.Add("UOM", "UOM");
+            tableMapping.ColumnMappings.Add("Size", "Size");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.Odbc.OdbcCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM tbl_Multi_PackList\r\nWHERE        (PO = ?) AND (POM = ?) AND (POD = ?)" +
+                " AND (PackNo = ?) AND (? = 1 AND ClientId IS NULL OR\r\n                         C" +
+                "lientId = ?) AND (StartPackage = ?) AND (EndPackage = ?) AND (PerPackage = ?) AN" +
+                "D (? = 1 AND LastEditDate IS NULL OR\r\n                         LastEditDate = ?)" +
+                " AND (? = 1 AND CreationDate IS NULL OR\r\n                         CreationDate =" +
+                " ?) AND (? = 1 AND PONumber IS NULL OR\r\n                         PONumber = ?) A" +
+                "ND (? = 1 AND OrderQty IS NULL OR\r\n                         OrderQty = ?) AND (?" +
+                " = 1 AND PINo IS NULL OR\r\n                         PINo = ?) AND (? = 1 AND PIDN" +
+                "o IS NULL OR\r\n                         PIDNo = ?) AND (? = 1 AND PageRefNo IS NU" +
+                "LL OR\r\n                         PageRefNo = ?) AND (? = 1 AND CartonStatus IS NU" +
+                "LL OR\r\n                         CartonStatus = ?) AND (? = 1 AND Description IS " +
+                "NULL OR\r\n                         Description = ?) AND (? = 1 AND CartonId IS NU" +
+                "LL OR\r\n                         CartonId = ?) AND (? = 1 AND ArtSize IS NULL OR\r" +
+                "\n                         ArtSize = ?) AND (? = 1 AND NetWeight IS NULL OR\r\n    " +
+                "                     NetWeight = ?) AND (? = 1 AND GrossWeight IS NULL OR\r\n     " +
+                "                    GrossWeight = ?) AND (? = 1 AND TotalGossWright IS NULL OR\r\n" +
+                "                         TotalGossWright = ?) AND (? = 1 AND CBM IS NULL OR\r\n   " +
+                "                      CBM = ?) AND (? = 1 AND TotalGoods IS NULL OR\r\n           " +
+                "              TotalGoods = ?) AND (? = 1 AND EgyptStaus IS NULL OR\r\n            " +
+                "             EgyptStaus = ?) AND (? = 1 AND EgPINo IS NULL OR\r\n                 " +
+                "        EgPINo = ?) AND (? = 1 AND EgPIDD IS NULL OR\r\n                         E" +
+                "gPIDD = ?) AND (? = 1 AND L4Name IS NULL OR\r\n                         L4Name = ?" +
+                ") AND (? = 1 AND Code IS NULL OR\r\n                         Code = ?) AND (? = 1 " +
+                "AND NetNetWeight IS NULL OR\r\n                         NetNetWeight = ?) AND (? =" +
+                " 1 AND UOM IS NULL OR\r\n                         UOM = ?)";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POD", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POD", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PackNo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PackNo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientId", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientId", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientId1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientId", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("StartPackage", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartPackage", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EndPackage", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndPackage", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PerPackage", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(4)), "PerPackage", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LastEditDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LastEditDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LastEditDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LastEditDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CreationDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CreationDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CreationDate1", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CreationDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PONumber", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PONumber", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PONumber1", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PONumber", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("OrderQty", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OrderQty", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("OrderQty1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OrderQty", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PINo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PINo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PINo1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PINo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PIDNo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PIDNo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PIDNo1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PIDNo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PageRefNo", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PageRefNo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PageRefNo1", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PageRefNo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CartonStatus", global::System.Data.Odbc.OdbcType.Bit, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CartonStatus", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CartonStatus1", global::System.Data.Odbc.OdbcType.Bit, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CartonStatus", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Description", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Description", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Description1", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Description", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CartonId", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CartonId", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CartonId1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CartonId", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtSize", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtSize", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtSize1", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtSize", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NetWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "NetWeight", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NetWeight1", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "NetWeight", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("GrossWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "GrossWeight", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("GrossWeight1", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "GrossWeight", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TotalGossWright", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "TotalGossWright", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TotalGossWright1", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "TotalGossWright", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CBM", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "CBM", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CBM1", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "CBM", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TotalGoods", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "TotalGoods", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TotalGoods1", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "TotalGoods", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgyptStaus", global::System.Data.Odbc.OdbcType.Bit, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgyptStaus", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgyptStaus1", global::System.Data.Odbc.OdbcType.Bit, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgyptStaus", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgPINo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgPINo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgPINo1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgPINo", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgPIDD", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgPIDD", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgPIDD1", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgPIDD", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("L4Name", global::System.Data.Odbc.OdbcType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "L4Name", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("L4Name1", global::System.Data.Odbc.OdbcType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "L4Name", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Code", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Code", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Code1", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Code", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NetNetWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "NetNetWeight", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NetNetWeight1", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "NetNetWeight", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("UOM", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UOM", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("UOM1", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UOM", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand = new global::System.Data.Odbc.OdbcCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE       tbl_Multi_PackList
+SET                PO = ?, POM = ?, POD = ?, ClientId = ?, StartPackage = ?, EndPackage = ?, PerPackage = ?, LastEditDate = ?, CreationDate = ?, PONumber = ?, OrderQty = ?, PINo = ?, PIDNo = ?, PageRefNo = ?, CartonStatus = ?, Description = ?,
+                          CartonId = ?, ArtSize = ?, NetWeight = ?, GrossWeight = ?, TotalGossWright = ?, CBM = ?, TotalGoods = ?, EgyptStaus = ?, EgPINo = ?, EgPIDD = ?, L4Name = ?, Code = ?, NetNetWeight = ?, UOM = ?
+WHERE        (PackNo = ?)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POM", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POM", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("POD", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "POD", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ClientId", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ClientId", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("StartPackage", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartPackage", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EndPackage", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndPackage", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PerPackage", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(4)), "PerPackage", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("LastEditDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LastEditDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CreationDate", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CreationDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PONumber", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PONumber", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("OrderQty", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OrderQty", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PINo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PINo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PIDNo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PIDNo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PageRefNo", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PageRefNo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CartonStatus", global::System.Data.Odbc.OdbcType.Bit, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CartonStatus", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Description", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Description", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CartonId", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CartonId", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ArtSize", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ArtSize", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NetWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "NetWeight", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("GrossWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "GrossWeight", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TotalGossWright", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "TotalGossWright", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("CBM", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "CBM", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("TotalGoods", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "TotalGoods", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgyptStaus", global::System.Data.Odbc.OdbcType.Bit, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgyptStaus", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgPINo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgPINo", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("EgPIDD", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EgPIDD", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("L4Name", global::System.Data.Odbc.OdbcType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "L4Name", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Code", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Code", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("NetNetWeight", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(18)), ((byte)(7)), "NetNetWeight", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("UOM", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "UOM", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_PackNo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PackNo", global::System.Data.DataRowVersion.Original, false, null));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.Odbc.OdbcConnection();
+            this._connection.ConnectionString = global::ERP_Production.Properties.Settings.Default.FSCo;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.Odbc.OdbcCommand[2];
+            this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT        tbl_Multi_PackList.PO, tbl_Multi_PackList.POM, tbl_Multi_PackList.POD, tbl_Multi_PackList.PackNo, tbl_Multi_PackList.ClientId, tbl_Multi_PackList.StartPackage, tbl_Multi_PackList.EndPackage, tbl_Multi_PackList.PerPackage, 
+                         tbl_Multi_PackList.LastEditDate, tbl_Multi_PackList.CreationDate, tbl_Multi_PackList.PONumber, tbl_Multi_PackList.OrderQty, tbl_Multi_PackList.PINo, tbl_Multi_PackList.PIDNo, tbl_Multi_PackList.PageRefNo, 
+                         tbl_Multi_PackList.CartonStatus, tbl_Multi_PackList.Description, tbl_Multi_PackList.CartonId, tbl_Multi_PackList.ArtSize, tbl_Multi_PackList.NetWeight, tbl_Multi_PackList.GrossWeight, tbl_Multi_PackList.TotalGossWright, 
+                         tbl_Multi_PackList.CBM, tbl_Multi_PackList.TotalGoods, tbl_Multi_PackList.EgyptStaus, tbl_Multi_PackList.EgPINo, tbl_Multi_PackList.EgPIDD, tbl_Multi_PackList.L4Name, tbl_Multi_PackList.Code, 
+                         tbl_Multi_PackList.NetNetWeight, tbl_Multi_PackList.UOM, tbl_Multi_PO_S.[Size]
+FROM            tbl_Multi_PackList, tbl_Multi_PO_S
+WHERE        tbl_Multi_PackList.PO = tbl_Multi_PO_S.PO AND tbl_Multi_PackList.POD = tbl_Multi_PO_S.POS AND tbl_Multi_PackList.POM = tbl_Multi_PO_S.POM AND (tbl_Multi_PackList.PO = ?)";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1] = new global::System.Data.Odbc.OdbcCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "DELETE FROM tbl_Multi_PackList\r\nWHERE        (PO = ?)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PO", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PO", global::System.Data.DataRowVersion.Original, false, null));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DSPackingList.tbl_Multi_PackList1DataTable dataTable, int PO) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(PO));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DSPackingList.tbl_Multi_PackList1DataTable GetData(int PO) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(PO));
+            DSPackingList.tbl_Multi_PackList1DataTable dataTable = new DSPackingList.tbl_Multi_PackList1DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSPackingList.tbl_Multi_PackList1DataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DSPackingList dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_Multi_PackList1");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteQuery(int PO) {
+            global::System.Data.Odbc.OdbcCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(PO));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -15722,6 +17860,8 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
         
         private tbl_Multi_PO_STableAdapter _tbl_Multi_PO_STableAdapter;
         
+        private tbl_Multi_PackListTableAdapter _tbl_Multi_PackListTableAdapter;
+        
         private tbl_Multi_PO_S1TableAdapter _tbl_Multi_PO_S1TableAdapter;
         
         private tbl_Multi_PO_H_PackingTableAdapter _tbl_Multi_PO_H_PackingTableAdapter;
@@ -15729,6 +17869,8 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
         private tbl_Pro_Cust_IdentTableAdapter _tbl_Pro_Cust_IdentTableAdapter;
         
         private tbl_carton_nameTableAdapter _tbl_carton_nameTableAdapter;
+        
+        private tbl_Multi_PackList1TableAdapter _tbl_Multi_PackList1TableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -15756,6 +17898,20 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
             }
             set {
                 this._tbl_Multi_PO_STableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_Multi_PackListTableAdapter tbl_Multi_PackListTableAdapter {
+            get {
+                return this._tbl_Multi_PackListTableAdapter;
+            }
+            set {
+                this._tbl_Multi_PackListTableAdapter = value;
             }
         }
         
@@ -15817,6 +17973,20 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_Multi_PackList1TableAdapter tbl_Multi_PackList1TableAdapter {
+            get {
+                return this._tbl_Multi_PackList1TableAdapter;
+            }
+            set {
+                this._tbl_Multi_PackList1TableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -15838,6 +18008,10 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                             && (this._tbl_Multi_PO_STableAdapter.Connection != null))) {
                     return this._tbl_Multi_PO_STableAdapter.Connection;
                 }
+                if (((this._tbl_Multi_PackListTableAdapter != null) 
+                            && (this._tbl_Multi_PackListTableAdapter.Connection != null))) {
+                    return this._tbl_Multi_PackListTableAdapter.Connection;
+                }
                 if (((this._tbl_Multi_PO_S1TableAdapter != null) 
                             && (this._tbl_Multi_PO_S1TableAdapter.Connection != null))) {
                     return this._tbl_Multi_PO_S1TableAdapter.Connection;
@@ -15853,6 +18027,10 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                 if (((this._tbl_carton_nameTableAdapter != null) 
                             && (this._tbl_carton_nameTableAdapter.Connection != null))) {
                     return this._tbl_carton_nameTableAdapter.Connection;
+                }
+                if (((this._tbl_Multi_PackList1TableAdapter != null) 
+                            && (this._tbl_Multi_PackList1TableAdapter.Connection != null))) {
+                    return this._tbl_Multi_PackList1TableAdapter.Connection;
                 }
                 return null;
             }
@@ -15870,6 +18048,9 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                 if ((this._tbl_Multi_PO_STableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._tbl_Multi_PackListTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 if ((this._tbl_Multi_PO_S1TableAdapter != null)) {
                     count = (count + 1);
                 }
@@ -15880,6 +18061,9 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                     count = (count + 1);
                 }
                 if ((this._tbl_carton_nameTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tbl_Multi_PackList1TableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -15899,6 +18083,15 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._tbl_Multi_PO_STableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._tbl_Multi_PackListTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Multi_PackList.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_Multi_PackListTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -15938,6 +18131,15 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._tbl_Multi_PackList1TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_Multi_PackList1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_Multi_PackList1TableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -15953,6 +18155,14 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._tbl_Multi_PO_STableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._tbl_Multi_PackListTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_Multi_PackList.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_Multi_PackListTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -15988,6 +18198,14 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._tbl_Multi_PackList1TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_Multi_PackList1.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_Multi_PackList1TableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -15998,6 +18216,14 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(DSPackingList dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._tbl_Multi_PackList1TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Multi_PackList1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_Multi_PackList1TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._tbl_carton_nameTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tbl_carton_name.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -16027,6 +18253,14 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._tbl_Multi_PO_S1TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._tbl_Multi_PackListTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_Multi_PackList.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_Multi_PackListTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -16082,6 +18316,11 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
+            if (((this._tbl_Multi_PackListTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_Multi_PackListTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
             if (((this._tbl_Multi_PO_S1TableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._tbl_Multi_PO_S1TableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
@@ -16099,6 +18338,11 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
             }
             if (((this._tbl_carton_nameTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._tbl_carton_nameTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._tbl_Multi_PackList1TableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_Multi_PackList1TableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -16143,6 +18387,15 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_Multi_PO_STableAdapter.Adapter);
                     }
                 }
+                if ((this._tbl_Multi_PackListTableAdapter != null)) {
+                    revertConnections.Add(this._tbl_Multi_PackListTableAdapter, this._tbl_Multi_PackListTableAdapter.Connection);
+                    this._tbl_Multi_PackListTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(workConnection));
+                    this._tbl_Multi_PackListTableAdapter.Transaction = ((global::System.Data.Odbc.OdbcTransaction)(workTransaction));
+                    if (this._tbl_Multi_PackListTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_Multi_PackListTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_Multi_PackListTableAdapter.Adapter);
+                    }
+                }
                 if ((this._tbl_Multi_PO_S1TableAdapter != null)) {
                     revertConnections.Add(this._tbl_Multi_PO_S1TableAdapter, this._tbl_Multi_PO_S1TableAdapter.Connection);
                     this._tbl_Multi_PO_S1TableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(workConnection));
@@ -16177,6 +18430,15 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                     if (this._tbl_carton_nameTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._tbl_carton_nameTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_carton_nameTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tbl_Multi_PackList1TableAdapter != null)) {
+                    revertConnections.Add(this._tbl_Multi_PackList1TableAdapter, this._tbl_Multi_PackList1TableAdapter.Connection);
+                    this._tbl_Multi_PackList1TableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(workConnection));
+                    this._tbl_Multi_PackList1TableAdapter.Transaction = ((global::System.Data.Odbc.OdbcTransaction)(workTransaction));
+                    if (this._tbl_Multi_PackList1TableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_Multi_PackList1TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_Multi_PackList1TableAdapter.Adapter);
                     }
                 }
                 // 
@@ -16241,6 +18503,10 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                     this._tbl_Multi_PO_STableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._tbl_Multi_PO_STableAdapter]));
                     this._tbl_Multi_PO_STableAdapter.Transaction = null;
                 }
+                if ((this._tbl_Multi_PackListTableAdapter != null)) {
+                    this._tbl_Multi_PackListTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._tbl_Multi_PackListTableAdapter]));
+                    this._tbl_Multi_PackListTableAdapter.Transaction = null;
+                }
                 if ((this._tbl_Multi_PO_S1TableAdapter != null)) {
                     this._tbl_Multi_PO_S1TableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._tbl_Multi_PO_S1TableAdapter]));
                     this._tbl_Multi_PO_S1TableAdapter.Transaction = null;
@@ -16256,6 +18522,10 @@ HAVING        (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
                 if ((this._tbl_carton_nameTableAdapter != null)) {
                     this._tbl_carton_nameTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._tbl_carton_nameTableAdapter]));
                     this._tbl_carton_nameTableAdapter.Transaction = null;
+                }
+                if ((this._tbl_Multi_PackList1TableAdapter != null)) {
+                    this._tbl_Multi_PackList1TableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._tbl_Multi_PackList1TableAdapter]));
+                    this._tbl_Multi_PackList1TableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
