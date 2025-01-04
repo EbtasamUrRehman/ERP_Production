@@ -355,7 +355,7 @@ namespace ERP_Production
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
+            //this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.newDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_User_LoginsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_Lock_UserBindingSource)).EndInit();

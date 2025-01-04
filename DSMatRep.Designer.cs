@@ -1303,18 +1303,14 @@ namespace ERP_Production {
             
             private global::System.Data.DataColumn columnRecBy;
             
-<<<<<<< HEAD
             private global::System.Data.DataColumn columnPlanDate;
             
-=======
->>>>>>> master
             private global::System.Data.DataColumn columnShipMethod;
             
             private global::System.Data.DataColumn columnCarcasStatus;
             
             private global::System.Data.DataColumn columnLAName;
             
-<<<<<<< HEAD
             private global::System.Data.DataColumn columnCustReqDate;
             
             private global::System.Data.DataColumn columnPSDD;
@@ -1327,15 +1323,10 @@ namespace ERP_Production {
             
             private global::System.Data.DataColumn columnEntryDate;
             
-=======
-            private global::System.Data.DataColumn columnPODD;
-            
->>>>>>> master
             private global::System.Data.DataColumn columnDD;
             
             private global::System.Data.DataColumn columnShipMode;
             
-<<<<<<< HEAD
             private global::System.Data.DataColumn columnExFactoryDate;
             
             private global::System.Data.DataColumn columnSecondConfDate;
@@ -1352,8 +1343,6 @@ namespace ERP_Production {
             
             private global::System.Data.DataColumn columnBatchDate;
             
-=======
->>>>>>> master
             private global::System.Data.DataColumn columnPOM;
             
             private global::System.Data.DataColumn columnArtCode;
@@ -1523,7 +1512,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public global::System.Data.DataColumn PlanDateColumn {
                 get {
                     return this.columnPlanDate;
@@ -1532,8 +1520,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public global::System.Data.DataColumn ShipMethodColumn {
                 get {
                     return this.columnShipMethod;
@@ -1558,7 +1544,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public global::System.Data.DataColumn CustReqDateColumn {
                 get {
                     return this.columnCustReqDate;
@@ -1583,8 +1568,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public global::System.Data.DataColumn PODDColumn {
                 get {
                     return this.columnPODD;
@@ -1593,7 +1576,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public global::System.Data.DataColumn LPDateColumn {
                 get {
                     return this.columnLPDate;
@@ -1610,8 +1592,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public global::System.Data.DataColumn DDColumn {
                 get {
                     return this.columnDD;
@@ -1628,7 +1608,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public global::System.Data.DataColumn ExFactoryDateColumn {
                 get {
                     return this.columnExFactoryDate;
@@ -1693,8 +1672,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public global::System.Data.DataColumn POMColumn {
                 get {
                     return this.columnPOM;
@@ -1770,7 +1747,6 @@ namespace ERP_Production {
                         decimal ReprintQty, 
                         string Reasons, 
                         string RecBy, 
-<<<<<<< HEAD
                         System.DateTime PlanDate, 
                         string ShipMethod, 
                         bool CarcasStatus, 
@@ -1791,14 +1767,6 @@ namespace ERP_Production {
                         System.DateTime CancelDate, 
                         System.DateTime IssueDate, 
                         System.DateTime BatchDate, 
-=======
-                        string ShipMethod, 
-                        bool CarcasStatus, 
-                        string LAName, 
-                        System.DateTime PODD, 
-                        System.DateTime DD, 
-                        string ShipMode, 
->>>>>>> master
                         string ArtCode, 
                         int ModelID) {
                 tbl_Multi_PO_HRow rowtbl_Multi_PO_HRow = ((tbl_Multi_PO_HRow)(this.NewRow()));
@@ -1819,7 +1787,6 @@ namespace ERP_Production {
                         ReprintQty,
                         Reasons,
                         RecBy,
-<<<<<<< HEAD
                         PlanDate,
                         ShipMethod,
                         CarcasStatus,
@@ -1840,14 +1807,6 @@ namespace ERP_Production {
                         CancelDate,
                         IssueDate,
                         BatchDate,
-=======
-                        ShipMethod,
-                        CarcasStatus,
-                        LAName,
-                        PODD,
-                        DD,
-                        ShipMode,
->>>>>>> master
                         null,
                         ArtCode,
                         ModelID};
@@ -1858,8 +1817,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
-=======
             public tbl_Multi_PO_HRow FindByModelID(int ModelID) {
                 return ((tbl_Multi_PO_HRow)(this.Rows.Find(new object[] {
                             ModelID})));
@@ -1867,7 +1824,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
->>>>>>> master
             public override global::System.Data.DataTable Clone() {
                 tbl_Multi_PO_HDataTable cln = ((tbl_Multi_PO_HDataTable)(base.Clone()));
                 cln.InitVars();
@@ -1899,7 +1855,6 @@ namespace ERP_Production {
                 this.columnReprintQty = base.Columns["ReprintQty"];
                 this.columnReasons = base.Columns["Reasons"];
                 this.columnRecBy = base.Columns["RecBy"];
-<<<<<<< HEAD
                 this.columnPlanDate = base.Columns["PlanDate"];
                 this.columnShipMethod = base.Columns["ShipMethod"];
                 this.columnCarcasStatus = base.Columns["CarcasStatus"];
@@ -1920,14 +1875,6 @@ namespace ERP_Production {
                 this.columnCancelDate = base.Columns["CancelDate"];
                 this.columnIssueDate = base.Columns["IssueDate"];
                 this.columnBatchDate = base.Columns["BatchDate"];
-=======
-                this.columnShipMethod = base.Columns["ShipMethod"];
-                this.columnCarcasStatus = base.Columns["CarcasStatus"];
-                this.columnLAName = base.Columns["LAName"];
-                this.columnPODD = base.Columns["PODD"];
-                this.columnDD = base.Columns["DD"];
-                this.columnShipMode = base.Columns["ShipMode"];
->>>>>>> master
                 this.columnPOM = base.Columns["POM"];
                 this.columnArtCode = base.Columns["ArtCode"];
                 this.columnModelID = base.Columns["ModelID"];
@@ -1968,18 +1915,14 @@ namespace ERP_Production {
                 base.Columns.Add(this.columnReasons);
                 this.columnRecBy = new global::System.Data.DataColumn("RecBy", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRecBy);
-<<<<<<< HEAD
                 this.columnPlanDate = new global::System.Data.DataColumn("PlanDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPlanDate);
-=======
->>>>>>> master
                 this.columnShipMethod = new global::System.Data.DataColumn("ShipMethod", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnShipMethod);
                 this.columnCarcasStatus = new global::System.Data.DataColumn("CarcasStatus", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCarcasStatus);
                 this.columnLAName = new global::System.Data.DataColumn("LAName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLAName);
-<<<<<<< HEAD
                 this.columnCustReqDate = new global::System.Data.DataColumn("CustReqDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCustReqDate);
                 this.columnPSDD = new global::System.Data.DataColumn("PSDD", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -1992,15 +1935,10 @@ namespace ERP_Production {
                 base.Columns.Add(this.columnLPDate);
                 this.columnEntryDate = new global::System.Data.DataColumn("EntryDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEntryDate);
-=======
-                this.columnPODD = new global::System.Data.DataColumn("PODD", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPODD);
->>>>>>> master
                 this.columnDD = new global::System.Data.DataColumn("DD", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDD);
                 this.columnShipMode = new global::System.Data.DataColumn("ShipMode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnShipMode);
-<<<<<<< HEAD
                 this.columnExFactoryDate = new global::System.Data.DataColumn("ExFactoryDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnExFactoryDate);
                 this.columnSecondConfDate = new global::System.Data.DataColumn("SecondConfDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -2017,19 +1955,14 @@ namespace ERP_Production {
                 base.Columns.Add(this.columnIssueDate);
                 this.columnBatchDate = new global::System.Data.DataColumn("BatchDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBatchDate);
-=======
->>>>>>> master
                 this.columnPOM = new global::System.Data.DataColumn("POM", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPOM);
                 this.columnArtCode = new global::System.Data.DataColumn("ArtCode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArtCode);
                 this.columnModelID = new global::System.Data.DataColumn("ModelID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnModelID);
-<<<<<<< HEAD
-=======
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnModelID}, true));
->>>>>>> master
                 this.columnPO.AutoIncrement = true;
                 this.columnPO.AutoIncrementSeed = -1;
                 this.columnPO.AutoIncrementStep = -1;
@@ -2058,10 +1991,7 @@ namespace ERP_Production {
                 this.columnArtCode.AllowDBNull = false;
                 this.columnArtCode.MaxLength = 50;
                 this.columnModelID.AllowDBNull = false;
-<<<<<<< HEAD
-=======
                 this.columnModelID.Unique = true;
->>>>>>> master
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12857,7 +12787,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public System.DateTime PlanDate {
                 get {
                     try {
@@ -12874,8 +12803,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public string ShipMethod {
                 get {
                     try {
@@ -12919,7 +12846,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public System.DateTime CustReqDate {
                 get {
                     try {
@@ -12968,8 +12894,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public System.DateTime PODD {
                 get {
                     try {
@@ -12986,7 +12910,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public System.DateTime LPDate {
                 get {
                     try {
@@ -13019,8 +12942,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public System.DateTime DD {
                 get {
                     try {
@@ -13053,7 +12974,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public System.DateTime ExFactoryDate {
                 get {
                     try {
@@ -13109,7 +13029,7 @@ namespace ERP_Production {
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'CreationDate\' in table \'tbl_Multi_PO_H\' is DBNull.", e);
-                    }
+            }
                 }
                 set {
                     this[this.tabletbl_Multi_PO_H.CreationDateColumn] = value;
@@ -13182,8 +13102,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public int POM {
                 get {
                     return ((int)(this[this.tabletbl_Multi_PO_H.POMColumn]));
@@ -13373,7 +13291,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public bool IsPlanDateNull() {
                 return this.IsNull(this.tabletbl_Multi_PO_H.PlanDateColumn);
             }
@@ -13386,8 +13303,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public bool IsShipMethodNull() {
                 return this.IsNull(this.tabletbl_Multi_PO_H.ShipMethodColumn);
             }
@@ -13412,7 +13327,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public bool IsCustReqDateNull() {
                 return this.IsNull(this.tabletbl_Multi_PO_H.CustReqDateColumn);
             }
@@ -13449,8 +13363,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public bool IsPODDNull() {
                 return this.IsNull(this.tabletbl_Multi_PO_H.PODDColumn);
             }
@@ -13463,7 +13375,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-<<<<<<< HEAD
             public bool IsLPDateNull() {
                 return this.IsNull(this.tabletbl_Multi_PO_H.LPDateColumn);
             }
@@ -13488,8 +13399,6 @@ namespace ERP_Production {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-=======
->>>>>>> master
             public bool IsDDNull() {
                 return this.IsNull(this.tabletbl_Multi_PO_H.DDColumn);
             }
@@ -13511,7 +13420,6 @@ namespace ERP_Production {
             public void SetShipModeNull() {
                 this[this.tabletbl_Multi_PO_H.ShipModeColumn] = global::System.Convert.DBNull;
             }
-<<<<<<< HEAD
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -13589,8 +13497,8 @@ namespace ERP_Production {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsIssueDateNull() {
                 return this.IsNull(this.tabletbl_Multi_PO_H.IssueDateColumn);
-            }
-            
+        }
+        
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetIssueDateNull() {
@@ -13608,8 +13516,6 @@ namespace ERP_Production {
             public void SetBatchDateNull() {
                 this[this.tabletbl_Multi_PO_H.BatchDateColumn] = global::System.Convert.DBNull;
             }
-=======
->>>>>>> master
         }
         
         /// <summary>
@@ -24915,7 +24821,6 @@ namespace ERP_Production.DSMatRepTableAdapters {
             tableMapping.ColumnMappings.Add("ReprintQty", "ReprintQty");
             tableMapping.ColumnMappings.Add("Reasons", "Reasons");
             tableMapping.ColumnMappings.Add("RecBy", "RecBy");
-<<<<<<< HEAD
             tableMapping.ColumnMappings.Add("PlanDate", "PlanDate");
             tableMapping.ColumnMappings.Add("ShipMethod", "ShipMethod");
             tableMapping.ColumnMappings.Add("CarcasStatus", "CarcasStatus");
@@ -24936,14 +24841,6 @@ namespace ERP_Production.DSMatRepTableAdapters {
             tableMapping.ColumnMappings.Add("CancelDate", "CancelDate");
             tableMapping.ColumnMappings.Add("IssueDate", "IssueDate");
             tableMapping.ColumnMappings.Add("BatchDate", "BatchDate");
-=======
-            tableMapping.ColumnMappings.Add("ShipMethod", "ShipMethod");
-            tableMapping.ColumnMappings.Add("CarcasStatus", "CarcasStatus");
-            tableMapping.ColumnMappings.Add("LAName", "LAName");
-            tableMapping.ColumnMappings.Add("PODD", "PODD");
-            tableMapping.ColumnMappings.Add("DD", "DD");
-            tableMapping.ColumnMappings.Add("ShipMode", "ShipMode");
->>>>>>> master
             tableMapping.ColumnMappings.Add("POM", "POM");
             tableMapping.ColumnMappings.Add("ArtCode", "ArtCode");
             tableMapping.ColumnMappings.Add("ModelID", "ModelID");
@@ -24970,26 +24867,6 @@ namespace ERP_Production.DSMatRepTableAdapters {
                 "_PO_H.DPOC, tbl_Multi_PO_H.CarryPerson, tbl_Multi_PO_H.IssedBy, tbl_Multi_PO_H.R" +
                 "eprintQty, tbl_Multi_PO_H.Reasons, \r\n                         tbl_Multi_PO_H.Rec" +
                 "By, tbl_Multi_PO_H.ShipMethod, tbl_Multi_PO_H.CarcasStatus, tbl_Multi_PO_M.LANam" +
-<<<<<<< HEAD
-                "e, tbl_Multi_PO_M.CustReqDate, tbl_Multi_PO_M.PlanDate, tbl_Multi_PO_M.PSDD, tbl" +
-                "_Multi_PO_M.FPD, \r\n                         tbl_Multi_PO_M.PODD, tbl_Multi_PO_M." +
-                "LPDate, tbl_Multi_PO_M.EntryDate, tbl_Multi_PO_M.DD, tbl_Multi_PO_M.ShipMode, tb" +
-                "l_Multi_PO_M.ExFactoryDate, tbl_Multi_PO_M.SecondConfDate, tbl_Multi_PO_M.LastEd" +
-                "itDate, \r\n                         tbl_Multi_PO_M.CreationDate, tbl_Multi_PO_M.C" +
-                "urrentDate, tbl_Multi_PO_M.CancelDate, tbl_Multi_PO_M.IssueDate, tbl_Multi_PO_M." +
-                "BatchDate, tbl_Pro_Article.ArtCode, tbl_Multi_PO_H.ModelID\r\nFROM            tbl_" +
-                "Multi_PO_H, tbl_Multi_PO_M, Tbl_Multi_PO_Plan_D, tbl_Pro_Article\r\nWHERE        t" +
-                "bl_Multi_PO_H.PO = tbl_Multi_PO_M.PO AND tbl_Multi_PO_H.ClientID = tbl_Multi_PO_" +
-                "M.ClientID AND tbl_Multi_PO_H.ModelID = tbl_Multi_PO_M.ModelID AND tbl_Multi_PO_" +
-                "H.ArtID = tbl_Multi_PO_M.ArtID AND \r\n                         tbl_Multi_PO_M.PO " +
-                "= Tbl_Multi_PO_Plan_D.PO AND tbl_Multi_PO_M.POM = Tbl_Multi_PO_Plan_D.POM AND tb" +
-                "l_Multi_PO_M.ArtID = Tbl_Multi_PO_Plan_D.ArtID AND \r\n                         tb" +
-                "l_Multi_PO_M.ModelID = Tbl_Multi_PO_Plan_D.ModelID AND tbl_Multi_PO_M.ClientID =" +
-                " Tbl_Multi_PO_Plan_D.ClientID AND tbl_Multi_PO_H.ClientID = tbl_Pro_Article.Clie" +
-                "ntID AND \r\n                         tbl_Multi_PO_H.ModelID = tbl_Pro_Article.Mod" +
-                "elID AND tbl_Multi_PO_H.ArtID = tbl_Pro_Article.ArtID AND (tbl_Multi_PO_H.Factor" +
-                "yCode = ?) AND (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
-=======
                 "e, tbl_Multi_PO_M.PODD, tbl_Multi_PO_M.DD, tbl_Multi_PO_M.ShipMode, tbl_Pro_Arti" +
                 "cle.ArtCode, \r\n                         tbl_Multi_PO_H.ModelID\r\nFROM            " +
                 "tbl_Multi_PO_H, tbl_Multi_PO_M, Tbl_Multi_PO_Plan_D, tbl_Pro_Article\r\nWHERE     " +
@@ -25012,7 +24889,6 @@ namespace ERP_Production.DSMatRepTableAdapters {
                 "bl_Multi_PO_M.DD, tbl_Multi_PO_M.ShipMode, tbl_Pro_Article.ArtCode, \r\n          " +
                 "               tbl_Multi_PO_H.ModelID\r\nHAVING        (tbl_Multi_PO_H.FactoryCode" +
                 " = ?) AND (tbl_Multi_PO_M.PODD BETWEEN ? AND ?)";
->>>>>>> master
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("FactoryCode", global::System.Data.Odbc.OdbcType.VarChar, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "FactoryCode", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[0].Parameters.Add(new global::System.Data.Odbc.OdbcParameter("PODD", global::System.Data.Odbc.OdbcType.DateTime, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PODD", global::System.Data.DataRowVersion.Current, false, null));

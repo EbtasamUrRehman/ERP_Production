@@ -168,10 +168,6 @@ namespace ERP_Production
 
         }
 
-<<<<<<< HEAD
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-=======
         private void checkEdit1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkEdit1.Checked)
@@ -187,7 +183,6 @@ namespace ERP_Production
         private void labelControl6_Click(object sender, EventArgs e)
         {
             MessageBox.Show("You are unable to sign up. Please contact the IT Development team for support.", "Sign-Up ", MessageBoxButtons.OK, MessageBoxIcon.Information);
->>>>>>> master
 
         }
     }

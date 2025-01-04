@@ -597,12 +597,8 @@ namespace ERP_Production.MatReq
             this.tabNavigationPage3.Caption = "Full Ball requisition";
             this.tabNavigationPage3.Controls.Add(this.gridControl1);
             this.tabNavigationPage3.Name = "tabNavigationPage3";
-<<<<<<< HEAD
-            this.tabNavigationPage3.Size = new System.Drawing.Size(1489, 165);
-=======
             this.tabNavigationPage3.PageVisible = false;
             this.tabNavigationPage3.Size = new System.Drawing.Size(1489, 196);
->>>>>>> master
             // 
             // gridControl1
             // 
@@ -612,11 +608,7 @@ namespace ERP_Production.MatReq
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit1});
-<<<<<<< HEAD
-            this.gridControl1.Size = new System.Drawing.Size(1489, 165);
-=======
             this.gridControl1.Size = new System.Drawing.Size(1489, 196);
->>>>>>> master
             this.gridControl1.TabIndex = 6;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4,
@@ -1051,12 +1043,8 @@ namespace ERP_Production.MatReq
             this.tabNavigationPage5.Caption = "Full Ball requisition";
             this.tabNavigationPage5.Controls.Add(this.gridControl5);
             this.tabNavigationPage5.Name = "tabNavigationPage5";
-<<<<<<< HEAD
-            this.tabNavigationPage5.Size = new System.Drawing.Size(1485, 347);
-=======
             this.tabNavigationPage5.PageVisible = false;
             this.tabNavigationPage5.Size = new System.Drawing.Size(1485, 378);
->>>>>>> master
             // 
             // gridControl5
             // 
@@ -1066,11 +1054,7 @@ namespace ERP_Production.MatReq
             this.gridControl5.Name = "gridControl5";
             this.gridControl5.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit5});
-<<<<<<< HEAD
-            this.gridControl5.Size = new System.Drawing.Size(1485, 347);
-=======
             this.gridControl5.Size = new System.Drawing.Size(1485, 378);
->>>>>>> master
             this.gridControl5.TabIndex = 6;
             this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView8,

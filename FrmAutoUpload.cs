@@ -456,12 +456,8 @@ namespace ERP_Production
                             catch (Exception ex)
                             {
                                 // Log the exception or handle it as required
-<<<<<<< HEAD
-                                LogDatabaseError("tbl_Multi_PO_STableAdapter.Insert", row, PoCode, logFilePath, ex);
-=======
                                 LogDatabaseError("", row, PoCode, logFilePath, ex);
                                 worksheet.Rows[row].FillColor = Color.Red;
->>>>>>> master
                             }
                         }
                     }
