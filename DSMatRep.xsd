@@ -139,12 +139,26 @@ HAVING        (tbl_Multi_PO_H.FactoryCode = ?) AND (tbl_Multi_PO_M.PODD BETWEEN 
               <Mapping SourceColumn="ReprintQty" DataSetColumn="ReprintQty" />
               <Mapping SourceColumn="Reasons" DataSetColumn="Reasons" />
               <Mapping SourceColumn="RecBy" DataSetColumn="RecBy" />
+              <Mapping SourceColumn="PlanDate" DataSetColumn="PlanDate" />
               <Mapping SourceColumn="ShipMethod" DataSetColumn="ShipMethod" />
               <Mapping SourceColumn="CarcasStatus" DataSetColumn="CarcasStatus" />
               <Mapping SourceColumn="LAName" DataSetColumn="LAName" />
+              <Mapping SourceColumn="CustReqDate" DataSetColumn="CustReqDate" />
+              <Mapping SourceColumn="PSDD" DataSetColumn="PSDD" />
+              <Mapping SourceColumn="FPD" DataSetColumn="FPD" />
               <Mapping SourceColumn="PODD" DataSetColumn="PODD" />
+              <Mapping SourceColumn="LPDate" DataSetColumn="LPDate" />
+              <Mapping SourceColumn="EntryDate" DataSetColumn="EntryDate" />
               <Mapping SourceColumn="DD" DataSetColumn="DD" />
               <Mapping SourceColumn="ShipMode" DataSetColumn="ShipMode" />
+              <Mapping SourceColumn="ExFactoryDate" DataSetColumn="ExFactoryDate" />
+              <Mapping SourceColumn="SecondConfDate" DataSetColumn="SecondConfDate" />
+              <Mapping SourceColumn="LastEditDate" DataSetColumn="LastEditDate" />
+              <Mapping SourceColumn="CreationDate" DataSetColumn="CreationDate" />
+              <Mapping SourceColumn="CurrentDate" DataSetColumn="CurrentDate" />
+              <Mapping SourceColumn="CancelDate" DataSetColumn="CancelDate" />
+              <Mapping SourceColumn="IssueDate" DataSetColumn="IssueDate" />
+              <Mapping SourceColumn="BatchDate" DataSetColumn="BatchDate" />
               <Mapping SourceColumn="POM" DataSetColumn="POM" />
               <Mapping SourceColumn="ArtCode" DataSetColumn="ArtCode" />
               <Mapping SourceColumn="ModelID" DataSetColumn="ModelID" />
@@ -2417,6 +2431,7 @@ WHERE        (PO = ?) AND (POS = ?)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="PlanDate" msprop:Generator_ColumnVarNameInTable="columnPlanDate" msprop:Generator_ColumnPropNameInRow="PlanDate" msprop:Generator_ColumnPropNameInTable="PlanDateColumn" msprop:Generator_UserColumnName="PlanDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="ShipMethod" msprop:Generator_ColumnVarNameInTable="columnShipMethod" msprop:Generator_ColumnPropNameInRow="ShipMethod" msprop:Generator_ColumnPropNameInTable="ShipMethodColumn" msprop:Generator_UserColumnName="ShipMethod" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -2432,7 +2447,12 @@ WHERE        (PO = ?) AND (POS = ?)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="CustReqDate" msprop:Generator_ColumnVarNameInTable="columnCustReqDate" msprop:Generator_ColumnPropNameInRow="CustReqDate" msprop:Generator_ColumnPropNameInTable="CustReqDateColumn" msprop:Generator_UserColumnName="CustReqDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PSDD" msprop:Generator_ColumnVarNameInTable="columnPSDD" msprop:Generator_ColumnPropNameInRow="PSDD" msprop:Generator_ColumnPropNameInTable="PSDDColumn" msprop:Generator_UserColumnName="PSDD" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FPD" msprop:Generator_ColumnVarNameInTable="columnFPD" msprop:Generator_ColumnPropNameInRow="FPD" msprop:Generator_ColumnPropNameInTable="FPDColumn" msprop:Generator_UserColumnName="FPD" type="xs:dateTime" minOccurs="0" />
               <xs:element name="PODD" msprop:Generator_ColumnVarNameInTable="columnPODD" msprop:Generator_ColumnPropNameInRow="PODD" msprop:Generator_ColumnPropNameInTable="PODDColumn" msprop:Generator_UserColumnName="PODD" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LPDate" msprop:Generator_ColumnVarNameInTable="columnLPDate" msprop:Generator_ColumnPropNameInRow="LPDate" msprop:Generator_ColumnPropNameInTable="LPDateColumn" msprop:Generator_UserColumnName="LPDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EntryDate" msprop:Generator_ColumnVarNameInTable="columnEntryDate" msprop:Generator_ColumnPropNameInRow="EntryDate" msprop:Generator_ColumnPropNameInTable="EntryDateColumn" msprop:Generator_UserColumnName="EntryDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="DD" msprop:Generator_ColumnVarNameInTable="columnDD" msprop:Generator_ColumnPropNameInRow="DD" msprop:Generator_ColumnPropNameInTable="DDColumn" msprop:Generator_UserColumnName="DD" type="xs:dateTime" minOccurs="0" />
               <xs:element name="ShipMode" msprop:Generator_ColumnVarNameInTable="columnShipMode" msprop:Generator_ColumnPropNameInRow="ShipMode" msprop:Generator_ColumnPropNameInTable="ShipModeColumn" msprop:Generator_UserColumnName="ShipMode" minOccurs="0">
                 <xs:simpleType>
@@ -2441,6 +2461,14 @@ WHERE        (PO = ?) AND (POS = ?)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="ExFactoryDate" msprop:Generator_ColumnVarNameInTable="columnExFactoryDate" msprop:Generator_ColumnPropNameInRow="ExFactoryDate" msprop:Generator_ColumnPropNameInTable="ExFactoryDateColumn" msprop:Generator_UserColumnName="ExFactoryDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SecondConfDate" msprop:Generator_ColumnVarNameInTable="columnSecondConfDate" msprop:Generator_ColumnPropNameInRow="SecondConfDate" msprop:Generator_ColumnPropNameInTable="SecondConfDateColumn" msprop:Generator_UserColumnName="SecondConfDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastEditDate" msprop:Generator_ColumnVarNameInTable="columnLastEditDate" msprop:Generator_ColumnPropNameInRow="LastEditDate" msprop:Generator_ColumnPropNameInTable="LastEditDateColumn" msprop:Generator_UserColumnName="LastEditDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreationDate" msprop:Generator_ColumnVarNameInTable="columnCreationDate" msprop:Generator_ColumnPropNameInRow="CreationDate" msprop:Generator_ColumnPropNameInTable="CreationDateColumn" msprop:Generator_UserColumnName="CreationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CurrentDate" msprop:Generator_ColumnVarNameInTable="columnCurrentDate" msprop:Generator_ColumnPropNameInRow="CurrentDate" msprop:Generator_ColumnPropNameInTable="CurrentDateColumn" msprop:Generator_UserColumnName="CurrentDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CancelDate" msprop:Generator_ColumnVarNameInTable="columnCancelDate" msprop:Generator_ColumnPropNameInRow="CancelDate" msprop:Generator_ColumnPropNameInTable="CancelDateColumn" msprop:Generator_UserColumnName="CancelDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IssueDate" msprop:Generator_ColumnVarNameInTable="columnIssueDate" msprop:Generator_ColumnPropNameInRow="IssueDate" msprop:Generator_ColumnPropNameInTable="IssueDateColumn" msprop:Generator_UserColumnName="IssueDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BatchDate" msprop:Generator_ColumnVarNameInTable="columnBatchDate" msprop:Generator_ColumnPropNameInRow="BatchDate" msprop:Generator_ColumnPropNameInTable="BatchDateColumn" msprop:Generator_UserColumnName="BatchDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="POM" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPOM" msprop:Generator_ColumnPropNameInRow="POM" msprop:Generator_ColumnPropNameInTable="POMColumn" msprop:Generator_UserColumnName="POM" type="xs:int" />
               <xs:element name="ArtCode" msprop:Generator_ColumnVarNameInTable="columnArtCode" msprop:Generator_ColumnPropNameInRow="ArtCode" msprop:Generator_ColumnPropNameInTable="ArtCodeColumn" msprop:Generator_UserColumnName="ArtCode">
                 <xs:simpleType>

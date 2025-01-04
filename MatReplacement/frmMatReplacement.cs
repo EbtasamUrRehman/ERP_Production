@@ -290,6 +290,7 @@ namespace ERP_Production.MatReplacement
                         {
                             MessageBox.Show($"repalcement generated sucecsfully");
 
+                        // Reload the data to refresh the UI
                             load();
                         }
                     }

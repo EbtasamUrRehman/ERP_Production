@@ -24,7 +24,7 @@ namespace ERP_Production
 
         private int? artSize;
         private string logFilePath;
-        string logFilePath1;
+
         public FrmAutoUpload()
         {
             InitializeComponent();
@@ -464,13 +464,11 @@ namespace ERP_Production
                     else
                     {
                         LogDatabaseError($"An error occurred while processing ArtCode {ArtCode}", row, PoCode, logFilePath);
-                        worksheet.Rows[row].FillColor = Color.Red;
                     }
                 }
                 catch (Exception ex)
                 {
                     LogDatabaseError($"An error occurred while processing ArtCode {ArtCode}", row, PoCode, logFilePath, ex);
-                    worksheet.Rows[row].FillColor = Color.Red;
                     // Log the exception or handle it as required
                     //MessageBox.Show($"An error occurred while processing ArtCode {ArtCode}: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -485,8 +483,6 @@ namespace ERP_Production
             progressBarControl1.Update();
 
             MessageBox.Show($"Data processing completed. Check the log file at: {logFilePath}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-             logFilePath1 = logFilePath;
-            hyperlinkLabelControl1.Text = logFilePath1;
             progressBarControl1.Hide();
 
         }
@@ -734,21 +730,6 @@ namespace ERP_Production
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             UploadDatedataToDatabaseWithError();
-        }
-
-        private void hyperlinkLabelControl1_Click(object sender, EventArgs e)
-        {
-           System.Diagnostics.Process.Start(logFilePath1);
-        }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void spreadsheetCommandBarButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
         }
     }
 }
