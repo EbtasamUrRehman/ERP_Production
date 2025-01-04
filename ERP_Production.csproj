@@ -178,6 +178,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DSMatRepHOD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMatRepHOD.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DSPackingMaterial.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -545,6 +550,17 @@
     </None>
     <None Include="DSLabelPlanning.xss">
       <DependentUpon>DSLabelPlanning.xsd</DependentUpon>
+    </None>
+    <None Include="DSMatRepHOD.xsc">
+      <DependentUpon>DSMatRepHOD.xsd</DependentUpon>
+    </None>
+    <None Include="DSMatRepHOD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMatRepHOD.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSMatRepHOD.xss">
+      <DependentUpon>DSMatRepHOD.xsd</DependentUpon>
     </None>
     <None Include="DSPackingMaterial.xsc">
       <DependentUpon>DSPackingMaterial.xsd</DependentUpon>
